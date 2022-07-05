@@ -107,3 +107,17 @@ deploy:
   type: git
   repo: git@github.com:Dumby-cat/Dumby-cat.github.io.git
   branch: master
+
+#RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:

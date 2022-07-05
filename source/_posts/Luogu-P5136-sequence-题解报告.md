@@ -3,8 +3,8 @@ title: Luogu P5136 sequence 题解报告
 date: 2021-08-27 15:25:29
 tags:
 - c++
-- 算法
-- 例题
+- 矩阵乘法
+- 数论
 categories: 一只蒟蒻的c++学习笔记
 ---
 # 一只蒟蒻的 Luogu P5136 sequence 题解报告
