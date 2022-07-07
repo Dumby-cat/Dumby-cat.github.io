@@ -1,5 +1,5 @@
 ---
-title: 洛谷P4197 Peaks (Kruskal重构树)题解
+title: 洛谷P4197 Peaks (Kruskal重构树) 题解
 date: 2022-07-06 21:48:40
 tags:
 - Kruskal

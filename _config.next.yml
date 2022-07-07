@@ -365,8 +365,8 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: base16/black-metal-venom
-    dark: base16/black-metal-venom
+    light: base16/black-metal-marduk
+    dark: base16/black-metal-marduk
     # base16/black-metal-venom
     # sunburst
     # github-dark-dimmed
