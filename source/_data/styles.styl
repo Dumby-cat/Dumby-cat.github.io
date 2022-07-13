@@ -151,13 +151,14 @@ i {
 //   color: #ffffff;
 // }
 
-
+//复制键
 .copy-btn {
   color: #ffffff;
   if (hexo-config('codeblock.copy_button.style') == 'flat') {
     background: #000000;
   } 
 }
+
 
 .followme {
     color: #ffffff;
@@ -166,12 +167,12 @@ i {
     border-left: 3px solid #ffffff;
 }
 
-
+//文章标题
 .posts-expand .post-title-link {
   color: #ffffff;
 }
 
-
+//菜单栏标签
 .menu-item {
   a, span.exturl {
     color: #ffffff;
@@ -187,12 +188,14 @@ i {
     background: #5c5c5c;
 }
 
+//页码
 .pagination .page-number.current {
     background: #101010;
     border-color: #ccc;
     color: #ffffff;
 }
 
+//标签云
 .tag-cloud {
   a {
     display: inline-block;
@@ -205,6 +208,7 @@ i {
   }
 }
 
+//文章底部标签
 .posts-expand .post-tags a {
     background: #000000;
     &:hover {
@@ -213,6 +217,7 @@ i {
     }
 }
 
+//分类标签
 .category-all-page .category-list {
     list-style: none;
     margin: 0;
@@ -228,4 +233,24 @@ i {
 
 .posts-collapse .post-content .collection-title {
     display: none;
+}
+
+//表格表头
+table {
+  background: #000000;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: $table-font-size;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+//表格主体
+tbody tr {
+  &:nth-of-type(odd) {
+    background: #000000;
+  }
+
+  &:hover {
+    background: #1c1c1c;
+  }
 }

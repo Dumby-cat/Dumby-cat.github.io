@@ -1,5 +1,5 @@
 ﻿---
-title: 一只蒟蒻的A*学习笔记（K短路例题）
+title: 一只蒟蒻的A-Star 学习笔记（K短路例题）
 date: 2021-06-29 20:10:45
 tags: 
 - c++
@@ -8,7 +8,10 @@ categories: Dumby的OI生涯
 ---
 ## K 短路输出路径
 题目链接：[ACWing](https://www.acwing.com/problem/content/2623/) 和 [洛谷](https://www.luogu.com.cn/problem/P4467)
-注意：此题正解非 A* ，但奈何本蒟蒻只会 A* 。。。<!--more-->
+注意：此题正解非 A-Star ，但奈何本蒟蒻只会 A-Star 。。。
+
+<!--more-->
+
 ### 题目描述
 给一张有向图，给出起点S、终点T、K，输出从起点到终点的第 K 短路路径（路径**不**允许重复经过点或边）。
 当有多条 K 短路时，输出字典序最小的一条。
@@ -18,7 +21,7 @@ categories: Dumby的OI生涯
 **未做过 K 短路的同学建议先做[这道题](https://www.acwing.com/problem/content/180/)**
 **对 K 短路板子不熟悉的同学可以看下 y总视频 或者[这篇题解](https://www.acwing.com/file_system/file/content/whole/index/content/2469128/)**
 **对 A-Star 算法不熟悉的同学可以看下 y总视频 或者[这篇博客](https://blog.csdn.net/Dumby_cat/article/details/118325822)**
-其他部分与 K 短路模板一模一样，只有 A* 主体部分有变化。
+其他部分与 K 短路模板一模一样，只有 A-Star 主体部分有变化。
 我们要记录下 经过当前点的从起点到终点的路径的估计距离、起点到当前点的真实距离、节点号、路径、一个用来去重的 bool 数组。
 于是我们把原来的三元组换成结构体。
 储存好了，怎么判断谁的字典序最小？

@@ -12,7 +12,7 @@ categories: Dumby的OI生涯
 
 ~~试~~求出：
 
-$$\left \lceil \left ( \frac{1+\sqrt{5}}{2}  \right )^{n}  \right \rceil \bmod 998244353$$
+$\left \lceil \left ( \frac{1+\sqrt{5}}{2}  \right )^{n}  \right \rceil \bmod 998244353$
 
 多测<!--more-->
 
@@ -26,7 +26,7 @@ $$\left \lceil \left ( \frac{1+\sqrt{5}}{2}  \right )^{n}  \right \rceil \bmod 9
 
 可以想到在原式后加上一个 $\left ( \frac{1-\sqrt{5}}{2}  \right )^{n}$，使式子变为：
 
-$$ \left ( \frac{1+\sqrt{5}}{2}  \right )^{n} + \left ( \frac{1-\sqrt{5}}{2}  \right )^{n} $$
+$ \left ( \frac{1+\sqrt{5}}{2}  \right )^{n} + \left ( \frac{1-\sqrt{5}}{2}  \right )^{n} $
 
 此时便可以将根号消掉。（注意最后需要减去一个 $\left ( \frac{1-\sqrt{5}}{2}  \right )^{n}$）
 
@@ -36,9 +36,9 @@ $$ \left ( \frac{1+\sqrt{5}}{2}  \right )^{n} + \left ( \frac{1-\sqrt{5}}{2}  \r
 
 稍微考虑一下便可得到：
 
-$$x^{n}+y^{n}=\left ( x+y \right ) \left ( x^{n-1}+y^{n-1} \right ) -xy \times \left ( x^{n-2}+y^{n-2} \right )$$
+$x^{n}+y^{n}=\left ( x+y \right ) \left ( x^{n-1}+y^{n-1} \right ) -xy \times \left ( x^{n-2}+y^{n-2} \right )$
 
-$$f_{n}=\left ( x+y \right )f_{n-1}-xy \times f_{n-2} $$
+$f_{n}=\left ( x+y \right )f_{n-1}-xy \times f_{n-2} $
 
 这个就是我们的递推式啦。
 
@@ -50,7 +50,7 @@ $$f_{n}=\left ( x+y \right )f_{n-1}-xy \times f_{n-2} $$
 
 转移矩阵如下：
 
-$$\begin{bmatrix} 1 &1 \\ 1 &0\end{bmatrix}$$
+$\begin{bmatrix} 1 &1 \\ 1 &0\end{bmatrix}$
 
 最后再来看看减去的那个式子对最终答案的影响：
 
