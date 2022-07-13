@@ -5,7 +5,7 @@ tags:
 - 线段树
 - 数据结构
 - c++
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
 
 ## 解析

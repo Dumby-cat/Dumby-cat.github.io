@@ -5,9 +5,8 @@ tags:
 - c++
 - 树形DP
 - DP
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
-#  一只蒟蒻的树形DP学习笔记
 START MY SHOW！！！！
 ## 为什么叫树形DP？与线性DP有什么区别？
 两者的本质一致，只不过是在处理数据时的迭代方式不同了而已。

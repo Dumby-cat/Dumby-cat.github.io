@@ -4,7 +4,7 @@ date: 2022-07-05 19:22:03
 tags:
 - 栈
 - 数据结构
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
 
 ## 解析

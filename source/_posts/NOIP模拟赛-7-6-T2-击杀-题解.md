@@ -3,7 +3,7 @@ title: NOIP模拟赛 7.6 T2 击杀 题解
 date: 2022-07-07 19:10:15
 tags:
 - DP
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
 
 ## 题面

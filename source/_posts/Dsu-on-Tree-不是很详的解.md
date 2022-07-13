@@ -5,7 +5,7 @@ tags:
 - c++
 - 启发式
 - dsu on tree
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
 
 ## 引子

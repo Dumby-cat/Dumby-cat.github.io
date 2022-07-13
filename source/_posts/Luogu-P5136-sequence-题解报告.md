@@ -5,9 +5,8 @@ tags:
 - c++
 - 矩阵乘法
 - 数论
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
-# 一只蒟蒻的 Luogu P5136 sequence 题解报告
 
 ## 题目描述
 

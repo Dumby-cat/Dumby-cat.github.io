@@ -4,9 +4,8 @@ date: 2021-06-29 20:10:45
 tags: 
 - c++
 - 搜索
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
-# 一只蒟蒻的A*学习笔记（ K 短路例题）
 ## K 短路输出路径
 题目链接：[ACWing](https://www.acwing.com/problem/content/2623/) 和 [洛谷](https://www.luogu.com.cn/problem/P4467)
 注意：此题正解非 A* ，但奈何本蒟蒻只会 A* 。。。<!--more-->

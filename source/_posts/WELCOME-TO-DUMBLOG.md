@@ -6,7 +6,7 @@ tags:
 - Site
 - Sundries
 - Notice
-categories: Site
+categories: 站务
 ---
 # 欢迎来到 DUMBLOG !
 

@@ -7,7 +7,7 @@ tags:
 - c++
 - 排序
 - 字符串
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
 
 ## 思路

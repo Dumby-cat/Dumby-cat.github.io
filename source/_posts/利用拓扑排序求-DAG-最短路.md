@@ -7,7 +7,7 @@ tags:
 - 图论
 - DAG
 - 最短路
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
 
 ## 背景

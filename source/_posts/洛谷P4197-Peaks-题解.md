@@ -7,7 +7,7 @@ tags:
 - 倍增
 - DFS
 - 主席树
-categories: 一只蒟蒻的c++学习笔记
+categories: Dumby的OI生涯
 ---
 
 ## 解析
