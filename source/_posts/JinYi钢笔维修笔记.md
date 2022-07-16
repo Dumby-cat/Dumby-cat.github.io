@@ -13,9 +13,9 @@ categories: Dumby的折腾笔记
 
 好多地方坏了，开个贴慢慢修。
 
-{% asset_img 开搞.png 开搞}
+{% asset_img 开搞.png 开搞%}
 
-{% asset_img 笔帽部分.png 从笔帽开始}
+{% asset_img 笔帽部分.png 从笔帽开始%}
 
 左英雄616右JinYi。
 
@@ -25,33 +25,33 @@ categories: Dumby的折腾笔记
 
 发现616的密封件和JinYi很像：
 
-{% asset_img 对比.png 两者密封件很像}
+{% asset_img 对比.png 两者密封件很像%}
 
 左616右JinYi。
 
-{% asset_img 装.png JinYi的笔顶也能装到616上}
+{% asset_img 装.png JinYi的笔顶也能装到616上%}
 
 发现JinYi的笔顶也能装到616上。
 
 于是把616的那个装到JinYi的笔帽上，但发现太松了笔根本盖不上。。
 
-{% asset_img 盖不上.png 盖不上}
+{% asset_img 盖不上.png 盖不上%}
 
 想到原来的JinYi密封件上有个固定用的东西，把它装到616密封件上。
 
-{% asset_img 616.png 装到616上}
+{% asset_img 616.png 装到616上%}
 
 然后发现塞不进JinYi的笔帽。。。
 
-{% asset_img 塞不下.png 塞不下}
+{% asset_img 塞不下.png 塞不下%}
 
 于是乎，仿照原来JinYi密封件的样子把616密封件削掉几块。
 
-{% asset_img 削.png 削掉几块}
+{% asset_img 削.png 削掉几块%}
 
 然后发现：
 
-{% asset_img 还是塞不下.png 还是塞不下}
+{% asset_img 还是塞不下.png 还是塞不下%}
 
 还是塞不下。。。
 
