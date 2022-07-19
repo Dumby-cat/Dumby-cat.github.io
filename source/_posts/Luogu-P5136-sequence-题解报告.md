@@ -32,25 +32,25 @@ $ \left ( \frac{1+\sqrt{5}}{2}  \right )^{n} + \left ( \frac{1-\sqrt{5}}{2}  \ri
 
 我们设 $x= \left ( \frac{1+\sqrt{5}}{2}  \right )$，$y=\left ( \frac{1-\sqrt{5}}{2}  \right )$。
 
-再设 $f_{n}=x^{n}+y^{n}$。
+再设 $f\_{n}=x^{n}+y^{n}$。
 
 稍微考虑一下便可得到：
 
 $x^{n}+y^{n}=\left ( x+y \right ) \left ( x^{n-1}+y^{n-1} \right ) -xy \times \left ( x^{n-2}+y^{n-2} \right )$
 
-$f_{n}=\left ( x+y \right )f_{n-1}-xy \times f_{n-2} $
+$f\_{n}=\left ( x+y \right )f\_{n-1}-xy \times f\_{n-2} $
 
 这个就是我们的递推式啦。
 
-其中有些东西可以直接算出来：$x+y=1$，$xy=-1$，$f_{0}=1$，$f_{1}=2$，$f_{2}=3$。
+其中有些东西可以直接算出来：$x+y=1$，$xy=-1$，$f\_{0}=1$，$f\_{1}=2$，$f\_{2}=3$。
 
 于是乎我们的矩阵就~~很容易~~地得出来了：
 
-需要由 $\begin{bmatrix} f_{n-1} &f_{n-2}\end{bmatrix}$ 推得 $\begin{bmatrix} f_{n} &f_{n-1}\end{bmatrix}$。
+需要由 $\begin{bmatrix} f\_{n-1} &f\_{n-2}\end{bmatrix}$ 推得 $\begin{bmatrix} f\_{n} &f\_{n-1}\end{bmatrix}$。
 
 转移矩阵如下：
 
-$\begin{bmatrix} 1 &1 \\ 1 &0\end{bmatrix}$
+$\begin{bmatrix} 1 &1 \\\ 1 &0\end{bmatrix}$
 
 最后再来看看减去的那个式子对最终答案的影响：
 
