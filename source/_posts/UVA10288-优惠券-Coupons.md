@@ -20,9 +20,9 @@ categories: Dumby的OI生涯
 
 ## 思路
 
-我们设 $f_{i}$ 为取出第 $i$ 个数期望需要的次数，$p_{i}$ 为取出第 $i$ 个数的概率。
+我们设 $f\_{i}$ 为取出第 $i$ 个数期望需要的次数，$p\_{i}$ 为取出第 $i$ 个数的概率。
 
-已经取出 $i-1$ 个数，所以 $p_{i}$ 就是 $\frac{n-i+1}{n}$。
+已经取出 $i-1$ 个数，所以 $p\_{i}$ 就是 $\frac{n-i+1}{n}$。
 
 我们有个结论：概率为 $p$ 的事件期望 $\frac{1}{p}$ 次后发生。
 
@@ -32,13 +32,13 @@ categories: Dumby的OI生涯
 
 那么我们有：
 
-$E\left(X\right)=\sum_{i=1}^{\infty } i\left(1-P\right)^{i-1}P$
+$E\left(X\right)=\\sum\_{i=1}^{\infty } i\left(1-P\right)^{i-1}P$
 
-$E\left(X\right)=P\sum_{i=1}^{\infty } i\left(1-P\right)^{i-1}$
+$E\left(X\right)=P\\sum\_{i=1}^{\infty } i\left(1-P\right)^{i-1}$
 
 令：
 
-$S= \sum_{i=1}^{\infty}i\left(1-P\right)^{i-1}$
+$S= \\sum\_{i=1}^{\infty}i\left(1-P\right)^{i-1}$
 
 $\therefore S=1+2\left(1-P\right)+3\left(1-P\right)^{2}+...$
 
@@ -53,9 +53,9 @@ $S=\frac{1}{P^{2}}$
 
 $\therefore E\left(X\right)=P\times S=P\times \frac{1}{P^{2}}=\frac{1}{P}$
 
-所以，我们能得到 $f_{i}=\frac{n}{n-i+1}$。
+所以，我们能得到 $f\_{i}=\frac{n}{n-i+1}$。
 
-所以取出所有数期望次数 $F={\textstyle \sum_{i=1}^{n}f_{i}}={\textstyle \sum_{i=1}^{n}\frac{n}{n-i+1}}={\textstyle \sum_{i=1}^{n}\frac{n}{i}}$。
+所以取出所有数期望次数 $F={\textstyle \sum\_{i=1}^{n}f\_{i}}={\textstyle \sum\_{i=1}^{n}\frac{n}{n-i+1}}={\textstyle \sum\_{i=1}^{n}\frac{n}{i}}$。
 
 根据这个式子计算答案就好了。
 
