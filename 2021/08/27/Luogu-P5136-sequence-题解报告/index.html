@@ -138,7 +138,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-07-17 20:38:01" itemprop="dateModified" datetime="2022-07-17T20:38:01+08:00">2022-07-17</time>
+      <time title="修改时间：2022-07-19 21:07:21" itemprop="dateModified" datetime="2022-07-19T21:07:21+08:00">2022-07-19</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -173,13 +173,13 @@
 <p>再设 $f_{n}=x^{n}+y^{n}$。</p>
 <p>稍微考虑一下便可得到：</p>
 <p>$x^{n}+y^{n}=\left ( x+y \right ) \left ( x^{n-1}+y^{n-1} \right ) -xy \times \left ( x^{n-2}+y^{n-2} \right )$</p>
-<p>$f<em>{n}=\left ( x+y \right )f</em>{n-1}-xy \times f_{n-2} $</p>
+<p>$f_{n}=\left ( x+y \right )f_{n-1}-xy \times f_{n-2} $</p>
 <p>这个就是我们的递推式啦。</p>
-<p>其中有些东西可以直接算出来：$x+y=1$，$xy=-1$，$f<em>{0}=1$，$f</em>{1}=2$，$f_{2}=3$。</p>
+<p>其中有些东西可以直接算出来：$x+y=1$，$xy=-1$，$f_{0}=1$，$f_{1}=2$，$f_{2}=3$。</p>
 <p>于是乎我们的矩阵就<del>很容易</del>地得出来了：</p>
-<p>需要由 $\begin{bmatrix} f<em>{n-1} &amp;f</em>{n-2}\end{bmatrix}$ 推得 $\begin{bmatrix} f<em>{n} &amp;f</em>{n-1}\end{bmatrix}$。</p>
+<p>需要由 $\begin{bmatrix} f_{n-1} &amp;f_{n-2}\end{bmatrix}$ 推得 $\begin{bmatrix} f_{n} &amp;f_{n-1}\end{bmatrix}$。</p>
 <p>转移矩阵如下：</p>
-<p>$\begin{bmatrix} 1 &amp;1 \ 1 &amp;0\end{bmatrix}$</p>
+<p>$\begin{bmatrix} 1 &amp;1 \\ 1 &amp;0\end{bmatrix}$</p>
 <p>最后再来看看减去的那个式子对最终答案的影响：</p>
 <blockquote>
 <p>注意最后需要减去一个 $\left ( \frac{1-\sqrt{5}}{2}  \right )^{n}$</p>

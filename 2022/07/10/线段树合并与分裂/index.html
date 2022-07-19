@@ -138,7 +138,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-07-17 20:38:02" itemprop="dateModified" datetime="2022-07-17T20:38:02+08:00">2022-07-17</time>
+      <time title="修改时间：2022-07-19 21:13:07" itemprop="dateModified" datetime="2022-07-19T21:13:07+08:00">2022-07-19</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -171,7 +171,7 @@
 <p>流程如下：</p>
 <ol>
 <li>在两棵树上都递归到一个位置，如果 $L$ 树的该位置对应的节点 $u$ 为空，则返回 $R$ 树的 $u$，反之亦然；</li>
-<li>如果两棵树都有 $u$ 节点，则将 $R<em>{u}$ 的信息加到 $L</em>{u}$ 上，删除 $R_{u}$（也可不删，但在一些毒瘤题里可能会被卡空间），返回。</li>
+<li>如果两棵树都有 $u$ 节点，则将 $R_{u}$ 的信息加到 $L_{u}$ 上，删除 $R_{u}$（也可不删，但在一些毒瘤题里可能会被卡空间），返回。</li>
 </ol>
 <p>代码如下：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> rt[<span class="number">1000</span>],n;<span class="comment">//rt[]是每棵树的根</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> l=<span class="number">0</span>,r=<span class="number">0</span>,cn=<span class="number">0</span>;</span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> l(x) tr[x].l</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> r(x) tr[x].r</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> cn(x) tr[x].cn</span></span><br><span class="line">&#125;tr[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> q,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)<span class="keyword">return</span> q;</span><br><span class="line">	<span class="keyword">if</span>(!q)<span class="keyword">return</span> p;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">cn</span>(p)+=<span class="built_in">cn</span>(q);</span><br><span class="line">		<span class="keyword">return</span> p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">l</span>(p)=<span class="built_in">merge</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q),l,mid);</span><br><span class="line">	<span class="built_in">r</span>(p)=<span class="built_in">merge</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q),mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="built_in">cn</span>(p)=<span class="built_in">cn</span>(<span class="built_in">l</span>(p))+<span class="built_in">cn</span>(<span class="built_in">r</span>(p));</span><br><span class="line">	<span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">merge</span>(rt[L],rt[R],<span class="number">1</span>,n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -179,8 +179,8 @@
 <p>我们假设要把 $L$ 树从 $k$ 处分裂成 $L$ 树（和分裂前不一样）和 $R$ 树，即将原来 $L$ 树中小于等于 $k$ 的数放到新 $L$ 树中，大于 $k$ 的数放到 $R$ 树中。</p>
 <p>流程如下：</p>
 <ol>
-<li>到达一个节点 $L<em>{u}$，判断 $k$ 在 $L</em>{u}$ 的左子树中还是右子树中；</li>
-<li>如果在左子树中，则直接将 $L<em>{u}$ 的右子树给 $R</em>{u}$，并将 $L_{u}$ 的右子树删除，递归进入左子树；</li>
+<li>到达一个节点 $L_{u}$，判断 $k$ 在 $L_{u}$ 的左子树中还是右子树中；</li>
+<li>如果在左子树中，则直接将 $L_{u}$ 的右子树给 $R_{u}$，并将 $L_{u}$ 的右子树删除，递归进入左子树；</li>
 <li>如果在右子树中，则左子树不动，递归进入右子树；</li>
 <li>如果到达叶子结点，则将 $L$ 的该节点作为 $R$ 的节点。</li>
 </ol>

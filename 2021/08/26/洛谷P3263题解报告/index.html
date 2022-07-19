@@ -138,7 +138,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-07-17 20:38:02" itemprop="dateModified" datetime="2022-07-17T20:38:02+08:00">2022-07-17</time>
+      <time title="修改时间：2022-07-19 21:07:45" itemprop="dateModified" datetime="2022-07-19T21:07:45+08:00">2022-07-19</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -176,27 +176,27 @@
 <p>设 $x$ 为 $\frac{b+\sqrt{d} }{2}$，$y$ 为 $\frac{b-\sqrt{d} }{2}$。</p>
 <p>设 $f_{n}=x^{n}+y^{n}$。</p>
 <p>那么可以设我们的状态矩阵为：</p>
-<p>$\begin{bmatrix}  f<em>{n}&amp;f</em>{n-1} \end{bmatrix}$</p>
+<p>$\begin{bmatrix}  f_{n}&amp;f_{n-1} \end{bmatrix}$</p>
 <p>需要通过 </p>
-<p>$\begin{bmatrix}  f<em>{n-1}&amp;f</em>{n-2} \end{bmatrix}$</p>
+<p>$\begin{bmatrix}  f_{n-1}&amp;f_{n-2} \end{bmatrix}$</p>
 <p>转移到</p>
-<p>$\begin{bmatrix}  f<em>{n}&amp;f</em>{n-1} \end{bmatrix}$</p>
+<p>$\begin{bmatrix}  f_{n}&amp;f_{n-1} \end{bmatrix}$</p>
 <p>接下来考虑如何转移。</p>
-<p>将 $f<em>{n}$ 拆成 $X\times f</em>{n-1}-X\times f<em>{n-2}$ 的形式，又因为 $f</em>{n-1}=x^{n-1}+y^{n-1}$，$f_{n-2}=x^{n-2}+y^{n-2}$，代入得： </p>
+<p>将 $f_{n}$ 拆成 $X\times f_{n-1}-X\times f_{n-2}$ 的形式，又因为 $f_{n-1}=x^{n-1}+y^{n-1}$，$f_{n-2}=x^{n-2}+y^{n-2}$，代入得： </p>
 <p>$X\times \left ( x^{n-1}+y^{n-1} \right ) -X\times \left ( x^{n-2}+y^{n-2} \right )$</p>
 <p>于是稍加考虑就可以得出：</p>
 <p>$x^{n}+y^{n}=\left ( x+y \right ) \times \left ( x^{n-1}+y^{n-1} \right ) - xy \times \left ( x^{n-2}+y^{n-2} \right )$</p>
 <p>所以转移式为：</p>
-<p>$f<em>{n}=\left ( x+y \right ) \times f</em>{n-1}- xy \times f_{n-2}$</p>
+<p>$f_{n}=\left ( x+y \right ) \times f_{n-1}- xy \times f_{n-2}$</p>
 <p>能保证这个式子中没有任何浮点数吗？</p>
-<p>我们发现 $f<em>{1}=\frac{b+\sqrt{d} }{2}+\frac{b-\sqrt{d} }{2}=b$，$f</em>{2}= \left (  \frac{b+\sqrt{d} }{2}  \right )^{2}+ \left (  \frac{b-\sqrt{d} }{2} \right )^{2} = \frac{b^{2}+d }{2}$。</p>
+<p>我们发现 $f_{1}=\frac{b+\sqrt{d} }{2}+\frac{b-\sqrt{d} }{2}=b$，$f_{2}= \left (  \frac{b+\sqrt{d} }{2}  \right )^{2}+ \left (  \frac{b-\sqrt{d} }{2} \right )^{2} = \frac{b^{2}+d }{2}$。</p>
 <p>$b$ 一定是整数，而由于 $b\bmod{2}=1$，$d \bmod{4}=1$，由费马小定理可得 $b^{2}\equiv b \pmod{2}$，所以 $b^{2}+d \bmod{2}=0$，所以 $\frac{b^{2}+d }{2}$ 也是整数。</p>
-<p>于是乎，$f<em>{1}$ 和 $f</em>{2}$ 都是整数，接下来只需证明出他俩前面的系数也是整数就好了。</p>
+<p>于是乎，$f_{1}$ 和 $f_{2}$ 都是整数，接下来只需证明出他俩前面的系数也是整数就好了。</p>
 <p>首先易得 $x+y=b$，所以 $x+y$ 是整数，然后 $xy=\frac{b^{2}-d}{4}$，由欧拉定理可得 $b^{\varphi (4)}=b^{2}\equiv 1\pmod{4}$，又因为 $d \bmod{4}=1$，所以 $\left ( b^{2}-d \right ) \bmod 4=0$，所以 $xy$ 为整数。</p>
 <p>综上，$f_{n}$ 总为整数。</p>
 <p>所以转移矩阵也同时推出来了。</p>
 <p>如下：</p>
-<p>$\begin{bmatrix} b &amp;1 \ -\frac{b^{2}-d}{4} &amp;0\end{bmatrix}$</p>
+<p>$\begin{bmatrix} b &amp;1 \\ -\frac{b^{2}-d}{4} &amp;0\end{bmatrix}$</p>
 <p>这里的 $-\frac{b^{2}-d}{4}$ 为了方便可以写成 $\frac{d-b^{2}}{4}$。</p>
 <p>最后再来看看刚才这个东西对答案的影响：</p>
 <blockquote>
