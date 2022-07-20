@@ -138,7 +138,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-07-17 20:38:01" itemprop="dateModified" datetime="2022-07-17T20:38:01+08:00">2022-07-17</time>
+      <time title="修改时间：2022-07-20 19:32:49" itemprop="dateModified" datetime="2022-07-20T19:32:49+08:00">2022-07-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -163,6 +163,15 @@
         <p>本贴用来记录口糊出来的杂题的思路、做法等。</p>
 <p>没有代码，可能有错。</p>
 <span id="more"></span>
+<h2 id="CF490F-Treeland-Tour"><a href="#CF490F-Treeland-Tour" class="headerlink" title="CF490F Treeland Tour"></a>CF490F Treeland Tour</h2><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF490F">题目链接</a>。</p>
+<p>DFS + 线段树合并。</p>
+<p>树上最长上升子序列在一个以 $u$ 为根的子树内可以看作以 $f_{i}-1$ 为结尾的 LIS + 1（$u$ 节点）+ 以 $f_{i}+1$ 为结尾的 LDS。</p>
+<p>至于子树内的 LIS 之前肯定更新过了。</p>
+<p>具体的，进行 DFS，从孩子向父亲更新。</p>
+<p>对于每个节点，开一棵权值线段树，第 $i$ 个叶子结点存以数值 $i$ 为结尾的 LIS。</p>
+<p>DFS 向上回溯时，从以 $u$ 的儿子 $v$ 为根的子树中找出一条最长的 LIS，更新答案，再将 $v$ 的权值线段树合并到 $u$ 上。</p>
+<p>合并的时候再考虑一下从已更新的其他儿子的子树中找出的 LIS 或 LDS 与 $v$ 的子树中 LDS 或 LIS 加上 $u$ 形成的 LIS 对答案的贡献。</p>
+<p>处理完 $u$ 的子节点后回溯之前将 $f_{u}$ 加到 $u$ 的权值线段树里去。</p>
 
     </div>
 
