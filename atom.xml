@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2022-07-22T00:38:08.624Z</updated>
+  <updated>2022-07-22T01:55:09.967Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-07-21T10:42:22.000Z</published>
-    <updated>2022-07-22T00:38:08.624Z</updated>
+    <updated>2022-07-22T01:55:09.967Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;del&gt;阿巴阿巴，因为最近要开始整活所以要学一些没用的。&lt;/del&gt;&lt;/p&gt;</summary>
@@ -42,10 +42,10 @@
     <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-07-21T10:19:46.000Z</published>
-    <updated>2022-07-21T10:38:40.629Z</updated>
+    <updated>2022-07-22T02:35:40.890Z</updated>
     
     
-    <summary type="html">&lt;p&gt;C艹中的类在 OI 中几乎用不上（因为 OI 不是面向对象设计，&lt;del&gt;是面向数据设计&lt;/del&gt;），但是毕竟是C艹中比较重要的一个东西，今后折腾经常要用，所以还是学一下。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;C艹中的 class 关键字在 OI 中几乎用不上，但是毕竟是C艹中比较重要的一个东西，今后折腾经常要用，所以还是学一下。&lt;/p&gt;</summary>
     
     
     
