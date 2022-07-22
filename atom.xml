@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2022-07-19T11:33:31.059Z</updated>
+  <updated>2022-07-22T00:38:08.624Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C艹 面向对象程序设计学习笔记</title>
+    <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-07-21T10:42:22.000Z</published>
+    <updated>2022-07-22T00:38:08.624Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;del&gt;阿巴阿巴，因为最近要开始整活所以要学一些没用的。&lt;/del&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="c++" scheme="https://dumblog.top/tags/c/"/>
+    
+    <category term="面向对象程序设计" scheme="https://dumblog.top/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C艹 Class（类）学习笔记</title>
+    <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-07-21T10:19:46.000Z</published>
+    <updated>2022-07-21T10:38:40.629Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;C艹中的类在 OI 中几乎用不上（因为 OI 不是面向对象设计，&lt;del&gt;是面向数据设计&lt;/del&gt;），但是毕竟是C艹中比较重要的一个东西，今后折腾经常要用，所以还是学一下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="c++" scheme="https://dumblog.top/tags/c/"/>
+    
+    <category term="类" scheme="https://dumblog.top/tags/%E7%B1%BB/"/>
+    
+    <category term="class" scheme="https://dumblog.top/tags/class/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷 P4550 收集邮票</title>
@@ -162,7 +206,7 @@
     <link href="https://dumblog.top/2022/07/14/%E6%9D%82%E9%A2%98%E6%80%9D%E8%B7%AF%E7%AC%94%E8%AE%B0/"/>
     <id>https://dumblog.top/2022/07/14/%E6%9D%82%E9%A2%98%E6%80%9D%E8%B7%AF%E7%AC%94%E8%AE%B0/</id>
     <published>2022-07-14T05:00:04.000Z</published>
-    <updated>2022-07-20T11:32:49.600Z</updated>
+    <updated>2022-07-21T03:50:23.652Z</updated>
     
     
     <summary type="html">&lt;p&gt;本贴用来记录口糊出来的杂题的思路、做法等。&lt;/p&gt;
@@ -455,62 +499,6 @@
     <category term="DAG" scheme="https://dumblog.top/tags/DAG/"/>
     
     <category term="最短路" scheme="https://dumblog.top/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>！！！🏮新年好🏮！！！</title>
-    <link href="https://dumblog.top/2022/01/31/%E6%96%B0%E5%B9%B4%E5%A5%BD%EF%BC%81%EF%BC%81%EF%BC%81/"/>
-    <id>https://dumblog.top/2022/01/31/%E6%96%B0%E5%B9%B4%E5%A5%BD%EF%BC%81%EF%BC%81%EF%BC%81/</id>
-    <published>2022-01-31T13:17:04.000Z</published>
-    <updated>2022-07-17T12:38:01.945Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;（⚠已失效⚠）&lt;/p&gt;
-&lt;p&gt;！！！🏮新年好🏮！！！&lt;/p&gt;
-&lt;p&gt;Dumby_cat 隆重推出 Dumblog</summary>
-        
-      
-    
-    
-    
-    <category term="站务" scheme="https://dumblog.top/categories/%E7%AB%99%E5%8A%A1/"/>
-    
-    
-    <category term="Service" scheme="https://dumblog.top/tags/Service/"/>
-    
-    <category term="Site" scheme="https://dumblog.top/tags/Site/"/>
-    
-    <category term="Sundries" scheme="https://dumblog.top/tags/Sundries/"/>
-    
-    <category term="Notice" scheme="https://dumblog.top/tags/Notice/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一只蒟蒻的组合数学的入门笔记</title>
-    <link href="https://dumblog.top/2021/09/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/"/>
-    <id>https://dumblog.top/2021/09/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</id>
-    <published>2021-09-02T10:09:46.000Z</published>
-    <updated>2022-07-19T13:11:23.647Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;加法及乘法原理&quot;&gt;&lt;a href=&quot;#加法及乘法原理&quot; class=&quot;headerlink&quot; title=&quot;加法及乘法原理&quot;&gt;&lt;/a&gt;加法及乘法原理&lt;/h2&gt;&lt;h3 id=&quot;加法原理&quot;&gt;&lt;a href=&quot;#加法原理&quot; class=&quot;headerlink&quot; title=&quot;加法原理&quot;&gt;&lt;/a&gt;加法原理&lt;/h3&gt;&lt;p&gt;完成一件事有 $n$ 类方法，每类方法有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1}+m_{2}+…+m_{n}$ 种方法。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的OI生涯" scheme="https://dumblog.top/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/"/>
-    
-    
-    <category term="c++" scheme="https://dumblog.top/tags/c/"/>
-    
-    <category term="数论" scheme="https://dumblog.top/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-    <category term="组合数学" scheme="https://dumblog.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
