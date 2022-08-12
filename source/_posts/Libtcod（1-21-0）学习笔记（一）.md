@@ -1,13 +1,13 @@
 ---
-title: Libtcod学习笔记（C++）
+title: Libtcod（1.21.0）学习笔记（C++）（ToDo）
 date: 2022-08-02 16:45:17
 tags:
 - c++
 - libtcod
-categories: Dumby的折腾笔记
+categories: Dumby的RoguelikeDev笔记
 ---
 
-学习用 libtcod（1.20.0） + C++ + VS + CMake 制作Roguelike游戏。
+学习用 libtcod（1.21.0） + C++ + VS 制作Roguelike游戏。
 
 环境：Win10 64位。
 
@@ -110,51 +110,51 @@ SDL（Simple DirectMedia Layer）是一套开放源代码的跨平台多媒体�
 因为已经将vcpkg集成到全局了，libtcod也可直接引用。
 
 但是SDL并不能直接引用，需要我们进行配置。
-
 先打开项目的属性，找到“VC++目录”选项，进入，找到包含目录，点击右侧箭头，进行编辑。
-
 在上方输入框中输入SDL文件夹中的include文件夹的绝对路径，点击确定即可。
-
 这里用SDL的绝对路径进行配置，所以不能将SDL文件夹进行迁移，如果需要进行迁移，请使用相对路径，具体参考知乎大佬兰話一的文章《SDL库的介绍与安装》，链接在本文底部。
-
 于是SDL配置完成。
-<!--
-随便创建一个文件夹 tmp（名字任意），然后在这个文件夹里创建三个文件夹：include、src、lib。
 
-可以在cmd里通过以下指令实现：
+然后由于一些兼容问题，我们需要将C++版本改为C++17。
+还是项目属性，找到“C/C++”一栏，点开后找到底下的“语言”一栏，将“C++语言标准”改为“ISO C++17 标准 (/std:c++17)”。
 
+以上改完了以后，将我们的源文件（main.cpp）改为如下用于测试是否配置成功：
+
+```cpp
+#include <SDL.h>
+#include <libtcod.hpp>
+int main(int argc, char* argv[]) {
+    auto console = tcod::Console{ 80, 25 };
+    auto params = TCOD_ContextParams{};
+    params.tcod_version = TCOD_COMPILEDVERSION;
+    params.console = console.get();
+    params.window_title = "Libtcod Project";
+    params.sdl_window_flags = SDL_WINDOW_RESIZABLE;
+    params.vsync = true;
+    params.argc = argc;
+    params.argv = argv;
+    auto context = tcod::Context(params);
+    while (1) {
+        TCOD_console_clear(console.get());
+        tcod::print(console, { 0, 0 }, "Hello World", std::nullopt, std::nullopt);
+        context.present(console);
+        SDL_Event event;
+        SDL_WaitEvent(nullptr);
+        while (SDL_PollEvent(&event)) {
+            context.convert_event_coordinates(event);
+            switch (event.type) {
+            case SDL_QUIT:
+                return 0;
+            }
+        }
+    }
+}
 ```
-mkdir include src lib
-```
-
-或者一个一个创建。
-
-然后把？？？？？？？？？？？？？？？？？
--->
-
-
-
-
-
-
 
 
 
 鸽。。。
 未完待续。。。
-
-
-
-
-# 太难啦！！！！！！！！！！！呜呜呜呜呜呜呜呜呜呜呜呜呜呜！！！！！！！！！！！！！！！！！！！！！
-
-
-
-
-
-
-
-
 
 
 
