@@ -15,6 +15,8 @@ categories: Dumby的RoguelikeDev笔记
 
 接下来我们尝试用 VsCode + LibTCod + C++ 制作 Roguelike 游戏。
 
+<!--more-->
+
 ## 配置
 
 先要有一些基本工具：VsCode、Cmake，对了，最好再载一下VS（这里用VS2022），因为后面vcpkg使用时要求有VS实例。
@@ -88,8 +90,6 @@ git submodule update --init --recursive
 学习用 libtcod（1.21.0） + C++ + VS 制作Roguelike游戏。
 
 环境：Win10 64位。
-
-<!--more-->
 
 ## 配置
 
