@@ -38,14 +38,20 @@ git submodule update --init --recursive
 这里如果有什么报错之类的通常都是网络不行，多试几次就行了。
 注意子模块一定要正确初始化，刚那两个文件夹有一个空的都会导致编译失败。
 
-然后打开VsCode，点击打开文件夹，打开项目的主目录（```D:\tcod-cpp-engine-2022```）。
+接下来打开VsCode，点击打开文件夹，打开项目的主目录（```D:\tcod-cpp-engine-2022```）。
 
-然后如果你没有下载扩展的话会让你载一些，把VsCode推荐的扩展全都载下来就好了，其中最重要的是这几个：C/C++相关扩展、CMake工具。
+如果你没有下载扩展的话会让你载一些，把VsCode推荐的扩展全都载下来就好了，其中最重要的是这几个：C/C++相关扩展、CMake工具。
 
-然后VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提示的话可以到底部找到Kit选项打开并选择。
+VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提示的话可以到底部找到Kit选项打开并选择。
 
 {% asset_img Kit.png 选择Kit %}
 
+最后按 ```F5```，VsCode会自动进行编译。
+
+这样应该就行了，他会跳出一个该项目原作者的一个示例，能运行就说明配置成功。
+
+参考：
+- [@HexDecimal 大佬的项目 Libtcod C++ engine 2022](https://github.com/HexDecimal/tcod-cpp-engine-2022)
 
 
 
@@ -63,29 +69,13 @@ git submodule update --init --recursive
 
 
 
-
-
-```
-分割线
-```
 
 ---
-
-```
-分割线
-```
 
 ## 以下为废稿。。。
 
-```
-分割线
-```
-
 ---
 
-```
-分割线
-```
 
 学习用 libtcod（1.21.0） + C++ + VS 制作Roguelike游戏。
 
