@@ -16,15 +16,17 @@ categories: Dumby的OI生涯
 
 给定这样一个式子：
 
-$T \left ( n \right ) = a T\left ( \frac{n}{b}  \right )+f\left ( n \right )$
+$T \left ( n \right ) = a T\left ( \frac{n}{b}  \right )+ n^{d}P$
+
+其中 $P$ 表示一个式子，通常 $P=\log^{k}{n},k \ge 0$，如 $T \left ( n \right ) = 2 T\left ( \frac{n}{2}  \right )+ n\log{n}$ 时，则 $d=1, P=log{n}$
 
 然后分三种情况：
 
-偷张图：
+1. $n^{\\log\_{b}{a}} > n^{d}$，则 $T \left ( n \right ) = n^{\\log\_{b}{a}}$
+2. $n^{\\log\_{b}{a}} < n^{d}$，则 $T \left ( n \right ) = n^{d}$
+3. $n^{\\log\_{b}{a}} = n^{d}$，当 $P=\log^{k}{n}$ 时，即后面带的那个式子是 $n^{d}\log^{k}{n}$ 时，$T \left ( n \right ) = n^{d}\log^{k+1}{n}$
 
-{% asset_img 偷张图.jpg 偷来的图 %}
-
-但实际上主定理的应用场景还是比较局限，有些式子不满足主定理的形式，（应该）不能用主定理解决（吧）。
+这样初赛中绝大多数时间复杂度题应该都能过了。
 
 ## 递归、递归树
 
