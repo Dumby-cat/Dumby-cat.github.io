@@ -53,3 +53,4 @@ VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提�
 
 参考：
 - [@HexDecimal 大佬的项目 Libtcod C++ engine 2022](https://github.com/HexDecimal/tcod-cpp-engine-2022)
+- [LibTCod 官方模板](https://github.com/HexDecimal/libtcod-vcpkg-template)
