@@ -4,7 +4,7 @@ date: 2022-07-21 18:42:22
 tags:
 - c++
 - 面向对象程序设计
-categories: Dumby的折腾笔记
+categories: Dumby的C++学习笔记
 ---
 
 ~~阿巴阿巴，因为最近要开始整活所以要学一些没用的。~~

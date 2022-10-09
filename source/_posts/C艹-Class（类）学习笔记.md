@@ -5,7 +5,7 @@ tags:
 - c++
 - 类
 - class
-categories: Dumby的折腾笔记
+categories: Dumby的C++学习笔记
 ---
 
 C艹中的 class 关键字在 OI 中几乎用不上，但是毕竟是C艹中比较重要的一个东西，今后整活经常要用，所以还是学一下。
