@@ -1,11 +1,13 @@
 ---
-title: JinYi钢笔维修笔记
+title: 修钢笔捏
 date: 2022-07-16 19:08:38
 tags:
 - 钢笔
-categories: Dumby的折腾笔记
+- 日常
+categories: Dumby的sb日常
 ---
-修笔。
+
+修笔捏。
 
 <!--more-->
 
@@ -55,6 +57,6 @@ categories: Dumby的折腾笔记
 
 还是塞不下。。。
 
-这个想法只好先放一放。。。
+寄。。。
 
 ~未完~
