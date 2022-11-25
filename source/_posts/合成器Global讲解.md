@@ -38,5 +38,9 @@ categories: Dumby的折腾笔记
 
 大部分合成器的BPM是与宿主的BPM绑定的。
 
+应该都知道BPM是什么这里就不多说了。
+
+之后会详细讲一下Serum的global面板，这里先讲到这（本来也没什么好说的）。
+
 参考：
 - [B站UP主@AndreChen的教学视频 “【合辑】【合成器基础教学】入门/通用/必备知识——Abletive教学视频站”](https://www.bilibili.com/video/BV1Ys411i7hF)
