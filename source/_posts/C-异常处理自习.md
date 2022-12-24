@@ -5,7 +5,7 @@ tags: c++
 categories: Dumby的C++学习笔记
 ---
 
-本文主要介绍了 try catch throw 这三个东西。
+本文主要用于自习 try catch throw 这三个东西。
 
 <!--more-->
 
