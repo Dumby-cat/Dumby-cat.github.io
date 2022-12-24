@@ -2,7 +2,7 @@
 title: 一只蒟蒻的A-Star学习笔记
 date: 2021-06-29 13:22:38
 tags:
-- c++
+- C++
 - 搜索
 categories: Dumby的OI生涯
 ---

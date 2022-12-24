@@ -2,7 +2,8 @@
 title: C++ goto语句
 date: 2022-12-24 14:32:57
 tags:
-- c++
+- C++
+- C++函数和语句
 categories: Dumby的C++学习笔记
 ---
 

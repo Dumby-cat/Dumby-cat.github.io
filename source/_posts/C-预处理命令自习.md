@@ -1,7 +1,7 @@
 ---
 title: C++预处理命令自习
 date: 2022-10-09 09:58:14
-tags: c++
+tags: C++
 categories: Dumby的C++学习笔记
 ---
 

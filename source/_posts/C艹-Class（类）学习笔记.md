@@ -2,7 +2,7 @@
 title: C艹 Class（类）学习笔记
 date: 2022-07-21 18:19:46
 tags:
-- c++
+- C++
 - 类
 - class
 categories: Dumby的C++学习笔记

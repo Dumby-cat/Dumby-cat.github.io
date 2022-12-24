@@ -4,7 +4,7 @@ date: 2022-07-12 12:17:26
 tags:
 - 线段树
 - 数据结构
-- c++
+- C++
 - 排序
 - 字符串
 categories: Dumby的OI生涯
