@@ -2,7 +2,7 @@
 title: UVA10288 优惠券 Coupons
 date: 2022-07-18 19:06:24
 tags:
-- c++
+- C++
 - 概率
 - 期望
 - DP

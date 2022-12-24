@@ -2,7 +2,7 @@
 title: 一只蒟蒻的A-Star 学习笔记（K短路例题）
 date: 2021-06-29 20:10:45
 tags: 
-- c++
+- C++
 - 搜索
 categories: Dumby的OI生涯
 ---

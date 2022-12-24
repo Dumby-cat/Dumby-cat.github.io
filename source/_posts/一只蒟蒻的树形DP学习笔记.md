@@ -2,7 +2,7 @@
 title: 一只蒟蒻的树形DP学习笔记
 date: 2021-06-27 13:41:07
 tags: 
-- c++
+- C++
 - 树形DP
 - DP
 categories: Dumby的OI生涯

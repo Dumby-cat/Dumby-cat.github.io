@@ -2,7 +2,7 @@
 title: Roguelike学习笔记一：LibTCod
 date: 2022-08-02 16:45:17
 tags:
-- c++
+- C++
 - roguelike
 - libtcod
 categories: Dumby的RoguelikeDev笔记
