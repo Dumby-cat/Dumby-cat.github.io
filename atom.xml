@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DUMBLOG</title>
+  <icon>https://dumblog.top/icon.png</icon>
+  <subtitle>dumblog</subtitle>
+  <link href="https://dumblog.top/atom.xml" rel="self"/>
+  
+  <link href="https://dumblog.top/"/>
+  <updated>2023-01-07T11:50:39.771Z</updated>
+  <id>https://dumblog.top/</id>
+  
+  <author>
+    <name>Dumby_cat</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Serum合成器OSC模块Warp选项讲解</title>
+    <link href="https://dumblog.top/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/"/>
+    <id>https://dumblog.top/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/</id>
+    <published>2023-01-07T04:28:58.000Z</published>
+    <updated>2023-01-07T11:50:39.771Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本帖用于介绍 Serum 的振荡器模块中的 Warp 选项。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ goto语句</title>
+    <link href="https://dumblog.top/2022/12/24/C-GOTO%E8%AF%AD%E5%8F%A5/"/>
+    <id>https://dumblog.top/2022/12/24/C-GOTO%E8%AF%AD%E5%8F%A5/</id>
+    <published>2022-12-24T06:32:57.000Z</published>
+    <updated>2023-01-07T04:25:47.791Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;关于C++中的goto语句。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的C++学习笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
+    
+    <category term="C++函数和语句" scheme="https://dumblog.top/tags/C-%E5%87%BD%E6%95%B0%E5%92%8C%E8%AF%AD%E5%8F%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《安多》短评</title>
+    <link href="https://dumblog.top/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E7%9F%AD%E8%AF%84/"/>
+    <id>https://dumblog.top/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E7%9F%AD%E8%AF%84/</id>
+    <published>2022-11-27T14:25:28.000Z</published>
+    <updated>2023-01-07T04:25:47.799Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近刚看完《安多》，随便口嗨一下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="星球大战" scheme="https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/"/>
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Serum的OSC入门</title>
+    <link href="https://dumblog.top/2022/11/27/Serum%E7%9A%84OSC%E5%85%A5%E9%97%A8/"/>
+    <id>https://dumblog.top/2022/11/27/Serum%E7%9A%84OSC%E5%85%A5%E9%97%A8/</id>
+    <published>2022-11-27T11:17:03.000Z</published>
+    <updated>2023-01-07T04:25:47.796Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本帖用于介绍Serum的振荡器。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>合成器Global讲解</title>
+    <link href="https://dumblog.top/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/"/>
+    <id>https://dumblog.top/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/</id>
+    <published>2022-11-13T04:24:38.000Z</published>
+    <updated>2023-01-07T04:25:47.879Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本帖用于介绍合成器的Global面板。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>进化论</title>
+    <link href="https://dumblog.top/2022/11/11/%E8%BF%9B%E5%8C%96%E8%AE%BA/"/>
+    <id>https://dumblog.top/2022/11/11/%E8%BF%9B%E5%8C%96%E8%AE%BA/</id>
+    <published>2022-11-11T07:38:11.000Z</published>
+    <updated>2023-01-07T04:25:47.916Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;写在前面：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;最近三天是本校的期中考试，考试期间略读了一些鲁迅先生的文章，觉得有些上头。正巧考完试正在情绪激动之时，就胡写了一通。我本不是什么做文章的人，只是心里憋着难受，便随意地狗叫了一通，文章毫无逻辑，文笔也是十分拙劣，就当是篇粗劣的爽文好了。&lt;/em&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="狗P文学" scheme="https://dumblog.top/tags/%E7%8B%97P%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客在线更新指北</title>
+    <link href="https://dumblog.top/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/"/>
+    <id>https://dumblog.top/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/</id>
+    <published>2022-10-21T05:44:04.000Z</published>
+    <updated>2023-01-07T04:25:47.876Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;利用 Vercel+Github 通过一些歪门邪道实现 Hexo 静态博客的在线更新。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="站务" scheme="https://dumblog.top/tags/%E7%AB%99%E5%8A%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于博客服务器被黑的事情</title>
+    <link href="https://dumblog.top/2022/10/15/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A2%AB%E9%BB%91%E7%9A%84%E4%BA%8B%E6%83%85/"/>
+    <id>https://dumblog.top/2022/10/15/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A2%AB%E9%BB%91%E7%9A%84%E4%BA%8B%E6%83%85/</id>
+    <published>2022-10-15T09:32:24.000Z</published>
+    <updated>2023-01-07T04:30:33.685Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2022年10月4日23时54分，我收到一封邮件。这件事就从这个邮件开始。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="站务" scheme="https://dumblog.top/categories/%E7%AB%99%E5%8A%A1/"/>
+    
+    
+    <category term="站务" scheme="https://dumblog.top/tags/%E7%AB%99%E5%8A%A1/"/>
+    
+    <category term="杂谈" scheme="https://dumblog.top/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++异常处理自习</title>
+    <link href="https://dumblog.top/2022/10/09/C-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%87%AA%E4%B9%A0/"/>
+    <id>https://dumblog.top/2022/10/09/C-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%87%AA%E4%B9%A0/</id>
+    <published>2022-10-09T01:58:39.000Z</published>
+    <updated>2023-01-07T04:25:47.791Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文主要用于自习 try catch throw 这三个东西。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的C++学习笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++预处理命令自习</title>
+    <link href="https://dumblog.top/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/"/>
+    <id>https://dumblog.top/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/</id>
+    <published>2022-10-09T01:58:14.000Z</published>
+    <updated>2023-01-07T04:25:47.792Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文主要用于学习各种 C++ 预处理命令，包括条件编译（目前只写了这个）。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的C++学习笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>csp-s初赛准备：时间复杂度</title>
+    <link href="https://dumblog.top/2022/09/18/csp-s%E5%88%9D%E8%B5%9B%E5%87%86%E5%A4%87%EF%BC%9A%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    <id>https://dumblog.top/2022/09/18/csp-s%E5%88%9D%E8%B5%9B%E5%87%86%E5%A4%87%EF%BC%9A%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</id>
+    <published>2022-09-18T01:57:51.000Z</published>
+    <updated>2023-01-07T04:25:47.799Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;初赛似乎是必考一题时间复杂度计算，现在在考前抱下佛脚。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的OI生涯" scheme="https://dumblog.top/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/"/>
+    
+    
+    <category term="初赛" scheme="https://dumblog.top/tags/%E5%88%9D%E8%B5%9B/"/>
+    
+    <category term="时间复杂度" scheme="https://dumblog.top/tags/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    
+    <category term="主定理" scheme="https://dumblog.top/tags/%E4%B8%BB%E5%AE%9A%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>合成器基本结构介绍</title>
+    <link href="https://dumblog.top/2022/09/09/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/"/>
+    <id>https://dumblog.top/2022/09/09/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/</id>
+    <published>2022-09-09T09:58:29.000Z</published>
+    <updated>2023-01-07T04:25:47.882Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本贴用于学习合成器的各个模块，包括振荡器、滤波器等。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>合成器主要类别简介</title>
+    <link href="https://dumblog.top/2022/08/31/%E5%90%88%E6%88%90%E5%99%A8%E4%B8%BB%E8%A6%81%E7%B1%BB%E5%88%AB%E7%AE%80%E4%BB%8B/"/>
+    <id>https://dumblog.top/2022/08/31/%E5%90%88%E6%88%90%E5%99%A8%E4%B8%BB%E8%A6%81%E7%B1%BB%E5%88%AB%E7%AE%80%E4%BB%8B/</id>
+    <published>2022-08-31T03:43:38.000Z</published>
+    <updated>2023-01-07T04:25:47.881Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;用本帖记录一下合成器的种类及其基本原理。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Roguelike学习笔记一：LibTCod</title>
+    <link href="https://dumblog.top/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/"/>
+    <id>https://dumblog.top/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/</id>
+    <published>2022-08-02T08:45:17.000Z</published>
+    <updated>2023-01-07T04:25:47.794Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;折腾了好久好久，怎么都跑不起来libtcod，真tm太曹丹了。。&lt;/p&gt;
+&lt;p&gt;直到我看到这个叫做&lt;a href=&quot;https://github.com/HexDecimal/tcod-cpp-engine-2022&quot;&gt;TCod Cpp Engine&lt;/a&gt;的项目（最近官方出了个&lt;a href=&quot;https://github.com/HexDecimal/libtcod-vcpkg-template&quot;&gt;模板&lt;/a&gt;，配置过程与下面类似，两者都可使用），最后跟着介绍的步骤终于跑起来了。&lt;/p&gt;
+&lt;p&gt;接下来开始学习LibTCod。&lt;/p&gt;
+&lt;img src=&quot;/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%88%90%E5%8A%9F%E8%BF%90%E8%A1%8C.png&quot; class=&quot;&quot; title=&quot;终于跑起来啦！！！&quot;&gt;</summary>
+    
+    
+    
+    <category term="Dumby的RoguelikeDev笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84RoguelikeDev%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
+    
+    <category term="roguelike" scheme="https://dumblog.top/tags/roguelike/"/>
+    
+    <category term="libtcod" scheme="https://dumblog.top/tags/libtcod/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈傅里叶分析</title>
+    <link href="https://dumblog.top/2022/07/27/%E6%B5%85%E8%B0%88%E5%82%85%E9%87%8C%E5%8F%B6%E5%88%86%E6%9E%90/"/>
+    <id>https://dumblog.top/2022/07/27/%E6%B5%85%E8%B0%88%E5%82%85%E9%87%8C%E5%8F%B6%E5%88%86%E6%9E%90/</id>
+    <published>2022-07-27T02:52:55.000Z</published>
+    <updated>2023-01-07T04:25:47.902Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;学这个不是因为OI，只是为了更深刻地了解一下合成器原理。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
+    
+    <category term="傅里叶分析" scheme="https://dumblog.top/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C艹 面向对象程序设计学习笔记</title>
+    <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-07-21T10:42:22.000Z</published>
+    <updated>2023-01-07T04:25:47.792Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;del&gt;阿巴阿巴，因为最近要开始整活所以要学一些没用的。&lt;/del&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的C++学习笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
+    
+    <category term="面向对象程序设计" scheme="https://dumblog.top/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C艹 Class（类）学习笔记</title>
+    <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-07-21T10:19:46.000Z</published>
+    <updated>2023-01-07T04:25:47.792Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;C艹中的 class 关键字在 OI 中几乎用不上，但是毕竟是C艹中比较重要的一个东西，今后整活经常要用，所以还是学一下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的C++学习笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
+    
+    <category term="类" scheme="https://dumblog.top/tags/%E7%B1%BB/"/>
+    
+    <category term="class" scheme="https://dumblog.top/tags/class/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷 P4550 收集邮票</title>
+    <link href="https://dumblog.top/2022/07/19/%E6%B4%9B%E8%B0%B7-P4550-%E6%94%B6%E9%9B%86%E9%82%AE%E7%A5%A8/"/>
+    <id>https://dumblog.top/2022/07/19/%E6%B4%9B%E8%B0%B7-P4550-%E6%94%B6%E9%9B%86%E9%82%AE%E7%A5%A8/</id>
+    <published>2022-07-19T11:08:34.000Z</published>
+    <updated>2023-01-07T04:25:47.901Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;思路&quot;&gt;&lt;a href=&quot;#思路&quot; class=&quot;headerlink&quot; title=&quot;思路&quot;&gt;&lt;/a&gt;思路&lt;/h2&gt;&lt;p&gt;和 &lt;a href=&quot;/2022/07/18/UVA10288-%E4%BC%98%E6%83%A0%E5%88%B8-Coupons/&quot; title=&quot;UVA10288 优惠券&quot;&gt;UVA10288 优惠券&lt;/a&gt; 很像，只不过加了价格随次数变动的条件。&lt;/p&gt;
+&lt;p&gt;在原来式子的基础上改一下，第一次取出第 $i$ 个物品期望需要的价格是取出前 $i$ 个物品期望需要的次数总和（也就是价格）乘上取出第 $i$ 个期望需要的次数（注意这里的价格是平均过的）。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的OI生涯" scheme="https://dumblog.top/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/"/>
+    
+    
+    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
+    
+    <category term="DP" scheme="https://dumblog.top/tags/DP/"/>
+    
+    <category term="期望" scheme="https://dumblog.top/tags/%E6%9C%9F%E6%9C%9B/"/>
+    
+    <category term="线性DP" scheme="https://dumblog.top/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UVA10288 优惠券 Coupons</title>
+    <link href="https://dumblog.top/2022/07/18/UVA10288-%E4%BC%98%E6%83%A0%E5%88%B8-Coupons/"/>
+    <id>https://dumblog.top/2022/07/18/UVA10288-%E4%BC%98%E6%83%A0%E5%88%B8-Coupons/</id>
+    <published>2022-07-18T11:06:24.000Z</published>
+    <updated>2023-01-07T04:25:47.798Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;题意&quot;&gt;&lt;a href=&quot;#题意&quot; class=&quot;headerlink&quot; title=&quot;题意&quot;&gt;&lt;/a&gt;题意&lt;/h2&gt;&lt;p&gt;简化题意如下：&lt;/p&gt;
+&lt;p&gt;每次随机取一个 $\left [ 1,n \right ]$ 的整数，问期望几次能够凑齐所有数。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的OI生涯" scheme="https://dumblog.top/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/"/>
+    
+    
+    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
+    
+    <category term="DP" scheme="https://dumblog.top/tags/DP/"/>
+    
+    <category term="概率" scheme="https://dumblog.top/tags/%E6%A6%82%E7%8E%87/"/>
+    
+    <category term="期望" scheme="https://dumblog.top/tags/%E6%9C%9F%E6%9C%9B/"/>
+    
+    <category term="线性DP" scheme="https://dumblog.top/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>修钢笔捏</title>
+    <link href="https://dumblog.top/2022/07/16/%E4%BF%AE%E9%92%A2%E7%AC%94%E6%8D%8F/"/>
+    <id>https://dumblog.top/2022/07/16/%E4%BF%AE%E9%92%A2%E7%AC%94%E6%8D%8F/</id>
+    <published>2022-07-16T11:08:38.000Z</published>
+    <updated>2023-01-07T04:25:47.802Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;修笔捏。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="钢笔" scheme="https://dumblog.top/tags/%E9%92%A2%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
