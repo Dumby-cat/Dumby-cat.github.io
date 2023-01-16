@@ -1961,7 +1961,7 @@
 <h2 id="Warp-Menu-总览"><a href="#Warp-Menu-总览" class="headerlink" title="Warp Menu 总览"></a>Warp Menu 总览</h2><p>点击默认的OFF，打开一个目录（即Warp Menu），如图：</p>
 <img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E7%9B%AE%E5%BD%95.png" class="" title="Warp_Menu">
 <p>每一个选项都有很有意思的功能，下面一个一个看。</p>
-<h2 id="SYNC"><a href="#SYNC" class="headerlink" title="SYNC"></a>SYNC</h2><p>SYNC：同步（？）</p>
+<h2 id="SYNC"><a href="#SYNC" class="headerlink" title="SYNC"></a>SYNC</h2><p>SYNC：同步（？）。</p>
 <p>调一下旋钮就知道这东西干嘛用的了。</p>
 <img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E8%B0%83%E6%95%B4SYNC.gif" class="" title="调整SYNC">
 <p>应该不会注意不到波形的变化吧。</p>
@@ -1970,15 +1970,39 @@
 <img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E8%B0%83SYNC.jpg" class="" title="调到这种位置">
 <p>由于右边的波形被截掉了，相当于有一个突变（和锯齿波的那种类似），声音就会夹杂着类似锯齿波的声音，比较刺耳。</p>
 <p>但如果用锯齿波来调的话，因为本身就是这种声音，所以除了音调变化听不大出来其他的变化。</p>
-<h2 id="SYNC-WINDOW"><a href="#SYNC-WINDOW" class="headerlink" title="SYNC WINDOW"></a>SYNC WINDOW</h2><p>如果不想有刚才的“突变”的问题，可以选择 SYNC WINDOW 这个选项。</p>
+<h3 id="SYNC-WINDOW"><a href="#SYNC-WINDOW" class="headerlink" title="SYNC WINDOW"></a>SYNC WINDOW</h3><p>如果不想有刚才的“突变”的问题，可以选择 SYNC WINDOW 这个选项。</p>
 <p>这个选项分两种： SYNC 1/2 WIN. 和 SYNC WINDOW。</p>
 <p>这个东西就相当于在波形的两侧加上淡入淡出，使声音变得更平滑，不会使连续变化的波形出现突变的情况。</p>
 <p>当然如果你用锯齿波的话，当 Warp 的数值低的时候，锯齿波会被柔和成类似正弦波的东西。</p>
 <p>SYNC 1/2 WIN. 相当于是淡入淡出更快的 SYNC WINDOW。</p>
 <p>SYNC WINDOW：</p>
-
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_WINDOW.jpg" class="" title="SYNC_WINDOW">
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_WINDOW.gif" class="" title="SYNC_WINDOW">
 <p>SYNC 1/2 WIN.：</p>
-
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_1-2_WIN.jpg" class="" title="SYNC_1&#x2F;2_WIN.">
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_1-2_WIN.gif" class="" title="SYNC_1&#x2F;2_WIN.">
+<h2 id="BEND"><a href="#BEND" class="headerlink" title="BEND"></a>BEND</h2><p>BEND：弯曲。</p>
+<h3 id="BEND-1"><a href="#BEND-1" class="headerlink" title="BEND +"></a>BEND +</h3><p>将波形向内弯曲，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BEND+.gif" class="" title="BEND+">
+<h3 id="BEND-2"><a href="#BEND-2" class="headerlink" title="BEND -"></a>BEND -</h3><p>将波形向外弯曲，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BEND-.gif" class="" title="BEND-">
+<h3 id="BEND-3"><a href="#BEND-3" class="headerlink" title="BEND +/-"></a>BEND +/-</h3><p>数值为负时向内弯曲，为正时向外弯曲，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BEND+-.gif" class="" title="BEND+&#x2F;-">
+<h2 id="PWM"><a href="#PWM" class="headerlink" title="PWM"></a>PWM</h2><p>PWM：脉冲宽度调制（Pulse Width Modulation）。</p>
+<p>相当于将波形宽度（即“脉冲宽度”）变窄，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E6%AD%A3%E5%BC%A6PWM.gif" class="" title="正弦波PWM">
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E6%96%B9%E6%B3%A2PWM.gif" class="" title="方波PWM">
+<h2 id="ASYM"><a href="#ASYM" class="headerlink" title="ASYM"></a>ASYM</h2><p>ASYM：非对称（即非对称弯曲）。</p>
+<p>ASYM 的作用大概就是将波形左右两边分别压缩或拉伸。</p>
+<h3 id="ASYM-1"><a href="#ASYM-1" class="headerlink" title="ASYM +"></a>ASYM +</h3><p>将波形左半边压缩，右半边拉伸，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYM+.gif" class="" title="ASYM+">
+<h3 id="ASYM-2"><a href="#ASYM-2" class="headerlink" title="ASYM -"></a>ASYM -</h3><p>将波形左半边拉伸，右半边压缩，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYM-.gif" class="" title="ASYM-">
+<h3 id="ASYM-3"><a href="#ASYM-3" class="headerlink" title="ASYM +/-"></a>ASYM +/-</h3><p>数值为负时，将波形左半边压缩，右半边拉伸；数值为正时，将波形左半边拉伸，右半边压缩，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYM+-.gif" class="" title="ASYM+-">
+<h2 id="FLIP"><a href="#FLIP" class="headerlink" title="FLIP"></a>FLIP</h2><p>FLIP：翻转。</p>
+<p>将波形进行相位反转，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/FLIP.gif" class="" title="FLIP">
 <p>未完待续。。。</p>
 ]]></content>
       <categories>
