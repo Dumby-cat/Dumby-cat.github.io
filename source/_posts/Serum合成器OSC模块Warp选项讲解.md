@@ -38,7 +38,7 @@ Warp：弯曲、变形。
 
 ## SYNC
 
-SYNC：同步（？）
+SYNC：同步（？）。
 
 调一下旋钮就知道这东西干嘛用的了。
 
@@ -56,7 +56,7 @@ SYNC：同步（？）
 
 但如果用锯齿波来调的话，因为本身就是这种声音，所以除了音调变化听不大出来其他的变化。
 
-## SYNC WINDOW
+### SYNC WINDOW
 
 如果不想有刚才的“突变”的问题，可以选择 SYNC WINDOW 这个选项。
 
@@ -70,10 +70,78 @@ SYNC 1/2 WIN. 相当于是淡入淡出更快的 SYNC WINDOW。
 
 SYNC WINDOW：
 
-{% asset_img SYNC WINDOW.jpg SYNC WINDOW %}
+{% asset_img SYNC_WINDOW.jpg SYNC_WINDOW %}
+
+{% asset_img SYNC_WINDOW.gif SYNC_WINDOW %}
 
 SYNC 1/2 WIN.：
 
-{% asset_img SYNC 1-2 WIN.jpg SYNC 1/2 WIN. %}
+{% asset_img SYNC_1-2_WIN.jpg SYNC_1/2_WIN. %}
+
+{% asset_img SYNC_1-2_WIN.gif SYNC_1/2_WIN. %}
+
+## BEND
+
+BEND：弯曲。
+
+### BEND +
+
+将波形向内弯曲，效果如下：
+
+{% asset_img BEND+.gif BEND+ %}
+
+### BEND -
+
+将波形向外弯曲，效果如下：
+
+{% asset_img BEND-.gif BEND- %}
+
+### BEND +/-
+
+数值为负时向内弯曲，为正时向外弯曲，效果如下：
+
+{% asset_img BEND+-.gif BEND+/- %}
+
+## PWM
+
+PWM：脉冲宽度调制（Pulse Width Modulation）。
+
+相当于将波形宽度（即“脉冲宽度”）变窄，效果如下：
+
+{% asset_img 正弦PWM.gif 正弦波PWM %}
+
+{% asset_img 方波PWM.gif 方波PWM %}
+
+## ASYM
+
+ASYM：非对称（即非对称弯曲）。
+
+ASYM 的作用大概就是将波形左右两边分别压缩或拉伸。
+
+### ASYM +
+
+将波形左半边压缩，右半边拉伸，效果如下：
+
+{% asset_img ASYM+.gif ASYM+ %}
+
+### ASYM -
+
+将波形左半边拉伸，右半边压缩，效果如下：
+
+{% asset_img ASYM-.gif ASYM- %}
+
+### ASYM +/-
+
+数值为负时，将波形左半边压缩，右半边拉伸；数值为正时，将波形左半边拉伸，右半边压缩，效果如下：
+
+{% asset_img ASYM+-.gif ASYM+- %}
+
+## FLIP
+
+FLIP：翻转。
+
+将波形进行相位反转，效果如下：
+
+{% asset_img FLIP.gif FLIP %}
 
 未完待续。。。
