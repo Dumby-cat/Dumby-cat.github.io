@@ -140,8 +140,62 @@ ASYM 的作用大概就是将波形左右两边分别压缩或拉伸。
 
 FLIP：翻转。
 
-将波形进行相位反转，效果如下：
+将波形进行上下翻转，效果如下：
 
 {% asset_img FLIP.gif FLIP %}
+
+## MIRROR
+
+MIRROR：镜像。
+
+相当于将波形先加一个 ASYM +/-，然后再左右镜像一下，效果如下：
+
+{% asset_img MIRROR.gif MIRROR %}
+
+## REMAP
+
+REMAP：重映射。
+
+功能如其名，这个 Warp 选项旁边还有一个笔的记号，点开它是一个长得像 LFO 一样的东西，上面写着“Remap Edit”：
+
+{% asset_img REMAPEDIT.png REMAPEDIT %}
+
+实际上这是个映射函数（我认为），它的作用大概如下。
+
+为了方便说明，我们假设波形是一个函数 $g( \varphi )$，如图：
+
+{% asset_img g(phi).png g(phi) %}
+
+然后这个我们设映射函数为 $f( \varphi )$，如下：
+
+{% asset_img RF.png RemapFunction %}
+
+当 REMAP 数值为 100% 时，原来的波形 $g( \varphi )$ 变成 $g( f( \varphi ) )$。也就是说，原来的相位 $ \varphi $ 被映射成 $f( \varphi )$。
+
+当 REMAP 数值在 0% 到 100% 之间时，$g( \varphi )$ 会在 $g( \varphi )$ 到 $g( f( \varphi ) )$ 之间变化。
+
+### REMAP 1
+
+普通的 REMAP，效果如下：
+
+{% asset_img REMAP1.gif REMAP1 %}
+
+### REMAP 2
+
+差不多就是 REMAP 1 + MIRROR，效果如下：
+
+{% asset_img REMAP2.gif REMAP2 %}
+
+### REMAP 3
+
+基于正弦函数的 REMAP，通过 REMAP 3 可以不用花太大功夫在 $f( \varphi )$ 上，即使你画的映射函数很粗糙，它在波形上引起的变化也会很平滑，效果如下：
+
+{% asset_img REMAP3.gif REMAP3 %}
+
+### REMAP 4
+
+和 REMAP 2 类似，但是原来的波形周期变成四分之一，效果如下：
+
+{% asset_img REMAP4.gif REMAP4 %}
 
 未完待续。。。
