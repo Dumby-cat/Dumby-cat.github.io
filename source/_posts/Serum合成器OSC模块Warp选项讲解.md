@@ -88,7 +88,7 @@ BEND：弯曲。
 
 将波形向内弯曲，效果如下：
 
-{% asset_img BEND+.gif BEND+ %}
+{% asset_img BENDp.gif BEND+ %}
 
 ### BEND -
 
@@ -100,7 +100,7 @@ BEND：弯曲。
 
 数值为负时向内弯曲，为正时向外弯曲，效果如下：
 
-{% asset_img BEND+-.gif BEND+/- %}
+{% asset_img BENDp-.gif BEND+/- %}
 
 ## PWM
 
@@ -122,7 +122,7 @@ ASYM 的作用大概就是将波形左右两边分别压缩或拉伸。
 
 将波形左半边压缩，右半边拉伸，效果如下：
 
-{% asset_img ASYM+.gif ASYM+ %}
+{% asset_img ASYMp.gif ASYM+ %}
 
 ### ASYM -
 
@@ -134,7 +134,7 @@ ASYM 的作用大概就是将波形左右两边分别压缩或拉伸。
 
 数值为负时，将波形左半边压缩，右半边拉伸；数值为正时，将波形左半边拉伸，右半边压缩，效果如下：
 
-{% asset_img ASYM+-.gif ASYM+- %}
+{% asset_img ASYMp-.gif ASYM+- %}
 
 ## FLIP
 
