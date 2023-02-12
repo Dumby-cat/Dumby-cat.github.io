@@ -198,4 +198,35 @@ REMAP：重映射。
 
 {% asset_img REMAP4.gif REMAP4 %}
 
-未完待续。。。
+## QUANTIZE
+
+QUANTIZE：量化。
+
+就是把波形变方。
+
+## FM(FROM B)
+
+以振荡器B（OSC B）的波形来频率调制该振荡器。
+
+## AM(FROM B)
+
+以振荡器B（OSC B）的波形来幅度调制该振荡器。
+
+## RM(FROM B)
+
+以振荡器B（OSC B）的波形来环形调制该振荡器。
+
+## FM(NOISE)
+
+以噪声振荡器的波形来频率调制该振荡器。
+
+## FM(SUB)
+
+以低音振荡器的波形来频率调制该振荡器。
+
+## 结尾
+
+后面部分写得不详细，因为涉及其他地方的知识，以后写到再说（反正也没人看）。
+
+参考：
+- [B站 @Mask不是马赛克 的文章](https://www.bilibili.com/read/cv793091)
