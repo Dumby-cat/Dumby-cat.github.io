@@ -182,10 +182,10 @@
     <link href="https://dumblog.top/2022/10/09/C-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%87%AA%E4%B9%A0/"/>
     <id>https://dumblog.top/2022/10/09/C-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%87%AA%E4%B9%A0/</id>
     <published>2022-10-09T01:58:39.000Z</published>
-    <updated>2023-01-07T04:25:47.791Z</updated>
+    <updated>2023-02-25T08:53:40.019Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文主要用于自习 try catch throw 这三个东西。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;废稿。&lt;/p&gt;</summary>
     
     
     
@@ -194,6 +194,8 @@
     
     <category term="C++" scheme="https://dumblog.top/tags/C/"/>
     
+    <category term="垃圾桶" scheme="https://dumblog.top/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/"/>
+    
   </entry>
   
   <entry>
@@ -201,10 +203,10 @@
     <link href="https://dumblog.top/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/"/>
     <id>https://dumblog.top/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/</id>
     <published>2022-10-09T01:58:14.000Z</published>
-    <updated>2023-01-07T04:25:47.792Z</updated>
+    <updated>2023-02-25T08:51:18.921Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文主要用于学习各种 C++ 预处理命令，包括条件编译（目前只写了这个）。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;本文主要用于学习各种 C++ 预处理命令，包括头文件保护符（目前只写了这个）。&lt;/p&gt;</summary>
     
     
     
@@ -328,10 +330,10 @@
     <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-07-21T10:42:22.000Z</published>
-    <updated>2023-01-07T04:25:47.792Z</updated>
+    <updated>2023-02-25T08:53:10.934Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;del&gt;阿巴阿巴，因为最近要开始整活所以要学一些没用的。&lt;/del&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;废稿。&lt;/p&gt;</summary>
     
     
     
@@ -340,7 +342,7 @@
     
     <category term="C++" scheme="https://dumblog.top/tags/C/"/>
     
-    <category term="面向对象程序设计" scheme="https://dumblog.top/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    <category term="垃圾桶" scheme="https://dumblog.top/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/"/>
     
   </entry>
   
@@ -349,10 +351,10 @@
     <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-07-21T10:19:46.000Z</published>
-    <updated>2023-01-07T04:25:47.792Z</updated>
+    <updated>2023-02-25T08:52:53.984Z</updated>
     
     
-    <summary type="html">&lt;p&gt;C艹中的 class 关键字在 OI 中几乎用不上，但是毕竟是C艹中比较重要的一个东西，今后整活经常要用，所以还是学一下。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;废稿。&lt;/p&gt;</summary>
     
     
     
@@ -361,9 +363,7 @@
     
     <category term="C++" scheme="https://dumblog.top/tags/C/"/>
     
-    <category term="类" scheme="https://dumblog.top/tags/%E7%B1%BB/"/>
-    
-    <category term="class" scheme="https://dumblog.top/tags/class/"/>
+    <category term="垃圾桶" scheme="https://dumblog.top/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/"/>
     
   </entry>
   

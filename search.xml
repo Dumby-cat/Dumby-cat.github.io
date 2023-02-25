@@ -3,8 +3,9 @@
   <entry>
     <title>C++异常处理自习</title>
     <url>/2022/10/09/C-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%87%AA%E4%B9%A0/</url>
-    <content><![CDATA[<p>本文主要用于自习 try catch throw 这三个东西。</p>
+    <content><![CDATA[<p>废稿。</p>
 <span id="more"></span>
+<p>本文主要用于自习 try catch throw 这三个东西。</p>
 <p>首先说一下异常处理的基本过程：一个函数 A，其运行过程中抛出了一个异常，如果 A 自己处理掉了这个异常，那么就继续执行代码；如果没有处理，函数 A 会立刻停止执行，并将该异常抛给函数 A 的调用者。以此类推。<br>当最后异常抛给 main 函数时，如果 main 函数也不做处理，则程序会立即异常停止。</p>
 <p>C++中异常处理主要用 try catch throw 这三个东西。</p>
 <h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p>throw 语法：</p>
@@ -42,6 +43,7 @@
       </categories>
       <tags>
         <tag>C++</tag>
+        <tag>垃圾桶</tag>
       </tags>
   </entry>
   <entry>
@@ -69,9 +71,9 @@
   <entry>
     <title>C++预处理命令自习</title>
     <url>/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/</url>
-    <content><![CDATA[<p>本文主要用于学习各种 C++ 预处理命令，包括条件编译（目前只写了这个）。</p>
+    <content><![CDATA[<p>本文主要用于学习各种 C++ 预处理命令，包括头文件保护符（目前只写了这个）。</p>
 <span id="more"></span>
-<h2 id="条件编译"><a href="#条件编译" class="headerlink" title="条件编译"></a>条件编译</h2><h3 id="if"><a href="#if" class="headerlink" title="#if"></a>#if</h3><p>语法：</p>
+<h2 id="头文件保护符"><a href="#头文件保护符" class="headerlink" title="头文件保护符"></a>头文件保护符</h2><h3 id="if"><a href="#if" class="headerlink" title="#if"></a>#if</h3><p>语法：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#if 整型常量表达式1</span><br><span class="line">    程序段1</span><br><span class="line">#elif 整型常量表达式2 // elif 可以省略</span><br><span class="line">    程序段2</span><br><span class="line">#elif 整型常量表达式3</span><br><span class="line">    程序段3</span><br><span class="line">#else</span><br><span class="line">    程序段3</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
 <p>其功能与普通的 <code>if</code> 、 <code>else if</code> 、 <code>else</code> 功能类似，但也有区别。</p>
 <p>与 <code>if</code> 一样， <code>#elif</code> 和 <code>#else</code> 可以省去。</p>
@@ -115,8 +117,9 @@
   <entry>
     <title>C艹 Class（类）学习笔记</title>
     <url>/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>C艹中的 class 关键字在 OI 中几乎用不上，但是毕竟是C艹中比较重要的一个东西，今后整活经常要用，所以还是学一下。</p>
+    <content><![CDATA[<p>废稿。</p>
 <span id="more"></span>
+<p>C艹中的 class 关键字在 OI 中几乎用不上，但是毕竟是C艹中比较重要的一个东西，今后整活经常要用，所以还是学一下。</p>
 <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>类的定义伪代码如下：<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">关键字 类名&#123;</span><br><span class="line">	访问修饰符:</span><br><span class="line">		变量;</span><br><span class="line">		方法()&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>其中关键字就是class，方法就是一个个函数之类的，访问修饰符分为三种： <strong>private、public、protected</strong>。</p>
 <h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><h3 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h3><h4 id="私有（private）成员"><a href="#私有（private）成员" class="headerlink" title="私有（private）成员"></a>私有（private）成员</h4><p>私有成员类外部无法直接访问调用，只能类本身和友元函数能访问和调用。<br>类的成员默认都是私有的。</p>
@@ -153,15 +156,15 @@
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>类</tag>
-        <tag>class</tag>
+        <tag>垃圾桶</tag>
       </tags>
   </entry>
   <entry>
     <title>C艹 面向对象程序设计学习笔记</title>
     <url>/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p><del>阿巴阿巴，因为最近要开始整活所以要学一些没用的。</del></p>
+    <content><![CDATA[<p>废稿。</p>
 <span id="more"></span>
+<p><del>阿巴阿巴，因为最近要开始整活所以要学一些没用的。</del></p>
 <p>本帖主要通过与面向过程编程设计对比来了解面向对象程序设计。</p>
 <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>根据百度百科：</p>
 <ul>
@@ -246,7 +249,7 @@
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>面向对象程序设计</tag>
+        <tag>垃圾桶</tag>
       </tags>
   </entry>
   <entry>

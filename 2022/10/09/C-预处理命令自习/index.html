@@ -138,7 +138,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-01-07 12:25:47" itemprop="dateModified" datetime="2023-01-07T12:25:47+08:00">2023-01-07</time>
+      <time title="修改时间：2023-02-25 16:51:18" itemprop="dateModified" datetime="2023-02-25T16:51:18+08:00">2023-02-25</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -160,9 +160,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>本文主要用于学习各种 C++ 预处理命令，包括条件编译（目前只写了这个）。</p>
+        <p>本文主要用于学习各种 C++ 预处理命令，包括头文件保护符（目前只写了这个）。</p>
 <span id="more"></span>
-<h2 id="条件编译"><a href="#条件编译" class="headerlink" title="条件编译"></a>条件编译</h2><h3 id="if"><a href="#if" class="headerlink" title="#if"></a>#if</h3><p>语法：</p>
+<h2 id="头文件保护符"><a href="#头文件保护符" class="headerlink" title="头文件保护符"></a>头文件保护符</h2><h3 id="if"><a href="#if" class="headerlink" title="#if"></a>#if</h3><p>语法：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#if 整型常量表达式1</span><br><span class="line">    程序段1</span><br><span class="line">#elif 整型常量表达式2 // elif 可以省略</span><br><span class="line">    程序段2</span><br><span class="line">#elif 整型常量表达式3</span><br><span class="line">    程序段3</span><br><span class="line">#else</span><br><span class="line">    程序段3</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
 <p>其功能与普通的 <code>if</code> 、 <code>else if</code> 、 <code>else</code> 功能类似，但也有区别。</p>
 <p>与 <code>if</code> 一样， <code>#elif</code> 和 <code>#else</code> 可以省去。</p>
