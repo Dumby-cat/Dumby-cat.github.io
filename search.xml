@@ -1580,7 +1580,7 @@
   <entry>
     <title>！！！🏮新年好🏮！！！</title>
     <url>/2022/01/31/%E6%96%B0%E5%B9%B4%E5%A5%BD%EF%BC%81%EF%BC%81%EF%BC%81/</url>
-    <content><![CDATA[<p>（⚠已失效⚠）</p>
+    <content><![CDATA[<p>已经是22年了捏。</p>
 <p>！！！🏮新年好🏮！！！</p>
 <p>Dumby_cat 隆重推出 Dumblog 新年款！！！（其实就是变红了。。。）</p>
 <p>总之，祝各位来访者新年快乐！！！</p>
@@ -2045,6 +2045,22 @@
         <tag>C++</tag>
         <tag>线段树</tag>
         <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git恢复误删文件</title>
+    <url>/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<p>放这篇文章给自己看，怕自己又脑瘫整出些逆天操作，因此在这留个后路。</p>
+<span id="more"></span>
+<p>首先运行 <code>$git log</code>，找到上次的commit的ID，然后运行 <code>$git reset --hard &lt;ID&gt;</code></p>
+<p>然后应该就没问题了。</p>
+<p>哦对了，<code>$git log</code> 按 q 键退出。</p>
+]]></content>
+      <categories>
+        <category>Dumby的折腾笔记</category>
+      </categories>
+      <tags>
+        <tag>站务</tag>
       </tags>
   </entry>
 </search>

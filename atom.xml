@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2023-02-25T09:15:10.313Z</updated>
+  <updated>2023-02-25T09:36:09.285Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git恢复误删文件</title>
+    <link href="https://dumblog.top/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/"/>
+    <id>https://dumblog.top/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/</id>
+    <published>2023-02-25T09:27:20.000Z</published>
+    <updated>2023-02-25T09:36:09.285Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;放这篇文章给自己看，怕自己又脑瘫整出些逆天操作，因此在这留个后路。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="站务" scheme="https://dumblog.top/tags/%E7%AB%99%E5%8A%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>Serum合成器OSC模块Warp选项讲解</title>
@@ -418,27 +437,6 @@
     <category term="期望" scheme="https://dumblog.top/tags/%E6%9C%9F%E6%9C%9B/"/>
     
     <category term="线性DP" scheme="https://dumblog.top/tags/%E7%BA%BF%E6%80%A7DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>修钢笔捏</title>
-    <link href="https://dumblog.top/2022/07/16/%E4%BF%AE%E9%92%A2%E7%AC%94%E6%8D%8F/"/>
-    <id>https://dumblog.top/2022/07/16/%E4%BF%AE%E9%92%A2%E7%AC%94%E6%8D%8F/</id>
-    <published>2022-07-16T11:08:38.000Z</published>
-    <updated>2023-02-25T09:15:10.584Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;修笔捏。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
-    
-    
-    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="钢笔" scheme="https://dumblog.top/tags/%E9%92%A2%E7%AC%94/"/>
     
   </entry>
   
