@@ -2594,7 +2594,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #6c8a21;
+  background: #8a395b;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2826,4 +2826,14 @@ tbody tr:nth-of-type(odd) {
 }
 tbody tr:hover {
   background: #1c1c1c;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 15px;
 }
