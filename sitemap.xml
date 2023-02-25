@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dumblog.top/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/</loc>
+    
+    <lastmod>2023-02-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dumblog.top/2022/10/09/C-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%87%AA%E4%B9%A0/</loc>
     
     <lastmod>2023-02-25</lastmod>
@@ -32,15 +41,6 @@
     <loc>https://dumblog.top/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/</loc>
     
     <lastmod>2023-02-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dumblog.top/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/</loc>
-    
-    <lastmod>2023-02-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
