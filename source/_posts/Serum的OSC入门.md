@@ -6,7 +6,7 @@ tags:
 categories: Dumby的折腾笔记
 ---
 
-本帖用于介绍Serum的振荡器。
+本帖用于自习Serum的振荡器模块。
 
 <!--more-->
 
