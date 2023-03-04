@@ -21,14 +21,14 @@
 
 
 
-<link rel="canonical" href="https://dumblog.top/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/">
+<link rel="canonical" href="https://dumblog.top/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dumblog.top/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/","path":"2023/02/25/Git恢复误删文件/","title":"Git恢复误删文件"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dumblog.top/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/","path":"2023/03/04/Serum合成器Filter模块自习/","title":"Serum合成器Filter模块自习"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Git恢复误删文件 | DUMBLOG</title>
+<title>Serum合成器Filter模块自习 | DUMBLOG</title>
   
 
 
@@ -102,7 +102,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dumblog.top/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/">
+    <link itemprop="mainEntityOfPage" href="https://dumblog.top/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -115,12 +115,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Git恢复误删文件 | DUMBLOG">
+      <meta itemprop="name" content="Serum合成器Filter模块自习 | DUMBLOG">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Git恢复误删文件
+          Serum合成器Filter模块自习
         </h1>
 
         <div class="post-meta-container">
@@ -132,7 +132,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-02-25 17:27:20 / 修改时间：17:36:09" itemprop="dateCreated datePublished" datetime="2023-02-25T17:27:20+08:00">2023-02-25</time>
+      <time title="创建时间：2023-03-04 17:14:20 / 修改时间：22:08:51" itemprop="dateCreated datePublished" datetime="2023-03-04T17:14:20+08:00">2023-03-04</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -154,11 +154,37 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>放这篇文章给自己看，怕自己又脑瘫整出些逆天操作，因此在这留个后路。</p>
+        <p>本帖用于自习Serum的滤波器模块。</p>
 <span id="more"></span>
-<p>首先运行 <code>$git log</code>，找到上次的commit的ID，然后运行 <code>$git reset --hard &lt;ID&gt;</code></p>
-<p>然后应该就没问题了。</p>
-<p>哦对了，<code>$git log</code> 按 q 键退出。</p>
+<p>滤波器顾名思义就是用来滤波的，简单地理解下可以看成这样一幅图：</p>
+<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E6%BB%A4%E6%B3%A2%E5%99%A8%E5%8A%9F%E8%83%BD%E7%9A%84%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3.png" class="" title="滤波器功能的简单理解">
+<p>上方的波形的横轴参数相当是频率，纵轴参数相当于是相应频率的声音的通过度，越高通过的越多，而越低则滤掉的越多。上图中的右边部分很低，说明滤波器将高频段的声音过滤掉了，所以经过这个滤波器的声音会感觉闷闷的。</p>
+<p>最基本的滤波器应该是这三种：高通、低通、带通。</p>
+<h3 id="低通滤波器（Low）"><a href="#低通滤波器（Low）" class="headerlink" title="低通滤波器（Low）"></a>低通滤波器（Low）</h3><p>意思就是只通过低频率，将高频率的声音过滤掉。</p>
+<p>上面的那张图就是低通的滤波器。</p>
+<h3 id="高通滤波器（High）"><a href="#高通滤波器（High）" class="headerlink" title="高通滤波器（High）"></a>高通滤波器（High）</h3><p>同理，如图：</p>
+<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E9%AB%98%E9%80%9A.png" class="" title="高通">
+<h3 id="带通滤波器（Band）"><a href="#带通滤波器（Band）" class="headerlink" title="带通滤波器（Band）"></a>带通滤波器（Band）</h3><p>只通过一段连续频率的滤波器叫带通滤波器，如图：</p>
+<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E5%B8%A6%E9%80%9A.png" class="" title="带通">
+<p>此外还有峰值增益（Peak）、陷波（Notch）等。</p>
+<p>接下来看下Serum自带的Filter：</p>
+<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/FILTER.png" class="" title="FILTER">
+<h2 id="ABNS"><a href="#ABNS" class="headerlink" title="ABNS"></a>ABNS</h2><p>那四个按钮表示 OSC A/B/Noice/Sub 是否进行滤波。</p>
+<h2 id="KeyTrack"><a href="#KeyTrack" class="headerlink" title="KeyTrack"></a>KeyTrack</h2><p>音符追踪。</p>
+<p>点亮以后滤波器的属性（Cutoff）会随输入音符的变化而变化，有时能让滤波效果更适应音符。</p>
+<h2 id="CUTOFF"><a href="#CUTOFF" class="headerlink" title="CUTOFF"></a>CUTOFF</h2><p>Cutoff：截止频率。</p>
+<p>用来修改允许通过的频段。</p>
+<h2 id="RES"><a href="#RES" class="headerlink" title="RES"></a>RES</h2><p>Resonance：谐振、共鸣。</p>
+<p>会把Cutoff周围的频段突出。</p>
+<h2 id="PAN"><a href="#PAN" class="headerlink" title="PAN"></a>PAN</h2><p>Pan（Stereo）：声相。</p>
+<h2 id="DRIVE"><a href="#DRIVE" class="headerlink" title="DRIVE"></a>DRIVE</h2><p>Drive：过载。</p>
+<p>使输入滤波器的增益加强，太强可能会失真。</p>
+<h2 id="FAT"><a href="#FAT" class="headerlink" title="FAT"></a>FAT</h2><p>这个按钮会随选用的滤波类型变化，有时显示“FAT”，有时“FREQ”（Frequency），有时直接“-”。</p>
+<h2 id="MIX"><a href="#MIX" class="headerlink" title="MIX"></a>MIX</h2><p>修改通过滤波器的声音的比例。</p>
+<p>点他一下会变成 LEVEL。</p>
+<h2 id="MENU"><a href="#MENU" class="headerlink" title="MENU"></a>MENU</h2><p>目录里默认有四大类：Normal（普通）、Multi（复合）、Flanges（法兰）、Misc（杂项，里面有很多有意思的滤波类型）。</p>
+<h2 id="波表"><a href="#波表" class="headerlink" title="波表"></a>波表</h2><p>点击滤波器的图案可以切换到Phases，即通过滤波器后的波形。</p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>这是个结尾。</p>
 
     </div>
 
@@ -168,21 +194,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%AB%99%E5%8A%A1/" rel="tag"># 站务</a>
+              <a href="/tags/%E5%90%88%E6%88%90%E5%99%A8/" rel="tag"># 合成器</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/" rel="prev" title="Serum合成器OSC模块Warp选项讲解">
-                  <i class="fa fa-chevron-left"></i> Serum合成器OSC模块Warp选项讲解
+                <a href="/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/" rel="prev" title="Git恢复误删文件">
+                  <i class="fa fa-chevron-left"></i> Git恢复误删文件
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/" rel="next" title="Serum合成器Filter模块自习">
-                  Serum合成器Filter模块自习 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
