@@ -691,26 +691,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《安多》短评</title>
-    <url>/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E7%9F%AD%E8%AF%84/</url>
-    <content><![CDATA[<p>最近刚看完《安多》，随便口嗨一下。</p>
-<span id="more"></span>
-<p>首先个人比起带娃更喜欢《安多》这种风格，但感觉《安多》和《曼佬》两部都挺不错的。</p>
-<p>这部剧剧情前几集比较分散，刚开始看的时候有点奇怪，但后面几集跟上后，整体我认为非常不错。</p>
-<p>这部剧在人物形象刻画上也很深刻，整部剧从好几条线展开，每条线的人物形象都十分鲜明，尤其是安多、南大和希利尔。</p>
-<p>美术风格上看，《安多》也与星战之前几部真人剧完全不同，整体给人一种反乌托邦的冰凉的感觉，特别是在科洛桑时的镜头。</p>
-<p>还有特效和其他的细节就不用说了，毕竟是迪士尼。</p>
-<p>如果让我打昏的话那必然是满昏。</p>
-]]></content>
-      <categories>
-        <category>Dumby的sb日常</category>
-      </categories>
-      <tags>
-        <tag>星球大战</tag>
-        <tag>日常</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一只蒟蒻的A-Star学习笔记</title>
     <url>/2021/06/29/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84A-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="A-Star-是啥？？-A-Star-用来干啥？？"><a href="#A-Star-是啥？？-A-Star-用来干啥？？" class="headerlink" title="A-Star 是啥？？ A-Star 用来干啥？？"></a>A-Star 是啥？？ A-Star 用来干啥？？</h2><p>首先，<strong>A-Star 算法只能用在数据规模很大的搜索题中</strong>，这时直接用 BFS 会超时，而利用 <strong>启发函数（估价函数）</strong> 优化后的 BFS ——A-Star 算法就能处理这种问题。<br>A-Star 算法通过一个 <strong>“启发函数（估价函数）”</strong> 来使到达终点需要遍历的状态大大减少，以达到提高运行效率的作用。<br><span id="more"></span><br>就比如：当普通的 BFS 需要遍历 $10^{8}$、$10^{9}$ 甚至 $10^{20}$ 个状态才能到达终点时，通过 A-Star 的启发函数 则只需要遍历极少的状态就能达到终点。</p>
@@ -2103,6 +2083,78 @@
       </categories>
       <tags>
         <tag>合成器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spider-Man: Across the Spider-Verse 观后</title>
+    <url>/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/</url>
+    <content><![CDATA[<p>最近二刷完《蜘蛛侠：纵横宇宙》，顺手写点有趣的东西吧。</p>
+<span id="more"></span>
+<p>先放张剧照镇下帖。</p>
+
+<h3 id="Spotter-man"><a href="#Spotter-man" class="headerlink" title="Spotter-man"></a>Spotter-man</h3><p>这名字我瞎起的。。</p>
+<p>主要是看到这个东西：</p>
+<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/Spotter-man.png" class="" title="Spotter-man">
+<p>我不知道官方有没有关于这个的介绍，反正挺有意思的，看着像 Spot 和 Spider-man 的结合体。</p>
+<h3 id="有点像："><a href="#有点像：" class="headerlink" title="有点像："></a>有点像：</h3><p>第一遍看的时候就觉得这两东西挺像的了：</p>
+<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/Lobby.jpg" class="" title="2099_Lobby">
+<p>和</p>
+<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/%E7%91%9E%E5%9F%8E.png" class="" title="瑞城">
+<p>（不过只是有些设定挺像的，其他的。。。毕竟后者那一集是额。。dddd）</p>
+<h3 id="我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10-5）"><a href="#我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10-5）" class="headerlink" title="我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）"></a>我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）</h3><p>简直无敌。</p>
+<p>（有机会下次去三刷。。）</p>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>影视剧</tag>
+        <tag>蜘蛛侠</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《安多》不短的评</title>
+    <url>/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/</url>
+    <content><![CDATA[<p>最近二刷完《安多》，随便说几句。</p>
+<span id="more"></span>
+<p>反正是随便说几句就<strong>想说啥说啥</strong>了。</p>
+<p><strong>以下纯属个人基于剧集的口嗨和猜测。别杠，杠就是你对</strong></p>
+<h3 id="情节"><a href="#情节" class="headerlink" title="情节"></a>情节</h3><p>本剧个人认为叙事比较开阔，它不仅仅像是曼达洛人前两部那样只写主角一条线，《安多》这部剧从安多本身出发，拓展出很多义军成立前的一个个反帝的小个体小组织。</p>
+<p>但他又并非是《义军崛起》那样（不过《义军崛起》基本也是主角团一条线），《安多》的格局显然要开阔很多。</p>
+<p>这部剧已经有些脱离个人英雄主义的味道了，“星星之火”，放到这部剧中来说挺合适的。</p>
+<p>分别看看每个人：</p>
+<p>先看看安多个人。</p>
+<p>安多曾是一个克纳里的小毛孩，被玛尔瓦带走后见证了许多事，包括国家底层人民的艰难的生活、小偷小摸的事情、战争以及对安多很重要的事件克莱姆之死。<br>从卢森来费里克斯摇走安多开始，安多从逃出费里克斯时的些许迷茫，不敢肯定自己、不愿加入卢森的小团体；到抢完一票后，受内米克的影响，渐渐醒悟；再到越狱后更深刻地明白帝国的黑暗；最后在费里克斯受母亲一番话（虽然是讲给全费里克斯的），坚定地成为了青年反帝战士（:P）。</p>
+<p>再看看安多他娘玛尔瓦。</p>
+<p>。。。（算了懒得码字了，我是懒批。。。）</p>
+<p>还有内米克，以及卢森和南大。</p>
+<p>。。。（😓😓😓）</p>
+<p>总之，用内米克的话来形容这部剧：</p>
+<blockquote>
+<p>There will be times when the struggle seems impossible.<br>I know this already.<br>Alone, unsure, dwarfed by the scale of the enemy.<br>Remember this.<br><strong>Freedom is a pure idea.</strong><br>It occurs spontaneously and without instruction.<br>Random acts of insurrection are occurring constantly throughout the galaxy.<br>There are whole armies, battalions that have no idea that they’ve already enlisted in the cause.<br>Remember that the frontier of the <strong>Rebellion</strong> is everywhere.<br>And even the smallest act of insurrection pushes our lines forward.<br>And then remember this.<br>The Imperial need for control is so desperate because it is so unnatural.<br>Tyranny requires constant effort.<br>It breaks, it leaks.<br>Authority is brittle.<br>Oppression is the mask of fear.<br>Remember that.<br>And know this, the day will come when all these skirmishes and battles, these moments of defiance will have flooded the banks of the Empire’s authority and then there will be one too many.<br>One single thing will break the siege.<br><strong>Remember this. Try.</strong></p>
+</blockquote>
+<p>这部剧才是我心目中的《义军崛起》。</p>
+<h3 id="视觉效果"><a href="#视觉效果" class="headerlink" title="视觉效果"></a>视觉效果</h3><p>我相当外行，以下只是随口扯几句。</p>
+<p>有个地方挺明显的，就是在科洛桑或者帝国设施内的色调和其他地方比如费里克斯一冷一暖对比是挺强烈的：</p>
+<p>帝国：</p>
+<img src="/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/%E8%AE%AE%E4%BC%9A.jpg" class="" title="议会">
+<img src="/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/%E7%9B%91%E7%8B%B1.jpg" class="" title="监狱">
+<img src="/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/ISB.jpg" class="" title="ISB">
+<img src="/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/IBS.jpg" class="" title="IBS">
+<p>费里克斯：</p>
+<img src="/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/%E8%B4%B9%E9%87%8C%E5%85%8B%E6%96%AF1.jpg" class="" title="费里克斯">
+<img src="/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/%E8%B4%B9%E9%87%8C%E5%85%8B%E6%96%AF2.jpg" class="" title="费里克斯">
+<img src="/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/%E8%B4%B9%E9%87%8C%E5%85%8B%E6%96%AF3.jpg" class="" title="费里克斯">
+<h3 id="我的评分：⭐⭐⭐⭐⭐（5-5）"><a href="#我的评分：⭐⭐⭐⭐⭐（5-5）" class="headerlink" title="我的评分：⭐⭐⭐⭐⭐（5/5）"></a>我的评分：⭐⭐⭐⭐⭐（5/5）</h3><p>（有空去三刷。。）</p>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>星球大战</tag>
+        <tag>日常</tag>
+        <tag>影视剧</tag>
       </tags>
   </entry>
 </search>

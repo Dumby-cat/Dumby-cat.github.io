@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2023-03-04T14:08:51.548Z</updated>
+  <updated>2023-06-17T15:01:54.566Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spider-Man: Across the Spider-Verse 观后</title>
+    <link href="https://dumblog.top/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/"/>
+    <id>https://dumblog.top/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/</id>
+    <published>2023-06-17T13:49:39.000Z</published>
+    <updated>2023-06-17T15:01:54.566Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近二刷完《蜘蛛侠：纵横宇宙》，顺手写点有趣的东西吧。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="影视剧" scheme="https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/"/>
+    
+    <category term="蜘蛛侠" scheme="https://dumblog.top/tags/%E8%9C%98%E8%9B%9B%E4%BE%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Serum合成器Filter模块自习</title>
@@ -95,14 +118,14 @@
   </entry>
   
   <entry>
-    <title>《安多》短评</title>
-    <link href="https://dumblog.top/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E7%9F%AD%E8%AF%84/"/>
-    <id>https://dumblog.top/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E7%9F%AD%E8%AF%84/</id>
+    <title>《安多》不短的评</title>
+    <link href="https://dumblog.top/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/"/>
+    <id>https://dumblog.top/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/</id>
     <published>2022-11-27T14:25:28.000Z</published>
-    <updated>2023-02-25T09:15:10.574Z</updated>
+    <updated>2023-06-17T15:00:21.263Z</updated>
     
     
-    <summary type="html">&lt;p&gt;最近刚看完《安多》，随便口嗨一下。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;最近二刷完《安多》，随便说几句。&lt;/p&gt;</summary>
     
     
     
@@ -112,6 +135,8 @@
     <category term="星球大战" scheme="https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/"/>
     
     <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="影视剧" scheme="https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/"/>
     
   </entry>
   
@@ -402,32 +427,6 @@
     <category term="C++" scheme="https://dumblog.top/tags/C/"/>
     
     <category term="垃圾桶" scheme="https://dumblog.top/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷 P4550 收集邮票</title>
-    <link href="https://dumblog.top/2022/07/19/%E6%B4%9B%E8%B0%B7-P4550-%E6%94%B6%E9%9B%86%E9%82%AE%E7%A5%A8/"/>
-    <id>https://dumblog.top/2022/07/19/%E6%B4%9B%E8%B0%B7-P4550-%E6%94%B6%E9%9B%86%E9%82%AE%E7%A5%A8/</id>
-    <published>2022-07-19T11:08:34.000Z</published>
-    <updated>2023-02-25T09:15:10.867Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;思路&quot;&gt;&lt;a href=&quot;#思路&quot; class=&quot;headerlink&quot; title=&quot;思路&quot;&gt;&lt;/a&gt;思路&lt;/h2&gt;&lt;p&gt;和 &lt;a href=&quot;/2022/07/18/UVA10288-%E4%BC%98%E6%83%A0%E5%88%B8-Coupons/&quot; title=&quot;UVA10288 优惠券&quot;&gt;UVA10288 优惠券&lt;/a&gt; 很像，只不过加了价格随次数变动的条件。&lt;/p&gt;
-&lt;p&gt;在原来式子的基础上改一下，第一次取出第 $i$ 个物品期望需要的价格是取出前 $i$ 个物品期望需要的次数总和（也就是价格）乘上取出第 $i$ 个期望需要的次数（注意这里的价格是平均过的）。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的OI生涯" scheme="https://dumblog.top/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/"/>
-    
-    
-    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
-    
-    <category term="DP" scheme="https://dumblog.top/tags/DP/"/>
-    
-    <category term="期望" scheme="https://dumblog.top/tags/%E6%9C%9F%E6%9C%9B/"/>
-    
-    <category term="线性DP" scheme="https://dumblog.top/tags/%E7%BA%BF%E6%80%A7DP/"/>
     
   </entry>
   
