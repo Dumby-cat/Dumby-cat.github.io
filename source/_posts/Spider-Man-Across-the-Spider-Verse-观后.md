@@ -40,6 +40,8 @@ categories: Dumby的sb日常
 
 ## 我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）
 
+应该是 Spider-Man: Into the Spider-Verse 之后看过的最好的一部动画电影了（没错这系列就是我榜单的Top.1）。
+
 简直无敌。
 
 （有机会下次去三刷。。）
