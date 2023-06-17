@@ -14,9 +14,9 @@ categories: Dumby的sb日常
 
 先放张剧照镇下帖。
 
-{% asset_img Miles & Gwen.jpg 镇帖图 %}
+{% asset_img Miles&Gwen.jpg 镇帖图 %}
 
-### Spotter-man
+## Spotter-man
 
 这名字我瞎起的。。
 
@@ -26,7 +26,7 @@ categories: Dumby的sb日常
 
 我不知道官方有没有关于这个的介绍，反正挺有意思的，看着像 Spot 和 Spider-man 的结合体。
 
-### 有点像：
+## 有点像：
 
 第一遍看的时候就觉得这两东西挺像的了：
 
@@ -38,7 +38,7 @@ categories: Dumby的sb日常
 
 （不过只是有些设定挺像的，其他的。。。毕竟后者那一集是额。。dddd）
 
-### 我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）
+## 我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）
 
 简直无敌。
 
