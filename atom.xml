@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2023-06-17T15:33:29.816Z</updated>
+  <updated>2023-06-23T13:51:04.830Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>无题</title>
+    <link href="https://dumblog.top/2023/06/23/%E6%97%A0%E9%A2%98/"/>
+    <id>https://dumblog.top/2023/06/23/%E6%97%A0%E9%A2%98/</id>
+    <published>2023-06-23T13:37:47.000Z</published>
+    <updated>2023-06-23T13:51:04.830Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文是我的一位同学写的，我们无意间在他的桌子上翻到这篇文章，觉得写得甚好，就将它抄到本人的博客上。以下文章是我的抄写版，但我尽量将这位同学每一处批注与涂改都保留了下来。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Spider-Man: Across the Spider-Verse 观后</title>
     <link href="https://dumblog.top/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/"/>
     <id>https://dumblog.top/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/</id>
     <published>2023-06-17T13:49:39.000Z</published>
-    <updated>2023-06-17T15:33:29.816Z</updated>
+    <updated>2023-06-23T13:40:34.349Z</updated>
     
     
     <summary type="html">&lt;p&gt;最近二刷完《蜘蛛侠：纵横宇宙》，顺手写点有趣的东西吧。&lt;/p&gt;</summary>
@@ -394,27 +415,6 @@
     <id>https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-07-21T10:42:22.000Z</published>
     <updated>2023-02-25T08:53:10.934Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;废稿。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的C++学习笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
-    
-    <category term="垃圾桶" scheme="https://dumblog.top/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C艹 Class（类）学习笔记</title>
-    <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://dumblog.top/2022/07/21/C%E8%89%B9-Class%EF%BC%88%E7%B1%BB%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-07-21T10:19:46.000Z</published>
-    <updated>2023-02-25T08:52:53.984Z</updated>
     
     
     <summary type="html">&lt;p&gt;废稿。&lt;/p&gt;</summary>
