@@ -72,7 +72,7 @@ categories: Dumby的sb日常
 
 为什么 Miles 希望加入组织时 Gwen 如此紧张？为什么 Owen 始终不让 Luke 与 Obi-Wan 接触？
 
-为什么 Miles 第一次与 Peter 产生感应时他的颜色从蓝绿变成红蓝？为什么在洞穴中被击落 Vader 头盔中是 Luke 的脸？
+为什么 Miles 第一次与 Peter 产生感应时他的颜色从紫绿变成红蓝？为什么在洞穴中被击落 Vader 头盔中是 Luke 的脸？
 
 这样的细节超级多，不多讲了。
 
