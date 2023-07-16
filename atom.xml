@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2023-06-23T13:51:04.830Z</updated>
+  <updated>2023-07-16T01:22:51.197Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《杀死一只知更鸟》短评</title>
+    <link href="https://dumblog.top/2023/07/16/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B%E7%9F%AD%E8%AF%84/"/>
+    <id>https://dumblog.top/2023/07/16/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B%E7%9F%AD%E8%AF%84/</id>
+    <published>2023-07-16T01:20:19.000Z</published>
+    <updated>2023-07-16T01:22:51.197Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;不想多写，就写一句话好了。&lt;/p&gt;
+&lt;p&gt;这本书从相当天真的视角，挖掘了相当深刻的主题。值得一读。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="书籍" scheme="https://dumblog.top/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>玩玩 Stable Diffusion</title>
+    <link href="https://dumblog.top/2023/07/09/%E7%8E%A9%E7%8E%A9-Stable-Diffusion/"/>
+    <id>https://dumblog.top/2023/07/09/%E7%8E%A9%E7%8E%A9-Stable-Diffusion/</id>
+    <published>2023-07-09T05:06:51.000Z</published>
+    <updated>2023-07-09T05:06:51.058Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>无题</title>
@@ -385,48 +435,6 @@
     <category term="roguelike" scheme="https://dumblog.top/tags/roguelike/"/>
     
     <category term="libtcod" scheme="https://dumblog.top/tags/libtcod/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>浅谈傅里叶分析</title>
-    <link href="https://dumblog.top/2022/07/27/%E6%B5%85%E8%B0%88%E5%82%85%E9%87%8C%E5%8F%B6%E5%88%86%E6%9E%90/"/>
-    <id>https://dumblog.top/2022/07/27/%E6%B5%85%E8%B0%88%E5%82%85%E9%87%8C%E5%8F%B6%E5%88%86%E6%9E%90/</id>
-    <published>2022-07-27T02:52:55.000Z</published>
-    <updated>2023-02-25T09:15:10.868Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;学这个不是因为OI，只是为了更深刻地了解一下合成器原理。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
-    
-    <category term="傅里叶分析" scheme="https://dumblog.top/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C艹 面向对象程序设计学习笔记</title>
-    <link href="https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://dumblog.top/2022/07/21/C%E8%89%B9-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-07-21T10:42:22.000Z</published>
-    <updated>2023-02-25T08:53:10.934Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;废稿。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的C++学习笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
-    
-    <category term="垃圾桶" scheme="https://dumblog.top/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/"/>
     
   </entry>
   
