@@ -13,9 +13,11 @@ Hello There!!!😀😀😀
 
 你好你好！！！😀😀😀
 
-Welcome to DUMBLOG,Dumby's blog!!!
+Welcome to DUMBLOG, Dumby's blog!!!
 
 欢迎来到 DUMBLOG——Dumby 的博客！！！
+
+<!--more-->
 
 # 事项
 
