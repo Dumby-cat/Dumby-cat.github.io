@@ -2594,7 +2594,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #12f5e0;
+  background: #6005ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2675,16 +2675,16 @@ body {
 .post-button .btn {
   color: #fff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #919191;
+}
 * {
   color: #fff;
-}
-* h1,
-* h2,
-* h3,
-* h4,
-* h5,
-* h6 {
-  color: #919191;
 }
 .btn {
   background: #000;
@@ -2755,6 +2755,12 @@ i {
   height: 0px;
   position: relative;
 }
+.site-title {
+  color: #fff;
+}
+.post-title {
+  color: #fff;
+}
 .copy-btn {
   color: #fff;
   background: #000;
@@ -2791,6 +2797,7 @@ i {
 .tag-cloud a {
   display: inline-block;
   border-bottom-color: #fff;
+  margin: 10px;
   color: #fff;
 }
 .tag-cloud a:hover {
