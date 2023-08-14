@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C++ goto语句</title>
+    <url>/2022/12/24/C-GOTO%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<p>关于C++中的goto语句。</p>
+<span id="more"></span>
+<p>用法和批处理中的GOTO一样，只不过C++中打标签是分号放后面。</p>
+<p>如下：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;!!&quot;</span>);</span><br><span class="line">	<span class="keyword">goto</span> t;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;22&quot;</span>);</span><br><span class="line">	t:</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">!!</span><br></pre></td></tr></table></figure>
+<p>用这个可以比较方便的跳出多重循环：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">10</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=<span class="number">10</span>;j++)&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">1</span>;k&lt;=<span class="number">10</span>;k++)&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;!!\n&quot;</span>);</span><br><span class="line">				<span class="keyword">if</span>(k==<span class="number">1</span>)&#123;</span><br><span class="line">					<span class="keyword">goto</span> tag;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	tag:</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">!!</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Dumby的C++学习笔记</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++函数和语句</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C++异常处理自习</title>
     <url>/2022/10/09/C-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%87%AA%E4%B9%A0/</url>
     <content><![CDATA[<p>废稿。</p>
@@ -59,12 +81,11 @@
 <p>整体不错，但是反面那个商标贴的有一点点歪了，而且边上还有条缝，兜里放久了会有细毛黏在里面。</p>
 <p>耳机颜值不错，不过我原本想买黑色的，不小心买成白的了。</p>
 <img src="/2023/07/22/Baseus-%E5%80%8D%E6%80%9D-M2s/%E8%80%B3%E6%9C%BA.JPG" class="" title="耳机">
-<p>蓝牙连接稳定，没有出现掉连的情况，不过它的入耳识别似乎有点小问题，偶尔会有戴上以后却检测成没戴，然后就会暂停，就得拿下来重新戴上（应该是我的问题，因为又是只有左耳会这样，我的左耳好像构造真的和右耳不一样诶）。</p>
-<p>音质说得过去，都挺清晰的，表现比较好。</p>
+<p>蓝牙连接稳定，没有出现掉连的情况。</p>
+<p>音质还算说得过去，但感觉没有网上吹的那么好。</p>
 <p><strong>降噪非常顶。</strong></p>
 <p>这玩意儿还有个立体声模式，不过这立体声，额，怎么说，用这立体声看电影还好，听音乐的话就感觉是把其中一部分频段拉出来放在两侧，然后剩下的放在中间一坨，听感像是耳朵上罩了俩一次性杯似的。</p>
-<p>还有倍思的那个控制软件，挺有意思的，不过里面的音效感觉不大行，还没原来听着舒服。</p>
-<p>再有一个就是，倍思的M2和M2s感觉音量都很小，不知道为什么。</p>
+<p>还有倍思的那个控制软件，挺有意思的，不过里面的音效感觉不大行，还没原来听着舒服（还有那个“DJ音效”，难蚌😆😆😆）。</p>
 <p>大概就这样，总体不错，对于两三百的耳机来说挺不错的。</p>
 ]]></content>
       <categories>
@@ -73,28 +94,6 @@
       <tags>
         <tag>日常</tag>
         <tag>耳机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++ goto语句</title>
-    <url>/2022/12/24/C-GOTO%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<p>关于C++中的goto语句。</p>
-<span id="more"></span>
-<p>用法和批处理中的GOTO一样，只不过C++中打标签是分号放后面。</p>
-<p>如下：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;!!&quot;</span>);</span><br><span class="line">	<span class="keyword">goto</span> t;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;22&quot;</span>);</span><br><span class="line">	t:</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">!!</span><br></pre></td></tr></table></figure>
-<p>用这个可以比较方便的跳出多重循环：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">10</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=<span class="number">10</span>;j++)&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">1</span>;k&lt;=<span class="number">10</span>;k++)&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;!!\n&quot;</span>);</span><br><span class="line">				<span class="keyword">if</span>(k==<span class="number">1</span>)&#123;</span><br><span class="line">					<span class="keyword">goto</span> tag;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	tag:</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">!!</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Dumby的C++学习笔记</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>C++函数和语句</tag>
       </tags>
   </entry>
   <entry>
@@ -125,22 +124,35 @@
       </tags>
   </entry>
   <entry>
-    <title>CF558E A Simple Task</title>
-    <url>/2022/07/12/CF558E-A-Simple-Task/</url>
-    <content><![CDATA[<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>开一个 set 维护当前有哪些点是区间的左区间。</p>
-<p>对于每个有序区间，开一个权值线段树维护，并记录一下该区间是升序还是降序。</p>
-<p>每次排序时就将维护这些区间的线段树分裂再合并，最后查一下每棵树再输出就好了。</p>
+    <title>Dsu on Tree （树上启发式合并）不是很详的解</title>
+    <url>/2022/07/09/Dsu-on-Tree-%E4%B8%8D%E6%98%AF%E5%BE%88%E8%AF%A6%E7%9A%84%E8%A7%A3/</url>
+    <content><![CDATA[<h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>先来个例题耍耍。</p>
+<blockquote>
+<p>给出一棵 $n$ 个节点以 $1$ 为根的树，节点 $u$ 的颜色为 $c_{u}$，现在对于每个结点 $u$ 询问以 $u$ 为根子树里一共出现了多少种不同的颜色。<br>$n \le 2 \times 10^{5}$。<br>（没错就是 OIWiki 上的例题。。。）</p>
+</blockquote>
 <span id="more"></span>
-<h2 id="码"><a href="#码" class="headerlink" title="码"></a>码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="comment">//#define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10000002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">10000001</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="type">char</span> s[N];</span><br><span class="line"><span class="type">bool</span> op[N];</span><br><span class="line"><span class="type">int</span> tot,rt[N];</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> l,r,cn;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> l(x) tr[x].l</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> r(x) tr[x].r</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> cn(x) tr[x].cn</span></span><br><span class="line">&#125;tr[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span>&amp; p,<span class="type">int</span> l,<span class="type">int</span> r,<span class="type">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)p=++tot;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">cn</span>(p)++;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=mid)<span class="built_in">add</span>(<span class="built_in">l</span>(p),l,mid,k);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">add</span>(<span class="built_in">r</span>(p),mid+<span class="number">1</span>,r,k);</span><br><span class="line">	<span class="built_in">cn</span>(p)=<span class="built_in">cn</span>(<span class="built_in">l</span>(p))+<span class="built_in">cn</span>(<span class="built_in">r</span>(p));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> q,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)<span class="keyword">return</span> q;</span><br><span class="line">	<span class="keyword">if</span>(!q)<span class="keyword">return</span> p;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">cn</span>(p)+=<span class="built_in">cn</span>(q);</span><br><span class="line">		<span class="built_in">cn</span>(q)=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">return</span> p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">l</span>(p)=<span class="built_in">merge</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q),l,mid);</span><br><span class="line">	<span class="built_in">r</span>(p)=<span class="built_in">merge</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q),mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="built_in">cn</span>(p)=<span class="built_in">cn</span>(<span class="built_in">l</span>(p))+<span class="built_in">cn</span>(<span class="built_in">r</span>(p));</span><br><span class="line">	<span class="built_in">cn</span>(q)=<span class="built_in">cn</span>(<span class="built_in">l</span>(q))+<span class="built_in">cn</span>(<span class="built_in">r</span>(q));</span><br><span class="line">	<span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">split0</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> &amp;q,<span class="type">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)<span class="keyword">return</span> ;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(p)==k)<span class="keyword">return</span> ;</span><br><span class="line">	q=++tot;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=<span class="built_in">cn</span>(<span class="built_in">l</span>(p)))<span class="built_in">swap</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q)),<span class="built_in">split0</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q),k);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">split0</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q),k-<span class="built_in">cn</span>(<span class="built_in">l</span>(p)));</span><br><span class="line">	<span class="built_in">cn</span>(q)=<span class="built_in">cn</span>(p)-k;</span><br><span class="line">	<span class="built_in">cn</span>(p)=k;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">split1</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> &amp;q,<span class="type">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)<span class="keyword">return</span> ;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(p)==k)<span class="keyword">return</span> ;</span><br><span class="line">	q=++tot;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=<span class="built_in">cn</span>(<span class="built_in">r</span>(p)))<span class="built_in">swap</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q)),<span class="built_in">split1</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q),k);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">split1</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q),k-<span class="built_in">cn</span>(<span class="built_in">r</span>(p)));</span><br><span class="line">	<span class="built_in">cn</span>(q)=<span class="built_in">cn</span>(p)-k;</span><br><span class="line">	<span class="built_in">cn</span>(p)=k;</span><br><span class="line">&#125;</span><br><span class="line">set&lt;<span class="type">int</span>&gt; st;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> IT set<span class="string">&lt;int&gt;</span>::iterator</span></span><br><span class="line"><span class="function">IT <span class="title">sp</span><span class="params">(<span class="type">int</span> p)</span></span>&#123;</span><br><span class="line">	IT it=st.<span class="built_in">lower_bound</span>(p);</span><br><span class="line">	<span class="keyword">if</span>(*it==p)<span class="keyword">return</span> it;</span><br><span class="line">	it--;</span><br><span class="line">	op[p]=op[*it];</span><br><span class="line">	<span class="keyword">if</span>(op[*it])<span class="built_in">split1</span>(rt[*it],rt[p],p-*it);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">split0</span>(rt[*it],rt[p],p-*it);</span><br><span class="line">	<span class="keyword">return</span> st.<span class="built_in">insert</span>(p).first;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">print0</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="built_in">cn</span>(p);i++) <span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,l+<span class="string">&#x27;a&#x27;</span><span class="number">-1</span>);</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(<span class="built_in">l</span>(p)))<span class="built_in">print0</span>(<span class="built_in">l</span>(p),l,mid);</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(<span class="built_in">r</span>(p)))<span class="built_in">print0</span>(<span class="built_in">r</span>(p),mid+<span class="number">1</span>,r);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">print1</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="built_in">cn</span>(p);i++) <span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,l+<span class="string">&#x27;a&#x27;</span><span class="number">-1</span>);</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(<span class="built_in">r</span>(p)))<span class="built_in">print1</span>(<span class="built_in">r</span>(p),mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(<span class="built_in">l</span>(p)))<span class="built_in">print1</span>(<span class="built_in">l</span>(p),l,mid);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	n=<span class="built_in">read</span>(),m=<span class="built_in">read</span>();</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,s+<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)<span class="built_in">add</span>(rt[i],<span class="number">1</span>,<span class="number">26</span>,s[i]-<span class="string">&#x27;a&#x27;</span>+<span class="number">1</span>),st.<span class="built_in">insert</span>(i);</span><br><span class="line">	<span class="keyword">while</span>(m--)&#123;</span><br><span class="line">		<span class="type">int</span> l=<span class="built_in">read</span>(),r=<span class="built_in">read</span>(),tmp=<span class="built_in">read</span>()^<span class="number">1</span>;</span><br><span class="line">		IT li=<span class="built_in">sp</span>(l),ri=<span class="built_in">sp</span>(r+<span class="number">1</span>);</span><br><span class="line">		li++;</span><br><span class="line">		<span class="keyword">for</span>(IT i=li;i!=ri;i++) <span class="built_in">merge</span>(rt[l],rt[*i],<span class="number">1</span>,<span class="number">26</span>);</span><br><span class="line">		st.<span class="built_in">erase</span>(li,ri);op[l]=tmp;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> it:st)&#123;</span><br><span class="line">		<span class="keyword">if</span>(op[it])<span class="built_in">print1</span>(rt[it],<span class="number">1</span>,<span class="number">26</span>);</span><br><span class="line">		<span class="keyword">else</span> <span class="built_in">print0</span>(rt[it],<span class="number">1</span>,<span class="number">26</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p>先把算法流程打出来方便讲。</p>
+<p>我们设一个数组 $cnt[]$ 用来记录颜色每个种类的数量。</p>
+<ol>
+<li>先树链剖分找出每个节点的重儿子；</li>
+<li>对于每个节点 $u$ 优先遍历其轻儿子，并计算出轻儿子的答案，但<em>不保留遍历轻儿子对 $cnt[]$ 数组的影响</em>；</li>
+<li>接着遍历 $u$ 的重儿子，<em>保留遍历重儿子对 $cnt[]$ 数组的影响</em>；</li>
+<li>再遍历一遍 $u$ 的轻儿子，<em>保留再次遍历轻儿子对 $cnt[]$ 数组的影响</em>，得到 $u$ 的答案。</li>
+</ol>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>该算法的重点就是先后两次遍历轻儿子。</p>
+<p>那么为什么不将两次遍历合并呢？</p>
+<p>考虑如果两次合并，那么轻儿子对 $cnt[]$ 数组的影响就会使重儿子遍历前后的数据难以储存，而如果两次分开操作则遍历重儿子时数组是空的，方便遍历时储存。</p>
+<p>那么为什么不先遍历重儿子呢？显然这样是不划算的（所以才叫启发式合并啊）。</p>
+<p>那合并后先遍历重儿子呢？ 显然这也是不划算的，因为轻儿子还没有遍历和处理过，带着重儿子的一堆数据显然是跑不快的。</p>
+<h1 id="码"><a href="#码" class="headerlink" title="码"></a>码</h1><p>懒得打。</p>
+]]></content>
       <categories>
         <category>Dumby的OI生涯</category>
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>线段树</tag>
-        <tag>数据结构</tag>
-        <tag>排序</tag>
-        <tag>字符串</tag>
+        <tag>启发式</tag>
+        <tag>dsu on tree</tag>
       </tags>
   </entry>
   <entry>
@@ -186,54 +198,6 @@
       <tags>
         <tag>C++</tag>
         <tag>垃圾桶</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dsu on Tree （树上启发式合并）不是很详的解</title>
-    <url>/2022/07/09/Dsu-on-Tree-%E4%B8%8D%E6%98%AF%E5%BE%88%E8%AF%A6%E7%9A%84%E8%A7%A3/</url>
-    <content><![CDATA[<h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>先来个例题耍耍。</p>
-<blockquote>
-<p>给出一棵 $n$ 个节点以 $1$ 为根的树，节点 $u$ 的颜色为 $c_{u}$，现在对于每个结点 $u$ 询问以 $u$ 为根子树里一共出现了多少种不同的颜色。<br>$n \le 2 \times 10^{5}$。<br>（没错就是 OIWiki 上的例题。。。）</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p>先把算法流程打出来方便讲。</p>
-<p>我们设一个数组 $cnt[]$ 用来记录颜色每个种类的数量。</p>
-<ol>
-<li>先树链剖分找出每个节点的重儿子；</li>
-<li>对于每个节点 $u$ 优先遍历其轻儿子，并计算出轻儿子的答案，但<em>不保留遍历轻儿子对 $cnt[]$ 数组的影响</em>；</li>
-<li>接着遍历 $u$ 的重儿子，<em>保留遍历重儿子对 $cnt[]$ 数组的影响</em>；</li>
-<li>再遍历一遍 $u$ 的轻儿子，<em>保留再次遍历轻儿子对 $cnt[]$ 数组的影响</em>，得到 $u$ 的答案。</li>
-</ol>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>该算法的重点就是先后两次遍历轻儿子。</p>
-<p>那么为什么不将两次遍历合并呢？</p>
-<p>考虑如果两次合并，那么轻儿子对 $cnt[]$ 数组的影响就会使重儿子遍历前后的数据难以储存，而如果两次分开操作则遍历重儿子时数组是空的，方便遍历时储存。</p>
-<p>那么为什么不先遍历重儿子呢？显然这样是不划算的（所以才叫启发式合并啊）。</p>
-<p>那合并后先遍历重儿子呢？ 显然这也是不划算的，因为轻儿子还没有遍历和处理过，带着重儿子的一堆数据显然是跑不快的。</p>
-<h1 id="码"><a href="#码" class="headerlink" title="码"></a>码</h1><p>懒得打。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>启发式</tag>
-        <tag>dsu on tree</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git恢复误删文件</title>
-    <url>/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<p>放这篇文章给自己看，怕自己又脑瘫整出些逆天操作，因此在这留个后路。</p>
-<span id="more"></span>
-<p>首先运行 <code>$git log</code>，找到上次的commit的ID，然后运行 <code>$git reset --hard &lt;ID&gt;</code></p>
-<p>然后应该就没问题了。</p>
-<p>哦对了，<code>$git log</code> 按 q 键退出。</p>
-]]></content>
-      <categories>
-        <category>Dumby的折腾笔记</category>
-      </categories>
-      <tags>
-        <tag>站务</tag>
       </tags>
   </entry>
   <entry>
@@ -330,6 +294,25 @@
       </tags>
   </entry>
   <entry>
+    <title>CF558E A Simple Task</title>
+    <url>/2022/07/12/CF558E-A-Simple-Task/</url>
+    <content><![CDATA[<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>开一个 set 维护当前有哪些点是区间的左区间。</p>
+<p>对于每个有序区间，开一个权值线段树维护，并记录一下该区间是升序还是降序。</p>
+<p>每次排序时就将维护这些区间的线段树分裂再合并，最后查一下每棵树再输出就好了。</p>
+<span id="more"></span>
+<h2 id="码"><a href="#码" class="headerlink" title="码"></a>码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="comment">//#define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10000002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">10000001</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="type">char</span> s[N];</span><br><span class="line"><span class="type">bool</span> op[N];</span><br><span class="line"><span class="type">int</span> tot,rt[N];</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> l,r,cn;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> l(x) tr[x].l</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> r(x) tr[x].r</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> cn(x) tr[x].cn</span></span><br><span class="line">&#125;tr[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span>&amp; p,<span class="type">int</span> l,<span class="type">int</span> r,<span class="type">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)p=++tot;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">cn</span>(p)++;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=mid)<span class="built_in">add</span>(<span class="built_in">l</span>(p),l,mid,k);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">add</span>(<span class="built_in">r</span>(p),mid+<span class="number">1</span>,r,k);</span><br><span class="line">	<span class="built_in">cn</span>(p)=<span class="built_in">cn</span>(<span class="built_in">l</span>(p))+<span class="built_in">cn</span>(<span class="built_in">r</span>(p));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> q,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)<span class="keyword">return</span> q;</span><br><span class="line">	<span class="keyword">if</span>(!q)<span class="keyword">return</span> p;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">cn</span>(p)+=<span class="built_in">cn</span>(q);</span><br><span class="line">		<span class="built_in">cn</span>(q)=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">return</span> p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">l</span>(p)=<span class="built_in">merge</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q),l,mid);</span><br><span class="line">	<span class="built_in">r</span>(p)=<span class="built_in">merge</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q),mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="built_in">cn</span>(p)=<span class="built_in">cn</span>(<span class="built_in">l</span>(p))+<span class="built_in">cn</span>(<span class="built_in">r</span>(p));</span><br><span class="line">	<span class="built_in">cn</span>(q)=<span class="built_in">cn</span>(<span class="built_in">l</span>(q))+<span class="built_in">cn</span>(<span class="built_in">r</span>(q));</span><br><span class="line">	<span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">split0</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> &amp;q,<span class="type">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)<span class="keyword">return</span> ;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(p)==k)<span class="keyword">return</span> ;</span><br><span class="line">	q=++tot;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=<span class="built_in">cn</span>(<span class="built_in">l</span>(p)))<span class="built_in">swap</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q)),<span class="built_in">split0</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q),k);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">split0</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q),k-<span class="built_in">cn</span>(<span class="built_in">l</span>(p)));</span><br><span class="line">	<span class="built_in">cn</span>(q)=<span class="built_in">cn</span>(p)-k;</span><br><span class="line">	<span class="built_in">cn</span>(p)=k;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">split1</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> &amp;q,<span class="type">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!p)<span class="keyword">return</span> ;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(p)==k)<span class="keyword">return</span> ;</span><br><span class="line">	q=++tot;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=<span class="built_in">cn</span>(<span class="built_in">r</span>(p)))<span class="built_in">swap</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q)),<span class="built_in">split1</span>(<span class="built_in">r</span>(p),<span class="built_in">r</span>(q),k);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">split1</span>(<span class="built_in">l</span>(p),<span class="built_in">l</span>(q),k-<span class="built_in">cn</span>(<span class="built_in">r</span>(p)));</span><br><span class="line">	<span class="built_in">cn</span>(q)=<span class="built_in">cn</span>(p)-k;</span><br><span class="line">	<span class="built_in">cn</span>(p)=k;</span><br><span class="line">&#125;</span><br><span class="line">set&lt;<span class="type">int</span>&gt; st;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> IT set<span class="string">&lt;int&gt;</span>::iterator</span></span><br><span class="line"><span class="function">IT <span class="title">sp</span><span class="params">(<span class="type">int</span> p)</span></span>&#123;</span><br><span class="line">	IT it=st.<span class="built_in">lower_bound</span>(p);</span><br><span class="line">	<span class="keyword">if</span>(*it==p)<span class="keyword">return</span> it;</span><br><span class="line">	it--;</span><br><span class="line">	op[p]=op[*it];</span><br><span class="line">	<span class="keyword">if</span>(op[*it])<span class="built_in">split1</span>(rt[*it],rt[p],p-*it);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">split0</span>(rt[*it],rt[p],p-*it);</span><br><span class="line">	<span class="keyword">return</span> st.<span class="built_in">insert</span>(p).first;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">print0</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="built_in">cn</span>(p);i++) <span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,l+<span class="string">&#x27;a&#x27;</span><span class="number">-1</span>);</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(<span class="built_in">l</span>(p)))<span class="built_in">print0</span>(<span class="built_in">l</span>(p),l,mid);</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(<span class="built_in">r</span>(p)))<span class="built_in">print0</span>(<span class="built_in">r</span>(p),mid+<span class="number">1</span>,r);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">print1</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="built_in">cn</span>(p);i++) <span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,l+<span class="string">&#x27;a&#x27;</span><span class="number">-1</span>);</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(<span class="built_in">r</span>(p)))<span class="built_in">print1</span>(<span class="built_in">r</span>(p),mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">cn</span>(<span class="built_in">l</span>(p)))<span class="built_in">print1</span>(<span class="built_in">l</span>(p),l,mid);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	n=<span class="built_in">read</span>(),m=<span class="built_in">read</span>();</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,s+<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)<span class="built_in">add</span>(rt[i],<span class="number">1</span>,<span class="number">26</span>,s[i]-<span class="string">&#x27;a&#x27;</span>+<span class="number">1</span>),st.<span class="built_in">insert</span>(i);</span><br><span class="line">	<span class="keyword">while</span>(m--)&#123;</span><br><span class="line">		<span class="type">int</span> l=<span class="built_in">read</span>(),r=<span class="built_in">read</span>(),tmp=<span class="built_in">read</span>()^<span class="number">1</span>;</span><br><span class="line">		IT li=<span class="built_in">sp</span>(l),ri=<span class="built_in">sp</span>(r+<span class="number">1</span>);</span><br><span class="line">		li++;</span><br><span class="line">		<span class="keyword">for</span>(IT i=li;i!=ri;i++) <span class="built_in">merge</span>(rt[l],rt[*i],<span class="number">1</span>,<span class="number">26</span>);</span><br><span class="line">		st.<span class="built_in">erase</span>(li,ri);op[l]=tmp;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> it:st)&#123;</span><br><span class="line">		<span class="keyword">if</span>(op[it])<span class="built_in">print1</span>(rt[it],<span class="number">1</span>,<span class="number">26</span>);</span><br><span class="line">		<span class="keyword">else</span> <span class="built_in">print0</span>(rt[it],<span class="number">1</span>,<span class="number">26</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>线段树</tag>
+        <tag>数据结构</tag>
+        <tag>排序</tag>
+        <tag>字符串</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Luogu P5136 sequence 题解报告</title>
     <url>/2021/08/27/Luogu-P5136-sequence-%E9%A2%98%E8%A7%A3%E6%8A%A5%E5%91%8A/</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><del>试</del>求出：</p>
@@ -371,23 +354,6 @@
         <tag>C++</tag>
         <tag>矩阵乘法</tag>
         <tag>数论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NOIP模拟赛T2 片段划分</title>
-    <url>/2022/07/05/NOIP%E6%A8%A1%E6%8B%9F%E8%B5%9BT2-%E7%89%87%E6%AE%B5%E5%88%92%E5%88%86/</url>
-    <content><![CDATA[<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>记录一下每个数前面第一个比它大的和比它小的数的位置，然后从后往前跳。</p>
-<p>先把比它大的找到，然后让比它小的在范围内向前跳，跳得越前越好。</p>
-<p>每次跳完答案加一。</p>
-<span id="more"></span>
-<h2 id="嗲吗"><a href="#嗲吗" class="headerlink" title="嗲吗"></a>嗲吗</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">// #define ll long long</span></span><br><span class="line"><span class="comment">// #define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">300002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">998244353</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"><span class="type">int</span> cnt1,cnt2;</span><br><span class="line"><span class="type">int</span> st1[N],st2[N];</span><br><span class="line"><span class="type">int</span> l[N],r[N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	n=<span class="built_in">read</span>();</span><br><span class="line">	st2[<span class="number">0</span>]=<span class="number">-1</span>;st1[<span class="number">0</span>]=<span class="number">-2</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		a[i]=<span class="built_in">read</span>();</span><br><span class="line">		<span class="keyword">while</span>(cnt1&amp;&amp;a[st1[cnt1]]&gt;a[i])cnt1--;</span><br><span class="line">		<span class="keyword">while</span>(cnt2&amp;&amp;a[st2[cnt2]]&lt;=a[i])cnt2--;</span><br><span class="line">		l[i]=st1[cnt1];</span><br><span class="line">		r[i]=st2[cnt2];</span><br><span class="line">		st1[++cnt1]=st2[++cnt2]=i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> ll,rr=n;</span><br><span class="line">	<span class="keyword">while</span>(rr&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		ll=rr;</span><br><span class="line">		<span class="keyword">while</span>(r[rr]&lt;=l[ll])ll=l[ll];</span><br><span class="line">		ans++;</span><br><span class="line">		rr=ll<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>数据结构</tag>
-        <tag>栈</tag>
       </tags>
   </entry>
   <entry>
@@ -435,6 +401,116 @@
       </tags>
   </entry>
   <entry>
+    <title>Git恢复误删文件</title>
+    <url>/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<p>放这篇文章给自己看，怕自己又脑瘫整出些逆天操作，因此在这留个后路。</p>
+<span id="more"></span>
+<p>首先运行 <code>$git log</code>，找到上次的commit的ID，然后运行 <code>$git reset --hard &lt;ID&gt;</code></p>
+<p>然后应该就没问题了。</p>
+<p>哦对了，<code>$git log</code> 按 q 键退出。</p>
+]]></content>
+      <categories>
+        <category>Dumby的折腾笔记</category>
+      </categories>
+      <tags>
+        <tag>站务</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Roguelike学习笔记一：LibTCod</title>
+    <url>/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/</url>
+    <content><![CDATA[<p>折腾了好久好久，怎么都跑不起来libtcod，真tm太曹丹了。。</p>
+<p>直到我看到这个叫做<a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">TCod Cpp Engine</a>的项目（最近官方出了个<a href="https://github.com/HexDecimal/libtcod-vcpkg-template">模板</a>，配置过程与下面类似，两者都可使用），最后跟着介绍的步骤终于跑起来了。</p>
+<p>接下来开始学习LibTCod。</p>
+<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%88%90%E5%8A%9F%E8%BF%90%E8%A1%8C.png" class="" title="终于跑起来啦！！！">
+<span id="more"></span>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>先要有一些基本工具：VsCode、Cmake，对了，最好再载一下VS（这里用VS2022），因为后面vcpkg使用时要求有VS实例。</p>
+<p>然后把<a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">这个库</a><strong>克隆</strong>到本地（注意是克隆不是直接复制，用git克隆后面可以免去很多乱七八糟的步骤）。</p>
+<p>这里我将库直接克隆到D盘下。（项目主目录为 <code>D:\tcod-cpp-engine-2022</code>）</p>
+<p>开始初始化<code>LibTCod</code>和<code>Vcpkg</code>两个子模块。<br>子模块是什么具体看<a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">官方文档</a>，这里不多说。<br>我们注意到克隆下来的文件夹中有两个空的文件夹：<code>libtcod</code>和<code>vcpkg</code>，这两个就是两个子模块的文件夹。<br>接下来在项目的文件夹下（<code>D:\tcod-cpp-engine-2022</code>）运行命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git submodule update --init --recursive</span><br></pre></td></tr></table></figure>
+<p>然后就完成了子模块的初始化。<br>这里如果有什么报错之类的通常都是网络不行，多试几次就行了。<br>注意子模块一定要正确初始化，刚那两个文件夹有一个空的都会导致编译失败。</p>
+<p>接下来打开VsCode，点击打开文件夹，打开项目的主目录（<code>D:\tcod-cpp-engine-2022</code>）。</p>
+<p>如果你没有下载扩展的话会让你载一些，把VsCode推荐的扩展全都载下来就好了，其中最重要的是这几个：C/C++相关扩展、CMake工具。</p>
+<p>VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提示的话可以到底部找到Kit选项打开并选择。</p>
+<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/Kit.png" class="" title="选择Kit">
+<p>最后按 <code>F5</code>，VsCode会自动进行编译。</p>
+<p>这样应该就行了，他会跳出一个该项目原作者的一个示例，能运行就说明配置成功。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">@HexDecimal 大佬的项目 Libtcod C++ engine 2022</a></li>
+<li><a href="https://github.com/HexDecimal/libtcod-vcpkg-template">LibTCod 官方模板</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Dumby的RoguelikeDev笔记</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>roguelike</tag>
+        <tag>libtcod</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Serum合成器Filter模块自习</title>
+    <url>/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/</url>
+    <content><![CDATA[<p>本帖用于自习Serum的滤波器模块。</p>
+<span id="more"></span>
+<p>滤波器顾名思义就是用来滤波的，简单地理解下可以看成这样一幅图：</p>
+<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E6%BB%A4%E6%B3%A2%E5%99%A8%E5%8A%9F%E8%83%BD%E7%9A%84%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3.png" class="" title="滤波器功能的简单理解">
+<p>上方的波形的横轴参数相当是频率，纵轴参数相当于是相应频率的声音的通过度，越高通过的越多，而越低则滤掉的越多。上图中的右边部分很低，说明滤波器将高频段的声音过滤掉了，所以经过这个滤波器的声音会感觉闷闷的。</p>
+<p>最基本的滤波器应该是这三种：高通、低通、带通。</p>
+<h3 id="低通滤波器（Low）"><a href="#低通滤波器（Low）" class="headerlink" title="低通滤波器（Low）"></a>低通滤波器（Low）</h3><p>意思就是只通过低频率，将高频率的声音过滤掉。</p>
+<p>上面的那张图就是低通的滤波器。</p>
+<h3 id="高通滤波器（High）"><a href="#高通滤波器（High）" class="headerlink" title="高通滤波器（High）"></a>高通滤波器（High）</h3><p>同理，如图：</p>
+<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E9%AB%98%E9%80%9A.png" class="" title="高通">
+<h3 id="带通滤波器（Band）"><a href="#带通滤波器（Band）" class="headerlink" title="带通滤波器（Band）"></a>带通滤波器（Band）</h3><p>只通过一段连续频率的滤波器叫带通滤波器，如图：</p>
+<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E5%B8%A6%E9%80%9A.png" class="" title="带通">
+<p>此外还有峰值增益（Peak）、陷波（Notch）等。</p>
+<p>接下来看下Serum自带的Filter：</p>
+<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/FILTER.png" class="" title="FILTER">
+<h2 id="ABNS"><a href="#ABNS" class="headerlink" title="ABNS"></a>ABNS</h2><p>那四个按钮表示 OSC A/B/Noice/Sub 是否进行滤波。</p>
+<h2 id="KeyTrack"><a href="#KeyTrack" class="headerlink" title="KeyTrack"></a>KeyTrack</h2><p>音符追踪。</p>
+<p>点亮以后滤波器的属性（Cutoff）会随输入音符的变化而变化，有时能让滤波效果更适应音符。</p>
+<h2 id="CUTOFF"><a href="#CUTOFF" class="headerlink" title="CUTOFF"></a>CUTOFF</h2><p>Cutoff：截止频率。</p>
+<p>用来修改允许通过的频段。</p>
+<h2 id="RES"><a href="#RES" class="headerlink" title="RES"></a>RES</h2><p>Resonance：谐振、共鸣。</p>
+<p>会把Cutoff周围的频段突出。</p>
+<h2 id="PAN"><a href="#PAN" class="headerlink" title="PAN"></a>PAN</h2><p>Pan（Stereo）：声相。</p>
+<h2 id="DRIVE"><a href="#DRIVE" class="headerlink" title="DRIVE"></a>DRIVE</h2><p>Drive：过载。</p>
+<p>使输入滤波器的增益加强，太强可能会失真。</p>
+<h2 id="FAT"><a href="#FAT" class="headerlink" title="FAT"></a>FAT</h2><p>这个按钮会随选用的滤波类型变化，有时显示“FAT”，有时“FREQ”（Frequency），有时直接“-”。</p>
+<h2 id="MIX"><a href="#MIX" class="headerlink" title="MIX"></a>MIX</h2><p>修改通过滤波器的声音的比例。</p>
+<p>点他一下会变成 LEVEL。</p>
+<h2 id="MENU"><a href="#MENU" class="headerlink" title="MENU"></a>MENU</h2><p>目录里默认有四大类：Normal（普通）、Multi（复合）、Flanges（法兰）、Misc（杂项，里面有很多有意思的滤波类型）。</p>
+<h2 id="波表"><a href="#波表" class="headerlink" title="波表"></a>波表</h2><p>点击滤波器的图案可以切换到Phases，即通过滤波器后的波形。</p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>这是个结尾。</p>
+]]></content>
+      <categories>
+        <category>Dumby的折腾笔记</category>
+      </categories>
+      <tags>
+        <tag>合成器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NOIP模拟赛T2 片段划分</title>
+    <url>/2022/07/05/NOIP%E6%A8%A1%E6%8B%9F%E8%B5%9BT2-%E7%89%87%E6%AE%B5%E5%88%92%E5%88%86/</url>
+    <content><![CDATA[<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>记录一下每个数前面第一个比它大的和比它小的数的位置，然后从后往前跳。</p>
+<p>先把比它大的找到，然后让比它小的在范围内向前跳，跳得越前越好。</p>
+<p>每次跳完答案加一。</p>
+<span id="more"></span>
+<h2 id="嗲吗"><a href="#嗲吗" class="headerlink" title="嗲吗"></a>嗲吗</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">// #define ll long long</span></span><br><span class="line"><span class="comment">// #define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">300002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">998244353</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"><span class="type">int</span> cnt1,cnt2;</span><br><span class="line"><span class="type">int</span> st1[N],st2[N];</span><br><span class="line"><span class="type">int</span> l[N],r[N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	n=<span class="built_in">read</span>();</span><br><span class="line">	st2[<span class="number">0</span>]=<span class="number">-1</span>;st1[<span class="number">0</span>]=<span class="number">-2</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		a[i]=<span class="built_in">read</span>();</span><br><span class="line">		<span class="keyword">while</span>(cnt1&amp;&amp;a[st1[cnt1]]&gt;a[i])cnt1--;</span><br><span class="line">		<span class="keyword">while</span>(cnt2&amp;&amp;a[st2[cnt2]]&lt;=a[i])cnt2--;</span><br><span class="line">		l[i]=st1[cnt1];</span><br><span class="line">		r[i]=st2[cnt2];</span><br><span class="line">		st1[++cnt1]=st2[++cnt2]=i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> ll,rr=n;</span><br><span class="line">	<span class="keyword">while</span>(rr&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		ll=rr;</span><br><span class="line">		<span class="keyword">while</span>(r[rr]&lt;=l[ll])ll=l[ll];</span><br><span class="line">		ans++;</span><br><span class="line">		rr=ll<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>数据结构</tag>
+        <tag>栈</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>POJ2274题解报告</title>
     <url>/2021/08/12/POJ2274%E9%A2%98%E8%A7%A3%E6%8A%A5%E5%91%8A/</url>
     <content><![CDATA[<p><a href="http://poj.org/problem?id=2274">题目链接</a></p>
@@ -478,41 +554,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Roguelike学习笔记一：LibTCod</title>
-    <url>/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/</url>
-    <content><![CDATA[<p>折腾了好久好久，怎么都跑不起来libtcod，真tm太曹丹了。。</p>
-<p>直到我看到这个叫做<a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">TCod Cpp Engine</a>的项目（最近官方出了个<a href="https://github.com/HexDecimal/libtcod-vcpkg-template">模板</a>，配置过程与下面类似，两者都可使用），最后跟着介绍的步骤终于跑起来了。</p>
-<p>接下来开始学习LibTCod。</p>
-<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%88%90%E5%8A%9F%E8%BF%90%E8%A1%8C.png" class="" title="终于跑起来啦！！！">
-<span id="more"></span>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>先要有一些基本工具：VsCode、Cmake，对了，最好再载一下VS（这里用VS2022），因为后面vcpkg使用时要求有VS实例。</p>
-<p>然后把<a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">这个库</a><strong>克隆</strong>到本地（注意是克隆不是直接复制，用git克隆后面可以免去很多乱七八糟的步骤）。</p>
-<p>这里我将库直接克隆到D盘下。（项目主目录为 <code>D:\tcod-cpp-engine-2022</code>）</p>
-<p>开始初始化<code>LibTCod</code>和<code>Vcpkg</code>两个子模块。<br>子模块是什么具体看<a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">官方文档</a>，这里不多说。<br>我们注意到克隆下来的文件夹中有两个空的文件夹：<code>libtcod</code>和<code>vcpkg</code>，这两个就是两个子模块的文件夹。<br>接下来在项目的文件夹下（<code>D:\tcod-cpp-engine-2022</code>）运行命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git submodule update --init --recursive</span><br></pre></td></tr></table></figure>
-<p>然后就完成了子模块的初始化。<br>这里如果有什么报错之类的通常都是网络不行，多试几次就行了。<br>注意子模块一定要正确初始化，刚那两个文件夹有一个空的都会导致编译失败。</p>
-<p>接下来打开VsCode，点击打开文件夹，打开项目的主目录（<code>D:\tcod-cpp-engine-2022</code>）。</p>
-<p>如果你没有下载扩展的话会让你载一些，把VsCode推荐的扩展全都载下来就好了，其中最重要的是这几个：C/C++相关扩展、CMake工具。</p>
-<p>VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提示的话可以到底部找到Kit选项打开并选择。</p>
-<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/Kit.png" class="" title="选择Kit">
-<p>最后按 <code>F5</code>，VsCode会自动进行编译。</p>
-<p>这样应该就行了，他会跳出一个该项目原作者的一个示例，能运行就说明配置成功。</p>
-<p>参考：</p>
-<ul>
-<li><a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">@HexDecimal 大佬的项目 Libtcod C++ engine 2022</a></li>
-<li><a href="https://github.com/HexDecimal/libtcod-vcpkg-template">LibTCod 官方模板</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Dumby的RoguelikeDev笔记</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>roguelike</tag>
-        <tag>libtcod</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SPOJ2916 GSS5-Can you answer these queries V</title>
     <url>/2022/07/09/SPOJ2916-GSS5-Can-you-answer-these-queries-V/</url>
     <content><![CDATA[<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>题目很坑，题中的子段是不能为空的。</p>
@@ -525,48 +566,6 @@
         <tag>C++</tag>
         <tag>线段树</tag>
         <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Serum合成器Filter模块自习</title>
-    <url>/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/</url>
-    <content><![CDATA[<p>本帖用于自习Serum的滤波器模块。</p>
-<span id="more"></span>
-<p>滤波器顾名思义就是用来滤波的，简单地理解下可以看成这样一幅图：</p>
-<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E6%BB%A4%E6%B3%A2%E5%99%A8%E5%8A%9F%E8%83%BD%E7%9A%84%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3.png" class="" title="滤波器功能的简单理解">
-<p>上方的波形的横轴参数相当是频率，纵轴参数相当于是相应频率的声音的通过度，越高通过的越多，而越低则滤掉的越多。上图中的右边部分很低，说明滤波器将高频段的声音过滤掉了，所以经过这个滤波器的声音会感觉闷闷的。</p>
-<p>最基本的滤波器应该是这三种：高通、低通、带通。</p>
-<h3 id="低通滤波器（Low）"><a href="#低通滤波器（Low）" class="headerlink" title="低通滤波器（Low）"></a>低通滤波器（Low）</h3><p>意思就是只通过低频率，将高频率的声音过滤掉。</p>
-<p>上面的那张图就是低通的滤波器。</p>
-<h3 id="高通滤波器（High）"><a href="#高通滤波器（High）" class="headerlink" title="高通滤波器（High）"></a>高通滤波器（High）</h3><p>同理，如图：</p>
-<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E9%AB%98%E9%80%9A.png" class="" title="高通">
-<h3 id="带通滤波器（Band）"><a href="#带通滤波器（Band）" class="headerlink" title="带通滤波器（Band）"></a>带通滤波器（Band）</h3><p>只通过一段连续频率的滤波器叫带通滤波器，如图：</p>
-<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E5%B8%A6%E9%80%9A.png" class="" title="带通">
-<p>此外还有峰值增益（Peak）、陷波（Notch）等。</p>
-<p>接下来看下Serum自带的Filter：</p>
-<img src="/2023/03/04/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/FILTER.png" class="" title="FILTER">
-<h2 id="ABNS"><a href="#ABNS" class="headerlink" title="ABNS"></a>ABNS</h2><p>那四个按钮表示 OSC A/B/Noice/Sub 是否进行滤波。</p>
-<h2 id="KeyTrack"><a href="#KeyTrack" class="headerlink" title="KeyTrack"></a>KeyTrack</h2><p>音符追踪。</p>
-<p>点亮以后滤波器的属性（Cutoff）会随输入音符的变化而变化，有时能让滤波效果更适应音符。</p>
-<h2 id="CUTOFF"><a href="#CUTOFF" class="headerlink" title="CUTOFF"></a>CUTOFF</h2><p>Cutoff：截止频率。</p>
-<p>用来修改允许通过的频段。</p>
-<h2 id="RES"><a href="#RES" class="headerlink" title="RES"></a>RES</h2><p>Resonance：谐振、共鸣。</p>
-<p>会把Cutoff周围的频段突出。</p>
-<h2 id="PAN"><a href="#PAN" class="headerlink" title="PAN"></a>PAN</h2><p>Pan（Stereo）：声相。</p>
-<h2 id="DRIVE"><a href="#DRIVE" class="headerlink" title="DRIVE"></a>DRIVE</h2><p>Drive：过载。</p>
-<p>使输入滤波器的增益加强，太强可能会失真。</p>
-<h2 id="FAT"><a href="#FAT" class="headerlink" title="FAT"></a>FAT</h2><p>这个按钮会随选用的滤波类型变化，有时显示“FAT”，有时“FREQ”（Frequency），有时直接“-”。</p>
-<h2 id="MIX"><a href="#MIX" class="headerlink" title="MIX"></a>MIX</h2><p>修改通过滤波器的声音的比例。</p>
-<p>点他一下会变成 LEVEL。</p>
-<h2 id="MENU"><a href="#MENU" class="headerlink" title="MENU"></a>MENU</h2><p>目录里默认有四大类：Normal（普通）、Multi（复合）、Flanges（法兰）、Misc（杂项，里面有很多有意思的滤波类型）。</p>
-<h2 id="波表"><a href="#波表" class="headerlink" title="波表"></a>波表</h2><p>点击滤波器的图案可以切换到Phases，即通过滤波器后的波形。</p>
-<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>这是个结尾。</p>
-]]></content>
-      <categories>
-        <category>Dumby的折腾笔记</category>
-      </categories>
-      <tags>
-        <tag>合成器</tag>
       </tags>
   </entry>
   <entry>
@@ -720,6 +719,55 @@
       </tags>
   </entry>
   <entry>
+    <title>Spider-Man: Across the Spider-Verse 观后</title>
+    <url>/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/</url>
+    <content><![CDATA[<p>最近二刷完《蜘蛛侠：纵横宇宙》，顺手写点有趣的东西吧。</p>
+<span id="more"></span>
+<p>先放张剧照镇下帖。</p>
+<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/Miles&Gwen.jpg" class="" title="镇帖图">
+<p>以下也有许多是口嗨，不喜勿喷。</p>
+<h2 id="Spotter-man"><a href="#Spotter-man" class="headerlink" title="Spotter-man"></a>Spotter-man</h2><p>这名字我瞎起的。。</p>
+<p>主要是看到这个东西：</p>
+<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/Spotter-man.png" class="" title="Spotter-man">
+<p>我不知道官方有没有关于这个的介绍，反正挺有意思的，看着像 Spot 和 Spider-man 的结合体，就瞎起了个名字。</p>
+<h2 id="有点像："><a href="#有点像：" class="headerlink" title="有点像："></a>有点像：</h2><h3 id="瑞克与莫蒂"><a href="#瑞克与莫蒂" class="headerlink" title="瑞克与莫蒂"></a>瑞克与莫蒂</h3><p>第一遍看的时候就觉得这两东西挺像的了：</p>
+<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/Lobby.jpg" class="" title="2099_Lobby">
+<p>和</p>
+<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/%E7%91%9E%E5%9F%8E.png" class="" title="瑞城">
+<p>（不过只是有些设定挺像的，其他的。。。毕竟后者那一集是额。。dddd）</p>
+<h3 id="星球大战"><a href="#星球大战" class="headerlink" title="星球大战"></a>星球大战</h3><img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/ReturnOfTheJedi.jpg" class="" title="Return of the Jedi">
+<p>《蜘蛛侠：平行宇宙》这两部情节设置个人感觉和《星球大战》（4-6）很有相似之处。我随便说说：</p>
+<p>两系列电影的第一部中，主角（Miles和Luke）在开始都是处于懵懂状态，一者是有点叛逆的高材生，一者是向往自由的农场少年（随便概括一下，可能不大准确）。</p>
+<p>电影不久出现第一处转折，一个是 Miles 被 42 号蜘蛛咬了一口，另一个是 Luke 遇上 R2-D2 和 C-3PO，这个转折将主角引向一个重要人物，Miles 遇上的是 Peter，Luke 则遇上了 Obi-Wan。</p>
+<p>接下来出现第二处转折，Miles 目睹了 Peter 之死，Luke 则是被帝国抄家，Owen 夫妇双亡。</p>
+<p>第二个转折之后主角遇上主角团，带着主角团打团战（May 被抄家和 Luke 拯救 Leia），打团战的时候出现第三个转折：Miles 的叔叔 Aaron 中弹挂了、Luke 的导师 Obi-Wan 成为英灵。</p>
+<p>两部电影都先后在这两次转折中出现与主角自己有深层联系的反派：Miles 的叔叔 Aaron 是徘徊者，Luke 的爹爹 Anakin 是 Vader。</p>
+<p>第三个转折之后来一段主角的成长，最后对局 Boss 然后摧毁电影重要地点（对撞机和死星）（不过 Luke 主要是炸死星而不是和 Vader 的对局），对局 Boss 的时候都来个场外精神援助（Miles 他爹和 Obi-Wan 的英灵）。</p>
+<p>然后第一部引来一个比较美满的结局。</p>
+<p>第一部可以说相似性相当高，第二部也有很多相似之处。</p>
+<p>比如主角在对局反派（Miguel 在这部里姑且算是个广义上的反派吧）时了解到自己的身世：Miles 是个错误的产物，Luke 是 Vader 的亲儿子。同时还发现 Gwen 和 Peter 以及 Obi-Wan 和 Yoda 早就知道真相。</p>
+<p>再比如两部作品的结尾，主角团都被打散，一个是 Miles 落入 Miles 之手，一个是 Han 被 Boba 拐走。第二部的故事都在极紧张之后的短暂缓和中落下帷幕，一者是大大的 TO BE CONTINUE，另一者是千年隼的离去，给人留下悬念、不安、期待和微小的希望。</p>
+<p>两系列电影的铺垫与伏笔也都做的超级好。</p>
+<p>为什么 Miles 希望加入组织时 Gwen 如此紧张？为什么 Owen 始终不让 Luke 与 Obi-Wan 接触？</p>
+<p>为什么 Miles 第一次与 Peter 产生感应时他的颜色从紫绿变成红蓝？为什么在洞穴中被击落 Vader 头盔中是 Luke 的脸？</p>
+<p>这样的细节超级多，不多讲了。</p>
+<p>整体上说的话，其实《黑客帝国》的情节也是这种布局，Neo 的成长啦，第一部结局的<em>相对</em>圆满啦，第二部设下的悬念和 TO BE CONTINUE 啦。</p>
+<p>不过毕竟风格不同，相对星战与蜘蛛侠没有那么相似。</p>
+<h2 id="我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10-5）"><a href="#我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10-5）" class="headerlink" title="我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）"></a>我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）</h2><p>应该是 Into the Spider-Verse 之后看过的最好的一部动画电影了（这系列无敌了）。</p>
+<p>Daniel的配乐做的也是真厉害，自己认为比上一部还要精彩，特别是最后徘徊者 Miles 出现的那段（Across the Spider-Verse(Start a Band)），在电影院看时感觉超级棒。</p>
+<p>画面就不说了，看过都知道。</p>
+<p>（有机会下次去三刷。。）</p>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>影视剧</tag>
+        <tag>蜘蛛侠</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>UVA10288 优惠券 Coupons</title>
     <url>/2022/07/18/UVA10288-%E4%BC%98%E6%83%A0%E5%88%B8-Coupons/</url>
     <content><![CDATA[<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>简化题意如下：</p>
@@ -777,81 +825,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Spider-Man: Across the Spider-Verse 观后</title>
-    <url>/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/</url>
-    <content><![CDATA[<p>最近二刷完《蜘蛛侠：纵横宇宙》，顺手写点有趣的东西吧。</p>
-<span id="more"></span>
-<p>先放张剧照镇下帖。</p>
-<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/Miles&Gwen.jpg" class="" title="镇帖图">
-<p>以下也有许多是口嗨，不喜勿喷。</p>
-<h2 id="Spotter-man"><a href="#Spotter-man" class="headerlink" title="Spotter-man"></a>Spotter-man</h2><p>这名字我瞎起的。。</p>
-<p>主要是看到这个东西：</p>
-<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/Spotter-man.png" class="" title="Spotter-man">
-<p>我不知道官方有没有关于这个的介绍，反正挺有意思的，看着像 Spot 和 Spider-man 的结合体，就瞎起了个名字。</p>
-<h2 id="有点像："><a href="#有点像：" class="headerlink" title="有点像："></a>有点像：</h2><h3 id="瑞克与莫蒂"><a href="#瑞克与莫蒂" class="headerlink" title="瑞克与莫蒂"></a>瑞克与莫蒂</h3><p>第一遍看的时候就觉得这两东西挺像的了：</p>
-<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/Lobby.jpg" class="" title="2099_Lobby">
-<p>和</p>
-<img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/%E7%91%9E%E5%9F%8E.png" class="" title="瑞城">
-<p>（不过只是有些设定挺像的，其他的。。。毕竟后者那一集是额。。dddd）</p>
-<h3 id="星球大战"><a href="#星球大战" class="headerlink" title="星球大战"></a>星球大战</h3><img src="/2023/06/17/Spider-Man-Across-the-Spider-Verse-%E8%A7%82%E5%90%8E/ReturnOfTheJedi.jpg" class="" title="Return of the Jedi">
-<p>《蜘蛛侠：平行宇宙》这两部情节设置个人感觉和《星球大战》（4-6）很有相似之处。我随便说说：</p>
-<p>两系列电影的第一部中，主角（Miles和Luke）在开始都是处于懵懂状态，一者是有点叛逆的高材生，一者是向往自由的农场少年（随便概括一下，可能不大准确）。</p>
-<p>电影不久出现第一处转折，一个是 Miles 被 42 号蜘蛛咬了一口，另一个是 Luke 遇上 R2-D2 和 C-3PO，这个转折将主角引向一个重要人物，Miles 遇上的是 Peter，Luke 则遇上了 Obi-Wan。</p>
-<p>接下来出现第二处转折，Miles 目睹了 Peter 之死，Luke 则是被帝国抄家，Owen 夫妇双亡。</p>
-<p>第二个转折之后主角遇上主角团，带着主角团打团战（May 被抄家和 Luke 拯救 Leia），打团战的时候出现第三个转折：Miles 的叔叔 Aaron 中弹挂了、Luke 的导师 Obi-Wan 成为英灵。</p>
-<p>两部电影都先后在这两次转折中出现与主角自己有深层联系的反派：Miles 的叔叔 Aaron 是徘徊者，Luke 的爹爹 Anakin 是 Vader。</p>
-<p>第三个转折之后来一段主角的成长，最后对局 Boss 然后摧毁电影重要地点（对撞机和死星）（不过 Luke 主要是炸死星而不是和 Vader 的对局），对局 Boss 的时候都来个场外精神援助（Miles 他爹和 Obi-Wan 的英灵）。</p>
-<p>然后第一部引来一个比较美满的结局。</p>
-<p>第一部可以说相似性相当高，第二部也有很多相似之处。</p>
-<p>比如主角在对局反派（Miguel 在这部里姑且算是个广义上的反派吧）时了解到自己的身世：Miles 是个错误的产物，Luke 是 Vader 的亲儿子。同时还发现 Gwen 和 Peter 以及 Obi-Wan 和 Yoda 早就知道真相。</p>
-<p>再比如两部作品的结尾，主角团都被打散，一个是 Miles 落入 Miles 之手，一个是 Han 被 Boba 拐走。第二部的故事都在极紧张之后的短暂缓和中落下帷幕，一者是大大的 TO BE CONTINUE，另一者是千年隼的离去，给人留下悬念、不安、期待和微小的希望。</p>
-<p>两系列电影的铺垫与伏笔也都做的超级好。</p>
-<p>为什么 Miles 希望加入组织时 Gwen 如此紧张？为什么 Owen 始终不让 Luke 与 Obi-Wan 接触？</p>
-<p>为什么 Miles 第一次与 Peter 产生感应时他的颜色从紫绿变成红蓝？为什么在洞穴中被击落 Vader 头盔中是 Luke 的脸？</p>
-<p>这样的细节超级多，不多讲了。</p>
-<p>整体上说的话，其实《黑客帝国》的情节也是这种布局，Neo 的成长啦，第一部结局的<em>相对</em>圆满啦，第二部设下的悬念和 TO BE CONTINUE 啦。</p>
-<p>不过毕竟风格不同，相对星战与蜘蛛侠没有那么相似。</p>
-<h2 id="我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10-5）"><a href="#我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10-5）" class="headerlink" title="我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）"></a>我的评分：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐（10/5）</h2><p>应该是 Into the Spider-Verse 之后看过的最好的一部动画电影了（这系列无敌了）。</p>
-<p>Daniel的配乐做的也是真厉害，自己认为比上一部还要精彩，特别是最后徘徊者 Miles 出现的那段（Across the Spider-Verse(Start a Band)），在电影院看时感觉超级棒。</p>
-<p>画面就不说了，看过都知道。</p>
-<p>（有机会下次去三刷。。）</p>
-]]></content>
-      <categories>
-        <category>Dumby的sb日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>影视剧</tag>
-        <tag>蜘蛛侠</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>csp-s初赛准备：时间复杂度</title>
-    <url>/2022/09/18/csp-s%E5%88%9D%E8%B5%9B%E5%87%86%E5%A4%87%EF%BC%9A%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[<p>初赛似乎是必考一题时间复杂度计算，现在在考前抱下佛脚。</p>
-<span id="more"></span>
-<h2 id="主定理"><a href="#主定理" class="headerlink" title="主定理"></a>主定理</h2><p>给定这样一个式子：</p>
-<p>$T \left ( n \right ) = a T\left ( \frac{n}{b}  \right )+ n^{d}P$</p>
-<p>其中 $P$ 表示一个式子，通常 $P=\log^{k}{n},k \ge 0$，如 $T \left ( n \right ) = 2 T\left ( \frac{n}{2}  \right )+ n\log{n}$ 时，则 $d=1, P=log{n}$</p>
-<p>然后分三种情况：</p>
-<ol>
-<li>$n^{\log_{b}{a}} &gt; n^{d}$，则 $T \left ( n \right ) = n^{\log_{b}{a}}$</li>
-<li>$n^{\log_{b}{a}} &lt; n^{d}$，则 $T \left ( n \right ) = n^{d}$</li>
-<li>$n^{\log_{b}{a}} = n^{d}$，当 $P=\log^{k}{n}$ 时，即后面带的那个式子是 $n^{d}\log^{k}{n}$ 时，$T \left ( n \right ) = n^{d}\log^{k+1}{n}$</li>
-</ol>
-<p>这样初赛中绝大多数时间复杂度题应该都能过了。</p>
-<h2 id="递归、递归树"><a href="#递归、递归树" class="headerlink" title="递归、递归树"></a>递归、递归树</h2><p>最好懂最无脑，考场上时间够可以用这个。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>初赛</tag>
-        <tag>时间复杂度</tag>
-        <tag>主定理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《安多》不短的评</title>
     <url>/2022/11/27/%E3%80%8A%E5%AE%89%E5%A4%9A%E3%80%8B%E4%B8%8D%E7%9F%AD%E7%9A%84%E8%AF%84/</url>
     <content><![CDATA[<p>最近二刷完《安多》，随便说几句。</p>
@@ -895,6 +868,46 @@
         <tag>日常</tag>
         <tag>影视剧</tag>
         <tag>星球大战</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>csp-s初赛准备：时间复杂度</title>
+    <url>/2022/09/18/csp-s%E5%88%9D%E8%B5%9B%E5%87%86%E5%A4%87%EF%BC%9A%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[<p>初赛似乎是必考一题时间复杂度计算，现在在考前抱下佛脚。</p>
+<span id="more"></span>
+<h2 id="主定理"><a href="#主定理" class="headerlink" title="主定理"></a>主定理</h2><p>给定这样一个式子：</p>
+<p>$T \left ( n \right ) = a T\left ( \frac{n}{b}  \right )+ n^{d}P$</p>
+<p>其中 $P$ 表示一个式子，通常 $P=\log^{k}{n},k \ge 0$，如 $T \left ( n \right ) = 2 T\left ( \frac{n}{2}  \right )+ n\log{n}$ 时，则 $d=1, P=log{n}$</p>
+<p>然后分三种情况：</p>
+<ol>
+<li>$n^{\log_{b}{a}} &gt; n^{d}$，则 $T \left ( n \right ) = n^{\log_{b}{a}}$</li>
+<li>$n^{\log_{b}{a}} &lt; n^{d}$，则 $T \left ( n \right ) = n^{d}$</li>
+<li>$n^{\log_{b}{a}} = n^{d}$，当 $P=\log^{k}{n}$ 时，即后面带的那个式子是 $n^{d}\log^{k}{n}$ 时，$T \left ( n \right ) = n^{d}\log^{k+1}{n}$</li>
+</ol>
+<p>这样初赛中绝大多数时间复杂度题应该都能过了。</p>
+<h2 id="递归、递归树"><a href="#递归、递归树" class="headerlink" title="递归、递归树"></a>递归、递归树</h2><p>最好懂最无脑，考场上时间够可以用这个。</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>初赛</tag>
+        <tag>时间复杂度</tag>
+        <tag>主定理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《杀死一只知更鸟》短评</title>
+    <url>/2023/07/16/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B%E7%9F%AD%E8%AF%84/</url>
+    <content><![CDATA[<p>不想多写，就写一句话好了。</p>
+<p>这本书从相当天真的视角，挖掘了相当深刻的主题。值得一读。</p>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>书籍</tag>
       </tags>
   </entry>
   <entry>
@@ -945,20 +958,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《杀死一只知更鸟》短评</title>
-    <url>/2023/07/16/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B%E7%9F%AD%E8%AF%84/</url>
-    <content><![CDATA[<p>不想多写，就写一句话好了。</p>
-<p>这本书从相当天真的视角，挖掘了相当深刻的主题。值得一读。</p>
-]]></content>
-      <categories>
-        <category>Dumby的sb日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>书籍</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一只蒟蒻的A-Star 学习笔记（K短路例题）</title>
     <url>/2021/06/29/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84A-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88K%E7%9F%AD%E8%B7%AF%E4%BE%8B%E9%A2%98%EF%BC%89/</url>
     <content><![CDATA[<h2 id="K-短路输出路径"><a href="#K-短路输出路径" class="headerlink" title="K 短路输出路径"></a>K 短路输出路径</h2><p>题目链接：<a href="https://www.acwing.com/problem/content/2623/">ACWing</a> 和 <a href="https://www.luogu.com.cn/problem/P4467">洛谷</a><br>注意：此题正解非 A-Star ，但奈何本蒟蒻只会 A-Star 。。。</p>
@@ -974,55 +973,6 @@
       <tags>
         <tag>C++</tag>
         <tag>搜索</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一只蒟蒻的数论学习笔记（欧拉函数专题篇）</title>
-    <url>/2021/07/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E6%95%B0%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0%E4%B8%93%E9%A2%98%E7%AF%87%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>1 到 $N$ 中与 $N$ 互质的数的个数被称为欧拉函数，记为 $\varphi(N)$。</p>
-<h2 id="函数式"><a href="#函数式" class="headerlink" title="函数式"></a>函数式</h2><p>$\varphi \left ( n \right ) = n \times \prod_{i=1}^{m} \left ( 1-\frac{1}{p_{i}} \right )$<br><span id="more"></span></p>
-<h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><h3 id="性质一"><a href="#性质一" class="headerlink" title="性质一"></a>性质一</h3><p>显然，如果 $N$ 为 质数，则 $\varphi(N)=N-1$</p>
-<h3 id="性质二"><a href="#性质二" class="headerlink" title="性质二"></a>性质二</h3><p> 欧拉函数为 积性函数： 若 $\gcd(a , b ) = 1$，则 $\varphi(ab)=\varphi(a)\varphi(b)$。</p>
-<blockquote>
-<p>积性函数 指对于所有互质的整数 $a$ 和 $b$ 有性质 $f( ab ) = f( a ) f( b )$ 的数论函数。</p>
-</blockquote>
-<h3 id="性质三"><a href="#性质三" class="headerlink" title="性质三"></a>性质三</h3><p> 若 $n=p^{k}$，$p$ 为 质数，则 $\varphi(n)= n\left (1 - \frac{1}{p} \right )=  \left ( p - 1 \right )p^{k-1}$。</p>
-<blockquote>
-<p>证明<br>$n$ 个数中只有 $p$ 的倍数不与 $n$ 互质，而 $p$ 的倍数 $x$ 则有 $\dfrac{n}{p}=p^{k-1}$ 个，<br>因此 $\varphi(n)=n-\dfrac{n}{p}=n(1-\dfrac{1}{p})=p^{k}-p^{k-1}=(p-1)p^{k-1}$ 。</p>
-</blockquote>
-<h3 id="性质四"><a href="#性质四" class="headerlink" title="性质四"></a>性质四</h3><p> 若 $N=p_{1}^{c_{1}}p_{2}^{c_{2}}…p_{m}^{c_{m}}$，则：<br> $\varphi(N)=N \times \dfrac{p_{1}-1}{p_{1}} \times \dfrac{p_{2}-1}{p_{2}} \times … \times \dfrac{p_{m}-1}{p_{m}}$<br> $\varphi(N)=N \times \left ( 1-\dfrac{1}{p_{1}} \right ) \times \left ( 1-\dfrac{1}{p_{2}} \right ) \times …  \times \left ( 1-\dfrac{1}{p_{m}} \right )$</p>
-<p>即：<br>${\small \varphi \left ( n \right ) = n \times \prod_{i=1}^{m} \left ( 1-\frac{1}{p_{i}} \right )} $</p>
-<h3 id="性质五"><a href="#性质五" class="headerlink" title="性质五"></a>性质五</h3><p>$\forall  n &gt; 1$，1 到 $n$ 中与 $n$ 互质的数的和为 $n \times \dfrac{\varphi(n)}{2}$。</p>
-<blockquote>
-<p>证明<br>因为 $\gcd( n , x ) = \gcd( n , n-x )$，所以与 $n$ 不互质的数 $x$，$n - x$ 成对出现，平均值为 $\dfrac{n}{2}$ 。<br>因此，与 $n$ 互质的数的平均数也是 $\dfrac{n}{2}$，进而可得 1 到 $n$ 中所有与 $n$ 互质的数的和为  $\dfrac{n}{2} \varphi(n)$，化简得 $\dfrac{n\times \varphi(n)}{2}$。</p>
-</blockquote>
-<h3 id="性质六"><a href="#性质六" class="headerlink" title="性质六"></a>性质六</h3><p>如果 $a \mod p = 0$，其中 $p$ 为质数，则 $\varphi(a \times p)=p \times \varphi(a)$</p>
-<blockquote>
-<p>证明<br>因为 $a \mod p = 0$，所以 $a \times p$ 与 $a$ 包含相同的质因子，只是其中有一个质因子 $p$ 的指数不同。<br>直接把 $\varphi(a \times p)$ 和 $\varphi(a)$ 按照函数式写出来，前者除去后者，商为 $p$ ，即  $\dfrac{\varphi(a \times p)}{\varphi(a)}=p$<br>所以 $\varphi(a \times p)=p \times \varphi(a)$</p>
-</blockquote>
-<h3 id="性质七"><a href="#性质七" class="headerlink" title="性质七"></a>性质七</h3><p>如果 $a \mod p \ne 0$， 其中 $p$ 为质数，则 $\varphi(ap)=(p-1)\varphi(a)$</p>
-<blockquote>
-<p>证明<br>欧拉函数为积性函数。<br>所以 $\varphi(ap)=\varphi(a)\varphi(p)$，<br>又因为 $p$ 是质数，由 性质一 可得 $\varphi(p)=p-1$<br>所以 $\varphi(ap)=(p-1)\varphi(a)$</p>
-</blockquote>
-<h2 id="欧拉定理"><a href="#欧拉定理" class="headerlink" title="欧拉定理"></a>欧拉定理</h2><p>若正整数 $a$，$n$ 互质，则 $a^{\varphi(n)} \equiv 1\pmod{n}$，其中 $\varphi(n)$ 为欧拉函数。</p>
-<blockquote>
-<p>证明<br>设 1 到 $n$ 中所有与 $n$ 互质的数为 $a_{1},a_{2},…,a_{\varphi(n)}$<br>因为 $a$ 与 $n$ 互质，$a_{1}$ 与 $n$ 互质 （$a \equiv 1\pmod{n}$ 并且 $a_{1} \equiv 1\pmod{n}$<br>所以 $aa_{1}$ 与 n 互质 （$aa_{1} \equiv 1\pmod{n}$<br>同理 $aa_{1},aa_{2},…,aa_{\varphi(n)}$ 都与 $n$ 互质<br>所以 $aa_{1} \times aa_{2} \times … \times aa_{\varphi(n)}=a^{\varphi(n)} \times \left ( a_{1}a_{2}…a_{\varphi(n)}\right )$ 与 $n$ 互质<br>又因为  $a^{\varphi(n)} \times \left ( a_{1}a_{2}…a_{\varphi(n)}\right ) \equiv a_{1}a_{2}…a_{\varphi(n)} \pmod{n}$<br>所以  $a^{\varphi(n)} \equiv 1\pmod{n}$</p>
-</blockquote>
-<h3 id="费马小定理"><a href="#费马小定理" class="headerlink" title="费马小定理"></a>费马小定理</h3><p>为欧拉定理的一种情况。<br>若 $p$ 为质数，则对于任意整数 $a$，有 $a^{p} \equiv a \pmod{p}$，即 $a^{p-1} \equiv 1 \pmod{p}$</p>
-<blockquote>
-<p>证明<br>是欧拉函数的一种情况<br>将 $\varphi(p)=p-1$ 带入即可</p>
-</blockquote>
-<h2 id="欧拉函数求法"><a href="#欧拉函数求法" class="headerlink" title="欧拉函数求法"></a>欧拉函数求法</h2><h3 id="求单个数的欧拉函数"><a href="#求单个数的欧拉函数" class="headerlink" title="求单个数的欧拉函数"></a>求单个数的欧拉函数</h3><p>只要在 分解质因数 时顺便将欧拉函数求出来就好了。<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">phi</span><span class="params">(<span class="type">int</span> n)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= <span class="built_in">sqrt</span>(n); i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (n % i == <span class="number">0</span>) </span><br><span class="line">		&#123;</span><br><span class="line">			ans = ans / i * (i - <span class="number">1</span>);</span><br><span class="line">			<span class="keyword">while</span> (n % i == <span class="number">0</span>)n /= i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (n &gt; <span class="number">1</span>)ans = ans / n * (n - <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="线性求多个数的欧拉函数"><a href="#线性求多个数的欧拉函数" class="headerlink" title="线性求多个数的欧拉函数"></a>线性求多个数的欧拉函数</h3><p>在 线性筛 实现的时候顺便求欧拉函数。<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">euler</span><span class="params">(<span class="type">int</span> x)</span> </span></span><br><span class="line"><span class="function"></span>&#123;   <span class="comment">// primes数组存质数</span></span><br><span class="line">	<span class="comment">// phi数组存欧拉函数</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">2</span>; i &lt;= x; i ++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(!st[i]) </span><br><span class="line">		&#123;</span><br><span class="line">			primes[cn++] = i; </span><br><span class="line">			phi[i] = i - <span class="number">1</span>;</span><br><span class="line">			<span class="comment">//这句利用性质一</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; primes[j] &lt;= x / i; j ++) </span><br><span class="line">		&#123; </span><br><span class="line">			st[ primes[j] * i ] = <span class="number">1</span>;</span><br><span class="line">			phi[ primes[j] * i ] = phi[i] * (i % primes[j] ? primes[j] - <span class="number">1</span> : primes[j]);</span><br><span class="line">			<span class="comment">// 这句利用了性质六、七</span></span><br><span class="line">			<span class="keyword">if</span>( i % primes[j] == <span class="number">0</span> ) <span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>OK，笔记完。<br>本蒟蒻刚学 OI ，如有错误请 D 我！！</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>数论</tag>
-        <tag>质数</tag>
-        <tag>欧拉函数</tag>
       </tags>
   </entry>
   <entry>
@@ -1096,6 +1046,55 @@
       </tags>
   </entry>
   <entry>
+    <title>一只蒟蒻的数论学习笔记（欧拉函数专题篇）</title>
+    <url>/2021/07/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E6%95%B0%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0%E4%B8%93%E9%A2%98%E7%AF%87%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>1 到 $N$ 中与 $N$ 互质的数的个数被称为欧拉函数，记为 $\varphi(N)$。</p>
+<h2 id="函数式"><a href="#函数式" class="headerlink" title="函数式"></a>函数式</h2><p>$\varphi \left ( n \right ) = n \times \prod_{i=1}^{m} \left ( 1-\frac{1}{p_{i}} \right )$<br><span id="more"></span></p>
+<h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><h3 id="性质一"><a href="#性质一" class="headerlink" title="性质一"></a>性质一</h3><p>显然，如果 $N$ 为 质数，则 $\varphi(N)=N-1$</p>
+<h3 id="性质二"><a href="#性质二" class="headerlink" title="性质二"></a>性质二</h3><p> 欧拉函数为 积性函数： 若 $\gcd(a , b ) = 1$，则 $\varphi(ab)=\varphi(a)\varphi(b)$。</p>
+<blockquote>
+<p>积性函数 指对于所有互质的整数 $a$ 和 $b$ 有性质 $f( ab ) = f( a ) f( b )$ 的数论函数。</p>
+</blockquote>
+<h3 id="性质三"><a href="#性质三" class="headerlink" title="性质三"></a>性质三</h3><p> 若 $n=p^{k}$，$p$ 为 质数，则 $\varphi(n)= n\left (1 - \frac{1}{p} \right )=  \left ( p - 1 \right )p^{k-1}$。</p>
+<blockquote>
+<p>证明<br>$n$ 个数中只有 $p$ 的倍数不与 $n$ 互质，而 $p$ 的倍数 $x$ 则有 $\dfrac{n}{p}=p^{k-1}$ 个，<br>因此 $\varphi(n)=n-\dfrac{n}{p}=n(1-\dfrac{1}{p})=p^{k}-p^{k-1}=(p-1)p^{k-1}$ 。</p>
+</blockquote>
+<h3 id="性质四"><a href="#性质四" class="headerlink" title="性质四"></a>性质四</h3><p> 若 $N=p_{1}^{c_{1}}p_{2}^{c_{2}}…p_{m}^{c_{m}}$，则：<br> $\varphi(N)=N \times \dfrac{p_{1}-1}{p_{1}} \times \dfrac{p_{2}-1}{p_{2}} \times … \times \dfrac{p_{m}-1}{p_{m}}$<br> $\varphi(N)=N \times \left ( 1-\dfrac{1}{p_{1}} \right ) \times \left ( 1-\dfrac{1}{p_{2}} \right ) \times …  \times \left ( 1-\dfrac{1}{p_{m}} \right )$</p>
+<p>即：<br>${\small \varphi \left ( n \right ) = n \times \prod_{i=1}^{m} \left ( 1-\frac{1}{p_{i}} \right )} $</p>
+<h3 id="性质五"><a href="#性质五" class="headerlink" title="性质五"></a>性质五</h3><p>$\forall  n &gt; 1$，1 到 $n$ 中与 $n$ 互质的数的和为 $n \times \dfrac{\varphi(n)}{2}$。</p>
+<blockquote>
+<p>证明<br>因为 $\gcd( n , x ) = \gcd( n , n-x )$，所以与 $n$ 不互质的数 $x$，$n - x$ 成对出现，平均值为 $\dfrac{n}{2}$ 。<br>因此，与 $n$ 互质的数的平均数也是 $\dfrac{n}{2}$，进而可得 1 到 $n$ 中所有与 $n$ 互质的数的和为  $\dfrac{n}{2} \varphi(n)$，化简得 $\dfrac{n\times \varphi(n)}{2}$。</p>
+</blockquote>
+<h3 id="性质六"><a href="#性质六" class="headerlink" title="性质六"></a>性质六</h3><p>如果 $a \mod p = 0$，其中 $p$ 为质数，则 $\varphi(a \times p)=p \times \varphi(a)$</p>
+<blockquote>
+<p>证明<br>因为 $a \mod p = 0$，所以 $a \times p$ 与 $a$ 包含相同的质因子，只是其中有一个质因子 $p$ 的指数不同。<br>直接把 $\varphi(a \times p)$ 和 $\varphi(a)$ 按照函数式写出来，前者除去后者，商为 $p$ ，即  $\dfrac{\varphi(a \times p)}{\varphi(a)}=p$<br>所以 $\varphi(a \times p)=p \times \varphi(a)$</p>
+</blockquote>
+<h3 id="性质七"><a href="#性质七" class="headerlink" title="性质七"></a>性质七</h3><p>如果 $a \mod p \ne 0$， 其中 $p$ 为质数，则 $\varphi(ap)=(p-1)\varphi(a)$</p>
+<blockquote>
+<p>证明<br>欧拉函数为积性函数。<br>所以 $\varphi(ap)=\varphi(a)\varphi(p)$，<br>又因为 $p$ 是质数，由 性质一 可得 $\varphi(p)=p-1$<br>所以 $\varphi(ap)=(p-1)\varphi(a)$</p>
+</blockquote>
+<h2 id="欧拉定理"><a href="#欧拉定理" class="headerlink" title="欧拉定理"></a>欧拉定理</h2><p>若正整数 $a$，$n$ 互质，则 $a^{\varphi(n)} \equiv 1\pmod{n}$，其中 $\varphi(n)$ 为欧拉函数。</p>
+<blockquote>
+<p>证明<br>设 1 到 $n$ 中所有与 $n$ 互质的数为 $a_{1},a_{2},…,a_{\varphi(n)}$<br>因为 $a$ 与 $n$ 互质，$a_{1}$ 与 $n$ 互质 （$a \equiv 1\pmod{n}$ 并且 $a_{1} \equiv 1\pmod{n}$<br>所以 $aa_{1}$ 与 n 互质 （$aa_{1} \equiv 1\pmod{n}$<br>同理 $aa_{1},aa_{2},…,aa_{\varphi(n)}$ 都与 $n$ 互质<br>所以 $aa_{1} \times aa_{2} \times … \times aa_{\varphi(n)}=a^{\varphi(n)} \times \left ( a_{1}a_{2}…a_{\varphi(n)}\right )$ 与 $n$ 互质<br>又因为  $a^{\varphi(n)} \times \left ( a_{1}a_{2}…a_{\varphi(n)}\right ) \equiv a_{1}a_{2}…a_{\varphi(n)} \pmod{n}$<br>所以  $a^{\varphi(n)} \equiv 1\pmod{n}$</p>
+</blockquote>
+<h3 id="费马小定理"><a href="#费马小定理" class="headerlink" title="费马小定理"></a>费马小定理</h3><p>为欧拉定理的一种情况。<br>若 $p$ 为质数，则对于任意整数 $a$，有 $a^{p} \equiv a \pmod{p}$，即 $a^{p-1} \equiv 1 \pmod{p}$</p>
+<blockquote>
+<p>证明<br>是欧拉函数的一种情况<br>将 $\varphi(p)=p-1$ 带入即可</p>
+</blockquote>
+<h2 id="欧拉函数求法"><a href="#欧拉函数求法" class="headerlink" title="欧拉函数求法"></a>欧拉函数求法</h2><h3 id="求单个数的欧拉函数"><a href="#求单个数的欧拉函数" class="headerlink" title="求单个数的欧拉函数"></a>求单个数的欧拉函数</h3><p>只要在 分解质因数 时顺便将欧拉函数求出来就好了。<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">phi</span><span class="params">(<span class="type">int</span> n)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= <span class="built_in">sqrt</span>(n); i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (n % i == <span class="number">0</span>) </span><br><span class="line">		&#123;</span><br><span class="line">			ans = ans / i * (i - <span class="number">1</span>);</span><br><span class="line">			<span class="keyword">while</span> (n % i == <span class="number">0</span>)n /= i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (n &gt; <span class="number">1</span>)ans = ans / n * (n - <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="线性求多个数的欧拉函数"><a href="#线性求多个数的欧拉函数" class="headerlink" title="线性求多个数的欧拉函数"></a>线性求多个数的欧拉函数</h3><p>在 线性筛 实现的时候顺便求欧拉函数。<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">euler</span><span class="params">(<span class="type">int</span> x)</span> </span></span><br><span class="line"><span class="function"></span>&#123;   <span class="comment">// primes数组存质数</span></span><br><span class="line">	<span class="comment">// phi数组存欧拉函数</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">2</span>; i &lt;= x; i ++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(!st[i]) </span><br><span class="line">		&#123;</span><br><span class="line">			primes[cn++] = i; </span><br><span class="line">			phi[i] = i - <span class="number">1</span>;</span><br><span class="line">			<span class="comment">//这句利用性质一</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; primes[j] &lt;= x / i; j ++) </span><br><span class="line">		&#123; </span><br><span class="line">			st[ primes[j] * i ] = <span class="number">1</span>;</span><br><span class="line">			phi[ primes[j] * i ] = phi[i] * (i % primes[j] ? primes[j] - <span class="number">1</span> : primes[j]);</span><br><span class="line">			<span class="comment">// 这句利用了性质六、七</span></span><br><span class="line">			<span class="keyword">if</span>( i % primes[j] == <span class="number">0</span> ) <span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>OK，笔记完。<br>本蒟蒻刚学 OI ，如有错误请 D 我！！</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>数论</tag>
+        <tag>质数</tag>
+        <tag>欧拉函数</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一只蒟蒻的数论学习笔记（筛质数和约数篇一）</title>
     <url>/2021/07/01/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E6%95%B0%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AD%9B%E8%B4%A8%E6%95%B0%E5%92%8C%E7%BA%A6%E6%95%B0%E7%AF%87%E4%B8%80%EF%BC%89/</url>
     <content><![CDATA[<h2 id="质数判定"><a href="#质数判定" class="headerlink" title="质数判定"></a>质数判定</h2><h3 id="试除法"><a href="#试除法" class="headerlink" title="试除法"></a>试除法</h3><p>枚举二到 $\sqrt{n}$ 的所有数 $i$，若 $n$ 能被 $i$ 整除，则 $n$ 不是质数。<br>否则则是质数。<br>为什么只需要枚举到 $\sqrt{n}$？<span id="more"></span><br>因为如果有一个数 $i &gt; \sqrt{n}$ ，且 $i|n$（“ <strong>|</strong> ”表示 “ <strong>整除</strong> ” ，即 $n \bmod{i}=0$），那么 $\dfrac{n}{i}$ 一定整除 $n$，而 $i &gt; \sqrt{n}$，则 $\dfrac{n}{i}$ 一定小于 $\sqrt{n}$，那么在从小到大的枚举中就已经判断出 $n$ 能被一个数整除，则无需再继续枚举。所以只需要枚举到 $\sqrt{n}$。</p>
@@ -1124,6 +1123,79 @@
         <tag>数论</tag>
         <tag>质数</tag>
         <tag>约数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一只蒟蒻的组合数学的入门笔记</title>
+    <url>/2021/09/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="加法及乘法原理"><a href="#加法及乘法原理" class="headerlink" title="加法及乘法原理"></a>加法及乘法原理</h2><h3 id="加法原理"><a href="#加法原理" class="headerlink" title="加法原理"></a>加法原理</h3><p>完成一件事有 $n$ 类方法，每类方法有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1}+m_{2}+…+m_{n}$ 种方法。</p>
+<span id="more"></span>
+<h3 id="乘法原理"><a href="#乘法原理" class="headerlink" title="乘法原理"></a>乘法原理</h3><p>完成一件事有 $n$ 个步骤，每个步骤有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1} \times m_{2} \times … \times m_{n}$ 种方法。</p>
+<h2 id="排列与组合入门"><a href="#排列与组合入门" class="headerlink" title="排列与组合入门"></a>排列与组合入门</h2><h3 id="排列与排列数"><a href="#排列与排列数" class="headerlink" title="排列与排列数"></a>排列与排列数</h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，按照一定顺序排列，所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的排列数</strong>。</p>
+<p>公式如下：</p>
+<p>$ A^{m}_{n}=\left ( n-m+1 \right )…\left ( n-2 \right )\left ( n-1 \right )n=\frac{n!}{\left (n-m\right )!} $</p>
+<p>如何理解这个公式：</p>
+<p>有 $m$ 个位置，第一个有 $n$ 种选法，第二个有 $n-1$ 种，以此类推，第 $m$ 种有 1 种选法，所以由乘法原理可得总方案数为 $\left ( n-m+1 \right )…\left ( n-2 \right )\left ( n-1 \right )n$。</p>
+<h3 id="组合与组合数"><a href="#组合与组合数" class="headerlink" title="组合与组合数"></a>组合与组合数</h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，组成一个组合（集合），所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的组合数</strong>。</p>
+<p>公式如下：</p>
+<p>$C^{m}_{n}=\frac{A^{m}_{n}}{m!}=\frac{n!}{m!\left (n-m\right)!}$</p>
+<p>如何理解这个公式：</p>
+<p>一个 $m$ 个元素的序列的全排列的序列数为 $m!$，所以将排列数除去全排列的序列数就为组合数。</p>
+<p><strong>$C^{m}_{n}$ 还写成 $\begin{pmatrix}n \\m\end{pmatrix}$，组合数也叫二项式系数</strong>。</p>
+<p>特别地，当 $m&gt;n$ 时，$A^{m}_{n}=C^{m}_{n}=0$。</p>
+<h4 id="C-求组合数代码"><a href="#C-求组合数代码" class="headerlink" title="C++ 求组合数代码"></a>C++ 求组合数代码</h4><p>递归：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">100005</span>, MOD = <span class="number">19260817</span>;</span><br><span class="line"><span class="type">int</span> a[N], ans;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = n; i &gt;= m; i--) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (m &gt; <span class="number">1</span>) <span class="built_in">C</span>(n - <span class="number">1</span>, m - <span class="number">1</span>);</span><br><span class="line">		<span class="keyword">else</span> ans = (ans + <span class="number">1</span>) % MOD;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>递推：</p>
+<p>组合数满足以下递推式：</p>
+<p>$\left\{\begin{matrix} C^{m}_{n}=C^{m-1}_{n}+C^{m-1}_{n-1},n&gt;m&gt;0\\C^{m}_{n}=1,m=0 或 n=m\end{matrix}\right.$</p>
+<p>所以代码很容易打出来了。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1005</span>, MOD = <span class="number">19260817</span>;</span><br><span class="line"><span class="type">int</span> f[N][N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (n == <span class="number">0</span> || m == n) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= m; i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt;= n; i++) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (i == <span class="number">0</span>)f[i][j] = <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">else</span> f[i][j] = f[i - <span class="number">1</span>][j - <span class="number">1</span>] + f[i - <span class="number">1</span>][j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> f[m][n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>求排列数则只要<br>将组合数乘上 $m!$ 就好了。</p>
+<h4 id="二项式定理"><a href="#二项式定理" class="headerlink" title="二项式定理"></a>二项式定理</h4><p>公式如下：</p>
+<p>$\left ( a+b \right )^{n}= {\textstyle \sum_{n}^{i=0}\begin{pmatrix}n \\i\end{pmatrix}a^{n-i}b^{i}}$</p>
+<p>其实很好理解，自己手推一下就出来了。</p>
+<h2 id="Catalan（卡特兰）数列"><a href="#Catalan（卡特兰）数列" class="headerlink" title="Catalan（卡特兰）数列"></a>Catalan（卡特兰）数列</h2><p>没什么好说的，记个公式（要推导它的通项公式需要生成函数，反正本蒟蒻不会）。</p>
+<p>$Cat_{0}=Cat_{1}=1$</p>
+<p>$Cat_{n}=\frac{\begin{pmatrix}2n\\n\end{pmatrix}}{n+1}\left ( n\ge 2,n \in N^{+}\right )$</p>
+<p>其他 Catalan 数列常用公式：</p>
+<p>$Cat_{n}=\frac{Cat_{n-1}\left ( 4n-2 \right )}{n+1}$</p>
+<p>$Cat_{n}=\begin{pmatrix} 2n\\n\end{pmatrix}-\begin{pmatrix} 2n\\n-1\end{pmatrix}$</p>
+<p>$Cat_{n}=\left\{\begin{matrix}{\textstyle \sum_{i=1}^{n}Cat_{i-1}Cat_{n-i}},n\ge 2,n\in N^{+} \\1, n=0,1\end{matrix}\right.$</p>
+<p>代码可以由 $Cat_{n}=\frac{Cat_{n-1}\left ( 4n-2 \right )}{n+1}$ 很简单的写出来，这里就不放了。</p>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ol>
+<li>对角线不相交，将一个凸多边形分成多个三角形的方案数。</li>
+<li>一个序列的进栈顺序为 $1,2,3…,n-1,n$，求有几种不同的出栈序列。</li>
+<li>$n$ 个节点可以构成多少个不同的二叉树。</li>
+<li>等等等等</li>
+</ol>
+<p>ok，有错误请 D 我。</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>数论</tag>
+        <tag>组合数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一只蒟蒻的龟速乘学习笔记</title>
+    <url>/2021/07/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E9%BE%9F%E9%80%9F%E4%B9%98%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>关于快速幂：<br>它死了。<br>咳咳。<span id="more"></span><br>以下是快速幂模板：<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_p</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = ans * a % p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = a * a % p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>可以看出，快速幂有一个缺点：当模数 p 大于 int 范围（最大值为 $2^{31}-1$）时，快速幂会爆 long long。<br>此时解决 $a^{b} \bmod c$ 的问题时就无法用快速幂了。<br>于是，龟速乘应运而生。</p>
+<h2 id="龟速乘"><a href="#龟速乘" class="headerlink" title="龟速乘"></a>龟速乘</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>通过将 <strong>乘法</strong> 转化为 <strong>加法</strong>并<strong>每次取模</strong> 而避免了爆 long long。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//龟速乘</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_m</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (k)</span><br><span class="line">	&#123;<span class="comment">//    区别在这里 ↓</span></span><br><span class="line">		<span class="keyword">if</span>(k &amp; <span class="number">1</span>)ans += a, ans %= p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = a + a, a %= p;</span><br><span class="line">		<span class="comment">//和这里 ↑</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//快速幂</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_p</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = <span class="built_in">q_m</span>(ans, a, p), ans %= p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = <span class="built_in">q_m</span>(a, a, p), a %= p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="速度"><a href="#速度" class="headerlink" title="速度"></a>速度</h3><p>顾名思义，龟速乘会比系统的乘法慢一些。</p>
+<p>OK就这样。<br>本蒟蒻新学 OI ，如有错误请 D 我。</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>数论</tag>
       </tags>
   </entry>
   <entry>
@@ -1202,23 +1274,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一只蒟蒻的龟速乘学习笔记</title>
-    <url>/2021/07/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E9%BE%9F%E9%80%9F%E4%B9%98%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>关于快速幂：<br>它死了。<br>咳咳。<span id="more"></span><br>以下是快速幂模板：<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_p</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = ans * a % p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = a * a % p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>可以看出，快速幂有一个缺点：当模数 p 大于 int 范围（最大值为 $2^{31}-1$）时，快速幂会爆 long long。<br>此时解决 $a^{b} \bmod c$ 的问题时就无法用快速幂了。<br>于是，龟速乘应运而生。</p>
-<h2 id="龟速乘"><a href="#龟速乘" class="headerlink" title="龟速乘"></a>龟速乘</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>通过将 <strong>乘法</strong> 转化为 <strong>加法</strong>并<strong>每次取模</strong> 而避免了爆 long long。</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//龟速乘</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_m</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (k)</span><br><span class="line">	&#123;<span class="comment">//    区别在这里 ↓</span></span><br><span class="line">		<span class="keyword">if</span>(k &amp; <span class="number">1</span>)ans += a, ans %= p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = a + a, a %= p;</span><br><span class="line">		<span class="comment">//和这里 ↑</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//快速幂</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_p</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = <span class="built_in">q_m</span>(ans, a, p), ans %= p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = <span class="built_in">q_m</span>(a, a, p), a %= p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="速度"><a href="#速度" class="headerlink" title="速度"></a>速度</h3><p>顾名思义，龟速乘会比系统的乘法慢一些。</p>
-<p>OK就这样。<br>本蒟蒻新学 OI ，如有错误请 D 我。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>数论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>修钢笔捏</title>
     <url>/2022/07/16/%E4%BF%AE%E9%92%A2%E7%AC%94%E6%8D%8F/</url>
     <content><![CDATA[<p>修笔捏。</p>
@@ -1255,91 +1310,6 @@
       <tags>
         <tag>日常</tag>
         <tag>钢笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一只蒟蒻的组合数学的入门笔记</title>
-    <url>/2021/09/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="加法及乘法原理"><a href="#加法及乘法原理" class="headerlink" title="加法及乘法原理"></a>加法及乘法原理</h2><h3 id="加法原理"><a href="#加法原理" class="headerlink" title="加法原理"></a>加法原理</h3><p>完成一件事有 $n$ 类方法，每类方法有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1}+m_{2}+…+m_{n}$ 种方法。</p>
-<span id="more"></span>
-<h3 id="乘法原理"><a href="#乘法原理" class="headerlink" title="乘法原理"></a>乘法原理</h3><p>完成一件事有 $n$ 个步骤，每个步骤有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1} \times m_{2} \times … \times m_{n}$ 种方法。</p>
-<h2 id="排列与组合入门"><a href="#排列与组合入门" class="headerlink" title="排列与组合入门"></a>排列与组合入门</h2><h3 id="排列与排列数"><a href="#排列与排列数" class="headerlink" title="排列与排列数"></a>排列与排列数</h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，按照一定顺序排列，所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的排列数</strong>。</p>
-<p>公式如下：</p>
-<p>$ A^{m}_{n}=\left ( n-m+1 \right )…\left ( n-2 \right )\left ( n-1 \right )n=\frac{n!}{\left (n-m\right )!} $</p>
-<p>如何理解这个公式：</p>
-<p>有 $m$ 个位置，第一个有 $n$ 种选法，第二个有 $n-1$ 种，以此类推，第 $m$ 种有 1 种选法，所以由乘法原理可得总方案数为 $\left ( n-m+1 \right )…\left ( n-2 \right )\left ( n-1 \right )n$。</p>
-<h3 id="组合与组合数"><a href="#组合与组合数" class="headerlink" title="组合与组合数"></a>组合与组合数</h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，组成一个组合（集合），所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的组合数</strong>。</p>
-<p>公式如下：</p>
-<p>$C^{m}_{n}=\frac{A^{m}_{n}}{m!}=\frac{n!}{m!\left (n-m\right)!}$</p>
-<p>如何理解这个公式：</p>
-<p>一个 $m$ 个元素的序列的全排列的序列数为 $m!$，所以将排列数除去全排列的序列数就为组合数。</p>
-<p><strong>$C^{m}_{n}$ 还写成 $\begin{pmatrix}n \\m\end{pmatrix}$，组合数也叫二项式系数</strong>。</p>
-<p>特别地，当 $m&gt;n$ 时，$A^{m}_{n}=C^{m}_{n}=0$。</p>
-<h4 id="C-求组合数代码"><a href="#C-求组合数代码" class="headerlink" title="C++ 求组合数代码"></a>C++ 求组合数代码</h4><p>递归：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">100005</span>, MOD = <span class="number">19260817</span>;</span><br><span class="line"><span class="type">int</span> a[N], ans;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = n; i &gt;= m; i--) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (m &gt; <span class="number">1</span>) <span class="built_in">C</span>(n - <span class="number">1</span>, m - <span class="number">1</span>);</span><br><span class="line">		<span class="keyword">else</span> ans = (ans + <span class="number">1</span>) % MOD;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p>递推：</p>
-<p>组合数满足以下递推式：</p>
-<p>$\left\{\begin{matrix} C^{m}_{n}=C^{m-1}_{n}+C^{m-1}_{n-1},n&gt;m&gt;0\\C^{m}_{n}=1,m=0 或 n=m\end{matrix}\right.$</p>
-<p>所以代码很容易打出来了。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1005</span>, MOD = <span class="number">19260817</span>;</span><br><span class="line"><span class="type">int</span> f[N][N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (n == <span class="number">0</span> || m == n) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= m; i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt;= n; i++) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (i == <span class="number">0</span>)f[i][j] = <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">else</span> f[i][j] = f[i - <span class="number">1</span>][j - <span class="number">1</span>] + f[i - <span class="number">1</span>][j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> f[m][n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p>求排列数则只要<br>将组合数乘上 $m!$ 就好了。</p>
-<h4 id="二项式定理"><a href="#二项式定理" class="headerlink" title="二项式定理"></a>二项式定理</h4><p>公式如下：</p>
-<p>$\left ( a+b \right )^{n}= {\textstyle \sum_{n}^{i=0}\begin{pmatrix}n \\i\end{pmatrix}a^{n-i}b^{i}}$</p>
-<p>其实很好理解，自己手推一下就出来了。</p>
-<h2 id="Catalan（卡特兰）数列"><a href="#Catalan（卡特兰）数列" class="headerlink" title="Catalan（卡特兰）数列"></a>Catalan（卡特兰）数列</h2><p>没什么好说的，记个公式（要推导它的通项公式需要生成函数，反正本蒟蒻不会）。</p>
-<p>$Cat_{0}=Cat_{1}=1$</p>
-<p>$Cat_{n}=\frac{\begin{pmatrix}2n\\n\end{pmatrix}}{n+1}\left ( n\ge 2,n \in N^{+}\right )$</p>
-<p>其他 Catalan 数列常用公式：</p>
-<p>$Cat_{n}=\frac{Cat_{n-1}\left ( 4n-2 \right )}{n+1}$</p>
-<p>$Cat_{n}=\begin{pmatrix} 2n\\n\end{pmatrix}-\begin{pmatrix} 2n\\n-1\end{pmatrix}$</p>
-<p>$Cat_{n}=\left\{\begin{matrix}{\textstyle \sum_{i=1}^{n}Cat_{i-1}Cat_{n-i}},n\ge 2,n\in N^{+} \\1, n=0,1\end{matrix}\right.$</p>
-<p>代码可以由 $Cat_{n}=\frac{Cat_{n-1}\left ( 4n-2 \right )}{n+1}$ 很简单的写出来，这里就不放了。</p>
-<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ol>
-<li>对角线不相交，将一个凸多边形分成多个三角形的方案数。</li>
-<li>一个序列的进栈顺序为 $1,2,3…,n-1,n$，求有几种不同的出栈序列。</li>
-<li>$n$ 个节点可以构成多少个不同的二叉树。</li>
-<li>等等等等</li>
-</ol>
-<p>ok，有错误请 D 我。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>数论</tag>
-        <tag>组合数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用拓扑排序求 DAG 最短路</title>
-    <url>/2022/02/14/%E5%88%A9%E7%94%A8%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E6%B1%82-DAG-%E6%9C%80%E7%9F%AD%E8%B7%AF/</url>
-    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>给定一张带负权边的有向无环图（DAG），$N$ 个点，$M$ 条边，求源点到各点的最短路。</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>因为有负权边，无法用 dijkstra 直接求最短路。</p>
-<p>用 SPFA 又容易被出题人卡成<strong>傻子</strong>。</p>
-<p>考虑到是 <strong>DAG</strong>，可以使用<strong>拓扑排序</strong>在 $O\left( N+M \right)$ 时间范围内求出最短路。<br><span id="more"></span><br>步骤如下：</p>
-<p>设源点为 $s$，点到源点的最短路用数组 $d[]$ 来储存，建一个队列 $q[]$ 给拓扑排序用，再建一个数组 $deg[]$ 用来存储每个点的入度。</p>
-<p>初始化：将除了 $d[s]$ 以外的所有 $d[]$ 赋值为 $+\infty$，$d[s]$ 赋值为 $0$，队列 $q[]$ 为空，提前处理出每个点的 $deg$。</p>
-<p>一、找出<strong>所有入度为 $0$ 的节点</strong>加入队列 $q[]$。</p>
-<p>二、取出队首节点，设队首节点为 $p$，该点指向的点为 $j$，两点间的边的边权为 $w$。</p>
-<p>三、将 $deg[j]$ 减一（删边），并用 $d[p]+w$ 来更新 $d[j]$。若 $deg[j]$ 被减为零，则让 $j$ 入队。</p>
-<p>重复二到三，直到所有点的 $deg[]$ 都变成 $0$，即所有点都被访问过（此时队空）。</p>
-<p>过程中所有的点和边都只被扫描了一次，时间复杂度为 $O\left( N+M \right)$。</p>
-<p>其实仔细看整个过程会发现<strong>这就是在拓扑排序模板上加了一小点东西，也是在 SPFA 模板上加了一小点东西</strong>。</p>
-<h2 id="喜闻乐见，代码时间"><a href="#喜闻乐见，代码时间" class="headerlink" title="喜闻乐见，代码时间"></a>喜闻乐见，代码时间</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">114514</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,m,s;</span><br><span class="line"><span class="type">int</span> h[N],nxt[N],to[N],w[N],cn;</span><br><span class="line"><span class="type">int</span> d[N];</span><br><span class="line"><span class="type">int</span> deg[N];</span><br><span class="line">queue&lt;<span class="type">int</span>&gt; q;</span><br><span class="line"><span class="comment">//变量名与前面一一对应</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b,<span class="type">int</span> c)</span></span>&#123;</span><br><span class="line">	to[++cn]=b;</span><br><span class="line">	w[cn]=c;</span><br><span class="line">	nxt[cn]=h[a];</span><br><span class="line">	h[a]=cn;</span><br><span class="line">	deg[b]++;<span class="comment">//在加边时顺便将 deg[] 处理出来</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">topsort</span><span class="params">(<span class="type">int</span> s)</span></span>&#123;<span class="comment">//拓扑排序，长得几乎和 SPFA 一模一样</span></span><br><span class="line">	<span class="built_in">memset</span>(d,<span class="number">0x3f</span>,<span class="keyword">sizeof</span> d);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!deg[i])q.<span class="built_in">push</span>(i);</span><br><span class="line">	&#125;</span><br><span class="line">	d[s]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(q.<span class="built_in">size</span>())&#123;</span><br><span class="line">		<span class="type">int</span> p=q.<span class="built_in">front</span>();</span><br><span class="line">		q.<span class="built_in">pop</span>();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=h[p];i;i=nxt[i])&#123;</span><br><span class="line">			<span class="type">int</span> j=to[i];</span><br><span class="line">			d[j]=<span class="built_in">min</span>(d[j],d[p]+w[i]);</span><br><span class="line">			<span class="keyword">if</span>(--deg[j]==<span class="number">0</span>)q.<span class="built_in">push</span>(j);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;n,&amp;m,&amp;s);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">		<span class="type">int</span> a,b,c;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line">		<span class="built_in">add</span>(a,b,c);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">topsort</span>(s);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,d[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>${\Huge \mathfrak{The\  End}}$</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>拓扑排序</tag>
-        <tag>图论</tag>
-        <tag>DAG</tag>
-        <tag>最短路</tag>
       </tags>
   </entry>
   <entry>
@@ -1596,33 +1566,32 @@
       </tags>
   </entry>
   <entry>
-    <title>合成器Global讲解</title>
-    <url>/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/</url>
-    <content><![CDATA[<p>本帖用于介绍合成器的Global面板。</p>
-<span id="more"></span>
-<p>首先看下 Serum 中的 Global 面板：</p>
-<img src="/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/Serum%E4%B8%AD%E7%9A%84Global%E9%9D%A2%E6%9D%BF.png" class="" title="Serum中的Global面板">
-<p>先看下这几个东西：quality（声音质量）、tune（音高）、bpm（速度）。</p>
-<p>这三东西是绝大多数合成器的global中都有的。</p>
-<h3 id="Quality（声音质量）"><a href="#Quality（声音质量）" class="headerlink" title="Quality（声音质量）"></a>Quality（声音质量）</h3><p>通常声音质量越高要求的性能越大。</p>
-<p>它在Serum中的这个位置：</p>
-<img src="/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/%E8%B4%A8%E9%87%8F.png" class="" title="声音质量">
-<h3 id="Tune（音高）"><a href="#Tune（音高）" class="headerlink" title="Tune（音高）"></a>Tune（音高）</h3><p>标准音高是 A（小字一组a），即 440Hz。</p>
-<p>它在Serum中的这个位置：</p>
-<img src="/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/%E9%9F%B3%E9%AB%98.png" class="" title="音高">
-<h3 id="BPM（速度）"><a href="#BPM（速度）" class="headerlink" title="BPM（速度）"></a>BPM（速度）</h3><p>大部分合成器的BPM是与宿主的BPM绑定的。</p>
-<p>应该都知道BPM是什么这里就不多说了。</p>
-<p>之后会详细讲一下Serum的global面板，这里先讲到这（本来也没什么好说的）。</p>
-<p>参考：</p>
-<ul>
-<li><a href="https://www.bilibili.com/video/BV1Ys411i7hF">B站UP主@AndreChen的教学视频 “【合辑】【合成器基础教学】入门/通用/必备知识——Abletive教学视频站”</a></li>
-</ul>
+    <title>利用拓扑排序求 DAG 最短路</title>
+    <url>/2022/02/14/%E5%88%A9%E7%94%A8%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E6%B1%82-DAG-%E6%9C%80%E7%9F%AD%E8%B7%AF/</url>
+    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>给定一张带负权边的有向无环图（DAG），$N$ 个点，$M$ 条边，求源点到各点的最短路。</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>因为有负权边，无法用 dijkstra 直接求最短路。</p>
+<p>用 SPFA 又容易被出题人卡成<strong>傻子</strong>。</p>
+<p>考虑到是 <strong>DAG</strong>，可以使用<strong>拓扑排序</strong>在 $O\left( N+M \right)$ 时间范围内求出最短路。<br><span id="more"></span><br>步骤如下：</p>
+<p>设源点为 $s$，点到源点的最短路用数组 $d[]$ 来储存，建一个队列 $q[]$ 给拓扑排序用，再建一个数组 $deg[]$ 用来存储每个点的入度。</p>
+<p>初始化：将除了 $d[s]$ 以外的所有 $d[]$ 赋值为 $+\infty$，$d[s]$ 赋值为 $0$，队列 $q[]$ 为空，提前处理出每个点的 $deg$。</p>
+<p>一、找出<strong>所有入度为 $0$ 的节点</strong>加入队列 $q[]$。</p>
+<p>二、取出队首节点，设队首节点为 $p$，该点指向的点为 $j$，两点间的边的边权为 $w$。</p>
+<p>三、将 $deg[j]$ 减一（删边），并用 $d[p]+w$ 来更新 $d[j]$。若 $deg[j]$ 被减为零，则让 $j$ 入队。</p>
+<p>重复二到三，直到所有点的 $deg[]$ 都变成 $0$，即所有点都被访问过（此时队空）。</p>
+<p>过程中所有的点和边都只被扫描了一次，时间复杂度为 $O\left( N+M \right)$。</p>
+<p>其实仔细看整个过程会发现<strong>这就是在拓扑排序模板上加了一小点东西，也是在 SPFA 模板上加了一小点东西</strong>。</p>
+<h2 id="喜闻乐见，代码时间"><a href="#喜闻乐见，代码时间" class="headerlink" title="喜闻乐见，代码时间"></a>喜闻乐见，代码时间</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">114514</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,m,s;</span><br><span class="line"><span class="type">int</span> h[N],nxt[N],to[N],w[N],cn;</span><br><span class="line"><span class="type">int</span> d[N];</span><br><span class="line"><span class="type">int</span> deg[N];</span><br><span class="line">queue&lt;<span class="type">int</span>&gt; q;</span><br><span class="line"><span class="comment">//变量名与前面一一对应</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b,<span class="type">int</span> c)</span></span>&#123;</span><br><span class="line">	to[++cn]=b;</span><br><span class="line">	w[cn]=c;</span><br><span class="line">	nxt[cn]=h[a];</span><br><span class="line">	h[a]=cn;</span><br><span class="line">	deg[b]++;<span class="comment">//在加边时顺便将 deg[] 处理出来</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">topsort</span><span class="params">(<span class="type">int</span> s)</span></span>&#123;<span class="comment">//拓扑排序，长得几乎和 SPFA 一模一样</span></span><br><span class="line">	<span class="built_in">memset</span>(d,<span class="number">0x3f</span>,<span class="keyword">sizeof</span> d);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!deg[i])q.<span class="built_in">push</span>(i);</span><br><span class="line">	&#125;</span><br><span class="line">	d[s]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(q.<span class="built_in">size</span>())&#123;</span><br><span class="line">		<span class="type">int</span> p=q.<span class="built_in">front</span>();</span><br><span class="line">		q.<span class="built_in">pop</span>();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=h[p];i;i=nxt[i])&#123;</span><br><span class="line">			<span class="type">int</span> j=to[i];</span><br><span class="line">			d[j]=<span class="built_in">min</span>(d[j],d[p]+w[i]);</span><br><span class="line">			<span class="keyword">if</span>(--deg[j]==<span class="number">0</span>)q.<span class="built_in">push</span>(j);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;n,&amp;m,&amp;s);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">		<span class="type">int</span> a,b,c;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line">		<span class="built_in">add</span>(a,b,c);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">topsort</span>(s);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,d[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>${\Huge \mathfrak{The\  End}}$</p>
 ]]></content>
       <categories>
-        <category>Dumby的折腾笔记</category>
+        <category>Dumby的OI生涯</category>
       </categories>
       <tags>
-        <tag>合成器</tag>
+        <tag>C++</tag>
+        <tag>拓扑排序</tag>
+        <tag>图论</tag>
+        <tag>DAG</tag>
+        <tag>最短路</tag>
       </tags>
   </entry>
   <entry>
@@ -1755,6 +1724,56 @@
       </tags>
   </entry>
   <entry>
+    <title>合成器Global讲解</title>
+    <url>/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/</url>
+    <content><![CDATA[<p>本帖用于介绍合成器的Global面板。</p>
+<span id="more"></span>
+<p>首先看下 Serum 中的 Global 面板：</p>
+<img src="/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/Serum%E4%B8%AD%E7%9A%84Global%E9%9D%A2%E6%9D%BF.png" class="" title="Serum中的Global面板">
+<p>先看下这几个东西：quality（声音质量）、tune（音高）、bpm（速度）。</p>
+<p>这三东西是绝大多数合成器的global中都有的。</p>
+<h3 id="Quality（声音质量）"><a href="#Quality（声音质量）" class="headerlink" title="Quality（声音质量）"></a>Quality（声音质量）</h3><p>通常声音质量越高要求的性能越大。</p>
+<p>它在Serum中的这个位置：</p>
+<img src="/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/%E8%B4%A8%E9%87%8F.png" class="" title="声音质量">
+<h3 id="Tune（音高）"><a href="#Tune（音高）" class="headerlink" title="Tune（音高）"></a>Tune（音高）</h3><p>标准音高是 A（小字一组a），即 440Hz。</p>
+<p>它在Serum中的这个位置：</p>
+<img src="/2022/11/13/%E5%90%88%E6%88%90%E5%99%A8Global%E8%AE%B2%E8%A7%A3/%E9%9F%B3%E9%AB%98.png" class="" title="音高">
+<h3 id="BPM（速度）"><a href="#BPM（速度）" class="headerlink" title="BPM（速度）"></a>BPM（速度）</h3><p>大部分合成器的BPM是与宿主的BPM绑定的。</p>
+<p>应该都知道BPM是什么这里就不多说了。</p>
+<p>之后会详细讲一下Serum的global面板，这里先讲到这（本来也没什么好说的）。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1Ys411i7hF">B站UP主@AndreChen的教学视频 “【合辑】【合成器基础教学】入门/通用/必备知识——Abletive教学视频站”</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Dumby的折腾笔记</category>
+      </categories>
+      <tags>
+        <tag>合成器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无题</title>
+    <url>/2023/06/23/%E6%97%A0%E9%A2%98/</url>
+    <content><![CDATA[<blockquote>
+<p>本文是我的一位同学写的，我们无意间在他的桌子上翻到这篇文章，觉得写得甚好，就将它抄到本人的博客上。以下文章是我的抄写版，但我尽量将这位同学每一处批注与涂改都保留了下来。</p>
+</blockquote>
+<span id="more"></span>
+<img src="/2023/06/23/%E6%97%A0%E9%A2%98/One.jpg" class="" title="One">
+<img src="/2023/06/23/%E6%97%A0%E9%A2%98/Two.jpg" class="" title="Two">
+<blockquote>
+<p>注：“高大”系某高层权威人士，“明”是一名同学。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>批处理学习笔记</title>
     <url>/2022/07/16/%E6%89%B9%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>本贴为批处理学习笔记。</p>
@@ -1828,29 +1847,33 @@
       </tags>
   </entry>
   <entry>
-    <title>暑假，启动！！！</title>
-    <url>/2023/07/22/%E6%9A%91%E5%81%87%EF%BC%8C%E5%90%AF%E5%8A%A8%EF%BC%81%EF%BC%81%EF%BC%81/</url>
-    <content><![CDATA[]]></content>
+    <title>杂七杂八的公式和定理（律）</title>
+    <url>/2022/07/14/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E5%85%AC%E5%BC%8F%E5%92%8C%E5%AE%9A%E7%90%86%EF%BC%88%E5%BE%8B%EF%BC%89/</url>
+    <content><![CDATA[<p>本贴用来存一些零散的公式以及定理或定律。</p>
+<p>总之就是知识大乱炖。</p>
+<span id="more"></span>
+<h2 id="等比数列求和公式"><a href="#等比数列求和公式" class="headerlink" title="等比数列求和公式"></a>等比数列求和公式</h2><p>设 $\left\{ a_{i} \right\}$ 为等比数列，公比为 $p$，$a_{1}$ 为第一项，前 $n$ 项和为 $S_{n}$，则有：</p>
+<ol>
+<li>$p\neq 1$ ： $S_{n}=\frac{a_{1}\left(1-p^{n}\right)}{1-p}$</li>
+<li>$p=1$ ： $S_{n}=na_{1}$</li>
+</ol>
+<p>当数列从 $1$ 开始，公比 $p$ 不为 $1$ 时，有：</p>
+<p>$\sum_{i=0}^{n}p^{i}=\frac{1-p^{n+1}}{1-p}$</p>
+<p>特别的，若 $p\in\left(0,1\right)$，有：</p>
+<p>$\sum_{i=0}^{\infty}p^{i}=\frac{1}{1-p}$</p>
+<p>重要的是后面两个（尤其最后一个）。</p>
+]]></content>
       <categories>
-        <category>Dumby的sb日常</category>
+        <category>Dumby的OI生涯</category>
       </categories>
       <tags>
-        <tag>日常</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
-    <title>无题</title>
-    <url>/2023/06/23/%E6%97%A0%E9%A2%98/</url>
-    <content><![CDATA[<blockquote>
-<p>本文是我的一位同学写的，我们无意间在他的桌子上翻到这篇文章，觉得写得甚好，就将它抄到本人的博客上。以下文章是我的抄写版，但我尽量将这位同学每一处批注与涂改都保留了下来。</p>
-</blockquote>
-<span id="more"></span>
-<img src="/2023/06/23/%E6%97%A0%E9%A2%98/One.jpg" class="" title="One">
-<img src="/2023/06/23/%E6%97%A0%E9%A2%98/Two.jpg" class="" title="Two">
-<blockquote>
-<p>注：“高大”系某高层权威人士，“明”是一名同学。</p>
-</blockquote>
-]]></content>
+    <title>暑假，启动！！！</title>
+    <url>/2023/07/22/%E6%9A%91%E5%81%87%EF%BC%8C%E5%90%AF%E5%8A%A8%EF%BC%81%EF%BC%81%EF%BC%81/</url>
+    <content><![CDATA[]]></content>
       <categories>
         <category>Dumby的sb日常</category>
       </categories>
@@ -1885,27 +1908,23 @@
       </tags>
   </entry>
   <entry>
-    <title>杂七杂八的公式和定理（律）</title>
-    <url>/2022/07/14/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E5%85%AC%E5%BC%8F%E5%92%8C%E5%AE%9A%E7%90%86%EF%BC%88%E5%BE%8B%EF%BC%89/</url>
-    <content><![CDATA[<p>本贴用来存一些零散的公式以及定理或定律。</p>
-<p>总之就是知识大乱炖。</p>
+    <title>洛谷 P2824 排序</title>
+    <url>/2022/07/11/%E6%B4%9B%E8%B0%B7-P2824-%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P2824">洛谷P2824 [HEOI2016/TJOI2016]排序</a>。</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="离线做法"><a href="#离线做法" class="headerlink" title="离线做法"></a>离线做法</h3><p>受 01 串排序的启发，我们可以二分答案，将大于等于 $mid$ 的数设为 $1$，小于的设为 $0$，然后排个序。</p>
+<p>如果排完序后询问的 $q$ 位置的数仍为 $1$，则 $mid$ 可行。</p>
 <span id="more"></span>
-<h2 id="等比数列求和公式"><a href="#等比数列求和公式" class="headerlink" title="等比数列求和公式"></a>等比数列求和公式</h2><p>设 $\left\{ a_{i} \right\}$ 为等比数列，公比为 $p$，$a_{1}$ 为第一项，前 $n$ 项和为 $S_{n}$，则有：</p>
-<ol>
-<li>$p\neq 1$ ： $S_{n}=\frac{a_{1}\left(1-p^{n}\right)}{1-p}$</li>
-<li>$p=1$ ： $S_{n}=na_{1}$</li>
-</ol>
-<p>当数列从 $1$ 开始，公比 $p$ 不为 $1$ 时，有：</p>
-<p>$\sum_{i=0}^{n}p^{i}=\frac{1-p^{n+1}}{1-p}$</p>
-<p>特别的，若 $p\in\left(0,1\right)$，有：</p>
-<p>$\sum_{i=0}^{\infty}p^{i}=\frac{1}{1-p}$</p>
-<p>重要的是后面两个（尤其最后一个）。</p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">//#define ll long long</span></span><br><span class="line"><span class="comment">//#define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10000002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">10000001</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n,m,q;</span><br><span class="line"><span class="type">int</span> a[N],f[N];</span><br><span class="line"><span class="type">int</span> t[N],l[N],r[N];</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> l,r,d,add;</span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> l(x) tr[x].l</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> r(x) tr[x].r</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> d(x) tr[x].d</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> add(x) tr[x].add</span></span><br><span class="line">&#125; tr[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">build</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="built_in">l</span>(p)=l,<span class="built_in">r</span>(p)=r,<span class="built_in">add</span>(p)=<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">d</span>(p)=f[l];</span><br><span class="line">		<span class="keyword">return</span> ; </span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">build</span>(p*<span class="number">2</span>,l,mid);</span><br><span class="line">	<span class="built_in">build</span>(p*<span class="number">2</span>+<span class="number">1</span>,mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="built_in">d</span>(p)=<span class="built_in">d</span>(p*<span class="number">2</span>)+<span class="built_in">d</span>(p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">pushdown</span><span class="params">(<span class="type">int</span> p)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">add</span>(p)!=<span class="number">2</span>)&#123;</span><br><span class="line">		<span class="built_in">d</span>(p*<span class="number">2</span>)=<span class="built_in">add</span>(p)*(<span class="built_in">r</span>(p*<span class="number">2</span>)-<span class="built_in">l</span>(p*<span class="number">2</span>)+<span class="number">1</span>);</span><br><span class="line">		<span class="built_in">d</span>(p*<span class="number">2</span>+<span class="number">1</span>)=<span class="built_in">add</span>(p)*(<span class="built_in">r</span>(p*<span class="number">2</span>+<span class="number">1</span>)-<span class="built_in">l</span>(p*<span class="number">2</span>+<span class="number">1</span>)+<span class="number">1</span>);</span><br><span class="line">		<span class="built_in">add</span>(p*<span class="number">2</span>)=<span class="built_in">add</span>(p*<span class="number">2</span>+<span class="number">1</span>)=<span class="built_in">add</span>(p);</span><br><span class="line">		<span class="built_in">add</span>(p)=<span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">change</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r,<span class="type">int</span> d)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=<span class="built_in">l</span>(p)&amp;&amp;<span class="built_in">r</span>(p)&lt;=r)&#123;</span><br><span class="line">		<span class="built_in">add</span>(p)=d;</span><br><span class="line">		<span class="built_in">d</span>(p)=d*(<span class="built_in">r</span>(p)-<span class="built_in">l</span>(p)+<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">pushdown</span>(p);</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=mid)<span class="built_in">change</span>(p*<span class="number">2</span>,l,r,d);</span><br><span class="line">	<span class="keyword">if</span>(r&gt;mid)<span class="built_in">change</span>(p*<span class="number">2</span>+<span class="number">1</span>,l,r,d);</span><br><span class="line">	<span class="built_in">d</span>(p)=<span class="built_in">d</span>(p*<span class="number">2</span>)+<span class="built_in">d</span>(p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">asksum</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=<span class="built_in">l</span>(p)&amp;&amp;<span class="built_in">r</span>(p)&lt;=r) <span class="keyword">return</span> <span class="built_in">d</span>(p);</span><br><span class="line">	<span class="built_in">pushdown</span>(p);</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=mid)ans+=<span class="built_in">asksum</span>(p*<span class="number">2</span>,l,r);</span><br><span class="line">	<span class="keyword">if</span>(r&gt;mid)ans+=<span class="built_in">asksum</span>(p*<span class="number">2</span>+<span class="number">1</span>,l,r);</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">ask</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">l</span>(p)==<span class="built_in">r</span>(p)) <span class="keyword">return</span> <span class="built_in">d</span>(p);</span><br><span class="line">	<span class="built_in">pushdown</span>(p);</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=mid)<span class="keyword">return</span> <span class="built_in">ask</span>(p*<span class="number">2</span>,k);</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">ask</span>(p*<span class="number">2</span>+<span class="number">1</span>,k);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> ll,rr;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(<span class="type">int</span> mid)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		f[i]=(a[i]&gt;=mid);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">build</span>(<span class="number">1</span>,<span class="number">1</span>,n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!t[i])&#123;</span><br><span class="line">			<span class="type">int</span> sum=<span class="built_in">asksum</span>(<span class="number">1</span>,l[i],r[i]);</span><br><span class="line">			<span class="built_in">change</span>(<span class="number">1</span>,l[i],r[i]-sum,<span class="number">0</span>);</span><br><span class="line">			<span class="built_in">change</span>(<span class="number">1</span>,r[i]-sum+<span class="number">1</span>,r[i],<span class="number">1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="type">int</span> sum=<span class="built_in">asksum</span>(<span class="number">1</span>,l[i],r[i]);</span><br><span class="line">			<span class="built_in">change</span>(<span class="number">1</span>,l[i],l[i]+sum<span class="number">-1</span>,<span class="number">1</span>);</span><br><span class="line">			<span class="built_in">change</span>(<span class="number">1</span>,l[i]+sum,r[i],<span class="number">0</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">ask</span>(<span class="number">1</span>,q);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	n=<span class="built_in">read</span>(),m=<span class="built_in">read</span>();</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)a[i]=<span class="built_in">read</span>();</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)t[i]=<span class="built_in">read</span>(),l[i]=<span class="built_in">read</span>(),r[i]=<span class="built_in">read</span>();</span><br><span class="line">	q=<span class="built_in">read</span>();</span><br><span class="line">	ll=<span class="number">1</span>,rr=n;</span><br><span class="line">	<span class="keyword">while</span>(ll&lt;=rr)&#123;</span><br><span class="line">		<span class="type">int</span> mid=(ll+rr)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">check</span>(mid))ll=mid+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> rr=mid<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ll<span class="number">-1</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="在线做法"><a href="#在线做法" class="headerlink" title="在线做法"></a>在线做法</h3><p>在线做法同 <a href="https://www.luogu.com.cn/problem/CF558E">CF558E A Simple Task</a>。</p>
 ]]></content>
       <categories>
         <category>Dumby的OI生涯</category>
       </categories>
       <tags>
         <tag>C++</tag>
+        <tag>线段树</tag>
+        <tag>数据结构</tag>
+        <tag>二分</tag>
       </tags>
   </entry>
   <entry>
@@ -1948,43 +1967,6 @@
         <tag>C++</tag>
         <tag>DP</tag>
         <tag>倍增</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>洛谷 P2824 排序</title>
-    <url>/2022/07/11/%E6%B4%9B%E8%B0%B7-P2824-%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P2824">洛谷P2824 [HEOI2016/TJOI2016]排序</a>。</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="离线做法"><a href="#离线做法" class="headerlink" title="离线做法"></a>离线做法</h3><p>受 01 串排序的启发，我们可以二分答案，将大于等于 $mid$ 的数设为 $1$，小于的设为 $0$，然后排个序。</p>
-<p>如果排完序后询问的 $q$ 位置的数仍为 $1$，则 $mid$ 可行。</p>
-<span id="more"></span>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">//#define ll long long</span></span><br><span class="line"><span class="comment">//#define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10000002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">10000001</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n,m,q;</span><br><span class="line"><span class="type">int</span> a[N],f[N];</span><br><span class="line"><span class="type">int</span> t[N],l[N],r[N];</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> l,r,d,add;</span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> l(x) tr[x].l</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> r(x) tr[x].r</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> d(x) tr[x].d</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> add(x) tr[x].add</span></span><br><span class="line">&#125; tr[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">build</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="built_in">l</span>(p)=l,<span class="built_in">r</span>(p)=r,<span class="built_in">add</span>(p)=<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">d</span>(p)=f[l];</span><br><span class="line">		<span class="keyword">return</span> ; </span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">build</span>(p*<span class="number">2</span>,l,mid);</span><br><span class="line">	<span class="built_in">build</span>(p*<span class="number">2</span>+<span class="number">1</span>,mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="built_in">d</span>(p)=<span class="built_in">d</span>(p*<span class="number">2</span>)+<span class="built_in">d</span>(p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">pushdown</span><span class="params">(<span class="type">int</span> p)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">add</span>(p)!=<span class="number">2</span>)&#123;</span><br><span class="line">		<span class="built_in">d</span>(p*<span class="number">2</span>)=<span class="built_in">add</span>(p)*(<span class="built_in">r</span>(p*<span class="number">2</span>)-<span class="built_in">l</span>(p*<span class="number">2</span>)+<span class="number">1</span>);</span><br><span class="line">		<span class="built_in">d</span>(p*<span class="number">2</span>+<span class="number">1</span>)=<span class="built_in">add</span>(p)*(<span class="built_in">r</span>(p*<span class="number">2</span>+<span class="number">1</span>)-<span class="built_in">l</span>(p*<span class="number">2</span>+<span class="number">1</span>)+<span class="number">1</span>);</span><br><span class="line">		<span class="built_in">add</span>(p*<span class="number">2</span>)=<span class="built_in">add</span>(p*<span class="number">2</span>+<span class="number">1</span>)=<span class="built_in">add</span>(p);</span><br><span class="line">		<span class="built_in">add</span>(p)=<span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">change</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r,<span class="type">int</span> d)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=<span class="built_in">l</span>(p)&amp;&amp;<span class="built_in">r</span>(p)&lt;=r)&#123;</span><br><span class="line">		<span class="built_in">add</span>(p)=d;</span><br><span class="line">		<span class="built_in">d</span>(p)=d*(<span class="built_in">r</span>(p)-<span class="built_in">l</span>(p)+<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">pushdown</span>(p);</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=mid)<span class="built_in">change</span>(p*<span class="number">2</span>,l,r,d);</span><br><span class="line">	<span class="keyword">if</span>(r&gt;mid)<span class="built_in">change</span>(p*<span class="number">2</span>+<span class="number">1</span>,l,r,d);</span><br><span class="line">	<span class="built_in">d</span>(p)=<span class="built_in">d</span>(p*<span class="number">2</span>)+<span class="built_in">d</span>(p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">asksum</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=<span class="built_in">l</span>(p)&amp;&amp;<span class="built_in">r</span>(p)&lt;=r) <span class="keyword">return</span> <span class="built_in">d</span>(p);</span><br><span class="line">	<span class="built_in">pushdown</span>(p);</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=mid)ans+=<span class="built_in">asksum</span>(p*<span class="number">2</span>,l,r);</span><br><span class="line">	<span class="keyword">if</span>(r&gt;mid)ans+=<span class="built_in">asksum</span>(p*<span class="number">2</span>+<span class="number">1</span>,l,r);</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">ask</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">l</span>(p)==<span class="built_in">r</span>(p)) <span class="keyword">return</span> <span class="built_in">d</span>(p);</span><br><span class="line">	<span class="built_in">pushdown</span>(p);</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=mid)<span class="keyword">return</span> <span class="built_in">ask</span>(p*<span class="number">2</span>,k);</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">ask</span>(p*<span class="number">2</span>+<span class="number">1</span>,k);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> ll,rr;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(<span class="type">int</span> mid)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		f[i]=(a[i]&gt;=mid);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">build</span>(<span class="number">1</span>,<span class="number">1</span>,n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!t[i])&#123;</span><br><span class="line">			<span class="type">int</span> sum=<span class="built_in">asksum</span>(<span class="number">1</span>,l[i],r[i]);</span><br><span class="line">			<span class="built_in">change</span>(<span class="number">1</span>,l[i],r[i]-sum,<span class="number">0</span>);</span><br><span class="line">			<span class="built_in">change</span>(<span class="number">1</span>,r[i]-sum+<span class="number">1</span>,r[i],<span class="number">1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="type">int</span> sum=<span class="built_in">asksum</span>(<span class="number">1</span>,l[i],r[i]);</span><br><span class="line">			<span class="built_in">change</span>(<span class="number">1</span>,l[i],l[i]+sum<span class="number">-1</span>,<span class="number">1</span>);</span><br><span class="line">			<span class="built_in">change</span>(<span class="number">1</span>,l[i]+sum,r[i],<span class="number">0</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">ask</span>(<span class="number">1</span>,q);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	n=<span class="built_in">read</span>(),m=<span class="built_in">read</span>();</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)a[i]=<span class="built_in">read</span>();</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)t[i]=<span class="built_in">read</span>(),l[i]=<span class="built_in">read</span>(),r[i]=<span class="built_in">read</span>();</span><br><span class="line">	q=<span class="built_in">read</span>();</span><br><span class="line">	ll=<span class="number">1</span>,rr=n;</span><br><span class="line">	<span class="keyword">while</span>(ll&lt;=rr)&#123;</span><br><span class="line">		<span class="type">int</span> mid=(ll+rr)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">check</span>(mid))ll=mid+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> rr=mid<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ll<span class="number">-1</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="在线做法"><a href="#在线做法" class="headerlink" title="在线做法"></a>在线做法</h3><p>在线做法同 <a href="https://www.luogu.com.cn/problem/CF558E">CF558E A Simple Task</a>。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>线段树</tag>
-        <tag>数据结构</tag>
-        <tag>二分</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>洛谷 P4550 收集邮票</title>
-    <url>/2022/07/19/%E6%B4%9B%E8%B0%B7-P4550-%E6%94%B6%E9%9B%86%E9%82%AE%E7%A5%A8/</url>
-    <content><![CDATA[<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>和 <a href="/2022/07/18/UVA10288-%E4%BC%98%E6%83%A0%E5%88%B8-Coupons/" title="UVA10288 优惠券">UVA10288 优惠券</a> 很像，只不过加了价格随次数变动的条件。</p>
-<p>在原来式子的基础上改一下，第一次取出第 $i$ 个物品期望需要的价格是取出前 $i$ 个物品期望需要的次数总和（也就是价格）乘上取出第 $i$ 个期望需要的次数（注意这里的价格是平均过的）。</p>
-<span id="more"></span>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ull unsigned long long</span></span><br><span class="line"><span class="comment">//#define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1000002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">10000001</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">double</span> <span class="title">readd</span><span class="params">()</span></span>&#123;<span class="type">int</span> y=<span class="number">0</span>;<span class="type">char</span> h=<span class="built_in">getchar</span>();<span class="keyword">while</span>(h&lt;<span class="string">&#x27;0&#x27;</span>||h&gt;<span class="string">&#x27;9&#x27;</span>)h=<span class="built_in">getchar</span>();<span class="keyword">while</span>(h&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp;h&lt;=<span class="string">&#x27;9&#x27;</span>)y=y*<span class="number">10</span>+h-<span class="string">&#x27;0&#x27;</span>,h=<span class="built_in">getchar</span>();<span class="keyword">if</span>(h==<span class="string">&#x27;.&#x27;</span>)&#123;h=<span class="built_in">getchar</span>();<span class="type">double</span> t=<span class="number">0</span>,t2=<span class="number">0.1</span>;<span class="keyword">while</span>(h&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp;h&lt;=<span class="string">&#x27;9&#x27;</span>)t=t+t2*(h-<span class="string">&#x27;0&#x27;</span>),t2/=<span class="number">10</span>,h=<span class="built_in">getchar</span>();<span class="keyword">return</span> y+t;&#125;<span class="keyword">return</span> y;&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> n=<span class="built_in">read</span>();</span><br><span class="line">	<span class="type">double</span> sum=<span class="number">0</span>,ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		sum+=<span class="number">1.0</span>*n/(n-i+<span class="number">1</span>);</span><br><span class="line">		ans+=sum*<span class="number">1.0</span>*n/(n-i+<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%.2lf&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>DP</tag>
-        <tag>期望</tag>
-        <tag>线性DP</tag>
       </tags>
   </entry>
   <entry>
@@ -2050,6 +2032,23 @@
         <tag>C++</tag>
         <tag>矩阵乘法</tag>
         <tag>数论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>洛谷 P4550 收集邮票</title>
+    <url>/2022/07/19/%E6%B4%9B%E8%B0%B7-P4550-%E6%94%B6%E9%9B%86%E9%82%AE%E7%A5%A8/</url>
+    <content><![CDATA[<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>和 <a href="/2022/07/18/UVA10288-%E4%BC%98%E6%83%A0%E5%88%B8-Coupons/" title="UVA10288 优惠券">UVA10288 优惠券</a> 很像，只不过加了价格随次数变动的条件。</p>
+<p>在原来式子的基础上改一下，第一次取出第 $i$ 个物品期望需要的价格是取出前 $i$ 个物品期望需要的次数总和（也就是价格）乘上取出第 $i$ 个期望需要的次数（注意这里的价格是平均过的）。</p>
+<span id="more"></span>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ull unsigned long long</span></span><br><span class="line"><span class="comment">//#define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1000002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">10000001</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">double</span> <span class="title">readd</span><span class="params">()</span></span>&#123;<span class="type">int</span> y=<span class="number">0</span>;<span class="type">char</span> h=<span class="built_in">getchar</span>();<span class="keyword">while</span>(h&lt;<span class="string">&#x27;0&#x27;</span>||h&gt;<span class="string">&#x27;9&#x27;</span>)h=<span class="built_in">getchar</span>();<span class="keyword">while</span>(h&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp;h&lt;=<span class="string">&#x27;9&#x27;</span>)y=y*<span class="number">10</span>+h-<span class="string">&#x27;0&#x27;</span>,h=<span class="built_in">getchar</span>();<span class="keyword">if</span>(h==<span class="string">&#x27;.&#x27;</span>)&#123;h=<span class="built_in">getchar</span>();<span class="type">double</span> t=<span class="number">0</span>,t2=<span class="number">0.1</span>;<span class="keyword">while</span>(h&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp;h&lt;=<span class="string">&#x27;9&#x27;</span>)t=t+t2*(h-<span class="string">&#x27;0&#x27;</span>),t2/=<span class="number">10</span>,h=<span class="built_in">getchar</span>();<span class="keyword">return</span> y+t;&#125;<span class="keyword">return</span> y;&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> n=<span class="built_in">read</span>();</span><br><span class="line">	<span class="type">double</span> sum=<span class="number">0</span>,ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		sum+=<span class="number">1.0</span>*n/(n-i+<span class="number">1</span>);</span><br><span class="line">		ans+=sum*<span class="number">1.0</span>*n/(n-i+<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%.2lf&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>DP</tag>
+        <tag>期望</tag>
+        <tag>线性DP</tag>
       </tags>
   </entry>
   <entry>
