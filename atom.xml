@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2023-08-14T06:40:18.209Z</updated>
+  <updated>2023-08-27T02:52:35.765Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ahsoka 一、二集短评</title>
+    <link href="https://dumblog.top/2023/08/27/Ahsoka-%E4%B8%80%E3%80%81%E4%BA%8C%E9%9B%86%E7%9F%AD%E8%AF%84/"/>
+    <id>https://dumblog.top/2023/08/27/Ahsoka-%E4%B8%80%E3%80%81%E4%BA%8C%E9%9B%86%E7%9F%AD%E8%AF%84/</id>
+    <published>2023-08-27T02:39:03.000Z</published>
+    <updated>2023-08-27T02:52:35.765Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;星战新剧《阿索卡》上映，谈谈前两集的观感。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="影视剧" scheme="https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/"/>
+    
+    <category term="星球大战" scheme="https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Baseus 倍思 M2s</title>
@@ -409,25 +432,6 @@
     <category term="时间复杂度" scheme="https://dumblog.top/tags/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
     
     <category term="主定理" scheme="https://dumblog.top/tags/%E4%B8%BB%E5%AE%9A%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>合成器基本结构介绍</title>
-    <link href="https://dumblog.top/2022/09/09/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://dumblog.top/2022/09/09/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/</id>
-    <published>2022-09-09T09:58:29.000Z</published>
-    <updated>2023-02-25T09:15:10.812Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本贴用于学习合成器的各个模块，包括振荡器、滤波器等。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
     
   </entry>
   
