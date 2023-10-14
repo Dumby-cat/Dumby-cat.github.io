@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2023-10-08T02:49:27.094Z</updated>
+  <updated>2023-10-14T13:14:49.490Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Иди и смотри</title>
+    <link href="https://dumblog.top/2023/10/14/%D0%98%D0%B4%D0%B8-%D0%B8-%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8/"/>
+    <id>https://dumblog.top/2023/10/14/%D0%98%D0%B4%D0%B8-%D0%B8-%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8/</id>
+    <published>2023-10-14T12:22:57.000Z</published>
+    <updated>2023-10-14T13:14:49.490Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;And I saw when the Lamb opened one of the seals, and I heard, as it were the noise of thunder, one of the four beasts saying, &lt;strong&gt;Come and see&lt;/strong&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="影视剧" scheme="https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/"/>
+    
+    <category term="战争" scheme="https://dumblog.top/tags/%E6%88%98%E4%BA%89/"/>
+    
+  </entry>
   
   <entry>
     <title>Ahsoka 剧评</title>
@@ -409,29 +432,6 @@
     
     
     <category term="C++" scheme="https://dumblog.top/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>csp-s初赛准备：时间复杂度</title>
-    <link href="https://dumblog.top/2022/09/18/csp-s%E5%88%9D%E8%B5%9B%E5%87%86%E5%A4%87%EF%BC%9A%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
-    <id>https://dumblog.top/2022/09/18/csp-s%E5%88%9D%E8%B5%9B%E5%87%86%E5%A4%87%EF%BC%9A%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</id>
-    <published>2022-09-18T01:57:51.000Z</published>
-    <updated>2023-02-25T09:15:10.573Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;初赛似乎是必考一题时间复杂度计算，现在在考前抱下佛脚。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的OI生涯" scheme="https://dumblog.top/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/"/>
-    
-    
-    <category term="初赛" scheme="https://dumblog.top/tags/%E5%88%9D%E8%B5%9B/"/>
-    
-    <category term="时间复杂度" scheme="https://dumblog.top/tags/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
-    
-    <category term="主定理" scheme="https://dumblog.top/tags/%E4%B8%BB%E5%AE%9A%E7%90%86/"/>
     
   </entry>
   
