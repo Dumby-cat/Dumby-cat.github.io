@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2023-10-14T13:23:44.877Z</updated>
+  <updated>2024-03-17T03:42:59.367Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dune Part.2 观后</title>
+    <link href="https://dumblog.top/2024/03/17/Dune-Part-2-%E8%A7%82%E5%90%8E/"/>
+    <id>https://dumblog.top/2024/03/17/Dune-Part-2-%E8%A7%82%E5%90%8E/</id>
+    <published>2024-03-17T03:41:22.000Z</published>
+    <updated>2024-03-17T03:42:59.367Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="影视剧" scheme="https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/"/>
+    
+    <category term="沙丘" scheme="https://dumblog.top/tags/%E6%B2%99%E4%B8%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Иди и смотри</title>
@@ -413,25 +442,6 @@
     <category term="C++" scheme="https://dumblog.top/tags/C/"/>
     
     <category term="垃圾桶" scheme="https://dumblog.top/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++预处理命令自习</title>
-    <link href="https://dumblog.top/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/"/>
-    <id>https://dumblog.top/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/</id>
-    <published>2022-10-09T01:58:14.000Z</published>
-    <updated>2023-02-25T08:51:18.921Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文主要用于学习各种 C++ 预处理命令，包括头文件保护符（目前只写了这个）。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的C++学习笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="C++" scheme="https://dumblog.top/tags/C/"/>
     
   </entry>
   
