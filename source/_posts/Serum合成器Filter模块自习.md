@@ -1,9 +1,10 @@
 ---
 title: Serum合成器Filter模块自习
-date: 2023-03-04 17:14:20
 tags:
-- 合成器
+  - 合成器
 categories: Dumby的折腾笔记
+abbrlink: a779d5b6
+date: 2023-03-04 17:14:20
 ---
 
 本帖用于自习Serum的滤波器模块。

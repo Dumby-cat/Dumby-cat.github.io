@@ -1,11 +1,12 @@
 ---
 title: SPOJ2916 GSS5-Can you answer these queries V
-date: 2022-07-09 20:52:29
 tags:
-- 线段树
-- 数据结构
-- C++
+  - 线段树
+  - 数据结构
+  - C++
 categories: Dumby的OI生涯
+abbrlink: 52b2685a
+date: 2022-07-09 20:52:29
 ---
 
 ## 解析

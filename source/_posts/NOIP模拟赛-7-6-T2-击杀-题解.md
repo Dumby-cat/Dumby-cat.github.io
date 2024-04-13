@@ -1,9 +1,10 @@
 ---
 title: NOIP模拟赛 7.6 T2 击杀 题解
-date: 2022-07-07 19:10:15
 tags:
-- DP
+  - DP
 categories: Dumby的OI生涯
+abbrlink: c94e91b3
+date: 2022-07-07 19:10:15
 ---
 
 ## 题面

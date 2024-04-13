@@ -1,13 +1,14 @@
 ---
 title: UVA10288 优惠券 Coupons
-date: 2022-07-18 19:06:24
 tags:
-- C++
-- 概率
-- 期望
-- DP
-- 线性DP
+  - C++
+  - 概率
+  - 期望
+  - DP
+  - 线性DP
 categories: Dumby的OI生涯
+abbrlink: 4d6eb27f
+date: 2022-07-18 19:06:24
 ---
 
 ## 题意

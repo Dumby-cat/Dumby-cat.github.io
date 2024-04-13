@@ -1,13 +1,14 @@
 ---
 title: CF558E A Simple Task
-date: 2022-07-12 12:17:26
 tags:
-- 线段树
-- 数据结构
-- C++
-- 排序
-- 字符串
+  - 线段树
+  - 数据结构
+  - C++
+  - 排序
+  - 字符串
 categories: Dumby的OI生涯
+abbrlink: 1a1ef87d
+date: 2022-07-12 12:17:26
 ---
 
 ## 思路

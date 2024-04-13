@@ -1,11 +1,12 @@
 ---
 title: Dsu on Tree （树上启发式合并）不是很详的解
-date: 2022-07-09 21:18:50
 tags:
-- C++
-- 启发式
-- dsu on tree
+  - C++
+  - 启发式
+  - dsu on tree
 categories: Dumby的OI生涯
+abbrlink: a62d2852
+date: 2022-07-09 21:18:50
 ---
 
 ## 引子

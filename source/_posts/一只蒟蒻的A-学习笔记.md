@@ -1,10 +1,11 @@
-﻿---
+---
 title: 一只蒟蒻的A-Star学习笔记
-date: 2021-06-29 13:22:38
 tags:
-- C++
-- 搜索
+  - C++
+  - 搜索
 categories: Dumby的OI生涯
+abbrlink: dfb97dcd
+date: 2021-06-29 13:22:38
 ---
 ## A-Star 是啥？？ A-Star 用来干啥？？
 

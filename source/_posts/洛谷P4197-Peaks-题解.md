@@ -1,13 +1,14 @@
 ---
 title: 洛谷P4197 Peaks (Kruskal重构树) 题解
-date: 2022-07-06 21:48:40
 tags:
-- C++
-- Kruskal
-- 倍增
-- DFS
-- 主席树
+  - C++
+  - Kruskal
+  - 倍增
+  - DFS
+  - 主席树
 categories: Dumby的OI生涯
+abbrlink: 8ea37269
+date: 2022-07-06 21:48:40
 ---
 
 ## 解析

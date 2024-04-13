@@ -1,11 +1,12 @@
 ---
 title: 'Spider-Man: Across the Spider-Verse 观后'
-date: 2023-06-17 21:49:39
 tags:
-- 日常
-- 影视剧
-- 蜘蛛侠
+  - 日常
+  - 影视剧
+  - 蜘蛛侠
 categories: Dumby的sb日常
+abbrlink: b6c4de85
+date: 2023-06-17 21:49:39
 ---
 
 最近二刷完《蜘蛛侠：纵横宇宙》，顺手写点有趣的东西吧。

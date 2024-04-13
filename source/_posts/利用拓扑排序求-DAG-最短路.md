@@ -1,13 +1,14 @@
 ---
 title: 利用拓扑排序求 DAG 最短路
-date: 2022-02-14 17:56:33
-tags: 
-- C++
-- 拓扑排序
-- 图论
-- DAG
-- 最短路
+tags:
+  - C++
+  - 拓扑排序
+  - 图论
+  - DAG
+  - 最短路
 categories: Dumby的OI生涯
+abbrlink: b83b8342
+date: 2022-02-14 17:56:33
 ---
 
 ## 背景

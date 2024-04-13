@@ -1,9 +1,10 @@
 ---
 title: 合成器Global讲解
-date: 2022-11-13 12:24:38
 tags:
-- 合成器
+  - 合成器
 categories: Dumby的折腾笔记
+abbrlink: 8e168ba4
+date: 2022-11-13 12:24:38
 ---
 
 本帖用于介绍合成器的Global面板。

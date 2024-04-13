@@ -1,10 +1,11 @@
 ---
 title: C++ goto语句
-date: 2022-12-24 14:32:57
 tags:
-- C++
-- C++函数和语句
+  - C++
+  - C++函数和语句
 categories: Dumby的C++学习笔记
+abbrlink: b001cc58
+date: 2022-12-24 14:32:57
 ---
 
 关于C++中的goto语句。
