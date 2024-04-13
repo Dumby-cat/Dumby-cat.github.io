@@ -1,11 +1,12 @@
-﻿---
+---
 title: 一只蒟蒻的树形DP学习笔记
-date: 2021-06-27 13:41:07
-tags: 
-- C++
-- 树形DP
-- DP
+tags:
+  - C++
+  - 树形DP
+  - DP
 categories: Dumby的OI生涯
+abbrlink: 7407db9f
+date: 2021-06-27 13:41:07
 ---
 START MY SHOW！！！！
 ## 为什么叫树形DP？与线性DP有什么区别？

@@ -1,10 +1,11 @@
 ---
 title: C艹 Class（类）学习笔记
-date: 2022-07-21 18:19:46
 tags:
-- C++
-- 垃圾桶
+  - C++
+  - 垃圾桶
 categories: Dumby的C++学习笔记
+abbrlink: 6eb5f9bd
+date: 2022-07-21 18:19:46
 ---
 
 废稿。

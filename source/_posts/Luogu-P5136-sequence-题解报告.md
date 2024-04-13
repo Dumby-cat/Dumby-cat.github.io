@@ -1,11 +1,12 @@
 ---
 title: Luogu P5136 sequence 题解报告
-date: 2021-08-27 15:25:29
 tags:
-- C++
-- 矩阵乘法
-- 数论
+  - C++
+  - 矩阵乘法
+  - 数论
 categories: Dumby的OI生涯
+abbrlink: c69d20bb
+date: 2021-08-27 15:25:29
 ---
 
 ## 题目描述

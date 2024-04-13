@@ -1,9 +1,10 @@
 ---
 title: Serum合成器OSC模块Warp选项讲解
-date: 2023-01-07 12:28:58
 tags:
-- 合成器
+  - 合成器
 categories: Dumby的折腾笔记
+abbrlink: 31cd30e4
+date: 2023-01-07 12:28:58
 ---
 
 本帖用于介绍 Serum 的振荡器模块中的 Warp 选项。

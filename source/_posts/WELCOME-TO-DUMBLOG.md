@@ -1,10 +1,11 @@
 ---
 title: WELCOME TO DUMBLOG
-date: 2021-06-26 14:45:10
-tags: 
-- 通知
-- 站务
+tags:
+  - 通知
+  - 站务
 categories: 站务
+abbrlink: f9fb1675
+date: 2021-06-26 14:45:10
 ---
 
 # 欢迎来到 DUMBLOG !

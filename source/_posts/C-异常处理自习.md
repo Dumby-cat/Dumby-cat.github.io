@@ -1,10 +1,11 @@
 ---
 title: C++异常处理自习
-date: 2022-10-09 09:58:39
-tags: 
-- C++
-- 垃圾桶
+tags:
+  - C++
+  - 垃圾桶
 categories: Dumby的C++学习笔记
+abbrlink: a1e55790
+date: 2022-10-09 09:58:39
 ---
 
 废稿。

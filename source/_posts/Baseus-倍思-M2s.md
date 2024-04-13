@@ -1,10 +1,11 @@
 ---
 title: Baseus 倍思 M2s
-date: 2023-07-22 13:20:13
 tags:
-- 日常
-- 耳机
+  - 日常
+  - 耳机
 categories: Dumby的sb日常
+abbrlink: 6e8aad32
+date: 2023-07-22 13:20:13
 ---
 
 上上个星期买的 Baseus M2s 在上个星期到手了，稍稍写下体验。

@@ -1,11 +1,12 @@
 ---
 title: NOIP模拟赛T2 片段划分
-date: 2022-07-05 19:22:03
 tags:
-- C++
-- 栈
-- 数据结构
+  - C++
+  - 栈
+  - 数据结构
 categories: Dumby的OI生涯
+abbrlink: 6ebd43b
+date: 2022-07-05 19:22:03
 ---
 
 ## 解析

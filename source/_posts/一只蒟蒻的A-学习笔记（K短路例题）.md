@@ -1,10 +1,11 @@
-﻿---
+---
 title: 一只蒟蒻的A-Star 学习笔记（K短路例题）
-date: 2021-06-29 20:10:45
-tags: 
-- C++
-- 搜索
+tags:
+  - C++
+  - 搜索
 categories: Dumby的OI生涯
+abbrlink: 9cf82999
+date: 2021-06-29 20:10:45
 ---
 ## K 短路输出路径
 题目链接：[ACWing](https://www.acwing.com/problem/content/2623/) 和 [洛谷](https://www.luogu.com.cn/problem/P4467)

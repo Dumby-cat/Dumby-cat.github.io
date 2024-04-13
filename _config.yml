@@ -16,6 +16,9 @@ timezone: ''
 url: https://dumblog.top
 root: /
 permalink: :year/:month/:day/:title/
+#abbrlink: 
+#  alg: crc32 #算法选项：crc16丨crc32
+#  rep: hex #输出进制：dec为十进制，hex为十六进制
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -105,9 +108,10 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 
 deploy:
-  type: git
-  repo: git@github.com:Dumby-cat/Dumby-cat.github.io.git
-  branch: master
+  - type: git
+    repo: git@github.com:Dumby-cat/Dumby-cat.github.io.git
+    branch: master
+  - type: baidu_url_submitter
 
 #RSS
 feed:
@@ -122,3 +126,10 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
+
+baidu_url_submit:
+  count: 200
+  host: https://dumblog.top
+  token: kyZZPxlW85Ma8xCM
+  path: baidu_urls.txt
