@@ -2594,7 +2594,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #29edbb;
+  background: #e8ff70;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2747,6 +2747,16 @@ header.post-header {
 @media (max-width: 767px) {
   .content-wrap {
     width: 100%;
+  }
+}
+nav.site-nav {
+  --scroll-height: 228px;
+  --scroll-width: 120px;
+}
+@media (max-width: 767px) {
+  body.site-nav-on .site-nav {
+    height: var(--scroll-height);
+    width: var(--scroll-width);
   }
 }
 i {
