@@ -142,6 +142,16 @@ header.post-header {
   }
 }
 
+nav.site-nav {
+    --scroll-height: 228px;
+    --scroll-width: 120px;
+}
+@media (max-width: 767px) {
+    body.site-nav-on .site-nav {
+        height: var(--scroll-height);
+        width: var(--scroll-width);
+    }
+}
 //Title-line
 i {
   background: #ffffff !important;
