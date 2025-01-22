@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2025-01-01T11:33:15.940Z</updated>
+  <updated>2025-01-22T03:48:10.164Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -17,15 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>日乐快生！（补）</title>
+    <link href="https://dumblog.top/2025/01/22/%E6%97%A5%E4%B9%90%E5%BF%AB%E7%94%9F%EF%BC%81%EF%BC%88%E8%A1%A5%EF%BC%89/"/>
+    <id>https://dumblog.top/2025/01/22/%E6%97%A5%E4%B9%90%E5%BF%AB%E7%94%9F%EF%BC%81%EF%BC%88%E8%A1%A5%EF%BC%89/</id>
+    <published>2025-01-22T03:39:19.000Z</published>
+    <updated>2025-01-22T03:48:10.164Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;生日已经过了好几天了，今天才想起来发篇帖子，主要想展示下我的蛋糕😋😋。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>已是2025</title>
     <link href="https://dumblog.top/2025/01/01/%E5%B7%B2%E6%98%AF2025/"/>
     <id>https://dumblog.top/2025/01/01/%E5%B7%B2%E6%98%AF2025/</id>
     <published>2025-01-01T11:28:45.000Z</published>
-    <updated>2025-01-01T11:33:15.940Z</updated>
+    <updated>2025-01-01T11:47:43.613Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;p&gt;各位新年好啊。&lt;/p&gt;
-&lt;p&gt;vivo50新年有好运！😜😜&lt;/p&gt;</summary>
+&lt;p&gt;vivo50新年有好运！😜😜&lt;/p&gt;
+</summary>
+        
+      
     
     
     
@@ -416,25 +442,6 @@
     <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="狗P文学" scheme="https://dumblog.top/tags/%E7%8B%97P%E6%96%87%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客在线更新指北</title>
-    <link href="https://dumblog.top/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/"/>
-    <id>https://dumblog.top/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/</id>
-    <published>2022-10-21T05:44:04.000Z</published>
-    <updated>2024-04-13T03:25:14.247Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;利用 Vercel+Github 通过一些歪门邪道实现 Hexo 静态博客的在线更新。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="站务" scheme="https://dumblog.top/tags/%E7%AB%99%E5%8A%A1/"/>
     
   </entry>
   
