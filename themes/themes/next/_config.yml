@@ -314,9 +314,11 @@ tagcloud:
   # All values below are same as default, change them by yourself.
   min: 12 # Minimun font size in px
   max: 30 # Maxium font size in px
-  start: "#ccc" # Start color (hex, rgba, hsla or color keywords)
-  end: "#111" # End color (hex, rgba, hsla or color keywords)
+  start: "#ffffff" # Start color (hex, rgba, hsla or color keywords)
+  end: "#ffffff" # End color (hex, rgba, hsla or color keywords)
   amount: 200 # Amount of tags, change it if you have more than 200 tags
+  orderby: name # Order of tags
+  order: 1 # Sort order
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
