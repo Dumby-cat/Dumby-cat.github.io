@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2025-05-09T08:26:45.965Z</updated>
+  <updated>2025-05-10T08:57:25.142Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《安多 第二季》剧评</title>
+    <link href="https://dumblog.top/2025/05/09/%E3%80%8A%E5%AE%89%E5%A4%9A-%E7%AC%AC%E4%BA%8C%E5%AD%A3%E3%80%8B%E5%89%A7%E8%AF%84/"/>
+    <id>https://dumblog.top/2025/05/09/%E3%80%8A%E5%AE%89%E5%A4%9A-%E7%AC%AC%E4%BA%8C%E5%AD%A3%E3%80%8B%E5%89%A7%E8%AF%84/</id>
+    <published>2025-05-09T15:42:51.000Z</published>
+    <updated>2025-05-10T08:57:25.142Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近安多第二季上线，写写观感顺便说说前段时间看的剧。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="星球大战" scheme="https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/"/>
+    
+    <category term="影视剧" scheme="https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>一个大学生为什么能这么疲惫与无力</title>
@@ -182,9 +205,9 @@
     <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="星球大战" scheme="https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/"/>
-    
     <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="星球大战" scheme="https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/"/>
     
     <category term="影视剧" scheme="https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/"/>
     
@@ -415,30 +438,11 @@
     <category term="Dumby的sb日常" scheme="https://dumblog.top/categories/Dumby%E7%9A%84sb%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="星球大战" scheme="https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/"/>
-    
     <category term="日常" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8/"/>
     
+    <category term="星球大战" scheme="https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/"/>
+    
     <category term="影视剧" scheme="https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Serum的OSC入门</title>
-    <link href="https://dumblog.top/2022/11/27/Serum%E7%9A%84OSC%E5%85%A5%E9%97%A8/"/>
-    <id>https://dumblog.top/2022/11/27/Serum%E7%9A%84OSC%E5%85%A5%E9%97%A8/</id>
-    <published>2022-11-27T11:17:03.000Z</published>
-    <updated>2024-04-13T03:25:14.241Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本帖用于自习Serum的振荡器模块。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的折腾笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="合成器" scheme="https://dumblog.top/tags/%E5%90%88%E6%88%90%E5%99%A8/"/>
     
   </entry>
   

@@ -50,8 +50,8 @@
         <category>Dumby的sb日常</category>
       </categories>
       <tags>
-        <tag>星球大战</tag>
         <tag>日常</tag>
+        <tag>星球大战</tag>
         <tag>影视剧</tag>
       </tags>
   </entry>
@@ -106,33 +106,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C++预处理命令自习</title>
-    <url>/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/</url>
-    <content><![CDATA[<p>本文主要用于学习各种 C++ 预处理命令，包括头文件保护符（目前只写了这个）。</p>
-<span id="more"></span>
-<h2 id="头文件保护符"><a href="#头文件保护符" class="headerlink" title="头文件保护符"></a>头文件保护符</h2><h3 id="if"><a href="#if" class="headerlink" title="#if"></a>#if</h3><p>语法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#if 整型常量表达式1</span><br><span class="line">    程序段1</span><br><span class="line">#elif 整型常量表达式2 // elif 可以省略</span><br><span class="line">    程序段2</span><br><span class="line">#elif 整型常量表达式3</span><br><span class="line">    程序段3</span><br><span class="line">#else</span><br><span class="line">    程序段3</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
-<p>其功能与普通的 <code>if</code> 、 <code>else if</code> 、 <code>else</code> 功能类似，但也有区别。</p>
-<p>与 <code>if</code> 一样， <code>#elif</code> 和 <code>#else</code> 可以省去。</p>
-<p>区别是 <code>#if</code> 只能判断“整形常量表达式”，也就是说表达式中只能有常量，且结果必须为常数。</p>
-<p>另一区别是 <code>#if</code> 必须和 <code>#endif</code> 组合使用， <code>#endif</code> 表示结束判断。</p>
-<h4 id="ifdef"><a href="#ifdef" class="headerlink" title="#ifdef"></a>#ifdef</h4><p>语法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#ifdef 宏名</span><br><span class="line">    程序段1</span><br><span class="line">#else</span><br><span class="line">    程序段2</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
-<p>如果宏被定义了，则执行程序段1，否则执行程序段2。</p>
-<h4 id="ifndef"><a href="#ifndef" class="headerlink" title="#ifndef"></a>#ifndef</h4><p>与 <code>#ifdef</code> 类似，只是判断条件相反，即宏未被定义则执行程序段1。</p>
-<p>参考：</p>
-<ul>
-<li><a href="http://c.biancheng.net/view/1986.html">C语言中文网</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Dumby的C++学习笔记</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C++异常处理自习</title>
     <url>/2022/10/09/C-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%87%AA%E4%B9%A0/</url>
     <content><![CDATA[<p>废稿。</p>
@@ -176,6 +149,33 @@
       <tags>
         <tag>C++</tag>
         <tag>垃圾桶</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++预处理命令自习</title>
+    <url>/2022/10/09/C-%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E8%87%AA%E4%B9%A0/</url>
+    <content><![CDATA[<p>本文主要用于学习各种 C++ 预处理命令，包括头文件保护符（目前只写了这个）。</p>
+<span id="more"></span>
+<h2 id="头文件保护符"><a href="#头文件保护符" class="headerlink" title="头文件保护符"></a>头文件保护符</h2><h3 id="if"><a href="#if" class="headerlink" title="#if"></a>#if</h3><p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#if 整型常量表达式1</span><br><span class="line">    程序段1</span><br><span class="line">#elif 整型常量表达式2 // elif 可以省略</span><br><span class="line">    程序段2</span><br><span class="line">#elif 整型常量表达式3</span><br><span class="line">    程序段3</span><br><span class="line">#else</span><br><span class="line">    程序段3</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
+<p>其功能与普通的 <code>if</code> 、 <code>else if</code> 、 <code>else</code> 功能类似，但也有区别。</p>
+<p>与 <code>if</code> 一样， <code>#elif</code> 和 <code>#else</code> 可以省去。</p>
+<p>区别是 <code>#if</code> 只能判断“整形常量表达式”，也就是说表达式中只能有常量，且结果必须为常数。</p>
+<p>另一区别是 <code>#if</code> 必须和 <code>#endif</code> 组合使用， <code>#endif</code> 表示结束判断。</p>
+<h4 id="ifdef"><a href="#ifdef" class="headerlink" title="#ifdef"></a>#ifdef</h4><p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#ifdef 宏名</span><br><span class="line">    程序段1</span><br><span class="line">#else</span><br><span class="line">    程序段2</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
+<p>如果宏被定义了，则执行程序段1，否则执行程序段2。</p>
+<h4 id="ifndef"><a href="#ifndef" class="headerlink" title="#ifndef"></a>#ifndef</h4><p>与 <code>#ifdef</code> 类似，只是判断条件相反，即宏未被定义则执行程序段1。</p>
+<p>参考：</p>
+<ul>
+<li><a href="http://c.biancheng.net/view/1986.html">C语言中文网</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Dumby的C++学习笔记</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -240,6 +240,54 @@
       <tags>
         <tag>C++</tag>
         <tag>垃圾桶</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dsu on Tree （树上启发式合并）不是很详的解</title>
+    <url>/2022/07/09/Dsu-on-Tree-%E4%B8%8D%E6%98%AF%E5%BE%88%E8%AF%A6%E7%9A%84%E8%A7%A3/</url>
+    <content><![CDATA[<h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>先来个例题耍耍。</p>
+<blockquote>
+<p>给出一棵 $n$ 个节点以 $1$ 为根的树，节点 $u$ 的颜色为 $c_{u}$，现在对于每个结点 $u$ 询问以 $u$ 为根子树里一共出现了多少种不同的颜色。<br>$n \le 2 \times 10^{5}$。<br>（没错就是 OIWiki 上的例题。。。）</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p>先把算法流程打出来方便讲。</p>
+<p>我们设一个数组 $cnt[]$ 用来记录颜色每个种类的数量。</p>
+<ol>
+<li>先树链剖分找出每个节点的重儿子；</li>
+<li>对于每个节点 $u$ 优先遍历其轻儿子，并计算出轻儿子的答案，但<em>不保留遍历轻儿子对 $cnt[]$ 数组的影响</em>；</li>
+<li>接着遍历 $u$ 的重儿子，<em>保留遍历重儿子对 $cnt[]$ 数组的影响</em>；</li>
+<li>再遍历一遍 $u$ 的轻儿子，<em>保留再次遍历轻儿子对 $cnt[]$ 数组的影响</em>，得到 $u$ 的答案。</li>
+</ol>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>该算法的重点就是先后两次遍历轻儿子。</p>
+<p>那么为什么不将两次遍历合并呢？</p>
+<p>考虑如果两次合并，那么轻儿子对 $cnt[]$ 数组的影响就会使重儿子遍历前后的数据难以储存，而如果两次分开操作则遍历重儿子时数组是空的，方便遍历时储存。</p>
+<p>那么为什么不先遍历重儿子呢？显然这样是不划算的（所以才叫启发式合并啊）。</p>
+<p>那合并后先遍历重儿子呢？ 显然这也是不划算的，因为轻儿子还没有遍历和处理过，带着重儿子的一堆数据显然是跑不快的。</p>
+<h1 id="码"><a href="#码" class="headerlink" title="码"></a>码</h1><p>懒得打。</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>启发式</tag>
+        <tag>dsu on tree</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git恢复误删文件</title>
+    <url>/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<p>放这篇文章给自己看，怕自己又脑瘫整出些逆天操作，因此在这留个后路。</p>
+<span id="more"></span>
+<p>首先运行 <code>$git log</code>，找到上次的commit的ID，然后运行 <code>$git reset --hard &lt;ID&gt;</code></p>
+<p>然后应该就没问题了。</p>
+<p>哦对了，<code>$git log</code> 按 q 键退出。</p>
+]]></content>
+      <categories>
+        <category>Dumby的折腾笔记</category>
+      </categories>
+      <tags>
+        <tag>站务</tag>
       </tags>
   </entry>
   <entry>
@@ -381,54 +429,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Dsu on Tree （树上启发式合并）不是很详的解</title>
-    <url>/2022/07/09/Dsu-on-Tree-%E4%B8%8D%E6%98%AF%E5%BE%88%E8%AF%A6%E7%9A%84%E8%A7%A3/</url>
-    <content><![CDATA[<h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>先来个例题耍耍。</p>
-<blockquote>
-<p>给出一棵 $n$ 个节点以 $1$ 为根的树，节点 $u$ 的颜色为 $c_{u}$，现在对于每个结点 $u$ 询问以 $u$ 为根子树里一共出现了多少种不同的颜色。<br>$n \le 2 \times 10^{5}$。<br>（没错就是 OIWiki 上的例题。。。）</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p>先把算法流程打出来方便讲。</p>
-<p>我们设一个数组 $cnt[]$ 用来记录颜色每个种类的数量。</p>
-<ol>
-<li>先树链剖分找出每个节点的重儿子；</li>
-<li>对于每个节点 $u$ 优先遍历其轻儿子，并计算出轻儿子的答案，但<em>不保留遍历轻儿子对 $cnt[]$ 数组的影响</em>；</li>
-<li>接着遍历 $u$ 的重儿子，<em>保留遍历重儿子对 $cnt[]$ 数组的影响</em>；</li>
-<li>再遍历一遍 $u$ 的轻儿子，<em>保留再次遍历轻儿子对 $cnt[]$ 数组的影响</em>，得到 $u$ 的答案。</li>
-</ol>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>该算法的重点就是先后两次遍历轻儿子。</p>
-<p>那么为什么不将两次遍历合并呢？</p>
-<p>考虑如果两次合并，那么轻儿子对 $cnt[]$ 数组的影响就会使重儿子遍历前后的数据难以储存，而如果两次分开操作则遍历重儿子时数组是空的，方便遍历时储存。</p>
-<p>那么为什么不先遍历重儿子呢？显然这样是不划算的（所以才叫启发式合并啊）。</p>
-<p>那合并后先遍历重儿子呢？ 显然这也是不划算的，因为轻儿子还没有遍历和处理过，带着重儿子的一堆数据显然是跑不快的。</p>
-<h1 id="码"><a href="#码" class="headerlink" title="码"></a>码</h1><p>懒得打。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>启发式</tag>
-        <tag>dsu on tree</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git恢复误删文件</title>
-    <url>/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<p>放这篇文章给自己看，怕自己又脑瘫整出些逆天操作，因此在这留个后路。</p>
-<span id="more"></span>
-<p>首先运行 <code>$git log</code>，找到上次的commit的ID，然后运行 <code>$git reset --hard &lt;ID&gt;</code></p>
-<p>然后应该就没问题了。</p>
-<p>哦对了，<code>$git log</code> 按 q 键退出。</p>
-]]></content>
-      <categories>
-        <category>Dumby的折腾笔记</category>
-      </categories>
-      <tags>
-        <tag>站务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Luogu P5136 sequence 题解报告</title>
     <url>/2021/08/27/Luogu-P5136-sequence-%E9%A2%98%E8%A7%A3%E6%8A%A5%E5%91%8A/</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><del>试</del>求出：</p>
@@ -470,6 +470,23 @@
         <tag>C++</tag>
         <tag>矩阵乘法</tag>
         <tag>数论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NOIP模拟赛T2 片段划分</title>
+    <url>/2022/07/05/NOIP%E6%A8%A1%E6%8B%9F%E8%B5%9BT2-%E7%89%87%E6%AE%B5%E5%88%92%E5%88%86/</url>
+    <content><![CDATA[<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>记录一下每个数前面第一个比它大的和比它小的数的位置，然后从后往前跳。</p>
+<p>先把比它大的找到，然后让比它小的在范围内向前跳，跳得越前越好。</p>
+<p>每次跳完答案加一。</p>
+<span id="more"></span>
+<h2 id="嗲吗"><a href="#嗲吗" class="headerlink" title="嗲吗"></a>嗲吗</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">// #define ll long long</span></span><br><span class="line"><span class="comment">// #define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">300002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">998244353</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"><span class="type">int</span> cnt1,cnt2;</span><br><span class="line"><span class="type">int</span> st1[N],st2[N];</span><br><span class="line"><span class="type">int</span> l[N],r[N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	n=<span class="built_in">read</span>();</span><br><span class="line">	st2[<span class="number">0</span>]=<span class="number">-1</span>;st1[<span class="number">0</span>]=<span class="number">-2</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		a[i]=<span class="built_in">read</span>();</span><br><span class="line">		<span class="keyword">while</span>(cnt1&amp;&amp;a[st1[cnt1]]&gt;a[i])cnt1--;</span><br><span class="line">		<span class="keyword">while</span>(cnt2&amp;&amp;a[st2[cnt2]]&lt;=a[i])cnt2--;</span><br><span class="line">		l[i]=st1[cnt1];</span><br><span class="line">		r[i]=st2[cnt2];</span><br><span class="line">		st1[++cnt1]=st2[++cnt2]=i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> ll,rr=n;</span><br><span class="line">	<span class="keyword">while</span>(rr&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		ll=rr;</span><br><span class="line">		<span class="keyword">while</span>(r[rr]&lt;=l[ll])ll=l[ll];</span><br><span class="line">		ans++;</span><br><span class="line">		rr=ll<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>数据结构</tag>
+        <tag>栈</tag>
       </tags>
   </entry>
   <entry>
@@ -517,20 +534,38 @@
       </tags>
   </entry>
   <entry>
-    <title>NOIP模拟赛T2 片段划分</title>
-    <url>/2022/07/05/NOIP%E6%A8%A1%E6%8B%9F%E8%B5%9BT2-%E7%89%87%E6%AE%B5%E5%88%92%E5%88%86/</url>
-    <content><![CDATA[<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>记录一下每个数前面第一个比它大的和比它小的数的位置，然后从后往前跳。</p>
-<p>先把比它大的找到，然后让比它小的在范围内向前跳，跳得越前越好。</p>
-<p>每次跳完答案加一。</p>
+    <title>Roguelike学习笔记一：LibTCod</title>
+    <url>/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/</url>
+    <content><![CDATA[<p>折腾了好久好久，怎么都跑不起来libtcod，真tm太曹丹了。。</p>
+<p>直到我看到这个叫做<a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">TCod Cpp Engine</a>的项目（最近官方出了个<a href="https://github.com/HexDecimal/libtcod-vcpkg-template">模板</a>，配置过程与下面类似，两者都可使用），最后跟着介绍的步骤终于跑起来了。</p>
+<p>接下来开始学习LibTCod。</p>
+<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%88%90%E5%8A%9F%E8%BF%90%E8%A1%8C.png" class="" title="终于跑起来啦！！！">
 <span id="more"></span>
-<h2 id="嗲吗"><a href="#嗲吗" class="headerlink" title="嗲吗"></a>嗲吗</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">// #define ll long long</span></span><br><span class="line"><span class="comment">// #define int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">300002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">998244353</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"><span class="type">int</span> cnt1,cnt2;</span><br><span class="line"><span class="type">int</span> st1[N],st2[N];</span><br><span class="line"><span class="type">int</span> l[N],r[N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	n=<span class="built_in">read</span>();</span><br><span class="line">	st2[<span class="number">0</span>]=<span class="number">-1</span>;st1[<span class="number">0</span>]=<span class="number">-2</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		a[i]=<span class="built_in">read</span>();</span><br><span class="line">		<span class="keyword">while</span>(cnt1&amp;&amp;a[st1[cnt1]]&gt;a[i])cnt1--;</span><br><span class="line">		<span class="keyword">while</span>(cnt2&amp;&amp;a[st2[cnt2]]&lt;=a[i])cnt2--;</span><br><span class="line">		l[i]=st1[cnt1];</span><br><span class="line">		r[i]=st2[cnt2];</span><br><span class="line">		st1[++cnt1]=st2[++cnt2]=i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> ll,rr=n;</span><br><span class="line">	<span class="keyword">while</span>(rr&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		ll=rr;</span><br><span class="line">		<span class="keyword">while</span>(r[rr]&lt;=l[ll])ll=l[ll];</span><br><span class="line">		ans++;</span><br><span class="line">		rr=ll<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>先要有一些基本工具：VsCode、Cmake，对了，最好再载一下VS（这里用VS2022），因为后面vcpkg使用时要求有VS实例。</p>
+<p>然后把<a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">这个库</a><strong>克隆</strong>到本地（注意是克隆不是直接复制，用git克隆后面可以免去很多乱七八糟的步骤）。</p>
+<p>这里我将库直接克隆到D盘下。（项目主目录为 <code>D:\tcod-cpp-engine-2022</code>）</p>
+<p>开始初始化<code>LibTCod</code>和<code>Vcpkg</code>两个子模块。<br>子模块是什么具体看<a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">官方文档</a>，这里不多说。<br>我们注意到克隆下来的文件夹中有两个空的文件夹：<code>libtcod</code>和<code>vcpkg</code>，这两个就是两个子模块的文件夹。<br>接下来在项目的文件夹下（<code>D:\tcod-cpp-engine-2022</code>）运行命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git submodule update --init --recursive</span><br></pre></td></tr></table></figure>
+<p>然后就完成了子模块的初始化。<br>这里如果有什么报错之类的通常都是网络不行，多试几次就行了。<br>注意子模块一定要正确初始化，刚那两个文件夹有一个空的都会导致编译失败。</p>
+<p>接下来打开VsCode，点击打开文件夹，打开项目的主目录（<code>D:\tcod-cpp-engine-2022</code>）。</p>
+<p>如果你没有下载扩展的话会让你载一些，把VsCode推荐的扩展全都载下来就好了，其中最重要的是这几个：C/C++相关扩展、CMake工具。</p>
+<p>VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提示的话可以到底部找到Kit选项打开并选择。</p>
+<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/Kit.png" class="" title="选择Kit">
+<p>最后按 <code>F5</code>，VsCode会自动进行编译。</p>
+<p>这样应该就行了，他会跳出一个该项目原作者的一个示例，能运行就说明配置成功。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">@HexDecimal 大佬的项目 Libtcod C++ engine 2022</a></li>
+<li><a href="https://github.com/HexDecimal/libtcod-vcpkg-template">LibTCod 官方模板</a></li>
+</ul>
+]]></content>
       <categories>
-        <category>Dumby的OI生涯</category>
+        <category>Dumby的RoguelikeDev笔记</category>
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>数据结构</tag>
-        <tag>栈</tag>
+        <tag>roguelike</tag>
+        <tag>libtcod</tag>
       </tags>
   </entry>
   <entry>
@@ -577,38 +612,18 @@
       </tags>
   </entry>
   <entry>
-    <title>Roguelike学习笔记一：LibTCod</title>
-    <url>/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/</url>
-    <content><![CDATA[<p>折腾了好久好久，怎么都跑不起来libtcod，真tm太曹丹了。。</p>
-<p>直到我看到这个叫做<a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">TCod Cpp Engine</a>的项目（最近官方出了个<a href="https://github.com/HexDecimal/libtcod-vcpkg-template">模板</a>，配置过程与下面类似，两者都可使用），最后跟着介绍的步骤终于跑起来了。</p>
-<p>接下来开始学习LibTCod。</p>
-<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%88%90%E5%8A%9F%E8%BF%90%E8%A1%8C.png" class="" title="终于跑起来啦！！！">
-<span id="more"></span>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>先要有一些基本工具：VsCode、Cmake，对了，最好再载一下VS（这里用VS2022），因为后面vcpkg使用时要求有VS实例。</p>
-<p>然后把<a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">这个库</a><strong>克隆</strong>到本地（注意是克隆不是直接复制，用git克隆后面可以免去很多乱七八糟的步骤）。</p>
-<p>这里我将库直接克隆到D盘下。（项目主目录为 <code>D:\tcod-cpp-engine-2022</code>）</p>
-<p>开始初始化<code>LibTCod</code>和<code>Vcpkg</code>两个子模块。<br>子模块是什么具体看<a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">官方文档</a>，这里不多说。<br>我们注意到克隆下来的文件夹中有两个空的文件夹：<code>libtcod</code>和<code>vcpkg</code>，这两个就是两个子模块的文件夹。<br>接下来在项目的文件夹下（<code>D:\tcod-cpp-engine-2022</code>）运行命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git submodule update --init --recursive</span><br></pre></td></tr></table></figure>
-<p>然后就完成了子模块的初始化。<br>这里如果有什么报错之类的通常都是网络不行，多试几次就行了。<br>注意子模块一定要正确初始化，刚那两个文件夹有一个空的都会导致编译失败。</p>
-<p>接下来打开VsCode，点击打开文件夹，打开项目的主目录（<code>D:\tcod-cpp-engine-2022</code>）。</p>
-<p>如果你没有下载扩展的话会让你载一些，把VsCode推荐的扩展全都载下来就好了，其中最重要的是这几个：C/C++相关扩展、CMake工具。</p>
-<p>VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提示的话可以到底部找到Kit选项打开并选择。</p>
-<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/Kit.png" class="" title="选择Kit">
-<p>最后按 <code>F5</code>，VsCode会自动进行编译。</p>
-<p>这样应该就行了，他会跳出一个该项目原作者的一个示例，能运行就说明配置成功。</p>
-<p>参考：</p>
-<ul>
-<li><a href="https://github.com/HexDecimal/tcod-cpp-engine-2022">@HexDecimal 大佬的项目 Libtcod C++ engine 2022</a></li>
-<li><a href="https://github.com/HexDecimal/libtcod-vcpkg-template">LibTCod 官方模板</a></li>
-</ul>
-]]></content>
+    <title>SPOJ2916 GSS5-Can you answer these queries V</title>
+    <url>/2022/07/09/SPOJ2916-GSS5-Can-you-answer-these-queries-V/</url>
+    <content><![CDATA[<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>题目很坑，题中的子段是不能为空的。</p>
+<p>其余就是一个比较裸的线段树维护区间最大值，在左右区间是否重合、包含上讨论一下就好了（虽然我调了快一晚上）。<br><span id="more"></span></p>
+<h2 id="码"><a href="#码" class="headerlink" title="码"></a>码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1000002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">10000001</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> l,r,s,mm,ml,mr;</span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> l(x) tr[x].l</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> r(x) tr[x].r</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> s(x) tr[x].s</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> mm(x) tr[x].mm</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> ml(x) tr[x].ml</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> mr(x) tr[x].mr</span></span><br><span class="line">&#125;tr[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">push_up</span><span class="params">(<span class="type">int</span> p)</span></span>&#123;</span><br><span class="line">	<span class="built_in">mm</span>(p)=<span class="built_in">max</span>(<span class="built_in">mm</span>(p*<span class="number">2</span>),<span class="built_in">max</span>(<span class="built_in">mm</span>(p*<span class="number">2</span>+<span class="number">1</span>),<span class="built_in">mr</span>(p*<span class="number">2</span>)+<span class="built_in">ml</span>(p*<span class="number">2</span>+<span class="number">1</span>)));</span><br><span class="line">	<span class="built_in">ml</span>(p)=<span class="built_in">max</span>(<span class="built_in">ml</span>(p*<span class="number">2</span>),<span class="built_in">s</span>(p*<span class="number">2</span>)+<span class="built_in">ml</span>(p*<span class="number">2</span>+<span class="number">1</span>));</span><br><span class="line">	<span class="built_in">mr</span>(p)=<span class="built_in">max</span>(<span class="built_in">mr</span>(p*<span class="number">2</span>+<span class="number">1</span>),<span class="built_in">s</span>(p*<span class="number">2</span>+<span class="number">1</span>)+<span class="built_in">mr</span>(p*<span class="number">2</span>));</span><br><span class="line">	<span class="built_in">s</span>(p)=<span class="built_in">s</span>(p*<span class="number">2</span>)+<span class="built_in">s</span>(p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">build</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="built_in">l</span>(p)=l,<span class="built_in">r</span>(p)=r;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">s</span>(p)=<span class="built_in">mm</span>(p)=<span class="built_in">ml</span>(p)=<span class="built_in">mr</span>(p)=a[l];</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">build</span>(p*<span class="number">2</span>,l,mid);</span><br><span class="line">	<span class="built_in">build</span>(p*<span class="number">2</span>+<span class="number">1</span>,mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="built_in">push_up</span>(p);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">change</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> k,<span class="type">int</span> d)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">l</span>(p)==<span class="built_in">r</span>(p))&#123;</span><br><span class="line">		<span class="built_in">s</span>(p)=<span class="built_in">mm</span>(p)=<span class="built_in">ml</span>(p)=<span class="built_in">mr</span>(p)=d;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=mid)<span class="built_in">change</span>(p*<span class="number">2</span>,k,d);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">change</span>(p*<span class="number">2</span>+<span class="number">1</span>,k,d);</span><br><span class="line">	<span class="built_in">push_up</span>(p);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">node <span class="title">ask</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l&gt;r)<span class="keyword">return</span> &#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=<span class="built_in">l</span>(p)&amp;&amp;<span class="built_in">r</span>(p)&lt;=r) <span class="keyword">return</span> tr[p];</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(l&gt;mid) <span class="keyword">return</span> <span class="built_in">ask</span>(p*<span class="number">2</span>+<span class="number">1</span>,l,r);</span><br><span class="line">	<span class="keyword">if</span>(r&lt;=mid)<span class="keyword">return</span> <span class="built_in">ask</span>(p*<span class="number">2</span>,l,r);</span><br><span class="line">	node ls=<span class="built_in">ask</span>(p*<span class="number">2</span>,l,mid),rs=<span class="built_in">ask</span>(p*<span class="number">2</span>+<span class="number">1</span>,mid+<span class="number">1</span>,r),ans;</span><br><span class="line">	ans.s=ls.s+rs.s;</span><br><span class="line">	ans.ml=<span class="built_in">max</span>(ls.ml,ls.s+rs.ml);</span><br><span class="line">	ans.mr=<span class="built_in">max</span>(rs.s+ls.mr,rs.mr);</span><br><span class="line">	ans.mm=<span class="built_in">max</span>(ls.mr+rs.ml,<span class="built_in">max</span>(ls.mm,rs.mm));</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> T=<span class="built_in">read</span>();</span><br><span class="line">	<span class="keyword">while</span>(T--)&#123;</span><br><span class="line">		n=<span class="built_in">read</span>();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)a[i]=<span class="built_in">read</span>();</span><br><span class="line">		m=<span class="built_in">read</span>();</span><br><span class="line">		<span class="built_in">build</span>(<span class="number">1</span>,<span class="number">1</span>,n);</span><br><span class="line">		<span class="keyword">while</span>(m--)&#123;</span><br><span class="line">			<span class="type">int</span> l1=<span class="built_in">read</span>(),r1=<span class="built_in">read</span>(),l2=<span class="built_in">read</span>(),r2=<span class="built_in">read</span>();</span><br><span class="line">			<span class="keyword">if</span>(l1&gt;r1)<span class="built_in">swap</span>(l1,r1);</span><br><span class="line">			<span class="keyword">if</span>(l2&gt;r2)<span class="built_in">swap</span>(l2,r2);</span><br><span class="line">			<span class="keyword">if</span>(l1&gt;l2)<span class="built_in">swap</span>(l1,l2),<span class="built_in">swap</span>(r1,r2);</span><br><span class="line">			<span class="keyword">if</span>(r1&lt;l2)&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,<span class="built_in">ask</span>(<span class="number">1</span>,l1,r1).mr+<span class="built_in">ask</span>(<span class="number">1</span>,r1+<span class="number">1</span>,l2<span class="number">-1</span>).s+<span class="built_in">ask</span>(<span class="number">1</span>,l2,r2).ml);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(r2&gt;r1)&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,<span class="built_in">max</span>(<span class="built_in">ask</span>(<span class="number">1</span>,l2,r1).mm,<span class="built_in">max</span>(<span class="built_in">ask</span>(<span class="number">1</span>,l1,l2<span class="number">-1</span>).mr+<span class="built_in">ask</span>(<span class="number">1</span>,l2,r2).ml,<span class="built_in">ask</span>(<span class="number">1</span>,l1,r1).mr+<span class="built_in">ask</span>(<span class="number">1</span>,r1+<span class="number">1</span>,r2).ml))); </span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,<span class="built_in">max</span>(<span class="built_in">ask</span>(<span class="number">1</span>,l1,l2<span class="number">-1</span>).mr+<span class="built_in">ask</span>(<span class="number">1</span>,l2,r2).ml,<span class="built_in">ask</span>(<span class="number">1</span>,l2,r2).mm)); </span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>Dumby的RoguelikeDev笔记</category>
+        <category>Dumby的OI生涯</category>
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>roguelike</tag>
-        <tag>libtcod</tag>
+        <tag>线段树</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -651,21 +666,6 @@
       </categories>
       <tags>
         <tag>合成器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SPOJ2916 GSS5-Can you answer these queries V</title>
-    <url>/2022/07/09/SPOJ2916-GSS5-Can-you-answer-these-queries-V/</url>
-    <content><![CDATA[<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>题目很坑，题中的子段是不能为空的。</p>
-<p>其余就是一个比较裸的线段树维护区间最大值，在左右区间是否重合、包含上讨论一下就好了（虽然我调了快一晚上）。<br><span id="more"></span></p>
-<h2 id="码"><a href="#码" class="headerlink" title="码"></a>码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pb(x) push_back(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1000002</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">10000001</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;<span class="keyword">register</span> <span class="type">char</span> c=<span class="built_in">getchar</span>();<span class="keyword">register</span> <span class="type">int</span> s=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())<span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)f=<span class="number">-1</span>;<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=<span class="built_in">getchar</span>())s=(s&lt;&lt;<span class="number">3</span>)+(s&lt;&lt;<span class="number">1</span>)+c-<span class="string">&#x27;0&#x27;</span>;<span class="keyword">return</span> s*f;&#125;</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> l,r,s,mm,ml,mr;</span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> l(x) tr[x].l</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> r(x) tr[x].r</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> s(x) tr[x].s</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> mm(x) tr[x].mm</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> ml(x) tr[x].ml</span></span><br><span class="line">	<span class="meta">#<span class="keyword">define</span> mr(x) tr[x].mr</span></span><br><span class="line">&#125;tr[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">push_up</span><span class="params">(<span class="type">int</span> p)</span></span>&#123;</span><br><span class="line">	<span class="built_in">mm</span>(p)=<span class="built_in">max</span>(<span class="built_in">mm</span>(p*<span class="number">2</span>),<span class="built_in">max</span>(<span class="built_in">mm</span>(p*<span class="number">2</span>+<span class="number">1</span>),<span class="built_in">mr</span>(p*<span class="number">2</span>)+<span class="built_in">ml</span>(p*<span class="number">2</span>+<span class="number">1</span>)));</span><br><span class="line">	<span class="built_in">ml</span>(p)=<span class="built_in">max</span>(<span class="built_in">ml</span>(p*<span class="number">2</span>),<span class="built_in">s</span>(p*<span class="number">2</span>)+<span class="built_in">ml</span>(p*<span class="number">2</span>+<span class="number">1</span>));</span><br><span class="line">	<span class="built_in">mr</span>(p)=<span class="built_in">max</span>(<span class="built_in">mr</span>(p*<span class="number">2</span>+<span class="number">1</span>),<span class="built_in">s</span>(p*<span class="number">2</span>+<span class="number">1</span>)+<span class="built_in">mr</span>(p*<span class="number">2</span>));</span><br><span class="line">	<span class="built_in">s</span>(p)=<span class="built_in">s</span>(p*<span class="number">2</span>)+<span class="built_in">s</span>(p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">build</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="built_in">l</span>(p)=l,<span class="built_in">r</span>(p)=r;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">		<span class="built_in">s</span>(p)=<span class="built_in">mm</span>(p)=<span class="built_in">ml</span>(p)=<span class="built_in">mr</span>(p)=a[l];</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">build</span>(p*<span class="number">2</span>,l,mid);</span><br><span class="line">	<span class="built_in">build</span>(p*<span class="number">2</span>+<span class="number">1</span>,mid+<span class="number">1</span>,r);</span><br><span class="line">	<span class="built_in">push_up</span>(p);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">change</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> k,<span class="type">int</span> d)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">l</span>(p)==<span class="built_in">r</span>(p))&#123;</span><br><span class="line">		<span class="built_in">s</span>(p)=<span class="built_in">mm</span>(p)=<span class="built_in">ml</span>(p)=<span class="built_in">mr</span>(p)=d;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(k&lt;=mid)<span class="built_in">change</span>(p*<span class="number">2</span>,k,d);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">change</span>(p*<span class="number">2</span>+<span class="number">1</span>,k,d);</span><br><span class="line">	<span class="built_in">push_up</span>(p);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">node <span class="title">ask</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l&gt;r)<span class="keyword">return</span> &#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">if</span>(l&lt;=<span class="built_in">l</span>(p)&amp;&amp;<span class="built_in">r</span>(p)&lt;=r) <span class="keyword">return</span> tr[p];</span><br><span class="line">	<span class="type">int</span> mid=(<span class="built_in">l</span>(p)+<span class="built_in">r</span>(p))&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(l&gt;mid) <span class="keyword">return</span> <span class="built_in">ask</span>(p*<span class="number">2</span>+<span class="number">1</span>,l,r);</span><br><span class="line">	<span class="keyword">if</span>(r&lt;=mid)<span class="keyword">return</span> <span class="built_in">ask</span>(p*<span class="number">2</span>,l,r);</span><br><span class="line">	node ls=<span class="built_in">ask</span>(p*<span class="number">2</span>,l,mid),rs=<span class="built_in">ask</span>(p*<span class="number">2</span>+<span class="number">1</span>,mid+<span class="number">1</span>,r),ans;</span><br><span class="line">	ans.s=ls.s+rs.s;</span><br><span class="line">	ans.ml=<span class="built_in">max</span>(ls.ml,ls.s+rs.ml);</span><br><span class="line">	ans.mr=<span class="built_in">max</span>(rs.s+ls.mr,rs.mr);</span><br><span class="line">	ans.mm=<span class="built_in">max</span>(ls.mr+rs.ml,<span class="built_in">max</span>(ls.mm,rs.mm));</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> T=<span class="built_in">read</span>();</span><br><span class="line">	<span class="keyword">while</span>(T--)&#123;</span><br><span class="line">		n=<span class="built_in">read</span>();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)a[i]=<span class="built_in">read</span>();</span><br><span class="line">		m=<span class="built_in">read</span>();</span><br><span class="line">		<span class="built_in">build</span>(<span class="number">1</span>,<span class="number">1</span>,n);</span><br><span class="line">		<span class="keyword">while</span>(m--)&#123;</span><br><span class="line">			<span class="type">int</span> l1=<span class="built_in">read</span>(),r1=<span class="built_in">read</span>(),l2=<span class="built_in">read</span>(),r2=<span class="built_in">read</span>();</span><br><span class="line">			<span class="keyword">if</span>(l1&gt;r1)<span class="built_in">swap</span>(l1,r1);</span><br><span class="line">			<span class="keyword">if</span>(l2&gt;r2)<span class="built_in">swap</span>(l2,r2);</span><br><span class="line">			<span class="keyword">if</span>(l1&gt;l2)<span class="built_in">swap</span>(l1,l2),<span class="built_in">swap</span>(r1,r2);</span><br><span class="line">			<span class="keyword">if</span>(r1&lt;l2)&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,<span class="built_in">ask</span>(<span class="number">1</span>,l1,r1).mr+<span class="built_in">ask</span>(<span class="number">1</span>,r1+<span class="number">1</span>,l2<span class="number">-1</span>).s+<span class="built_in">ask</span>(<span class="number">1</span>,l2,r2).ml);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(r2&gt;r1)&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,<span class="built_in">max</span>(<span class="built_in">ask</span>(<span class="number">1</span>,l2,r1).mm,<span class="built_in">max</span>(<span class="built_in">ask</span>(<span class="number">1</span>,l1,l2<span class="number">-1</span>).mr+<span class="built_in">ask</span>(<span class="number">1</span>,l2,r2).ml,<span class="built_in">ask</span>(<span class="number">1</span>,l1,r1).mr+<span class="built_in">ask</span>(<span class="number">1</span>,r1+<span class="number">1</span>,r2).ml))); </span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,<span class="built_in">max</span>(<span class="built_in">ask</span>(<span class="number">1</span>,l1,l2<span class="number">-1</span>).mr+<span class="built_in">ask</span>(<span class="number">1</span>,l2,r2).ml,<span class="built_in">ask</span>(<span class="number">1</span>,l2,r2).mm)); </span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>线段树</tag>
-        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -925,32 +925,6 @@
       </tags>
   </entry>
   <entry>
-    <title>csp-s初赛准备：时间复杂度</title>
-    <url>/2022/09/18/csp-s%E5%88%9D%E8%B5%9B%E5%87%86%E5%A4%87%EF%BC%9A%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[<p>初赛似乎是必考一题时间复杂度计算，现在在考前抱下佛脚。</p>
-<span id="more"></span>
-<h2 id="主定理"><a href="#主定理" class="headerlink" title="主定理"></a>主定理</h2><p>给定这样一个式子：</p>
-<p>$T \left ( n \right ) = a T\left ( \frac{n}{b}  \right )+ n^{d}P$</p>
-<p>其中 $P$ 表示一个式子，通常 $P=\log^{k}{n},k \ge 0$，如 $T \left ( n \right ) = 2 T\left ( \frac{n}{2}  \right )+ n\log{n}$ 时，则 $d=1, P=log{n}$</p>
-<p>然后分三种情况：</p>
-<ol>
-<li>$n^{\log_{b}{a}} &gt; n^{d}$，则 $T \left ( n \right ) = n^{\log_{b}{a}}$</li>
-<li>$n^{\log_{b}{a}} &lt; n^{d}$，则 $T \left ( n \right ) = n^{d}$</li>
-<li>$n^{\log_{b}{a}} = n^{d}$，当 $P=\log^{k}{n}$ 时，即后面带的那个式子是 $n^{d}\log^{k}{n}$ 时，$T \left ( n \right ) = n^{d}\log^{k+1}{n}$</li>
-</ol>
-<p>这样初赛中绝大多数时间复杂度题应该都能过了。</p>
-<h2 id="递归、递归树"><a href="#递归、递归树" class="headerlink" title="递归、递归树"></a>递归、递归树</h2><p>最好懂最无脑，考场上时间够可以用这个。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>初赛</tag>
-        <tag>时间复杂度</tag>
-        <tag>主定理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Иди и смотри</title>
     <url>/2023/10/14/%D0%98%D0%B4%D0%B8-%D0%B8-%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8/</url>
     <content><![CDATA[<p>And I saw when the Lamb opened one of the seals, and I heard, as it were the noise of thunder, one of the four beasts saying, <strong>Come and see</strong>.</p>
@@ -978,6 +952,32 @@
         <tag>日常</tag>
         <tag>影视剧</tag>
         <tag>战争</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>csp-s初赛准备：时间复杂度</title>
+    <url>/2022/09/18/csp-s%E5%88%9D%E8%B5%9B%E5%87%86%E5%A4%87%EF%BC%9A%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[<p>初赛似乎是必考一题时间复杂度计算，现在在考前抱下佛脚。</p>
+<span id="more"></span>
+<h2 id="主定理"><a href="#主定理" class="headerlink" title="主定理"></a>主定理</h2><p>给定这样一个式子：</p>
+<p>$T \left ( n \right ) = a T\left ( \frac{n}{b}  \right )+ n^{d}P$</p>
+<p>其中 $P$ 表示一个式子，通常 $P=\log^{k}{n},k \ge 0$，如 $T \left ( n \right ) = 2 T\left ( \frac{n}{2}  \right )+ n\log{n}$ 时，则 $d=1, P=log{n}$</p>
+<p>然后分三种情况：</p>
+<ol>
+<li>$n^{\log_{b}{a}} &gt; n^{d}$，则 $T \left ( n \right ) = n^{\log_{b}{a}}$</li>
+<li>$n^{\log_{b}{a}} &lt; n^{d}$，则 $T \left ( n \right ) = n^{d}$</li>
+<li>$n^{\log_{b}{a}} = n^{d}$，当 $P=\log^{k}{n}$ 时，即后面带的那个式子是 $n^{d}\log^{k}{n}$ 时，$T \left ( n \right ) = n^{d}\log^{k+1}{n}$</li>
+</ol>
+<p>这样初赛中绝大多数时间复杂度题应该都能过了。</p>
+<h2 id="递归、递归树"><a href="#递归、递归树" class="headerlink" title="递归、递归树"></a>递归、递归树</h2><p>最好懂最无脑，考场上时间够可以用这个。</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>初赛</tag>
+        <tag>时间复杂度</tag>
+        <tag>主定理</tag>
       </tags>
   </entry>
   <entry>
@@ -1021,23 +1021,9 @@
         <category>Dumby的sb日常</category>
       </categories>
       <tags>
+        <tag>日常</tag>
         <tag>星球大战</tag>
-        <tag>日常</tag>
         <tag>影视剧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《杀死一只知更鸟》短评</title>
-    <url>/2023/07/16/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B%E7%9F%AD%E8%AF%84/</url>
-    <content><![CDATA[<p>不想多写，就写一句话好了。</p>
-<p>这本书从相当天真的视角，挖掘了相当深刻的主题。值得一读。</p>
-]]></content>
-      <categories>
-        <category>Dumby的sb日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>书籍</tag>
       </tags>
   </entry>
   <entry>
@@ -1085,6 +1071,37 @@
       <tags>
         <tag>C++</tag>
         <tag>搜索</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《杀死一只知更鸟》短评</title>
+    <url>/2023/07/16/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B%E7%9F%AD%E8%AF%84/</url>
+    <content><![CDATA[<p>不想多写，就写一句话好了。</p>
+<p>这本书从相当天真的视角，挖掘了相当深刻的主题。值得一读。</p>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>书籍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一个大学生为什么能这么疲惫与无力</title>
+    <url>/2025/03/20/%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%83%BD%E8%BF%99%E4%B9%88%E7%96%B2%E6%83%AB%E4%B8%8E%E6%97%A0%E5%8A%9B/</url>
+    <content><![CDATA[<p>我要吐槽。</p>
+<span id="more"></span>
+<p>大学毕竟是走进社会前的最后一步嘛，有意无意间就会隐隐露出我是社畜的痛感。</p>
+<p>开会开会，这的那的一堆破事搞不好，一堆莫名其妙的规定，一堆总是能让你糟心的小事。我寻思这去打工了也不用上早自习啊？😅</p>
+<p>最近几天情绪真的很不稳定了，不过说回来也算很稳定了，稳定的烦躁焦虑和疲惫。每天都有很浓重一股无力感，无奈感和失落感缠绕着。</p>
+<p>。</p>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
       </tags>
   </entry>
   <entry>
@@ -1563,6 +1580,23 @@
       </tags>
   </entry>
   <entry>
+    <title>一只蒟蒻的龟速乘学习笔记</title>
+    <url>/2021/07/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E9%BE%9F%E9%80%9F%E4%B9%98%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>关于快速幂：<br>它死了。<br>咳咳。<span id="more"></span><br>以下是快速幂模板：<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_p</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = ans * a % p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = a * a % p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>可以看出，快速幂有一个缺点：当模数 p 大于 int 范围（最大值为 $2^{31}-1$）时，快速幂会爆 long long。<br>此时解决 $a^{b} \bmod c$ 的问题时就无法用快速幂了。<br>于是，龟速乘应运而生。</p>
+<h2 id="龟速乘"><a href="#龟速乘" class="headerlink" title="龟速乘"></a>龟速乘</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>通过将 <strong>乘法</strong> 转化为 <strong>加法</strong>并<strong>每次取模</strong> 而避免了爆 long long。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//龟速乘</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_m</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (k)</span><br><span class="line">	&#123;<span class="comment">//    区别在这里 ↓</span></span><br><span class="line">		<span class="keyword">if</span>(k &amp; <span class="number">1</span>)ans += a, ans %= p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = a + a, a %= p;</span><br><span class="line">		<span class="comment">//和这里 ↑</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//快速幂</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_p</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = <span class="built_in">q_m</span>(ans, a, p), ans %= p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = <span class="built_in">q_m</span>(a, a, p), a %= p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="速度"><a href="#速度" class="headerlink" title="速度"></a>速度</h3><p>顾名思义，龟速乘会比系统的乘法慢一些。</p>
+<p>OK就这样。<br>本蒟蒻新学 OI ，如有错误请 D 我。</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>数论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一只蒟蒻的组合数学的入门笔记</title>
     <url>/2021/09/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="加法及乘法原理"><a href="#加法及乘法原理" class="headerlink" title="加法及乘法原理"></a>加法及乘法原理</h2><h3 id="加法原理"><a href="#加法原理" class="headerlink" title="加法原理"></a>加法原理</h3><p>完成一件事有 $n$ 类方法，每类方法有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1}+m_{2}+…+m_{n}$ 种方法。</p>
@@ -1658,44 +1692,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一只蒟蒻的龟速乘学习笔记</title>
-    <url>/2021/07/02/%E4%B8%80%E5%8F%AA%E8%92%9F%E8%92%BB%E7%9A%84%E9%BE%9F%E9%80%9F%E4%B9%98%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>关于快速幂：<br>它死了。<br>咳咳。<span id="more"></span><br>以下是快速幂模板：<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_p</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = ans * a % p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = a * a % p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>可以看出，快速幂有一个缺点：当模数 p 大于 int 范围（最大值为 $2^{31}-1$）时，快速幂会爆 long long。<br>此时解决 $a^{b} \bmod c$ 的问题时就无法用快速幂了。<br>于是，龟速乘应运而生。</p>
-<h2 id="龟速乘"><a href="#龟速乘" class="headerlink" title="龟速乘"></a>龟速乘</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>通过将 <strong>乘法</strong> 转化为 <strong>加法</strong>并<strong>每次取模</strong> 而避免了爆 long long。</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//龟速乘</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_m</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (k)</span><br><span class="line">	&#123;<span class="comment">//    区别在这里 ↓</span></span><br><span class="line">		<span class="keyword">if</span>(k &amp; <span class="number">1</span>)ans += a, ans %= p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = a + a, a %= p;</span><br><span class="line">		<span class="comment">//和这里 ↑</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//快速幂</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">q_p</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k, <span class="type">int</span> p)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = <span class="built_in">q_m</span>(ans, a, p), ans %= p;</span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		a = <span class="built_in">q_m</span>(a, a, p), a %= p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="速度"><a href="#速度" class="headerlink" title="速度"></a>速度</h3><p>顾名思义，龟速乘会比系统的乘法慢一些。</p>
-<p>OK就这样。<br>本蒟蒻新学 OI ，如有错误请 D 我。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>数论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于博客服务器被黑的事情</title>
-    <url>/2022/10/15/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A2%AB%E9%BB%91%E7%9A%84%E4%BA%8B%E6%83%85/</url>
-    <content><![CDATA[<p>2022年10月4日23时54分，我收到一封邮件。这件事就从这个邮件开始。</p>
-<span id="more"></span>
-<p>邮件全文如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">发件人：Melanie Peitz&lt;kontakt@smartemotions.de&gt; (由 sh-642160441@eu.hosting-webspace.io 代发)</span><br><span class="line">收件人：我&lt;*****@**.com&gt;</span><br><span class="line">时  间：2022年10月04日 23:54 (星期二)</span><br><span class="line"></span><br><span class="line">---------------------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">Hallo Henry Tighe,</span><br><span class="line"></span><br><span class="line">dies ist eine automatische Bestätigung, dass deine Nachricht bei mir angekommen ist.</span><br><span class="line"></span><br><span class="line">Ich melde mich schnellstmöglich bei dir.</span><br><span class="line"></span><br><span class="line">Viele Grüße</span><br><span class="line">Melanie Peitz</span><br><span class="line"></span><br><span class="line">Impressum</span><br><span class="line">Dr. Melanie Peitz</span><br><span class="line">Coaching und Beratung</span><br><span class="line">Berger Weg 5a</span><br><span class="line">45549 Sprockhövel</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Telefon: 0160 60 87 661</span><br><span class="line">eMail:   kontakt@smartemotions.de</span><br><span class="line"></span><br><span class="line">Hier der Inhalt deiner Nachricht:</span><br><span class="line"></span><br><span class="line">Name</span><br><span class="line"></span><br><span class="line">    Henry Tighe</span><br><span class="line"></span><br><span class="line">Nachricht</span><br><span class="line"></span><br><span class="line">    Your Site Has Been Hacked</span><br><span class="line"></span><br><span class="line">    PLEASE FORWARD THíS EMAiL TO SOMEONE íN YOUR COMPANY WHO íS ALLOWED TO MAKE iMPORTANT DECíSiONS!</span><br><span class="line"></span><br><span class="line">    We have hacked your websíte https://dumblog.top and extracted your databases.</span><br><span class="line"></span><br><span class="line">    How did this happen?</span><br><span class="line"></span><br><span class="line">    Our team has found a vulnerabílity within your site that we were able to exploit. After fínding the vulnerabilíty we were able to get your database credentíals and extract your entire database and move the informatíon to an offshore server.</span><br><span class="line"></span><br><span class="line">    What does thís mean?</span><br><span class="line"></span><br><span class="line">    We will systematícally go through a series of steps of totally damaging your reputation. Fírst your database wíll be leaked or sold to the highest bidder whích they will use wíth whatever theír intentíons are. Next íf there are e-mails found they wíll be e-mailed that their ínformatíon has been sold or leaked and your site https://dumblog.top was at fault thusly damaging your reputatíon and havíng angry customers/assocíates with whatever angry customers/assocíates do. Lastly any línks that you have indexed in the search engínes will be de-indexed based off of blackhat techníques that we used ín the past to de-índex our targets.</span><br><span class="line"></span><br><span class="line">    How do í stop this?</span><br><span class="line"></span><br><span class="line">    We are wílling to refrain from destroyíng your site’s reputatíon for a small fee. The current fee ís $3000 in bitcoins (BTC).</span><br><span class="line"></span><br><span class="line">    Please send the bitcoin to the followíng Bítcoín address (Make sure to copy and paste):</span><br><span class="line"></span><br><span class="line">    bc1q7vyvktqpgex0pqrzktvyuyu07fcafqst8m7ch9</span><br><span class="line"></span><br><span class="line">    Once you have paid we wíll automatícally get informed that it was your payment. Please note that you have to make payment wíthin 5 days after receiving thís e-maíl or the database leak, e-mails díspatched, and de-índex of your site WiLL start!</span><br><span class="line"></span><br><span class="line">    How do í get Bítcoins?</span><br><span class="line"></span><br><span class="line">    You can easily buy bitcoíns vía several websites or even offline from a Bítcoín-ATM.</span><br><span class="line"></span><br><span class="line">    What if i don’t pay?</span><br><span class="line"></span><br><span class="line">    íf you decide not to pay, we will start the attack at the indícated date and uphold ít until you do, there’s no counter measure to thís, you will only end up wastíng more money tryíng to fínd a solutíon. We wíll completely destroy your reputation amongst google and your customers.</span><br><span class="line"></span><br><span class="line">    Thís ís not a hoax, do not reply to this email, don’t try to reason or negotíate, we wíll not read any replíes. Once you have paid we will stop what we were doing and you wíll never hear from us again!</span><br><span class="line"></span><br><span class="line">    Please note that Bitcoín ís anonymous and no one will find out that you have complied.</span><br><span class="line"></span><br><span class="line">E-Mail</span><br><span class="line"></span><br><span class="line">    *****@**.com</span><br><span class="line"></span><br><span class="line">Auswahl</span><br><span class="line"></span><br><span class="line"> 	Ich interessiere mich unverbindlich für dein Coaching-Angebot</span><br></pre></td></tr></table></figure>
-<p>翻译如下（机翻）：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你好，Henry Tighe，</span><br><span class="line"></span><br><span class="line">这是一个自动确认，您的消息已经到达我的手中。</span><br><span class="line"></span><br><span class="line">我会尽快和你联系的。</span><br><span class="line"></span><br><span class="line">诚挚的问候。</span><br><span class="line">Melanie Peitz</span><br><span class="line"></span><br><span class="line">公司信息</span><br><span class="line">Melanie Peitz博士</span><br><span class="line">辅导和咨询</span><br><span class="line">Berger Weg 5a</span><br><span class="line">45549 Sprockhövel</span><br><span class="line"></span><br><span class="line">电话：01606087661</span><br><span class="line">电子邮件：kontakt@Smartemotions.de</span><br><span class="line"></span><br><span class="line">以下是您的信息内容：</span><br><span class="line"></span><br><span class="line">名字</span><br><span class="line"></span><br><span class="line">    Henry Tighe</span><br><span class="line"></span><br><span class="line">消息</span><br><span class="line"></span><br><span class="line">    您的站点已被黑客攻击。</span><br><span class="line"></span><br><span class="line">    请将这封电子邮件转发给贵公司中被允许做出重要决策的人！</span><br><span class="line"></span><br><span class="line">    我们已经入侵了你的网站 https://dumblog.top 并提取了你的数据库。</span><br><span class="line"></span><br><span class="line">    怎么会出这事？</span><br><span class="line"></span><br><span class="line">    我们的团队在您的站点中发现了一个我们能够利用的漏洞。在发现漏洞后，我们能够获得您的数据库凭据，提取整个数据库，并将信息移动到离岸服务器。</span><br><span class="line"></span><br><span class="line">    这是什么意思？</span><br><span class="line"></span><br><span class="line">    我们将系统地经历一系列完全损害您声誉的步骤。首先，你的数据库将被泄露或出售给出价最高的竞标者，他们将使用这些数据库，无论他们的意图是什么。接下来，如果发现电子邮件，他们将收到电子邮件，告知他们的信息已被出售或泄露，因此您的网站 https://dumblog.top 有过错，从而损害了您的声誉，并导致愤怒的客户/同事做出任何愤怒的客户/同事的行为。最后，您在搜索引擎中索引的任何链接都将基于我们过去用来对目标进行索引的BlackHat技术进行去索引。</span><br><span class="line"></span><br><span class="line">    我怎么才能阻止这一切？</span><br><span class="line"></span><br><span class="line">    我们愿意避免为了一小笔费用而破坏您网站的声誉。目前的费用为3,000美元比特币(BTC)。</span><br><span class="line"></span><br><span class="line">    请将比特币发送到以下比特币地址(请务必复制并粘贴)：</span><br><span class="line"></span><br><span class="line">    Bc1q7vyvktqpgex0pqrzktwyuyu07fafqst8m7ch9。</span><br><span class="line"></span><br><span class="line">    一旦您付款，我们将自动得到通知，这是您的付款。请注意，您必须在收到此电子邮件或数据库泄漏后5天内付款，发送的电子邮件和您的网站将开始去索引！</span><br><span class="line"></span><br><span class="line">    我怎样才能得到比特币？</span><br><span class="line"></span><br><span class="line">    你可以很容易地通过几个网站购买比特币，甚至可以通过比特币自动取款机离线购买。</span><br><span class="line"></span><br><span class="line">    如果我不付钱呢？</span><br><span class="line"></span><br><span class="line">    如果你决定不付款，我们将在指定的日期开始攻击，并支持它，直到你这样做，没有任何反措施，你最终只会浪费更多的钱试图找到解决方案。我们将彻底摧毁你在谷歌和你的客户中的声誉。</span><br><span class="line"></span><br><span class="line">    这不是恶作剧，不要回复这封邮件，不要试图推理或谈判，我们不会读任何回复。一旦你付了钱，我们将停止我们正在做的事情，你将永远不会再听到我们的消息！</span><br><span class="line"></span><br><span class="line">    请注意，比特币是匿名的，没有人会发现你遵守了规定。</span><br><span class="line"></span><br><span class="line">邮箱</span><br><span class="line"></span><br><span class="line">    *****@**.com</span><br><span class="line"></span><br><span class="line">选择</span><br><span class="line"></span><br><span class="line">    我对你提供的无义务指导很感兴趣</span><br></pre></td></tr></table></figure>
-<p>看上去很有来头，可是一个静态博客怎么会有数据库捏？</p>
-<p>如果黑到服务器上，那就雨我无瓜了，反正是 Vercel 的服务器。</p>
-<p>🤓</p>
-]]></content>
-      <categories>
-        <category>站务</category>
-      </categories>
-      <tags>
-        <tag>站务</tag>
-        <tag>杂谈</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>利用拓扑排序求 DAG 最短路</title>
     <url>/2022/02/14/%E5%88%A9%E7%94%A8%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E6%B1%82-DAG-%E6%9C%80%E7%9F%AD%E8%B7%AF/</url>
     <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>给定一张带负权边的有向无环图（DAG），$N$ 个点，$M$ 条边，求源点到各点的最短路。</p>
@@ -1722,6 +1718,27 @@
         <tag>图论</tag>
         <tag>DAG</tag>
         <tag>最短路</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于博客服务器被黑的事情</title>
+    <url>/2022/10/15/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A2%AB%E9%BB%91%E7%9A%84%E4%BA%8B%E6%83%85/</url>
+    <content><![CDATA[<p>2022年10月4日23时54分，我收到一封邮件。这件事就从这个邮件开始。</p>
+<span id="more"></span>
+<p>邮件全文如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">发件人：Melanie Peitz&lt;kontakt@smartemotions.de&gt; (由 sh-642160441@eu.hosting-webspace.io 代发)</span><br><span class="line">收件人：我&lt;*****@**.com&gt;</span><br><span class="line">时  间：2022年10月04日 23:54 (星期二)</span><br><span class="line"></span><br><span class="line">---------------------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">Hallo Henry Tighe,</span><br><span class="line"></span><br><span class="line">dies ist eine automatische Bestätigung, dass deine Nachricht bei mir angekommen ist.</span><br><span class="line"></span><br><span class="line">Ich melde mich schnellstmöglich bei dir.</span><br><span class="line"></span><br><span class="line">Viele Grüße</span><br><span class="line">Melanie Peitz</span><br><span class="line"></span><br><span class="line">Impressum</span><br><span class="line">Dr. Melanie Peitz</span><br><span class="line">Coaching und Beratung</span><br><span class="line">Berger Weg 5a</span><br><span class="line">45549 Sprockhövel</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Telefon: 0160 60 87 661</span><br><span class="line">eMail:   kontakt@smartemotions.de</span><br><span class="line"></span><br><span class="line">Hier der Inhalt deiner Nachricht:</span><br><span class="line"></span><br><span class="line">Name</span><br><span class="line"></span><br><span class="line">    Henry Tighe</span><br><span class="line"></span><br><span class="line">Nachricht</span><br><span class="line"></span><br><span class="line">    Your Site Has Been Hacked</span><br><span class="line"></span><br><span class="line">    PLEASE FORWARD THíS EMAiL TO SOMEONE íN YOUR COMPANY WHO íS ALLOWED TO MAKE iMPORTANT DECíSiONS!</span><br><span class="line"></span><br><span class="line">    We have hacked your websíte https://dumblog.top and extracted your databases.</span><br><span class="line"></span><br><span class="line">    How did this happen?</span><br><span class="line"></span><br><span class="line">    Our team has found a vulnerabílity within your site that we were able to exploit. After fínding the vulnerabilíty we were able to get your database credentíals and extract your entire database and move the informatíon to an offshore server.</span><br><span class="line"></span><br><span class="line">    What does thís mean?</span><br><span class="line"></span><br><span class="line">    We will systematícally go through a series of steps of totally damaging your reputation. Fírst your database wíll be leaked or sold to the highest bidder whích they will use wíth whatever theír intentíons are. Next íf there are e-mails found they wíll be e-mailed that their ínformatíon has been sold or leaked and your site https://dumblog.top was at fault thusly damaging your reputatíon and havíng angry customers/assocíates with whatever angry customers/assocíates do. Lastly any línks that you have indexed in the search engínes will be de-indexed based off of blackhat techníques that we used ín the past to de-índex our targets.</span><br><span class="line"></span><br><span class="line">    How do í stop this?</span><br><span class="line"></span><br><span class="line">    We are wílling to refrain from destroyíng your site’s reputatíon for a small fee. The current fee ís $3000 in bitcoins (BTC).</span><br><span class="line"></span><br><span class="line">    Please send the bitcoin to the followíng Bítcoín address (Make sure to copy and paste):</span><br><span class="line"></span><br><span class="line">    bc1q7vyvktqpgex0pqrzktvyuyu07fcafqst8m7ch9</span><br><span class="line"></span><br><span class="line">    Once you have paid we wíll automatícally get informed that it was your payment. Please note that you have to make payment wíthin 5 days after receiving thís e-maíl or the database leak, e-mails díspatched, and de-índex of your site WiLL start!</span><br><span class="line"></span><br><span class="line">    How do í get Bítcoins?</span><br><span class="line"></span><br><span class="line">    You can easily buy bitcoíns vía several websites or even offline from a Bítcoín-ATM.</span><br><span class="line"></span><br><span class="line">    What if i don’t pay?</span><br><span class="line"></span><br><span class="line">    íf you decide not to pay, we will start the attack at the indícated date and uphold ít until you do, there’s no counter measure to thís, you will only end up wastíng more money tryíng to fínd a solutíon. We wíll completely destroy your reputation amongst google and your customers.</span><br><span class="line"></span><br><span class="line">    Thís ís not a hoax, do not reply to this email, don’t try to reason or negotíate, we wíll not read any replíes. Once you have paid we will stop what we were doing and you wíll never hear from us again!</span><br><span class="line"></span><br><span class="line">    Please note that Bitcoín ís anonymous and no one will find out that you have complied.</span><br><span class="line"></span><br><span class="line">E-Mail</span><br><span class="line"></span><br><span class="line">    *****@**.com</span><br><span class="line"></span><br><span class="line">Auswahl</span><br><span class="line"></span><br><span class="line"> 	Ich interessiere mich unverbindlich für dein Coaching-Angebot</span><br></pre></td></tr></table></figure>
+<p>翻译如下（机翻）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你好，Henry Tighe，</span><br><span class="line"></span><br><span class="line">这是一个自动确认，您的消息已经到达我的手中。</span><br><span class="line"></span><br><span class="line">我会尽快和你联系的。</span><br><span class="line"></span><br><span class="line">诚挚的问候。</span><br><span class="line">Melanie Peitz</span><br><span class="line"></span><br><span class="line">公司信息</span><br><span class="line">Melanie Peitz博士</span><br><span class="line">辅导和咨询</span><br><span class="line">Berger Weg 5a</span><br><span class="line">45549 Sprockhövel</span><br><span class="line"></span><br><span class="line">电话：01606087661</span><br><span class="line">电子邮件：kontakt@Smartemotions.de</span><br><span class="line"></span><br><span class="line">以下是您的信息内容：</span><br><span class="line"></span><br><span class="line">名字</span><br><span class="line"></span><br><span class="line">    Henry Tighe</span><br><span class="line"></span><br><span class="line">消息</span><br><span class="line"></span><br><span class="line">    您的站点已被黑客攻击。</span><br><span class="line"></span><br><span class="line">    请将这封电子邮件转发给贵公司中被允许做出重要决策的人！</span><br><span class="line"></span><br><span class="line">    我们已经入侵了你的网站 https://dumblog.top 并提取了你的数据库。</span><br><span class="line"></span><br><span class="line">    怎么会出这事？</span><br><span class="line"></span><br><span class="line">    我们的团队在您的站点中发现了一个我们能够利用的漏洞。在发现漏洞后，我们能够获得您的数据库凭据，提取整个数据库，并将信息移动到离岸服务器。</span><br><span class="line"></span><br><span class="line">    这是什么意思？</span><br><span class="line"></span><br><span class="line">    我们将系统地经历一系列完全损害您声誉的步骤。首先，你的数据库将被泄露或出售给出价最高的竞标者，他们将使用这些数据库，无论他们的意图是什么。接下来，如果发现电子邮件，他们将收到电子邮件，告知他们的信息已被出售或泄露，因此您的网站 https://dumblog.top 有过错，从而损害了您的声誉，并导致愤怒的客户/同事做出任何愤怒的客户/同事的行为。最后，您在搜索引擎中索引的任何链接都将基于我们过去用来对目标进行索引的BlackHat技术进行去索引。</span><br><span class="line"></span><br><span class="line">    我怎么才能阻止这一切？</span><br><span class="line"></span><br><span class="line">    我们愿意避免为了一小笔费用而破坏您网站的声誉。目前的费用为3,000美元比特币(BTC)。</span><br><span class="line"></span><br><span class="line">    请将比特币发送到以下比特币地址(请务必复制并粘贴)：</span><br><span class="line"></span><br><span class="line">    Bc1q7vyvktqpgex0pqrzktwyuyu07fafqst8m7ch9。</span><br><span class="line"></span><br><span class="line">    一旦您付款，我们将自动得到通知，这是您的付款。请注意，您必须在收到此电子邮件或数据库泄漏后5天内付款，发送的电子邮件和您的网站将开始去索引！</span><br><span class="line"></span><br><span class="line">    我怎样才能得到比特币？</span><br><span class="line"></span><br><span class="line">    你可以很容易地通过几个网站购买比特币，甚至可以通过比特币自动取款机离线购买。</span><br><span class="line"></span><br><span class="line">    如果我不付钱呢？</span><br><span class="line"></span><br><span class="line">    如果你决定不付款，我们将在指定的日期开始攻击，并支持它，直到你这样做，没有任何反措施，你最终只会浪费更多的钱试图找到解决方案。我们将彻底摧毁你在谷歌和你的客户中的声誉。</span><br><span class="line"></span><br><span class="line">    这不是恶作剧，不要回复这封邮件，不要试图推理或谈判，我们不会读任何回复。一旦你付了钱，我们将停止我们正在做的事情，你将永远不会再听到我们的消息！</span><br><span class="line"></span><br><span class="line">    请注意，比特币是匿名的，没有人会发现你遵守了规定。</span><br><span class="line"></span><br><span class="line">邮箱</span><br><span class="line"></span><br><span class="line">    *****@**.com</span><br><span class="line"></span><br><span class="line">选择</span><br><span class="line"></span><br><span class="line">    我对你提供的无义务指导很感兴趣</span><br></pre></td></tr></table></figure>
+<p>看上去很有来头，可是一个静态博客怎么会有数据库捏？</p>
+<p>如果黑到服务器上，那就雨我无瓜了，反正是 Vercel 的服务器。</p>
+<p>🤓</p>
+]]></content>
+      <categories>
+        <category>站务</category>
+      </categories>
+      <tags>
+        <tag>站务</tag>
+        <tag>杂谈</tag>
       </tags>
   </entry>
   <entry>
@@ -1884,6 +1901,42 @@
       </tags>
   </entry>
   <entry>
+    <title>开会</title>
+    <url>/2025/03/19/%E5%BC%80%E4%BC%9A/</url>
+    <content><![CDATA[<p>我要发表暴论，爱tm听就听，不听就tm滚。</p>
+<span id="more"></span>
+<p>先贴一段：</p>
+<ol>
+<li>早自习出勤，统计重点关注对象，分类别给出解决方案（如果没有办法交给辅导员处理）</li>
+<li>学雷锋月，开展学雷锋活动，形成文字、记录照片，发班级公众号，并转发至自行致远公众号</li>
+<li>下周早自习开展早演讲，（7:55-8:05）每天安排一个人，时间5～10分钟左右，可以让导生先来演讲（有无ppt都可以），并形成排班表（第一周的演讲质量一定要拉上去！！！）（第一周分享主题:我的大学生活）另外，早锻炼预计在4月份开始。</li>
+<li>合唱团（需要30人，男女各15人，指挥1人，男女不限）<br>每个班至少报3个人，至少2男一女（女生也可以多点）</li>
+<li>下周组织学院内拔河比赛（每个班8男2女），下周每天的下午7.8节课，地点在综合训练馆附近，具体地点听通知。<blockquote>
+<p>（1）.注意安全<br>（2）.可以组织动员班级的拉拉队，积极参与<br>（3）.如果有课成员可以不固定，只要人数够了就行（班长协调好！！！）</p>
+</blockquote>
+</li>
+</ol>
+<p>就看看这一段就感觉血压上来了。不知道以为我还在蝇州养猪场呢。</p>
+<p>挨个讲讲，就第一个这早自习吧（包括晚自习也一样），想学的有的是时间学，有的是地方学，和年轻人打过交道的（我是说真正平等深入交流而不是布置作业之类的自上而下的接头）都知道现在人就算熬晚点也不会想起早点。<br>我是起来了，食堂是没法吃的，商业街是只有包子的，要么就吃面包。也不是不可以早自习下课那会儿再去吧，你要不看看有多少人是这种想法，看看那会儿食堂tmd有多少人。我tm要在这么点时间里排这么长队把一堆吃的捅进肚子里再回去上课。<br>就算早餐解决了，牛魔的我早上七点不到起来，搁着坐半个多小时。一上午的课可以说是基本不用听了，困得跟头猪一样。<br>nmd自习就非得坐这破教室里学是吧，多学这半个小时我能升天啊？反之，我多睡半个小时我就是能清醒一天，效率就是能更高。😅</p>
+<p>第二个到目前没听到消息。</p>
+<p>第三个也是幽默。早自习还不行，还得找个人上去叫两下才舒服。本蛆有幸被选中演讲。一个星期本来五天都要讲，隔壁班愣是一个没讲。什么第一周质量拉上去，纯tm搞笑。我的大学生活，nmd爱怎么过怎么过去，谁tm过得不是大学生活。想看厉害的自己搜下一搜一大把，想看有意思的自己搜下一搜一大把，想看摆烂的自己搜下一搜一大把。一群半死不死的东西坐在教室里，上面一个什么东西叽里咕噜咕哝着什么东西，这就是早演讲。</p>
+<p>第四个第五个更是王炸。我以为什么每个班出几个人这种事随着我高中毕业已经成为过去式了，我是真想不到大学还来搞这种没名堂的东西。什么gp班级凝聚力你凝聚你码呢。我觉得凡是接受过义务教育的当代中国学生都tm对这种所谓凝聚力所谓增进交流的官腔犯恶心。</p>
+<p>这些还只是 <strong>我的大学生活</strong> 的一小部分。就除了这些吧，什么年级大会，什么班会，我是真想问问了，你们tm都是有什么怪癖吗什么开会癖什么狗叫癖，简简单单几个事情，敲几个字就能解决，你非得把所有人聚到一个位于学校最角落的破地方听你们狗叫。nmd你要是写成文章直接发出来，想看的人自己会看，不想看的你叫去开会他照样不会听。<br>还有这班会吧，也是厉害。一张嘴就是陈腔滥调，是个中国人都是听这种p话从小听到大的，耳朵都磨出茧了。nmd真是不会点官腔都当不了领导啊。还有什么叫几个人起来分享经验，你分享nm呢。我上个学期没有一个星期没不翘课非要我说出来是吧。平时没事就打游戏非要我说出来是吧。作业永远七分抄非要我说出来是吧。就考个b试我运气好点md很屌了是吧。<br>所有人问话都是一个调调，班主任，书记，导员。我就拿同一个破例子我能回答所有人的问题。😅</p>
+<p>是。我是戾气太重了。我想啊？</p>
+<p>学校管理层也都是蠢猪，和蝇州养猪场的饲养员tm有的一拼。这学校几把路本来就修的史一样，nmd还搁这修减速带升降桩，怕学生堵不死是吧。</p>
+<p>md一个个都是高级人类，tmd拿直肠思考就能解决我们凡人终生无法参透的问题😭😭。</p>
+<p>牛逼，太牛逼。</p>
+<p>今天又有人跳了，不知为何，白白失去一条生命固然可惜，但于他也许是解脱吧，希望人能有最好的结局🙏🏿，但不知学校里的某些出生是怎么看的。</p>
+<p>就这样吧，懒得烦了。</p>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>已是2025</title>
     <url>/2025/01/01/%E5%B7%B2%E6%98%AF2025/</url>
     <content><![CDATA[<p>各位新年好啊。</p>
@@ -1991,17 +2044,6 @@
       </tags>
   </entry>
   <entry>
-    <title>暑假，启动！！！</title>
-    <url>/2023/07/22/%E6%9A%91%E5%81%87%EF%BC%8C%E5%90%AF%E5%8A%A8%EF%BC%81%EF%BC%81%EF%BC%81/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Dumby的sb日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日乐快生！（补）</title>
     <url>/2025/01/22/%E6%97%A5%E4%B9%90%E5%BF%AB%E7%94%9F%EF%BC%81%EF%BC%88%E8%A1%A5%EF%BC%89/</url>
     <content><![CDATA[<p>生日已经过了好几天了，今天才想起来发篇帖子，主要想展示下我的蛋糕😋😋。</p>
@@ -2035,6 +2077,17 @@
       </tags>
   </entry>
   <entry>
+    <title>暑假，启动！！！</title>
+    <url>/2023/07/22/%E6%9A%91%E5%81%87%EF%BC%8C%E5%90%AF%E5%8A%A8%EF%BC%81%EF%BC%81%EF%BC%81/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>杂七杂八的公式和定理（律）</title>
     <url>/2022/07/14/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E5%85%AC%E5%BC%8F%E5%92%8C%E5%AE%9A%E7%90%86%EF%BC%88%E5%BE%8B%EF%BC%89/</url>
     <content><![CDATA[<p>本贴用来存一些零散的公式以及定理或定律。</p>
@@ -2050,6 +2103,32 @@
 <p>特别的，若 $p\in\left(0,1\right)$，有：</p>
 <p>$\sum_{i=0}^{\infty}p^{i}=\frac{1}{1-p}$</p>
 <p>重要的是后面两个（尤其最后一个）。</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂题思路笔记</title>
+    <url>/2022/07/14/%E6%9D%82%E9%A2%98%E6%80%9D%E8%B7%AF%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>本贴用来记录口糊出来的杂题的思路、做法等。</p>
+<p>没有代码，可能有错。</p>
+<span id="more"></span>
+<h2 id="CF490F-Treeland-Tour"><a href="#CF490F-Treeland-Tour" class="headerlink" title="CF490F Treeland Tour"></a>CF490F Treeland Tour</h2><p><a href="https://www.luogu.com.cn/problem/CF490F">题目链接</a>。</p>
+<p>DFS + 线段树合并。</p>
+<p>树上最长上升子序列在一个以 $u$ 为根的子树内可以看作以 $f_{i}-1$ 为结尾的 LIS + 1（$u$ 节点）+ 以 $f_{i}+1$ 为结尾的 LDS。</p>
+<p>至于子树内的 LIS 之前肯定更新过了。</p>
+<p>具体的，进行 DFS，从孩子向父亲更新。</p>
+<p>对于每个节点，开一棵权值线段树，第 $i$ 个叶子结点存以数值 $i$ 为结尾的 LIS。</p>
+<p>DFS 向上回溯时，从以 $u$ 的儿子 $v$ 为根的子树中找出一条最长的 LIS，更新答案，再将 $v$ 的权值线段树合并到 $u$ 上。</p>
+<p>合并的时候再考虑一下从已更新的其他儿子的子树中找出的 LIS 或 LDS 与 $v$ 的子树中 LDS 或 LIS 加上 $u$ 形成的 LIS 对答案的贡献。</p>
+<p>处理完 $u$ 的子节点后回溯之前将 $f_{u}$ 加到 $u$ 的权值线段树里去。</p>
+<h2 id="P3224-HNOI2012-永无乡"><a href="#P3224-HNOI2012-永无乡" class="headerlink" title="P3224 [HNOI2012]永无乡"></a>P3224 [HNOI2012]永无乡</h2><p><a href="https://www.luogu.com.cn/problem/P3224">题目链接</a>。</p>
+<p>思路非常简单。</p>
+<p>用并查集维护连通块内有哪些岛，再线段树合并到连通块内的根的权值线段树上。</p>
 ]]></content>
       <categories>
         <category>Dumby的OI生涯</category>
@@ -2146,32 +2225,6 @@
       </tags>
   </entry>
   <entry>
-    <title>杂题思路笔记</title>
-    <url>/2022/07/14/%E6%9D%82%E9%A2%98%E6%80%9D%E8%B7%AF%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>本贴用来记录口糊出来的杂题的思路、做法等。</p>
-<p>没有代码，可能有错。</p>
-<span id="more"></span>
-<h2 id="CF490F-Treeland-Tour"><a href="#CF490F-Treeland-Tour" class="headerlink" title="CF490F Treeland Tour"></a>CF490F Treeland Tour</h2><p><a href="https://www.luogu.com.cn/problem/CF490F">题目链接</a>。</p>
-<p>DFS + 线段树合并。</p>
-<p>树上最长上升子序列在一个以 $u$ 为根的子树内可以看作以 $f_{i}-1$ 为结尾的 LIS + 1（$u$ 节点）+ 以 $f_{i}+1$ 为结尾的 LDS。</p>
-<p>至于子树内的 LIS 之前肯定更新过了。</p>
-<p>具体的，进行 DFS，从孩子向父亲更新。</p>
-<p>对于每个节点，开一棵权值线段树，第 $i$ 个叶子结点存以数值 $i$ 为结尾的 LIS。</p>
-<p>DFS 向上回溯时，从以 $u$ 的儿子 $v$ 为根的子树中找出一条最长的 LIS，更新答案，再将 $v$ 的权值线段树合并到 $u$ 上。</p>
-<p>合并的时候再考虑一下从已更新的其他儿子的子树中找出的 LIS 或 LDS 与 $v$ 的子树中 LDS 或 LIS 加上 $u$ 形成的 LIS 对答案的贡献。</p>
-<p>处理完 $u$ 的子节点后回溯之前将 $f_{u}$ 加到 $u$ 的权值线段树里去。</p>
-<h2 id="P3224-HNOI2012-永无乡"><a href="#P3224-HNOI2012-永无乡" class="headerlink" title="P3224 [HNOI2012]永无乡"></a>P3224 [HNOI2012]永无乡</h2><p><a href="https://www.luogu.com.cn/problem/P3224">题目链接</a>。</p>
-<p>思路非常简单。</p>
-<p>用并查集维护连通块内有哪些岛，再线段树合并到连通块内的根的权值线段树上。</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>洛谷 P1654 OSU!</title>
     <url>/2022/07/15/%E6%B4%9B%E8%B0%B7-P1654-OSU/</url>
     <content><![CDATA[<p>三倍经验。</p>
@@ -2233,6 +2286,71 @@
         <tag>DP</tag>
         <tag>期望</tag>
         <tag>线性DP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>洛谷P3263题解报告</title>
+    <url>/2021/08/26/%E6%B4%9B%E8%B0%B7P3263%E9%A2%98%E8%A7%A3%E6%8A%A5%E5%91%8A/</url>
+    <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P3263">洛谷P3263</a></p>
+<h2 id="题意描述"><a href="#题意描述" class="headerlink" title="题意描述"></a>题意描述</h2><p>给定 $b$、$d$ 和 $n$。</p>
+<p><del>试</del>求出：</p>
+<p>$\left \lfloor  \left (    \frac{b+\sqrt{d} }{2}   \right )^{n} \right \rfloor \bmod{p} $</p>
+<span id="more"></span>
+<p>其中  $p=7528443412579576937$ ，$0 &lt; b^{2} \le d &lt; (b+1)^{2}\le 10^{18}$，$n\le 10^{18}$ 且 $b\bmod{2}=1$，$d \bmod{4}=1$。</p>
+<h2 id="题解报告"><a href="#题解报告" class="headerlink" title="题解报告"></a>题解报告</h2><p>式子较为复杂，看了下标签是“矩阵乘法”，更加蒙了。（原本都打算搞个 $double$ 的矩阵了。。。）</p>
+<p>想要让式子与矩乘挂上钩，首先想到要把那个根号给去掉。于是想到在原式后加一个式子使两者相加能将根号去掉。</p>
+<p>由于有一个 $n$，可以想到将带根号的那一项取负，其他不变（暂不考虑取模和向下取整），然后原式变为：</p>
+<p>$\left (  \frac{b-\sqrt{d} }{2}  \right )^{n}$</p>
+<p>在原式后加上现在这个式子便可将根号消掉，即：</p>
+<p>$\left (  \frac{b+\sqrt{d} }{2}  \right )^{n}+ \left (  \frac{b-\sqrt{d} }{2} \right )^{n}$</p>
+<p>然后在式子最后减去一个 $\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 就好了。</p>
+<p>设 $x$ 为 $\frac{b+\sqrt{d} }{2}$，$y$ 为 $\frac{b-\sqrt{d} }{2}$。</p>
+<p>设 $f_{n}=x^{n}+y^{n}$。</p>
+<p>那么可以设我们的状态矩阵为：</p>
+<p>$\begin{bmatrix}  f_{n}&amp;f_{n-1} \end{bmatrix}$</p>
+<p>需要通过 </p>
+<p>$\begin{bmatrix}  f_{n-1}&amp;f_{n-2} \end{bmatrix}$</p>
+<p>转移到</p>
+<p>$\begin{bmatrix}  f_{n}&amp;f_{n-1} \end{bmatrix}$</p>
+<p>接下来考虑如何转移。</p>
+<p>将 $f_{n}$ 拆成 $X\times f_{n-1}-X\times f_{n-2}$ 的形式，又因为 $f_{n-1}=x^{n-1}+y^{n-1}$，$f_{n-2}=x^{n-2}+y^{n-2}$，代入得： </p>
+<p>$X\times \left ( x^{n-1}+y^{n-1} \right ) -X\times \left ( x^{n-2}+y^{n-2} \right )$</p>
+<p>于是稍加考虑就可以得出：</p>
+<p>$x^{n}+y^{n}=\left ( x+y \right ) \times \left ( x^{n-1}+y^{n-1} \right ) - xy \times \left ( x^{n-2}+y^{n-2} \right )$</p>
+<p>所以转移式为：</p>
+<p>$f_{n}=\left ( x+y \right ) \times f_{n-1}- xy \times f_{n-2}$</p>
+<p>能保证这个式子中没有任何浮点数吗？</p>
+<p>我们发现 $f_{1}=\frac{b+\sqrt{d} }{2}+\frac{b-\sqrt{d} }{2}=b$，$f_{2}= \left (  \frac{b+\sqrt{d} }{2}  \right )^{2}+ \left (  \frac{b-\sqrt{d} }{2} \right )^{2} = \frac{b^{2}+d }{2}$。</p>
+<p>$b$ 一定是整数，而由于 $b\bmod{2}=1$，$d \bmod{4}=1$，由费马小定理可得 $b^{2}\equiv b \pmod{2}$，所以 $b^{2}+d \bmod{2}=0$，所以 $\frac{b^{2}+d }{2}$ 也是整数。</p>
+<p>于是乎，$f_{1}$ 和 $f_{2}$ 都是整数，接下来只需证明出他俩前面的系数也是整数就好了。</p>
+<p>首先易得 $x+y=b$，所以 $x+y$ 是整数，然后 $xy=\frac{b^{2}-d}{4}$，由欧拉定理可得 $b^{\varphi (4)}=b^{2}\equiv 1\pmod{4}$，又因为 $d \bmod{4}=1$，所以 $\left ( b^{2}-d \right ) \bmod 4=0$，所以 $xy$ 为整数。</p>
+<p>综上，$f_{n}$ 总为整数。</p>
+<p>所以转移矩阵也同时推出来了。</p>
+<p>如下：</p>
+<p>$\begin{bmatrix} b &amp;1 \\ -\frac{b^{2}-d}{4} &amp;0\end{bmatrix}$</p>
+<p>这里的 $-\frac{b^{2}-d}{4}$ 为了方便可以写成 $\frac{d-b^{2}}{4}$。</p>
+<p>最后再来看看刚才这个东西对答案的影响：</p>
+<blockquote>
+<p>然后在式子最后减去一个 $\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 就好了。</p>
+</blockquote>
+<p>由于答案是向下取整，所以当 $-\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 为正且大小在区间 $\left [ 0,1 \right )$ 时对答案无影响。</p>
+<p>由于 $0 &lt; b^{2} \le d &lt; (b+1)^{2}\le 10^{18} $，所以 $\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 的范围一定在区间 $\left [ 0,1 \right )$ 内。</p>
+<p>接下来只要讨论式子的正负性。</p>
+<p>因为 $0 &lt; b^{2} \le d$，所以 $\frac{b-\sqrt{d} }{2}$ 一定小于 0。</p>
+<p>当 $n \bmod{2}=1$ 时，即 $n$ 为奇数时，$-\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 一定的范围一定在 $\left [ 0,1 \right )$ 内，对答案没有影响。</p>
+<p>相反，当 $n \bmod{2}=0$ 时，$-\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 的范围在区间 $\left ( -1,0 \right ]$ 内。当式子等于 0 时,即 $b=\sqrt{d}$，$b^{2}=d$ 时，该式对答案无影响。</p>
+<p>综上，当且仅当 $n$ 为偶数且 $b^{2} \ne d$ 时，该式对答案有影响，答案向下取整后的值需要减一。</p>
+<p>说了一大堆，终于到了大家最爱的代码时间。</p>
+<h2 id="嗲吗"><a href="#嗲吗" class="headerlink" title="嗲吗"></a>嗲吗</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ull unsigned long long</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">tormul</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k)</span> </span></span><br><span class="line"><span class="function"></span>&#123;  <span class="comment">//龟速乘</span></span><br><span class="line">	ull ans = <span class="number">0</span>;  <span class="comment">//注意要开 ull，否则会 TLE！！（玄学 T，难道不应该 WA 吗）</span></span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = (ans + a) % MOD;</span><br><span class="line">		a = (ull)(a + a) % MOD;  <span class="comment">//开 ull。</span></span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">mat</span> </span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">2</span>][<span class="number">2</span>];</span><br><span class="line">	<span class="built_in">mat</span>() &#123; <span class="built_in">memset</span>(a, <span class="number">0</span>, <span class="keyword">sizeof</span> a); &#125;</span><br><span class="line">	mat <span class="keyword">operator</span> *(<span class="type">const</span> mat &amp;b)<span class="type">const</span> </span><br><span class="line">	&#123;</span><br><span class="line">		mat op;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) </span><br><span class="line">			<span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">0</span>; k &lt; <span class="number">2</span>; k++) </span><br><span class="line">				<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">2</span>; j++) </span><br><span class="line">					op.a[i][j] = (ull)(op.a[i][j] + <span class="built_in">tormul</span>(a[i][k], b.a[k][j])) % MOD;  <span class="comment">//ull</span></span><br><span class="line">		<span class="keyword">return</span> op;</span><br><span class="line">	&#125;</span><br><span class="line">&#125; ans, I;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	I.a[<span class="number">0</span>][<span class="number">0</span>] = b, I.a[<span class="number">0</span>][<span class="number">1</span>] = <span class="number">1</span>, I.a[<span class="number">1</span>][<span class="number">0</span>] = (d - b * b) / <span class="number">4</span>;</span><br><span class="line">	ans.a[<span class="number">0</span>][<span class="number">0</span>] = (b * b + d) / <span class="number">2</span>, ans.a[<span class="number">0</span>][<span class="number">1</span>] = b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	b = <span class="built_in">read</span>(), d = <span class="built_in">read</span>(), n = <span class="built_in">read</span>();</span><br><span class="line">	<span class="built_in">init</span>();</span><br><span class="line">	<span class="keyword">if</span> (n == <span class="number">0ll</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;1&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (n == <span class="number">1ll</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%lld &quot;</span>, (<span class="type">int</span>)((b + <span class="built_in">sqrt</span>(d)) / <span class="number">2</span>) % MOD);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	n -= <span class="number">2</span>;</span><br><span class="line">	<span class="type">int</span> ff = <span class="number">0</span>; <span class="comment">//用来判断最后减去的式子对答案是否有影响。</span></span><br><span class="line">	<span class="keyword">if</span> (b * b != d &amp;&amp; n % <span class="number">2</span> == <span class="number">0</span>) ff--;</span><br><span class="line">	<span class="keyword">while</span> (n) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (n &amp; <span class="number">1</span>)ans = ans * I;</span><br><span class="line">		I = I * I;</span><br><span class="line">		n &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	ans.a[<span class="number">0</span>][<span class="number">0</span>] += ff;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%lld &quot;</span>, ans.a[<span class="number">0</span>][<span class="number">0</span>]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>有错误请 D 我</p>
+]]></content>
+      <categories>
+        <category>Dumby的OI生涯</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>矩阵乘法</tag>
+        <tag>数论</tag>
       </tags>
   </entry>
   <entry>
@@ -2343,71 +2461,6 @@
       </tags>
   </entry>
   <entry>
-    <title>洛谷P3263题解报告</title>
-    <url>/2021/08/26/%E6%B4%9B%E8%B0%B7P3263%E9%A2%98%E8%A7%A3%E6%8A%A5%E5%91%8A/</url>
-    <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P3263">洛谷P3263</a></p>
-<h2 id="题意描述"><a href="#题意描述" class="headerlink" title="题意描述"></a>题意描述</h2><p>给定 $b$、$d$ 和 $n$。</p>
-<p><del>试</del>求出：</p>
-<p>$\left \lfloor  \left (    \frac{b+\sqrt{d} }{2}   \right )^{n} \right \rfloor \bmod{p} $</p>
-<span id="more"></span>
-<p>其中  $p=7528443412579576937$ ，$0 &lt; b^{2} \le d &lt; (b+1)^{2}\le 10^{18}$，$n\le 10^{18}$ 且 $b\bmod{2}=1$，$d \bmod{4}=1$。</p>
-<h2 id="题解报告"><a href="#题解报告" class="headerlink" title="题解报告"></a>题解报告</h2><p>式子较为复杂，看了下标签是“矩阵乘法”，更加蒙了。（原本都打算搞个 $double$ 的矩阵了。。。）</p>
-<p>想要让式子与矩乘挂上钩，首先想到要把那个根号给去掉。于是想到在原式后加一个式子使两者相加能将根号去掉。</p>
-<p>由于有一个 $n$，可以想到将带根号的那一项取负，其他不变（暂不考虑取模和向下取整），然后原式变为：</p>
-<p>$\left (  \frac{b-\sqrt{d} }{2}  \right )^{n}$</p>
-<p>在原式后加上现在这个式子便可将根号消掉，即：</p>
-<p>$\left (  \frac{b+\sqrt{d} }{2}  \right )^{n}+ \left (  \frac{b-\sqrt{d} }{2} \right )^{n}$</p>
-<p>然后在式子最后减去一个 $\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 就好了。</p>
-<p>设 $x$ 为 $\frac{b+\sqrt{d} }{2}$，$y$ 为 $\frac{b-\sqrt{d} }{2}$。</p>
-<p>设 $f_{n}=x^{n}+y^{n}$。</p>
-<p>那么可以设我们的状态矩阵为：</p>
-<p>$\begin{bmatrix}  f_{n}&amp;f_{n-1} \end{bmatrix}$</p>
-<p>需要通过 </p>
-<p>$\begin{bmatrix}  f_{n-1}&amp;f_{n-2} \end{bmatrix}$</p>
-<p>转移到</p>
-<p>$\begin{bmatrix}  f_{n}&amp;f_{n-1} \end{bmatrix}$</p>
-<p>接下来考虑如何转移。</p>
-<p>将 $f_{n}$ 拆成 $X\times f_{n-1}-X\times f_{n-2}$ 的形式，又因为 $f_{n-1}=x^{n-1}+y^{n-1}$，$f_{n-2}=x^{n-2}+y^{n-2}$，代入得： </p>
-<p>$X\times \left ( x^{n-1}+y^{n-1} \right ) -X\times \left ( x^{n-2}+y^{n-2} \right )$</p>
-<p>于是稍加考虑就可以得出：</p>
-<p>$x^{n}+y^{n}=\left ( x+y \right ) \times \left ( x^{n-1}+y^{n-1} \right ) - xy \times \left ( x^{n-2}+y^{n-2} \right )$</p>
-<p>所以转移式为：</p>
-<p>$f_{n}=\left ( x+y \right ) \times f_{n-1}- xy \times f_{n-2}$</p>
-<p>能保证这个式子中没有任何浮点数吗？</p>
-<p>我们发现 $f_{1}=\frac{b+\sqrt{d} }{2}+\frac{b-\sqrt{d} }{2}=b$，$f_{2}= \left (  \frac{b+\sqrt{d} }{2}  \right )^{2}+ \left (  \frac{b-\sqrt{d} }{2} \right )^{2} = \frac{b^{2}+d }{2}$。</p>
-<p>$b$ 一定是整数，而由于 $b\bmod{2}=1$，$d \bmod{4}=1$，由费马小定理可得 $b^{2}\equiv b \pmod{2}$，所以 $b^{2}+d \bmod{2}=0$，所以 $\frac{b^{2}+d }{2}$ 也是整数。</p>
-<p>于是乎，$f_{1}$ 和 $f_{2}$ 都是整数，接下来只需证明出他俩前面的系数也是整数就好了。</p>
-<p>首先易得 $x+y=b$，所以 $x+y$ 是整数，然后 $xy=\frac{b^{2}-d}{4}$，由欧拉定理可得 $b^{\varphi (4)}=b^{2}\equiv 1\pmod{4}$，又因为 $d \bmod{4}=1$，所以 $\left ( b^{2}-d \right ) \bmod 4=0$，所以 $xy$ 为整数。</p>
-<p>综上，$f_{n}$ 总为整数。</p>
-<p>所以转移矩阵也同时推出来了。</p>
-<p>如下：</p>
-<p>$\begin{bmatrix} b &amp;1 \\ -\frac{b^{2}-d}{4} &amp;0\end{bmatrix}$</p>
-<p>这里的 $-\frac{b^{2}-d}{4}$ 为了方便可以写成 $\frac{d-b^{2}}{4}$。</p>
-<p>最后再来看看刚才这个东西对答案的影响：</p>
-<blockquote>
-<p>然后在式子最后减去一个 $\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 就好了。</p>
-</blockquote>
-<p>由于答案是向下取整，所以当 $-\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 为正且大小在区间 $\left [ 0,1 \right )$ 时对答案无影响。</p>
-<p>由于 $0 &lt; b^{2} \le d &lt; (b+1)^{2}\le 10^{18} $，所以 $\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 的范围一定在区间 $\left [ 0,1 \right )$ 内。</p>
-<p>接下来只要讨论式子的正负性。</p>
-<p>因为 $0 &lt; b^{2} \le d$，所以 $\frac{b-\sqrt{d} }{2}$ 一定小于 0。</p>
-<p>当 $n \bmod{2}=1$ 时，即 $n$ 为奇数时，$-\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 一定的范围一定在 $\left [ 0,1 \right )$ 内，对答案没有影响。</p>
-<p>相反，当 $n \bmod{2}=0$ 时，$-\left (  \frac{b-\sqrt{d} }{2} \right )^{n}$ 的范围在区间 $\left ( -1,0 \right ]$ 内。当式子等于 0 时,即 $b=\sqrt{d}$，$b^{2}=d$ 时，该式对答案无影响。</p>
-<p>综上，当且仅当 $n$ 为偶数且 $b^{2} \ne d$ 时，该式对答案有影响，答案向下取整后的值需要减一。</p>
-<p>说了一大堆，终于到了大家最爱的代码时间。</p>
-<h2 id="嗲吗"><a href="#嗲吗" class="headerlink" title="嗲吗"></a>嗲吗</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ull unsigned long long</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">tormul</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> k)</span> </span></span><br><span class="line"><span class="function"></span>&#123;  <span class="comment">//龟速乘</span></span><br><span class="line">	ull ans = <span class="number">0</span>;  <span class="comment">//注意要开 ull，否则会 TLE！！（玄学 T，难道不应该 WA 吗）</span></span><br><span class="line">	<span class="keyword">while</span> (k) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (k &amp; <span class="number">1</span>)ans = (ans + a) % MOD;</span><br><span class="line">		a = (ull)(a + a) % MOD;  <span class="comment">//开 ull。</span></span><br><span class="line">		k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">mat</span> </span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">2</span>][<span class="number">2</span>];</span><br><span class="line">	<span class="built_in">mat</span>() &#123; <span class="built_in">memset</span>(a, <span class="number">0</span>, <span class="keyword">sizeof</span> a); &#125;</span><br><span class="line">	mat <span class="keyword">operator</span> *(<span class="type">const</span> mat &amp;b)<span class="type">const</span> </span><br><span class="line">	&#123;</span><br><span class="line">		mat op;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) </span><br><span class="line">			<span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">0</span>; k &lt; <span class="number">2</span>; k++) </span><br><span class="line">				<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">2</span>; j++) </span><br><span class="line">					op.a[i][j] = (ull)(op.a[i][j] + <span class="built_in">tormul</span>(a[i][k], b.a[k][j])) % MOD;  <span class="comment">//ull</span></span><br><span class="line">		<span class="keyword">return</span> op;</span><br><span class="line">	&#125;</span><br><span class="line">&#125; ans, I;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	I.a[<span class="number">0</span>][<span class="number">0</span>] = b, I.a[<span class="number">0</span>][<span class="number">1</span>] = <span class="number">1</span>, I.a[<span class="number">1</span>][<span class="number">0</span>] = (d - b * b) / <span class="number">4</span>;</span><br><span class="line">	ans.a[<span class="number">0</span>][<span class="number">0</span>] = (b * b + d) / <span class="number">2</span>, ans.a[<span class="number">0</span>][<span class="number">1</span>] = b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	b = <span class="built_in">read</span>(), d = <span class="built_in">read</span>(), n = <span class="built_in">read</span>();</span><br><span class="line">	<span class="built_in">init</span>();</span><br><span class="line">	<span class="keyword">if</span> (n == <span class="number">0ll</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;1&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (n == <span class="number">1ll</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%lld &quot;</span>, (<span class="type">int</span>)((b + <span class="built_in">sqrt</span>(d)) / <span class="number">2</span>) % MOD);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	n -= <span class="number">2</span>;</span><br><span class="line">	<span class="type">int</span> ff = <span class="number">0</span>; <span class="comment">//用来判断最后减去的式子对答案是否有影响。</span></span><br><span class="line">	<span class="keyword">if</span> (b * b != d &amp;&amp; n % <span class="number">2</span> == <span class="number">0</span>) ff--;</span><br><span class="line">	<span class="keyword">while</span> (n) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (n &amp; <span class="number">1</span>)ans = ans * I;</span><br><span class="line">		I = I * I;</span><br><span class="line">		n &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	ans.a[<span class="number">0</span>][<span class="number">0</span>] += ff;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%lld &quot;</span>, ans.a[<span class="number">0</span>][<span class="number">0</span>]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>有错误请 D 我</p>
-]]></content>
-      <categories>
-        <category>Dumby的OI生涯</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>矩阵乘法</tag>
-        <tag>数论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>测试用贴</title>
     <url>/2022/07/13/%E6%B5%8B%E8%AF%95%E7%94%A8%E8%B4%B4/</url>
     <content><![CDATA[<p>这是一个测试专用帖。</p>
@@ -2470,6 +2523,23 @@
       </tags>
   </entry>
   <entry>
+    <title>进化论</title>
+    <url>/2022/11/11/%E8%BF%9B%E5%8C%96%E8%AE%BA/</url>
+    <content><![CDATA[<p>写在前面：</p>
+<p><em>最近三天是本校的期中考试，考试期间略读了一些鲁迅先生的文章，觉得有些上头。正巧考完试正在情绪激动之时，就胡写了一通。我本不是什么做文章的人，只是心里憋着难受，便随意地狗叫了一通，文章毫无逻辑，文笔也是十分拙劣，就当是篇粗劣的爽文好了。</em></p>
+<span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">			   进化论</span><br><span class="line">    量变引起质变，在质变的基础上又有新一轮的量变。古代的猿猴，在一轮</span><br><span class="line">又一轮的量变与质变中，逐渐进化成人类。而如今，量变的积累也足够引起新</span><br><span class="line">的质变了，于是，“出题人”这一新物种便诞生了。</span><br><span class="line">    虽然“出题人”这个物种与人类外形相似，但内在却大不相同。正如原人之</span><br><span class="line">于猿猴，人类之于原人，“出题人”的知识与智慧，自然也是在“人类”这一物种</span><br><span class="line">之上。</span><br><span class="line">    又如人类之戏耍猿猴，“出题人”喜好将人类当做猿猴般戏耍。而其方式，</span><br><span class="line">虽然不是用皮鞭抽，或是关在玻璃笼中观赏，却是通过一种简单而粗暴的方法，</span><br><span class="line">其于人类社会中叫做“考试”。而施行此方法的主要工具在人类社会中叫做“试</span><br><span class="line">卷”。</span><br><span class="line">    又如在人类社会的动物园中的猿猴，被关于笼中一年又一年，一代又一代，</span><br><span class="line">久而久之，便习惯了人类的围观与玩弄，人类一年又一年，一代又一代地考试，</span><br><span class="line">自然也是习惯了的。</span><br><span class="line">    然而人类社会并非所有都会被“出题人”抓去玩耍。好比人类会将一些猿猴</span><br><span class="line">放生，以便其去维持生态平衡，因为生态不平衡，人类是无法存活的。“出题</span><br><span class="line">人”也一样，会将许多人类放生，以便其去维持生态平衡（于人类即人类的社</span><br><span class="line">会），因为生态不平衡，“出题人”同样是无法存活的。</span><br><span class="line">    不知猿猴社会是如何称呼被人类抓去的那部分的，毕竟我并不是猿猴。不</span><br><span class="line">过人类社会也确乎对那些被“出题人”抓取的有个称谓，叫做“考生”。</span><br><span class="line">    这“考生”日日受“出题人”的侮辱挑逗，自然是十分不满，于是他们决定反</span><br><span class="line">抗。</span><br><span class="line">    但猿猴终究是建不起高楼大厦的。“考生”终归也只是人类，其知识、智慧</span><br><span class="line">乃至一切都是于“出题人”之下的。</span><br><span class="line">    哎哎！可怜的人类的考生！他们到头来连“出题人”们随手设下的于他们如</span><br><span class="line">玩具般的“试卷”都破除不了，又怎能用其愚蠢而鄙陋的目光窥测“出题人”智慧</span><br><span class="line">又深邃的心灵呢？更无需谈反抗了！</span><br><span class="line">    ······</span><br><span class="line">    终会有人类的勇士出现在“考生”之中的！其能够破除所谓“试卷”，用自身</span><br><span class="line">的光芒将“出题人”的宇宙般的心灵照得一清二楚。他竟能够反抗！</span><br><span class="line">    ······</span><br><span class="line">    就如石猴子敌不过如来佛一般罢，人类的勇士拼尽了全力，却只能得到一</span><br><span class="line">个“A”或是“100”。</span><br><span class="line">    然后便无了，一切都无了。</span><br><span class="line">    那进化后的人类冷冷一笑，那未进化的人类的勇士，未进化的人类的荣光，</span><br><span class="line">便像烟花一般，闪了一下，然后便落下去，无尽地落下去，消失在“出题人”的</span><br><span class="line">黑暗的罗网中。</span><br><span class="line">    这便是进化与未进化的人类罢。</span><br></pre></td></tr></table></figure>
+<p><em>以上纯属个人口嗨，勿喷</em></p>
+]]></content>
+      <categories>
+        <category>Dumby的sb日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>狗P文学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>线段树合并与分裂略解</title>
     <url>/2022/07/10/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6%E4%B8%8E%E5%88%86%E8%A3%82/</url>
     <content><![CDATA[<h2 id="前置芝士"><a href="#前置芝士" class="headerlink" title="前置芝士"></a>前置芝士</h2><ul>
@@ -2512,73 +2582,26 @@
       </tags>
   </entry>
   <entry>
-    <title>进化论</title>
-    <url>/2022/11/11/%E8%BF%9B%E5%8C%96%E8%AE%BA/</url>
-    <content><![CDATA[<p>写在前面：</p>
-<p><em>最近三天是本校的期中考试，考试期间略读了一些鲁迅先生的文章，觉得有些上头。正巧考完试正在情绪激动之时，就胡写了一通。我本不是什么做文章的人，只是心里憋着难受，便随意地狗叫了一通，文章毫无逻辑，文笔也是十分拙劣，就当是篇粗劣的爽文好了。</em></p>
+    <title>《安多 第二季》剧评</title>
+    <url>/2025/05/09/%E3%80%8A%E5%AE%89%E5%A4%9A-%E7%AC%AC%E4%BA%8C%E5%AD%A3%E3%80%8B%E5%89%A7%E8%AF%84/</url>
+    <content><![CDATA[<p>最近安多第二季上线，写写观感顺便说说前段时间看的剧。</p>
 <span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">			   进化论</span><br><span class="line">    量变引起质变，在质变的基础上又有新一轮的量变。古代的猿猴，在一轮</span><br><span class="line">又一轮的量变与质变中，逐渐进化成人类。而如今，量变的积累也足够引起新</span><br><span class="line">的质变了，于是，“出题人”这一新物种便诞生了。</span><br><span class="line">    虽然“出题人”这个物种与人类外形相似，但内在却大不相同。正如原人之</span><br><span class="line">于猿猴，人类之于原人，“出题人”的知识与智慧，自然也是在“人类”这一物种</span><br><span class="line">之上。</span><br><span class="line">    又如人类之戏耍猿猴，“出题人”喜好将人类当做猿猴般戏耍。而其方式，</span><br><span class="line">虽然不是用皮鞭抽，或是关在玻璃笼中观赏，却是通过一种简单而粗暴的方法，</span><br><span class="line">其于人类社会中叫做“考试”。而施行此方法的主要工具在人类社会中叫做“试</span><br><span class="line">卷”。</span><br><span class="line">    又如在人类社会的动物园中的猿猴，被关于笼中一年又一年，一代又一代，</span><br><span class="line">久而久之，便习惯了人类的围观与玩弄，人类一年又一年，一代又一代地考试，</span><br><span class="line">自然也是习惯了的。</span><br><span class="line">    然而人类社会并非所有都会被“出题人”抓去玩耍。好比人类会将一些猿猴</span><br><span class="line">放生，以便其去维持生态平衡，因为生态不平衡，人类是无法存活的。“出题</span><br><span class="line">人”也一样，会将许多人类放生，以便其去维持生态平衡（于人类即人类的社</span><br><span class="line">会），因为生态不平衡，“出题人”同样是无法存活的。</span><br><span class="line">    不知猿猴社会是如何称呼被人类抓去的那部分的，毕竟我并不是猿猴。不</span><br><span class="line">过人类社会也确乎对那些被“出题人”抓取的有个称谓，叫做“考生”。</span><br><span class="line">    这“考生”日日受“出题人”的侮辱挑逗，自然是十分不满，于是他们决定反</span><br><span class="line">抗。</span><br><span class="line">    但猿猴终究是建不起高楼大厦的。“考生”终归也只是人类，其知识、智慧</span><br><span class="line">乃至一切都是于“出题人”之下的。</span><br><span class="line">    哎哎！可怜的人类的考生！他们到头来连“出题人”们随手设下的于他们如</span><br><span class="line">玩具般的“试卷”都破除不了，又怎能用其愚蠢而鄙陋的目光窥测“出题人”智慧</span><br><span class="line">又深邃的心灵呢？更无需谈反抗了！</span><br><span class="line">    ······</span><br><span class="line">    终会有人类的勇士出现在“考生”之中的！其能够破除所谓“试卷”，用自身</span><br><span class="line">的光芒将“出题人”的宇宙般的心灵照得一清二楚。他竟能够反抗！</span><br><span class="line">    ······</span><br><span class="line">    就如石猴子敌不过如来佛一般罢，人类的勇士拼尽了全力，却只能得到一</span><br><span class="line">个“A”或是“100”。</span><br><span class="line">    然后便无了，一切都无了。</span><br><span class="line">    那进化后的人类冷冷一笑，那未进化的人类的勇士，未进化的人类的荣光，</span><br><span class="line">便像烟花一般，闪了一下，然后便落下去，无尽地落下去，消失在“出题人”的</span><br><span class="line">黑暗的罗网中。</span><br><span class="line">    这便是进化与未进化的人类罢。</span><br></pre></td></tr></table></figure>
-<p><em>以上纯属个人口嗨，勿喷</em></p>
+<h2 id="安多"><a href="#安多" class="headerlink" title="安多"></a>安多</h2><p>先说安多。因为是一集一集看的，就调点有意思的写写。</p>
+<h3 id="第一集"><a href="#第一集" class="headerlink" title="第一集"></a>第一集</h3><p>先是上来就是一个看着让人很难不往zzzq上面想的女反抗军（不知道算不算得上反抗军，一下词穷了），不过考虑到其背景是平凡地勤出身，也可以理解。</p>
+<p>后面好几条线切换，印象最深刻的是这个：</p>
+<img src="/2025/05/09/%E3%80%8A%E5%AE%89%E5%A4%9A-%E7%AC%AC%E4%BA%8C%E5%AD%A3%E3%80%8B%E5%89%A7%E8%AF%84/%E9%B1%BC%E4%BA%BA.jpg" class="" title="鱼人">
+<p>就是说，鱼人也能进国安局了吗？</p>
+<p>其他整体节奏还是偏慢的，感觉像第一季的开头那样，不过还是挺吸引人的，虽然写这个的时候我还没看第二集（倒是把爱情公寓第一季看完了🤓）。</p>
+<h2 id="骨干小队"><a href="#骨干小队" class="headerlink" title="骨干小队"></a>骨干小队</h2><p>对于一部儿童片来说，还算合格，从小孩的逻辑来说很多地方是讲的通顺的。但是有点太过家家了，而且我不是小登了已经🤔。</p>
+<p>给分3.5/5。</p>
 ]]></content>
       <categories>
         <category>Dumby的sb日常</category>
       </categories>
       <tags>
         <tag>日常</tag>
-        <tag>狗P文学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开会</title>
-    <url>/2025/03/19/%E5%BC%80%E4%BC%9A/</url>
-    <content><![CDATA[<p>我要发表暴论，爱tm听就听，不听就tm滚。</p>
-<span id="more"></span>
-<p>先贴一段：</p>
-<ol>
-<li>早自习出勤，统计重点关注对象，分类别给出解决方案（如果没有办法交给辅导员处理）</li>
-<li>学雷锋月，开展学雷锋活动，形成文字、记录照片，发班级公众号，并转发至自行致远公众号</li>
-<li>下周早自习开展早演讲，（7:55-8:05）每天安排一个人，时间5～10分钟左右，可以让导生先来演讲（有无ppt都可以），并形成排班表（第一周的演讲质量一定要拉上去！！！）（第一周分享主题:我的大学生活）另外，早锻炼预计在4月份开始。</li>
-<li>合唱团（需要30人，男女各15人，指挥1人，男女不限）<br>每个班至少报3个人，至少2男一女（女生也可以多点）</li>
-<li>下周组织学院内拔河比赛（每个班8男2女），下周每天的下午7.8节课，地点在综合训练馆附近，具体地点听通知。<blockquote>
-<p>（1）.注意安全<br>（2）.可以组织动员班级的拉拉队，积极参与<br>（3）.如果有课成员可以不固定，只要人数够了就行（班长协调好！！！）</p>
-</blockquote>
-</li>
-</ol>
-<p>就看看这一段就感觉血压上来了。不知道以为我还在蝇州养猪场呢。</p>
-<p>挨个讲讲，就第一个这早自习吧（包括晚自习也一样），想学的有的是时间学，有的是地方学，和年轻人打过交道的（我是说真正平等深入交流而不是布置作业之类的自上而下的接头）都知道现在人就算熬晚点也不会想起早点。<br>我是起来了，食堂是没法吃的，商业街是只有包子的，要么就吃面包。也不是不可以早自习下课那会儿再去吧，你要不看看有多少人是这种想法，看看那会儿食堂tmd有多少人。我tm要在这么点时间里排这么长队把一堆吃的捅进肚子里再回去上课。<br>就算早餐解决了，牛魔的我早上七点不到起来，搁着坐半个多小时。一上午的课可以说是基本不用听了，困得跟头猪一样。<br>nmd自习就非得坐这破教室里学是吧，多学这半个小时我能升天啊？反之，我多睡半个小时我就是能清醒一天，效率就是能更高。😅</p>
-<p>第二个到目前没听到消息。</p>
-<p>第三个也是幽默。早自习还不行，还得找个人上去叫两下才舒服。本蛆有幸被选中演讲。一个星期本来五天都要讲，隔壁班愣是一个没讲。什么第一周质量拉上去，纯tm搞笑。我的大学生活，nmd爱怎么过怎么过去，谁tm过得不是大学生活。想看厉害的自己搜下一搜一大把，想看有意思的自己搜下一搜一大把，想看摆烂的自己搜下一搜一大把。一群半死不死的东西坐在教室里，上面一个什么东西叽里咕噜咕哝着什么东西，这就是早演讲。</p>
-<p>第四个第五个更是王炸。我以为什么每个班出几个人这种事随着我高中毕业已经成为过去式了，我是真想不到大学还来搞这种没名堂的东西。什么gp班级凝聚力你凝聚你码呢。我觉得凡是接受过义务教育的当代中国学生都tm对这种所谓凝聚力所谓增进交流的官腔犯恶心。</p>
-<p>这些还只是 <strong>我的大学生活</strong> 的一小部分。就除了这些吧，什么年级大会，什么班会，我是真想问问了，你们tm都是有什么怪癖吗什么开会癖什么狗叫癖，简简单单几个事情，敲几个字就能解决，你非得把所有人聚到一个位于学校最角落的破地方听你们狗叫。nmd你要是写成文章直接发出来，想看的人自己会看，不想看的你叫去开会他照样不会听。<br>还有这班会吧，也是厉害。一张嘴就是陈腔滥调，是个中国人都是听这种p话从小听到大的，耳朵都磨出茧了。nmd真是不会点官腔都当不了领导啊。还有什么叫几个人起来分享经验，你分享nm呢。我上个学期没有一个星期没不翘课非要我说出来是吧。平时没事就打游戏非要我说出来是吧。作业永远七分抄非要我说出来是吧。就考个b试我运气好点md很屌了是吧。<br>所有人问话都是一个调调，班主任，书记，导员。我就拿同一个破例子我能回答所有人的问题。😅</p>
-<p>是。我是戾气太重了。我想啊？</p>
-<p>学校管理层也都是蠢猪，和蝇州养猪场的饲养员tm有的一拼。这学校几把路本来就修的史一样，nmd还搁这修减速带升降桩，怕学生堵不死是吧。</p>
-<p>md一个个都是高级人类，tmd拿直肠思考就能解决我们凡人终生无法参透的问题😭😭。</p>
-<p>牛逼，太牛逼。</p>
-<p>今天又有人跳了，不知为何，白白失去一条生命固然可惜，但于他也许是解脱吧，希望人能有最好的结局🙏🏿，但不知学校里的某些出生是怎么看的。</p>
-<p>就这样吧，懒得烦了。</p>
-]]></content>
-      <categories>
-        <category>Dumby的sb日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一个大学生为什么能这么疲惫与无力</title>
-    <url>/2025/03/20/%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%83%BD%E8%BF%99%E4%B9%88%E7%96%B2%E6%83%AB%E4%B8%8E%E6%97%A0%E5%8A%9B/</url>
-    <content><![CDATA[<p>我要吐槽。</p>
-<span id="more"></span>
-<p>大学毕竟是走进社会前的最后一步嘛，有意无意间就会隐隐露出我是社畜的痛感。</p>
-<p>开会开会，这的那的一堆破事搞不好，一堆莫名其妙的规定，一堆总是能让你糟心的小事。我寻思这去打工了也不用上早自习啊？😅</p>
-<p>最近几天情绪真的很不稳定了，不过说回来也算很稳定了，稳定的烦躁焦虑和疲惫。每天都有很浓重一股无力感，无奈感和失落感缠绕着。</p>
-<p>。</p>
-]]></content>
-      <categories>
-        <category>Dumby的sb日常</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
+        <tag>星球大战</tag>
+        <tag>影视剧</tag>
       </tags>
   </entry>
 </search>
