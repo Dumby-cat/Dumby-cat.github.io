@@ -2594,7 +2594,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #9d90ff;
+  background: #65596b;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2807,9 +2807,10 @@ i {
 .tag-cloud a {
   display: inline-block;
   border-bottom-color: #fff;
+  margin: 10px;
   color: #fff;
   orderby: name;
-  order: -1;
+  order: 1;
 }
 .tag-cloud a:hover {
   color: #5c5c5c !important;
