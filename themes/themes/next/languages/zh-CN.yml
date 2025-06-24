@@ -43,7 +43,7 @@ counter:
   tag_cloud:
     zero: 暂无标签
     one: 目前共计 1 个标签
-    other: "目前共计 %d 个标签"
+    other: "目前共计 %d 个标签，可通过ctrl+F查找"
   categories:
     zero: 暂无分类
     one: 目前共计 1 个分类

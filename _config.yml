@@ -103,6 +103,21 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+plugins:
+  - hexo-toc
+
+# hexo-toc:
+#   anchorlink: true # 如果想要在标题旁边显示锚点链接，可以设置为true
+#   maxDepth: 6     # 指定生成目录的最大标题层级，默认为6
+toc:
+  maxdepth: 6
+  class: toc
+  # slugify: transliteration
+  decodeEntities: false
+  anchor:
+    position: before
+    symbol: '# '
+    style: none
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

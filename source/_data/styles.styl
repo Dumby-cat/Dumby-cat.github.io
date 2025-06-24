@@ -1,3 +1,8 @@
+
+:root {
+  --text-color: #ffffff;
+}
+
 //header
 
 header.header {
@@ -34,6 +39,17 @@ header.header {
   display: none;
 }
 
+//站内链接
+a:-webkit-any-link{
+  color: #9c9c9c;
+  border-bottom: none;
+  // border-bottom: 1px solid #9c9c9c;
+  &:hover {
+        color: #5c5c5c;
+        border-bottom: none;
+        // border-bottom: 1px solid #5c5c5c;
+    }
+}
 
 // 文章内链接文本样式 
 .post-body p a{
@@ -72,13 +88,13 @@ body {
 
 //标题颜色
 h1, h2, h3, h4, h5, h6 {
-  color: #919191
+  color: #c7c7c7;
 }
 
 //全局字体颜色
-* {
-  color: #ffffff;
-}
+// * {
+//   color: #ffffff;
+// }
 
 // 修改按键（button）样式
 .btn {
