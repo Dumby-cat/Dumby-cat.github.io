@@ -163,22 +163,22 @@
     <div class="post-body" itemprop="articleBody">
         <p>利用 Vercel+Github 通过一些歪门邪道实现 Hexo 静态博客的在线更新。</p>
 <span id="more"></span>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>之前一直觉得 Hexo 最大的缺点就是更新只能在本地，实在是不方便。</p>
+<h2><span id="bei-jing">背景</span></h2><p>之前一直觉得 Hexo 最大的缺点就是更新只能在本地，实在是不方便。</p>
 <p>后来学会通过多台机子实现hexo分支同步的方法，但也需要将源代码载到本地。而且这个方法需要使用者的电脑上装有 Node.js 和 Git 环境，而最烦的地方就在这里。我许多时候用的都是学校机房的电脑，系统 win7，还带还原卡，环境配置很麻烦，每次都要重来。而且我自己的电脑是 win10，每次换地方更新时都要修改博客的配置（win7和win10间转换），非常麻烦。</p>
 <p>由于我的博客是在Vercel上部署的，之前就想能不能用它来实现在线更新，但一直没成功，今天终于通过一些歪门邪道实现了。</p>
-<h2 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h2><p>首先，博客需要有一个在Github上的源码仓库。这里的分支是 <code>hexo</code>。</p>
+<h2><span id="qian-zhi-tiao-jian">前置条件</span></h2><p>首先，博客需要有一个在Github上的源码仓库。这里的分支是 <code>hexo</code>。</p>
 <p>然后，在Vercel中创建一个新项目，从Github中导入，选择博客的源码仓库，<code>FRAMEWORK PRESET</code> 选择 Other（或者 Hexo，这里建议选Other，因为选Hexo经常会有hexo g命令失效的问题，非常麻烦，other就不会有），然后直接 Deploy。</p>
 <p>之后Vercel会自动部署生成博客，点Visit可访问。</p>
 <p>前面这些都是常规操作，还有什么改域名之类的，不属于今天的讨论范围。</p>
 <p>接下来是重点，骚操作开始了。</p>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>首先在Github的源码仓库中更新文章，不管是删除、新增还是修改都可以。</p>
-<img src="/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0.PNG" class="" title="更新文章">
+<h2><span id="geng-xin">更新</span></h2><p>首先在Github的源码仓库中更新文章，不管是删除、新增还是修改都可以。</p>
+<img src="/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0.PNG" class title="更新文章">
 <p>保存后，Vercel 应该会检测到修改然后自动部署一遍。</p>
 <p><strong>但是</strong>，它自动部署后，我们更新的文章<strong>并不会</strong>出现在部署出的博客中。</p>
 <p>接下来，打开Vercel的这个界面，我们发现底下的Preview Deployments栏中有一个最新的Deployment。</p>
-<img src="/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/Deployment.PNG" class="" title="最新的Deployment">
+<img src="/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/Deployment.PNG" class title="最新的Deployment">
 <p>点击那条Deployment最右边的三个点，选择Promote to Production。</p>
-<img src="/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/%E4%B8%89%E4%B8%AA%E7%82%B9.PNG" class="" title="三个点">
+<img src="/2022/10/21/%E5%8D%9A%E5%AE%A2%E5%9C%A8%E7%BA%BF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8C%97/%E4%B8%89%E4%B8%AA%E7%82%B9.PNG" class title="三个点">
 <p>再点击 Promote to Production 之后Vercel应该又会自动Deploy一次，这次部署完之后，进入博客你就会发现，文章更新了！！！</p>
 <p>于是在线更新就成功实现了。</p>
 <p>虽然有点歪门邪道，我也不确定会不会有什么缺点和漏洞，但是我也是刚自己摸出来这个方法，就写篇博客记录下好了。</p>
@@ -257,6 +257,11 @@
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="/js/fold_action.js"></script>
 
 </body>
 </html>

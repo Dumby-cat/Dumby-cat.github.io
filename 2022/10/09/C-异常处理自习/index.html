@@ -166,7 +166,7 @@
 <p>本文主要用于自习 try catch throw 这三个东西。</p>
 <p>首先说一下异常处理的基本过程：一个函数 A，其运行过程中抛出了一个异常，如果 A 自己处理掉了这个异常，那么就继续执行代码；如果没有处理，函数 A 会立刻停止执行，并将该异常抛给函数 A 的调用者。以此类推。<br>当最后异常抛给 main 函数时，如果 main 函数也不做处理，则程序会立即异常停止。</p>
 <p>C++中异常处理主要用 try catch throw 这三个东西。</p>
-<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p>throw 语法：</p>
+<h2><span id="yu-fa">语法</span></h2><p>throw 语法：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">throw 表达式;</span><br></pre></td></tr></table></figure>
 <p>这个表达式是啥都行（基本类型或者类都可以）。</p>
 <p>try catch（这两个要一起用）语法：</p>
@@ -178,7 +178,7 @@
 <p>如果想用一个 catch 语句抓取所有异常类型，则将 catch 写成如下形式：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">catch(...)&#123;</span><br><span class="line">    异常处理程序段</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在 catch 的括号中写上 <code>...</code> 可以使该 catch 语句抓取所有异常类型，所以这种 catch 通常放在所有 catch 的最后。</p>
-<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><p>举个具体例子：</p>
+<h2><span id="li-zi">例子</span></h2><p>举个具体例子：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">A</span><span class="params">(<span class="type">int</span> m)</span></span>&#123;</span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(m==<span class="number">0</span>)</span><br><span class="line">            <span class="keyword">throw</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(m==<span class="number">1</span>)</span><br><span class="line">            <span class="keyword">throw</span> <span class="built_in">double</span>(<span class="number">1.0</span>);</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            <span class="keyword">return</span> m;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">catch</span>(<span class="type">double</span> a)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;double in A&quot;</span>&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,k;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        n=<span class="built_in">A</span>(k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">catch</span>(<span class="type">int</span> a)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;int in main&quot;</span>&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">catch</span>(<span class="type">double</span> a)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;double in main&quot;</span>&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;n;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>执行结果：</p>
 <p>输入1：</p>
@@ -271,6 +271,11 @@
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="/js/fold_action.js"></script>
 
 </body>
 </html>

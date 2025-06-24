@@ -164,9 +164,9 @@
         <p>折腾了好久好久，怎么都跑不起来libtcod，真tm太曹丹了。。</p>
 <p>直到我看到这个叫做<a target="_blank" rel="noopener" href="https://github.com/HexDecimal/tcod-cpp-engine-2022">TCod Cpp Engine</a>的项目（最近官方出了个<a target="_blank" rel="noopener" href="https://github.com/HexDecimal/libtcod-vcpkg-template">模板</a>，配置过程与下面类似，两者都可使用），最后跟着介绍的步骤终于跑起来了。</p>
 <p>接下来开始学习LibTCod。</p>
-<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%88%90%E5%8A%9F%E8%BF%90%E8%A1%8C.png" class="" title="终于跑起来啦！！！">
+<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%88%90%E5%8A%9F%E8%BF%90%E8%A1%8C.png" class title="终于跑起来啦！！！">
 <span id="more"></span>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>先要有一些基本工具：VsCode、Cmake，对了，最好再载一下VS（这里用VS2022），因为后面vcpkg使用时要求有VS实例。</p>
+<h2><span id="pei-zhi">配置</span></h2><p>先要有一些基本工具：VsCode、Cmake，对了，最好再载一下VS（这里用VS2022），因为后面vcpkg使用时要求有VS实例。</p>
 <p>然后把<a target="_blank" rel="noopener" href="https://github.com/HexDecimal/tcod-cpp-engine-2022">这个库</a><strong>克隆</strong>到本地（注意是克隆不是直接复制，用git克隆后面可以免去很多乱七八糟的步骤）。</p>
 <p>这里我将库直接克隆到D盘下。（项目主目录为 <code>D:\tcod-cpp-engine-2022</code>）</p>
 <p>开始初始化<code>LibTCod</code>和<code>Vcpkg</code>两个子模块。<br>子模块是什么具体看<a target="_blank" rel="noopener" href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">官方文档</a>，这里不多说。<br>我们注意到克隆下来的文件夹中有两个空的文件夹：<code>libtcod</code>和<code>vcpkg</code>，这两个就是两个子模块的文件夹。<br>接下来在项目的文件夹下（<code>D:\tcod-cpp-engine-2022</code>）运行命令：</p>
@@ -175,7 +175,7 @@
 <p>接下来打开VsCode，点击打开文件夹，打开项目的主目录（<code>D:\tcod-cpp-engine-2022</code>）。</p>
 <p>如果你没有下载扩展的话会让你载一些，把VsCode推荐的扩展全都载下来就好了，其中最重要的是这几个：C/C++相关扩展、CMake工具。</p>
 <p>VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提示的话可以到底部找到Kit选项打开并选择。</p>
-<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/Kit.png" class="" title="选择Kit">
+<img src="/2022/08/02/Roguelike%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9ALibTCod/Kit.png" class title="选择Kit">
 <p>最后按 <code>F5</code>，VsCode会自动进行编译。</p>
 <p>这样应该就行了，他会跳出一个该项目原作者的一个示例，能运行就说明配置成功。</p>
 <p>参考：</p>
@@ -260,6 +260,11 @@
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="/js/fold_action.js"></script>
 
 </body>
 </html>
