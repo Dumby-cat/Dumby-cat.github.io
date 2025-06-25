@@ -2615,7 +2615,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #2eff7a;
+  background: #7d6503;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2706,6 +2706,10 @@ body {
 }
 .post-button .btn {
   color: #fff;
+}
+.post-button .btn:hover {
+  color: #1c1c1c;
+  background: #5c5c5c;
 }
 h1,
 h2,
@@ -2819,6 +2823,7 @@ i {
 }
 .menu-item a:hover,
 .menu-item span.exturl:hover {
+  color: #1c1c1c;
   background: #5c5c5c;
 }
 .menu .menu-item a {
@@ -2826,6 +2831,7 @@ i {
 }
 .menu-item a:hover,
 .menu-item a.menu-item-active {
+  color: #1c1c1c;
   background: #5c5c5c;
 }
 .pagination .page-number.current {
