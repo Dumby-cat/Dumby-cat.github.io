@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        pre {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            font-size: 14px;
+            line-height: 1.2;
+            margin: 0;
+            padding: 10px;
+        }
+        .player { color: #00FF00; }      /* 玩家 - 亮绿色 */
+        .stairs { color: #00FFFF; }      /* 楼梯 - 青色 */
+        .trap { color: #FF0000; }        /* 陷阱 - 红色 */
+        .food { color: #00CC00; }        /* 食物 - 绿色 */
+        .floor { color: #404040; }       /* 地面 - 暗灰色 */
+        .status-value { color: #FFFFFF; }/* 状态值 - 白色 */
+        .hp { color: #00FF00; }          /* 生命值 - 绿色 */
+        .gold { color: #FFFF00; }        /* 金钱 - 黄色 */
+        .mana { color: #00BFFF; }        /* 法力值 - 亮蓝色 */
+        .xp { color: #00FFFF; }          /* 经验值 - 青色 */
+        .align { color: #0000FF; }       /* 阵营 - 蓝色 */
+        .status-effect { color: #800080; }/* 状态效果 - 紫色 */
+    </style>
+</head>
+<body>
+<pre>You find here some kind of bullshit.--More--                                    
+----                       ---                              ----                
+|..|                     ---<span class="floor">.</span>---                          ---<span class="floor">..</span>---        ---   
+|..|                     |<span class="floor">.....</span>--------                   |<span class="floor">......</span>|      ---.--  
+--.|                 -----<span class="floor">......</span>--.|..|                   |<span class="floor">......</span>--     |..<span class="stairs">></span>.|  
+ |.|                 |<span class="floor">................</span>|                   --<span class="floor">......</span>--    |..<span class="player">@</span>.|  
+ |.|                --<span class="floor">..............</span>---                --- ----<span class="floor">....</span>|   ---<span class="floor">...</span>|  
+ |.|                |..--.----<span class="floor">.....</span>-|      --          |..--  |<span class="floor">....</span>----|<span class="floor">.....</span>|  
+ |.|       -----    ----|.|  --<span class="floor">.....</span>|     --.--        |<span class="floor">....</span>---<span class="floor">....</span><span class="stairs"><</span>|.--.--..|  
+ |.|      --.|.--       |.|   -----<span class="floor">.</span>|     |<span class="floor">....</span>------   -<span class="floor">................</span>|--.|  
+ |.|      |<span class="floor">.....</span>--      |.----    |.------|<span class="floor">.....</span>|.|.------ |<span class="floor">............</span>-|  --  
+ |.---   --<span class="floor">......</span>|  --  |<span class="floor">....</span>|    |<span class="floor">...</span>|..| -<span class="floor">...</span><span class="food">%</span><span class="floor">.....</span>|.--- ---<span class="floor">...........</span>|      
+ |<span class="floor">...</span>-- --<span class="floor">.......</span>----.------.---  ---<span class="floor">....</span>| ----<span class="floor">..........</span>-----.-<span class="floor">...--....</span>|      
+ |<span class="floor">....</span>---<span class="trap">^</span><span class="floor">..........</span>|-..|  |<span class="floor">...</span>|    ---.--    ----<span class="floor">........</span>|<span class="floor">.......</span>-----).|      
+ |<span class="floor">...[....</span>----.|..|.|<span class="floor">...</span>----.-.|      |.----- --<span class="floor">..........</span>|.-<span class="floor">...</span>---   ----      
+ |<span class="floor">...--..-</span>|  -----|)..)<span class="floor">........</span>|      |<span class="floor">.....</span>---..---<span class="floor">............</span>|               
+ |<span class="floor">....</span>|...|       -.).)<span class="floor">........</span>|      --<span class="floor">.......</span><span class="food">%</span><span class="floor">................</span>|               
+ -----<span class="floor">...</span>--      |<span class="floor">...</span>|.---<span class="floor">.....</span>|      |<span class="floor">.......</span>-----<span class="floor">.............</span>|               
+     --..|       --.---- |<span class="floor">....</span>--      |<span class="floor">......</span>--   |..---.<span class="trap">^</span><span class="floor">.....</span>--               
+      |..|        ---    |..---       --.-----    |.-- |..---..|                
+      ----               ----          ---        ---  |..| ----                
+                                                       ----                     
+[Dumby_cat the Blogger         ] St:<span class="status-value">18</span> Dx:<span class="status-value">13</span> Co:<span class="status-value">18</span> In:<span class="status-value">7</span> Wi:<span class="status-value">10</span> Ch:<span class="status-value">8</span> <span class="align">Lawful</span>       
+Dlvl:<span class="status-value">4</span> $:<span class="gold">179</span> HP:<span class="hp">47(55)</span> Pw:<span class="mana">18(18)</span> AC:<span class="status-value">5</span> Xp:<span class="xp">5</span> T:<span class="status-value">1990</span> <span class="status-effect">Hallu</span>                         
+</pre>
+</body>
+</html>
