@@ -161,22 +161,22 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2><a href="#加法及乘法原理" class="none"># </a><span id="加法及乘法原理">加法及乘法原理</span></h2><h3><a href="#加法原理" class="none"># </a><span id="加法原理">加法原理</span></h3><p>完成一件事有 $n$ 类方法，每类方法有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1}+m_{2}+…+m_{n}$ 种方法。</p>
+        <h2 id="加法及乘法原理"><a href="#加法及乘法原理" class="headerlink" title="加法及乘法原理"></a>加法及乘法原理</h2><h3 id="加法原理"><a href="#加法原理" class="headerlink" title="加法原理"></a>加法原理</h3><p>完成一件事有 $n$ 类方法，每类方法有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1}+m_{2}+…+m_{n}$ 种方法。</p>
 <span id="more"></span>
-<h3><a href="#乘法原理" class="none"># </a><span id="乘法原理">乘法原理</span></h3><p>完成一件事有 $n$ 个步骤，每个步骤有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1} \times m_{2} \times … \times m_{n}$ 种方法。</p>
-<h2><a href="#排列与组合入门" class="none"># </a><span id="排列与组合入门">排列与组合入门</span></h2><h3><a href="#排列与排列数" class="none"># </a><span id="排列与排列数">排列与排列数</span></h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，按照一定顺序排列，所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的排列数</strong>。</p>
+<h3 id="乘法原理"><a href="#乘法原理" class="headerlink" title="乘法原理"></a>乘法原理</h3><p>完成一件事有 $n$ 个步骤，每个步骤有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1} \times m_{2} \times … \times m_{n}$ 种方法。</p>
+<h2 id="排列与组合入门"><a href="#排列与组合入门" class="headerlink" title="排列与组合入门"></a>排列与组合入门</h2><h3 id="排列与排列数"><a href="#排列与排列数" class="headerlink" title="排列与排列数"></a>排列与排列数</h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，按照一定顺序排列，所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的排列数</strong>。</p>
 <p>公式如下：</p>
 <p>$ A^{m}_{n}=\left ( n-m+1 \right )…\left ( n-2 \right )\left ( n-1 \right )n=\frac{n!}{\left (n-m\right )!} $</p>
 <p>如何理解这个公式：</p>
 <p>有 $m$ 个位置，第一个有 $n$ 种选法，第二个有 $n-1$ 种，以此类推，第 $m$ 种有 1 种选法，所以由乘法原理可得总方案数为 $\left ( n-m+1 \right )…\left ( n-2 \right )\left ( n-1 \right )n$。</p>
-<h3><a href="#组合与组合数" class="none"># </a><span id="组合与组合数">组合与组合数</span></h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，组成一个组合（集合），所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的组合数</strong>。</p>
+<h3 id="组合与组合数"><a href="#组合与组合数" class="headerlink" title="组合与组合数"></a>组合与组合数</h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，组成一个组合（集合），所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的组合数</strong>。</p>
 <p>公式如下：</p>
 <p>$C^{m}_{n}=\frac{A^{m}_{n}}{m!}=\frac{n!}{m!\left (n-m\right)!}$</p>
 <p>如何理解这个公式：</p>
 <p>一个 $m$ 个元素的序列的全排列的序列数为 $m!$，所以将排列数除去全排列的序列数就为组合数。</p>
 <p><strong>$C^{m}_{n}$ 还写成 $\begin{pmatrix}n \\m\end{pmatrix}$，组合数也叫二项式系数</strong>。</p>
 <p>特别地，当 $m&gt;n$ 时，$A^{m}_{n}=C^{m}_{n}=0$。</p>
-<h4><a href="#c-求组合数代码" class="none"># </a><span id="c-求组合数代码">C++ 求组合数代码</span></h4><p>递归：</p>
+<h4 id="C-求组合数代码"><a href="#C-求组合数代码" class="headerlink" title="C++ 求组合数代码"></a>C++ 求组合数代码</h4><p>递归：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">100005</span>, MOD = <span class="number">19260817</span>;</span><br><span class="line"><span class="type">int</span> a[N], ans;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = n; i &gt;= m; i--) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (m &gt; <span class="number">1</span>) <span class="built_in">C</span>(n - <span class="number">1</span>, m - <span class="number">1</span>);</span><br><span class="line">		<span class="keyword">else</span> ans = (ans + <span class="number">1</span>) % MOD;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <p>递推：</p>
@@ -186,10 +186,10 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1005</span>, MOD = <span class="number">19260817</span>;</span><br><span class="line"><span class="type">int</span> f[N][N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (n == <span class="number">0</span> || m == n) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= m; i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt;= n; i++) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (i == <span class="number">0</span>)f[i][j] = <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">else</span> f[i][j] = f[i - <span class="number">1</span>][j - <span class="number">1</span>] + f[i - <span class="number">1</span>][j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> f[m][n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <p>求排列数则只要<br>将组合数乘上 $m!$ 就好了。</p>
-<h4><a href="#二项式定理" class="none"># </a><span id="二项式定理">二项式定理</span></h4><p>公式如下：</p>
+<h4 id="二项式定理"><a href="#二项式定理" class="headerlink" title="二项式定理"></a>二项式定理</h4><p>公式如下：</p>
 <p>$\left ( a+b \right )^{n}= {\textstyle \sum_{n}^{i=0}\begin{pmatrix}n \\i\end{pmatrix}a^{n-i}b^{i}}$</p>
 <p>其实很好理解，自己手推一下就出来了。</p>
-<h2><a href="#catalan卡特兰数列" class="none"># </a><span id="catalan卡特兰数列">Catalan（卡特兰）数列</span></h2><p>没什么好说的，记个公式（要推导它的通项公式需要生成函数，反正本蒟蒻不会）。</p>
+<h2 id="Catalan（卡特兰）数列"><a href="#Catalan（卡特兰）数列" class="headerlink" title="Catalan（卡特兰）数列"></a>Catalan（卡特兰）数列</h2><p>没什么好说的，记个公式（要推导它的通项公式需要生成函数，反正本蒟蒻不会）。</p>
 <p>$Cat_{0}=Cat_{1}=1$</p>
 <p>$Cat_{n}=\frac{\begin{pmatrix}2n\\n\end{pmatrix}}{n+1}\left ( n\ge 2,n \in N^{+}\right )$</p>
 <p>其他 Catalan 数列常用公式：</p>
@@ -197,7 +197,7 @@
 <p>$Cat_{n}=\begin{pmatrix} 2n\\n\end{pmatrix}-\begin{pmatrix} 2n\\n-1\end{pmatrix}$</p>
 <p>$Cat_{n}=\left\{\begin{matrix}{\textstyle \sum_{i=1}^{n}Cat_{i-1}Cat_{n-i}},n\ge 2,n\in N^{+} \\1, n=0,1\end{matrix}\right.$</p>
 <p>代码可以由 $Cat_{n}=\frac{Cat_{n-1}\left ( 4n-2 \right )}{n+1}$ 很简单的写出来，这里就不放了。</p>
-<h3><a href="#应用" class="none"># </a><span id="应用">应用</span></h3><ol>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ol>
 <li>对角线不相交，将一个凸多边形分成多个三角形的方案数。</li>
 <li>一个序列的进栈顺序为 $1,2,3…,n-1,n$，求有几种不同的出栈序列。</li>
 <li>$n$ 个节点可以构成多少个不同的二叉树。</li>

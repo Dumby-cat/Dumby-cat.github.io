@@ -2615,7 +2615,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #7d6503;
+  background: #e8ffe2;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2718,6 +2718,11 @@ h4,
 h5,
 h6 {
   color: #c7c7c7;
+}
+b,
+strong {
+  font-weight: 900;
+  font-size: large;
 }
 .btn {
   background: #000;

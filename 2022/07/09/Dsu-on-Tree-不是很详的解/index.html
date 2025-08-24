@@ -161,12 +161,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2><a href="#引子" class="none"># </a><span id="引子">引子</span></h2><p>先来个例题耍耍。</p>
+        <h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>先来个例题耍耍。</p>
 <blockquote>
 <p>给出一棵 $n$ 个节点以 $1$ 为根的树，节点 $u$ 的颜色为 $c_{u}$，现在对于每个结点 $u$ 询问以 $u$ 为根子树里一共出现了多少种不同的颜色。<br>$n \le 2 \times 10^{5}$。<br>（没错就是 OIWiki 上的例题。。。）</p>
 </blockquote>
 <span id="more"></span>
-<h2><a href="#流程" class="none"># </a><span id="流程">流程</span></h2><p>先把算法流程打出来方便讲。</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p>先把算法流程打出来方便讲。</p>
 <p>我们设一个数组 $cnt[]$ 用来记录颜色每个种类的数量。</p>
 <ol>
 <li>先树链剖分找出每个节点的重儿子；</li>
@@ -174,12 +174,12 @@
 <li>接着遍历 $u$ 的重儿子，<em>保留遍历重儿子对 $cnt[]$ 数组的影响</em>；</li>
 <li>再遍历一遍 $u$ 的轻儿子，<em>保留再次遍历轻儿子对 $cnt[]$ 数组的影响</em>，得到 $u$ 的答案。</li>
 </ol>
-<h2><a href="#分析" class="none"># </a><span id="分析">分析</span></h2><p>该算法的重点就是先后两次遍历轻儿子。</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>该算法的重点就是先后两次遍历轻儿子。</p>
 <p>那么为什么不将两次遍历合并呢？</p>
 <p>考虑如果两次合并，那么轻儿子对 $cnt[]$ 数组的影响就会使重儿子遍历前后的数据难以储存，而如果两次分开操作则遍历重儿子时数组是空的，方便遍历时储存。</p>
 <p>那么为什么不先遍历重儿子呢？显然这样是不划算的（所以才叫启发式合并啊）。</p>
 <p>那合并后先遍历重儿子呢？ 显然这也是不划算的，因为轻儿子还没有遍历和处理过，带着重儿子的一堆数据显然是跑不快的。</p>
-<h1><a href="#码" class="none"># </a><span id="码">码</span></h1><p>懒得打。</p>
+<h1 id="码"><a href="#码" class="headerlink" title="码"></a>码</h1><p>懒得打。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 

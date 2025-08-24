@@ -163,16 +163,16 @@
     <div class="post-body" itemprop="articleBody">
         <p>本文主要用于学习各种 C++ 预处理命令，包括头文件保护符（目前只写了这个）。</p>
 <span id="more"></span>
-<h2><a href="#头文件保护符" class="none"># </a><span id="头文件保护符">头文件保护符</span></h2><h3><a href="#if" class="none"># </a><span id="if">#if</span></h3><p>语法：</p>
+<h2 id="头文件保护符"><a href="#头文件保护符" class="headerlink" title="头文件保护符"></a>头文件保护符</h2><h3 id="if"><a href="#if" class="headerlink" title="#if"></a>#if</h3><p>语法：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#if 整型常量表达式1</span><br><span class="line">    程序段1</span><br><span class="line">#elif 整型常量表达式2 // elif 可以省略</span><br><span class="line">    程序段2</span><br><span class="line">#elif 整型常量表达式3</span><br><span class="line">    程序段3</span><br><span class="line">#else</span><br><span class="line">    程序段3</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
 <p>其功能与普通的 <code>if</code> 、 <code>else if</code> 、 <code>else</code> 功能类似，但也有区别。</p>
 <p>与 <code>if</code> 一样， <code>#elif</code> 和 <code>#else</code> 可以省去。</p>
 <p>区别是 <code>#if</code> 只能判断“整形常量表达式”，也就是说表达式中只能有常量，且结果必须为常数。</p>
 <p>另一区别是 <code>#if</code> 必须和 <code>#endif</code> 组合使用， <code>#endif</code> 表示结束判断。</p>
-<h4><a href="#ifdef" class="none"># </a><span id="ifdef">#ifdef</span></h4><p>语法：</p>
+<h4 id="ifdef"><a href="#ifdef" class="headerlink" title="#ifdef"></a>#ifdef</h4><p>语法：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#ifdef 宏名</span><br><span class="line">    程序段1</span><br><span class="line">#else</span><br><span class="line">    程序段2</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
 <p>如果宏被定义了，则执行程序段1，否则执行程序段2。</p>
-<h4><a href="#ifndef" class="none"># </a><span id="ifndef">#ifndef</span></h4><p>与 <code>#ifdef</code> 类似，只是判断条件相反，即宏未被定义则执行程序段1。</p>
+<h4 id="ifndef"><a href="#ifndef" class="headerlink" title="#ifndef"></a>#ifndef</h4><p>与 <code>#ifdef</code> 类似，只是判断条件相反，即宏未被定义则执行程序段1。</p>
 <p>参考：</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/1986.html">C语言中文网</a></li>
