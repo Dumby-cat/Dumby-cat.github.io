@@ -148,3 +148,9 @@ baidu_url_submit:
   host: https://dumblog.top
   token: kyZZPxlW85Ma8xCM
   path: baidu_urls.txt
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html

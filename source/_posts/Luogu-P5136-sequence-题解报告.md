@@ -9,13 +9,17 @@ abbrlink: c69d20bb
 date: 2021-08-27 15:25:29
 ---
 
+Luogu P5136 sequence 题解。
+
+<!--more-->
+
 ## 题目描述
 
 ~~试~~求出：
 
 $\left \lceil \left ( \frac{1+\sqrt{5}}{2}  \right )^{n}  \right \rceil \bmod 998244353$
 
-多测<!--more-->
+多测
 
 ## 题解报告
 

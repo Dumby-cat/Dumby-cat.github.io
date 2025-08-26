@@ -1,5 +1,5 @@
 ---
-title: 一只蒟蒻的A-Star 学习笔记（K短路例题）
+title: A-Star 学习笔记（K短路例题）
 tags:
   - C++
   - 搜索
@@ -7,11 +7,14 @@ categories: Dumby的OI生涯
 abbrlink: 9cf82999
 date: 2021-06-29 20:10:45
 ---
+
+来做个常用A星算法解决的一种常见题型：K短路问题。
+
+<!--more-->
+
 ## K 短路输出路径
 题目链接：[ACWing](https://www.acwing.com/problem/content/2623/) 和 [洛谷](https://www.luogu.com.cn/problem/P4467)
 注意：此题正解非 A-Star ，但奈何本蒟蒻只会 A-Star 。。。
-
-<!--more-->
 
 ### 题目描述
 给一张有向图，给出起点S、终点T、K，输出从起点到终点的第 K 短路路径（路径**不**允许重复经过点或边）。

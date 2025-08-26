@@ -1,5 +1,5 @@
 ---
-title: 一只蒟蒻的树形DP学习笔记
+title: 树形DP学习笔记
 tags:
   - C++
   - 树形DP
@@ -8,10 +8,17 @@ categories: Dumby的OI生涯
 abbrlink: 7407db9f
 date: 2021-06-27 13:41:07
 ---
-START MY SHOW！！！！
+
+来做一些树形DP的经典题目吧。
+
+<!--more-->
+
+开始开始！
+
 ## 为什么叫树形DP？与线性DP有什么区别？
+
 两者的本质一致，只不过是在处理数据时的迭代方式不同了而已。
-即，数据间迭代关系由线性（线性DP）变成了非线性（树形DP）。<!--more-->
+即，数据间迭代关系由线性（线性DP）变成了非线性（树形DP）。
 举个栗子，如下两题：
 [最大子段和](https://www.luogu.com.cn/problem/P1115)和[最大子树和](https://www.luogu.com.cn/problem/P1122)
 
@@ -25,11 +32,7 @@ START MY SHOW！！！！
 
 ![这是一棵树](https://img-blog.csdnimg.cn/20210527202353320.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0R1bWJ5X2NhdA==,size_16,color_FFFFFF,t_70)        ![这是一棵退化的树](https://img-blog.csdnimg.cn/20210527202414265.PNG)
 所以，不能把树形DP当做单独的一种算法来学（~~话说DP好像本来就算不上是算法~~）。
-<bt>
-<bt>
-<bt>
-<bt>
-<bt>
+
 ## 树形DP的几个经典应用
 ### 树的直径
 #### 定义
@@ -74,11 +77,7 @@ void dp(int x)
 }
 ```
 最后直径就是 ans 的值。
-OK，NEXT！！！
-<bt>
-<bt>
-<bt>
-<bt>
+ 
 ### 树的重心
 #### 定义
 找一个点，使其所有子树中的最大子树节点数最少（或从此点将树分成两半，分成的两棵树权值差最小），该点即为该树的重心。
@@ -175,13 +174,8 @@ int main()
 这里还有道进阶的题目 ~~（就当做习题好了）~~。
 题解的话，~~我有时间写。。。吧~~
 题目：[POJ-3140：Contestants Division](http://poj.org/problem?id=3140)
-
-OK，MOVING ON！！！
-<bt>
-<bt>
-<Bt>
-<bt>
-<bt>
+ 
+ 
 ### 最大子树
 #### 例题：[最大子树和](https://www.luogu.com.cn/problem/P1122)
 
@@ -287,13 +281,8 @@ int main()
 	return 0;
 }
 ```
-ALRIGHT，MOVING  ON！！
-<bt>
-<bt>
-<bt>
-<bt>
-<bt>
-<bt>
+ 
+ 
 ### [没有上司的舞会](https://www.luogu.com.cn/problem/P1352)
 经典老题
 ##### 题目描述
@@ -364,13 +353,8 @@ int main()
 	return 0;
 }
 ```
-NEEEEEEEEEXT！！！
-<bt>
-<Bt>
-<bt>
-<Bt>
-<Bt>
-<bt>
+ 
+ 
 ### [二叉苹果树](https://www.luogu.com.cn/problem/P2015)
 这也是道经典题目。
 做过树形DP的肯定做过这道和上一道题。
@@ -428,13 +412,8 @@ int main()
 }
 ```
 OK，基础应用讲的差不多了，接下来看几题例题。
-<bt>
-<bt>
-<Bt>
-<BT>
-<bt>
-<Bt>
-<Bt>
+ 
+ 
 ## 应用升级
 ### 树上背包
 #### 例题：[选课](https://www.luogu.com.cn/problem/P2014)
@@ -493,11 +472,11 @@ int main()
 
 THEN NEXT！！！
 福利（做一题赚一题）：一道**几乎**一模一样的题目：[HDU-1561：The More,The Better](http://acm.hdu.edu.cn/showproblem.php?pid=1561)。
-<Bt>
-<bt>
-<bt>
-<bt>
-<Bt>
+ 
+ 
+ 
+ 
+ 
 ### 换根法
 #### 例题1：[积蓄程度](https://www.acwing.com/problem/content/289/)
 ##### 题目描述
@@ -800,9 +779,9 @@ int main()
 }
 ```
 接下来再讲一题。
-<Bt>
-<Bt>
-<bt>
+ 
+ 
+ 
 #### 例题2：[HDU-2196 ： Computer](http://acm.hdu.edu.cn/showproblem.php?pid=2196)
 ~~*其实我都不知道这道题算不算换根法，毕竟我是只蒟蒻*~~
 ##### 题目描述
@@ -997,12 +976,7 @@ int main()
 OK，我们的换根法就讲完啦！
 
 接下来的又是一些例题。
-<bt>
-<Bt>
-<Bt>
-<bt>
-<Bt>
-<Bt>
+ 
 ## 习题 习题 更多的习题
 ### [POJ-1655：Balancing Act](http://poj.org/problem?id=1655)
 因为是英文题面，我这里题目描述就写详细一点好了。
@@ -1109,12 +1083,11 @@ int main()
 }
 ```
 ~~水题讲完啦~~
-NNNNNEXT！！！！
 福利（做一题赚一题）：一道和这题几乎一模一样的题：[POJ-3107：Godfather](http://poj.org/problem?id=3107)（就好像 选课 和 The More,The Better 的区别）。
-<bt>
-<Bt>
-<Bt>
-<BT>
+ 
+ 
+ 
+ 
 ### [ZOJ-3201：Tree of Tree](https://zoj.pintia.cn/problem-sets/91827364500/problems/91827367825)
 ~~一道水题。~~
 #### 题目描述
@@ -1277,12 +1250,8 @@ int main()
 	return 0;
 }
 ```
-OH，YEAH！！！NNNNNNNEXT！！！
-<bt>
-<bt>
-<Bt>
-<Bt>
-<Bt>
+ 
+ 
 ### [POJ-2057：The Lost House](http://poj.org/problem?id=2057)
 #### 题目描述
 给定一棵树，节点数 n <= 1000（每个节点的分支 <= 8），一只蜗牛在根（1 号节点）处，他要到叶子节点上去找房子，而有几个节点上（根节点上没有）有虫子告诉你房子在不在这棵子树上，求出蜗牛最快找到房子的路径的期望值。
@@ -1425,11 +1394,8 @@ int main()
 这题挺不错的，但我讲的不怎么好，敬请谅解，毕竟我是只蒟蒻。
 
 下一题。
-<bt>
-<bt>
-<Bt>
-<Bt>
-<Bt>
+ 
+ 
 ### [POJ-1848：Tree](http://poj.org/problem?id=1848)
 #### 题目描述
 给定一棵树，求最少连多少条边，使得每个点在且仅在某一个环内。（一个环至少三个点）
@@ -1560,11 +1526,8 @@ int main()
 }
 ```
 接下来是今天的最后一题。
-<bt>
-<bt>
-<Bt>
-<Bt>
-<Bt>
+ 
+ 
 ### [POJ-2152：Fire](http://poj.org/problem?id=2152)
 #### 题目描述
 在一棵树形的城市群中建立一些消防站（每个城市中建立消防站所需的花费不同），但每个城市有一个到消防站的最大距离限制，求需要的最小花费。
@@ -1581,13 +1544,11 @@ int main()
 #### 题解
 ~~这题好难啊~~
 以后有空 ~~（下辈子）~~ 再来补吧。
-<bt>
-<bt>
-<Bt>
-<Bt>
-<Bt>
+ 
+ 
+ 
+ 
+ 
 OK
 今天的树形DP打完了。
 你学废了吗？
-
-*~Dumby_cat原创~*

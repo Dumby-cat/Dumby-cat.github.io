@@ -9,15 +9,15 @@ abbrlink: be989c8
 date: 2022-08-02 16:45:17
 ---
 
+学习一下传统Roguelike游戏制作引擎 LibTCod。
+
+<!--more-->
+
 折腾了好久好久，怎么都跑不起来libtcod，真tm太曹丹了。。
 
 直到我看到这个叫做[TCod Cpp Engine](https://github.com/HexDecimal/tcod-cpp-engine-2022)的项目（最近官方出了个[模板](https://github.com/HexDecimal/libtcod-vcpkg-template)，配置过程与下面类似，两者都可使用），最后跟着介绍的步骤终于跑起来了。
 
-接下来开始学习LibTCod。
-
 {% asset_img 第一次成功运行.png 终于跑起来啦！！！ %}
-
-<!--more-->
 
 ## 配置
 
