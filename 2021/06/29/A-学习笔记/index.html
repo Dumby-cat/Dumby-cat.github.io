@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.ico">
+  <link rel="mask-icon" href="/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="codeva-ErdOy0sMT5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="https://dumblog.top/2021/06/29/A-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dumblog.top/2021/06/29/A-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"2021/06/29/A-学习笔记/","title":"A-Star学习笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>A-Star学习笔记 | DUMBLOG</title>
+  
+
+
+
+
+
+
+  <meta name="description" content="介绍A星算法的定义和应用（内附代码实现）。">
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="DUMBLOG" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">DUMBLOG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Dumby的小站</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dumblog.top/2021/06/29/A-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dumby_cat">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DUMBLOG">
+      <meta itemprop="description" content="小哥哥快来玩呀！欢迎来我的小站 DUMBLOG！我会在这儿聊聊生活，分享打游戏的通关感想、最近看的超棒电影、旅行中的趣事和一些零零碎碎的日常吐槽；同时也倒腾技术，写写以前解题的“黑历史”和心得，也会记录现在学习的各种笔记和踩坑记录。随便逛逛，希望你能找到感兴趣的东西！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="A-Star学习笔记 | DUMBLOG">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          A-Star学习笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-06-29 13:22:38" itemprop="dateCreated datePublished" datetime="2021-06-29T13:22:38+08:00">2021-06-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-08-26 15:51:38" itemprop="dateModified" datetime="2025-08-26T15:51:38+08:00">2025-08-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/" itemprop="url" rel="index"><span itemprop="name">Dumby的OI生涯</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>介绍A星算法的定义和应用（内附代码实现）。</p>
+<span id="more"></span>
+<h2 id="A-Star-是啥？？-A-Star-用来干啥？？"><a href="#A-Star-是啥？？-A-Star-用来干啥？？" class="headerlink" title="A-Star 是啥？？ A-Star 用来干啥？？"></a>A-Star 是啥？？ A-Star 用来干啥？？</h2><p>首先，<strong>A-Star 算法只能用在数据规模很大的搜索题中</strong>，这时直接用 BFS 会超时，而利用 <strong>启发函数（估价函数）</strong> 优化后的 BFS ——A-Star 算法就能处理这种问题。<br>A-Star 算法通过一个 <strong>“启发函数（估价函数）”</strong> 来使到达终点需要遍历的状态大大减少，以达到提高运行效率的作用。</p>
+<p>就比如：当普通的 BFS 需要遍历 $10^{8}$、$10^{9}$ 甚至 $10^{20}$ 个状态才能到达终点时，通过 A-Star 的启发函数 则只需要遍历极少的状态就能达到终点。</p>
+<p><strong>注意：</strong> 使用 A-Star 时需要判断是否有解，当<strong>无解</strong>时（或者是<strong>数据规模较小</strong>时） A-Star 的效率可能会比朴素的 BFS 还低。</p>
+<h2 id="A-Star-代码框架"><a href="#A-Star-代码框架" class="headerlink" title="A-Star 代码框架"></a>A-Star 代码框架</h2><p>首先，我们要把朴素的 BFS 中的<strong>队列</strong>换成<strong>优先队列</strong>。<br>伪代码如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> ( ! q.<span class="built_in">size</span>() ) </span><br><span class="line">&#123;</span><br><span class="line">	t = 优先队列（小根堆）队头 ;</span><br><span class="line">	<span class="keyword">if</span> ( t == 终点 ) <span class="keyword">break</span> ;</span><br><span class="line">	<span class="keyword">for</span> ( 枚举 t 的所有邻边 )</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> ( 子节点可取 ) </span><br><span class="line">		&#123;</span><br><span class="line">			邻边入队；</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>那么这个优先队列中存啥呢？<br>首先，肯定要把该节点到起点的<strong>真实距离</strong>存下来；<br>此次，要把 真实距离+该节点到终点的<strong>估计距离</strong> 的总和存下来，并作为<strong>优先队列的排序关键字</strong>。<br>这个总和的含义就是 <strong>起点到终点的总的估计距离</strong> 。<br>每次取出优先队列的队头出来即每次取一个 估计距离最小的点 来扩展。</p>
+<h2 id="关于估价函数"><a href="#关于估价函数" class="headerlink" title="关于估价函数"></a>关于估价函数</h2><p>估价函数是 A-Star 算法的核心部分。<br>首先，要知道 <strong>估价函数是针对每个题目具体情况设计的</strong> ，有许多种方法可以算出估值，常用的有 Manhattan 等。</p>
+<p>设当前点为 <strong>state</strong> 。<br>设当前点到起点的<strong>真实距离</strong>为<strong>d[state]</strong>；<br>设当前点到终点的<strong>估计距离</strong>为 <strong>f[state]</strong>；<br>设当前点到终点的<strong>真实距离</strong>为 <strong>g[state]</strong>；<br>那么我们设计的估计函数必须满足如下性质：</p>
+<ol>
+<li>对于任意的 <strong>state</strong> ，都必须满足 <strong>f[state] ≤ g[state]</strong>。</li>
+<li>如果满足该条件，则当终点第一次出队时一定是<strong>最小值</strong>。</li>
+</ol>
+<p>下面给出证明：</p>
+<p>我们先证明第 1 点：</p>
+<p>可用极限法证明：当估计距离为无限大时（此时估值绝对大于真值），该节点会被压在堆底无法取出；同样的，当最优解的估值被估计成无限大时，最优解的节点也会被压在堆底，导致非最优解上的节点被取出拓展，直到取出了终点产生错误答案。<br>所以，对于任意的 <strong>state</strong> ，都必须满足 <strong>f[state] ≤ g[state]</strong>。</p>
+<p>我们再利用反证法证明第 2 点：</p>
+<p><em><del>反正他就是这样，我也说不了什么</del></em><br>我们设终点第一次出队时<strong>不是最小值</strong>。<br>也就是说此时终点的 d[state] 严格大于 d[最优解] 。<br>此时队列中肯定存在最优解路径上的某一个点，设该点为 u 。<br>那么最优解的长度就等于 <strong>d[u]+g[u]</strong> 。<br>由于我们的 <strong>f[u]</strong> 是小于 <strong>g[u]</strong> 的，可以得出 <strong>最优解的长度 = d[最优解] = d[u]+g[u] ≥ d[u]+f[u]</strong> 。<br>又因为 d[state] 大于 d[最优解] ，所以 d[state] 大于 g[u]+f[u] 。<br>这也就意味着 <strong>小根堆中还存在一个比队头还小的元素</strong> ，与小根堆的定义矛盾。<br>所以，如果满足该条件，则当终点第一次出队时一定是<strong>最小值</strong>。</p>
+<p>综上：对于任意的 <strong>state</strong> ，都必须满足 <strong>f[state] ≤ g[state]</strong>；如果满足，则当终点第一次出队时一定是<strong>最小值</strong>。</p>
+<p>证毕。</p>
+<p><strong>tips：</strong> 估值越接近真值，A-Star 的效率越高。</p>
+<p><strong>注意： 只有在终点第一次被取出时能保证是最小值，其他节点不一定是最小值。</strong><br>因为我们的估计函数是针对终点设计的，估值也是针对终点计算出来的，小根堆的排序关键字也是起点到终点的总估值，所以只能保证终点第一次被取出时是最小值。</p>
+<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><h3 id="八数码"><a href="#八数码" class="headerlink" title="八数码"></a>八数码</h3><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/181/">ACWing题面</a> 和 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1379">洛谷题面</a></p>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>输入一行八个数字和一个 “ x ” （x 表示空格）表示 3 * 3 的一个矩阵。<br>请问将该矩阵恢复到原状需要如何操作（需要几步）。<br>原状： 1 2 3 4 5 6 7 8 x</p>
+<h4 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h4><p>首先判定可解性：计算初态与终态的逆序对个数，如果两者奇偶性相同，则有解，否则无解。<br>又因为终态已经确定，逆序对个数为 0 ，所以初态的逆序对个数一定要为偶数。<br><strong>注意：使用 A-Star 算法前都应判断一下可解性，因为当无解时用 A-Star 效率会非常低。</strong></p>
+<p><del>题目蛮简单的</del>，直接在代码中解释吧。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;unordered_map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PIS pair<span class="string">&lt;int,string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1010</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">f</span><span class="params">(string s)</span> </span></span><br><span class="line"><span class="function"></span>&#123;   <span class="comment">//估值函数</span></span><br><span class="line">    <span class="comment">//此处设计的估值为 当前状态各个数字到终态的对应数字处的曼哈顿距离的总和</span></span><br><span class="line">    <span class="comment">//即当前状态的 1 到终态的 1 的曼哈顿距离 加上 当前状态的 2 到终态的 2 的曼哈顿距离 加上......</span></span><br><span class="line">	<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (s[i] != <span class="string">&#x27;x&#x27;</span>) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> t = s[i] - <span class="string">&#x27;1&#x27;</span>;</span><br><span class="line">			ans += <span class="built_in">abs</span>(i / <span class="number">3</span> - t / <span class="number">3</span>) + <span class="built_in">abs</span>(i % <span class="number">3</span> - t % <span class="number">3</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;  <span class="comment">//返回估值</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">unordered_map &lt; string, <span class="type">int</span> &gt; d;   <span class="comment">//用来记录到达某个状态所需的步数</span></span><br><span class="line">unordered_map &lt; string, pair&lt;<span class="type">char</span>, string&gt; &gt; pre;   <span class="comment">//用来记录到达某状态的前驱状态，三个维度分别表示：当前状态、从前驱状态转移到当前状态所移动的方向、前驱状态</span></span><br><span class="line">priority_queue &lt; PIS, vector &lt;PIS&gt;, greater&lt;PIS&gt; &gt; heap;   <span class="comment">//小根堆：first存储起点到终点的总估计值，second存储当前状态</span></span><br><span class="line"></span><br><span class="line"><span class="function">string <span class="title">bfs</span><span class="params">(string st)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string en = <span class="string">&quot;12345678x&quot;</span>;   <span class="comment">//定义终态</span></span><br><span class="line">	<span class="type">char</span> op[] = <span class="string">&quot;urdl&quot;</span>;   <span class="comment">//定义方向</span></span><br><span class="line">	d[st] = <span class="number">0</span>;   <span class="comment">//将起点到起点的距离设为 0 。</span></span><br><span class="line">	heap.<span class="built_in">push</span>(&#123;<span class="built_in">f</span>(st), st&#125;);   <span class="comment">//将初态入队</span></span><br><span class="line">	<span class="type">int</span> fx[<span class="number">4</span>] = &#123;<span class="number">-1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>&#125;, fy[<span class="number">4</span>] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">-1</span>&#125;;</span><br><span class="line">	<span class="keyword">while</span> (heap.<span class="built_in">size</span>()) </span><br><span class="line">	&#123;  <span class="comment">//堆未空</span></span><br><span class="line">		PIS t = heap.<span class="built_in">top</span>();  <span class="comment">//取出堆顶</span></span><br><span class="line">		heap.<span class="built_in">pop</span>();</span><br><span class="line">		string state = t.second;</span><br><span class="line">		<span class="keyword">if</span> (state == en)<span class="keyword">break</span>;   <span class="comment">//如果终点出队，则结束循环</span></span><br><span class="line">		<span class="type">int</span> x, y;  <span class="comment">//找出空格x的位置</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (state[i] == <span class="string">&#x27;x&#x27;</span>) </span><br><span class="line">			&#123;</span><br><span class="line">				x = i / <span class="number">3</span>;</span><br><span class="line">				y = i % <span class="number">3</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		string s = state;  <span class="comment">//将前驱状态保存，方便还原</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> a = x + fx[i], b = y + fy[i];</span><br><span class="line">			<span class="keyword">if</span> (a &lt; <span class="number">0</span> || a &gt; <span class="number">2</span> || b &lt; <span class="number">0</span> || b &gt; <span class="number">2</span>) <span class="keyword">continue</span>;  <span class="comment">//判断移动位置是否在矩阵内</span></span><br><span class="line">			state = s;  <span class="comment">//还原状态</span></span><br><span class="line">			<span class="built_in">swap</span>(state[x * <span class="number">3</span> + y], state[a * <span class="number">3</span> + b]);   <span class="comment">//移动空格</span></span><br><span class="line">			<span class="keyword">if</span> (!d.<span class="built_in">count</span>(state) || d[state] &gt; d[s] + <span class="number">1</span>) </span><br><span class="line">			&#123;  <span class="comment">//如果当前状态未出现过 或者 当前状态的步数可以更新</span></span><br><span class="line">				d[state] = d[s] + <span class="number">1</span>;  <span class="comment">//更新步数</span></span><br><span class="line">				pre[state] = &#123;op[i], s&#125;;   <span class="comment">//储存前驱</span></span><br><span class="line">				heap.<span class="built_in">push</span>(&#123;d[state] + <span class="built_in">f</span>(state), state&#125;);  <span class="comment">//新状态入队</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	string ans;</span><br><span class="line">	<span class="keyword">while</span> (en != st) </span><br><span class="line">	&#123;  <span class="comment">//求出移动方案</span></span><br><span class="line">		ans += pre[en].first;</span><br><span class="line">		en = pre[en].second;  <span class="comment">//从终态往回求移动方案直到终态等于初态</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">reverse</span>(ans.<span class="built_in">begin</span>(), ans.<span class="built_in">end</span>());  <span class="comment">//由于是从终态开始的，所以方案是倒着的，需要翻转一下。</span></span><br><span class="line">	<span class="keyword">return</span> ans;  <span class="comment">//返回方案</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string st, seq;</span><br><span class="line">	string c;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">9</span>; i++) </span><br><span class="line">	&#123;</span><br><span class="line">		cin &gt;&gt; c;   <span class="comment">//小技巧：让你输入字符时用字符串代替，可以自动滤去空格和回车</span></span><br><span class="line">		st += c[<span class="number">0</span>];  <span class="comment">//记录开始时的矩阵</span></span><br><span class="line">		<span class="keyword">if</span> (c[<span class="number">0</span>] != <span class="string">&#x27;x&#x27;</span>)seq += c[<span class="number">0</span>];   <span class="comment">//记录下所有的数字用来计算逆序对</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//计算逆序对对数</span></span><br><span class="line">	<span class="type">int</span> cn = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">8</span>; i++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = i; j &lt; <span class="number">8</span>; j++)</span><br><span class="line">			<span class="keyword">if</span> (seq[i] &gt; seq[j])cn++;  <span class="comment">//如果前面的数字大于后面的数字，则将个数加一。</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span> (cn &amp; <span class="number">1</span>)<span class="built_in">printf</span>(<span class="string">&quot;unsolvable&quot;</span>);  <span class="comment">//如果逆序对个数为奇数，则无解。</span></span><br><span class="line">	<span class="keyword">else</span> cout &lt;&lt; <span class="built_in">bfs</span>(st);  <span class="comment">//否则进行 BFS</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>接下来还有一种题型。</p>
+<h3 id="第-K-短路"><a href="#第-K-短路" class="headerlink" title="第 K 短路"></a>第 K 短路</h3><h4 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h4><p>给一张有向图，给出起点S、终点T、K，求出从起点到终点的第 K 短路（路径允许重复经过点或边）。<br>注意：每条最短路中至少要包含一条边。</p>
+<h4 id="题解-1"><a href="#题解-1" class="headerlink" title="题解"></a>题解</h4><p>首先肯定是想到打暴力。<br>把 S 到 T 的每一条路径长都算出来，再找出第 K 短的路。<br>但由于数据庞大，暴力只能骗到一点分。<br>而数据庞大时我们可以用 A-Star 来做。</p>
+<p>先考虑估价函数怎么打。<br>因为估值要小于等于真值，同时又要尽可能接近真值，那么我们可以把 <strong>当前点到终点的最短路</strong> 作为当前点到终点的估值。<br>而计算这个估值只需要 在反向图上跑一遍 dijkstra 就好了。</p>
+<p>估价函数设计出来后怎么求第 K 短路？<br><del>由数学归纳法易证</del>，当终点被第 K 次从队中取出时对应的路径就是第 K 短路。</p>
+<p>所以，代码就很好写了。</p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;unordered_map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PIII pair<span class="string">&lt;int,PII&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1010</span>, M = <span class="number">200020</span>;</span><br><span class="line"><span class="type">int</span> n, m, cn, h[M], rh[M], nxt[M], to[M], w[M], d[N], v[N], S, T, K;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addh</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> c)</span> </span></span><br><span class="line"><span class="function"></span>&#123;   <span class="comment">//存正向图</span></span><br><span class="line">	nxt[++cn] = h[a];</span><br><span class="line">	to[cn] = b;</span><br><span class="line">	w[cn] = c;</span><br><span class="line">	h[a] = cn;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addrh</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> c)</span> </span></span><br><span class="line"><span class="function"></span>&#123;   <span class="comment">//存反向图</span></span><br><span class="line">	nxt[++cn] = rh[a];</span><br><span class="line">	to[cn] = b;</span><br><span class="line">	w[cn] = c;</span><br><span class="line">	rh[a] = cn;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dijk</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;    <span class="comment">//dijkstra，同时也是估价函数</span></span><br><span class="line">	priority_queue&lt;PII, vector&lt;PII&gt;, greater&lt;PII&gt; &gt; q;   <span class="comment">//小根堆，first存到终点真实距离，second存节点号</span></span><br><span class="line">	q.<span class="built_in">push</span>(&#123;<span class="number">0</span>, T&#125;);   <span class="comment">//将终点压入队中，距离为 0 </span></span><br><span class="line">	<span class="built_in">memset</span>(d, <span class="number">0x3f</span>, <span class="keyword">sizeof</span> d);   <span class="comment">//将到终点的距离初始化为正无穷</span></span><br><span class="line">	d[T] = <span class="number">0</span>;  <span class="comment">//终点到终点的距离为 0</span></span><br><span class="line">	<span class="keyword">while</span> (q.<span class="built_in">size</span>()) </span><br><span class="line">	&#123;  <span class="comment">//堆不空</span></span><br><span class="line">		PII t = q.<span class="built_in">top</span>();   <span class="comment">//取出堆顶</span></span><br><span class="line">		q.<span class="built_in">pop</span>();</span><br><span class="line">		<span class="type">int</span> x = t.second;</span><br><span class="line">		<span class="keyword">if</span> (v[x])<span class="keyword">continue</span>;   <span class="comment">//防止重复遍历</span></span><br><span class="line">		v[x] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = rh[x]; i; i = nxt[i]) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> j = to[i];</span><br><span class="line">			<span class="keyword">if</span> (d[j] &gt; d[x] + w[i]) </span><br><span class="line">			&#123;   <span class="comment">//如果子节点到终点的距离可以更新</span></span><br><span class="line">				d[j] = d[x] + w[i];   <span class="comment">//更新距离</span></span><br><span class="line">				q.<span class="built_in">push</span>(&#123;d[j], j&#125;);   <span class="comment">//将子节点入队</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">astar</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;   <span class="comment">// A*</span></span><br><span class="line">	priority_queue&lt;PIII, vector&lt;PIII&gt;, greater&lt;PIII&gt; &gt; q;  <span class="comment">//小根堆，三维分别存 经过当前点的从起点到终点的路径的估计距离、起点到当前点的真实距离、节点号</span></span><br><span class="line">	<span class="built_in">memset</span>(v, <span class="number">0</span>, <span class="keyword">sizeof</span> v);    <span class="comment">// v 数组用来记录节点出队几次</span></span><br><span class="line">	q.<span class="built_in">push</span>(&#123;d[S], &#123;<span class="number">0</span>, S&#125;&#125;);   <span class="comment">//将起点入队</span></span><br><span class="line">	<span class="keyword">while</span> (q.<span class="built_in">size</span>()) </span><br><span class="line">	&#123;</span><br><span class="line">		PIII x = q.<span class="built_in">top</span>();   <span class="comment">//取出堆顶</span></span><br><span class="line">		q.<span class="built_in">pop</span>();</span><br><span class="line">		<span class="type">int</span> t = x.second.second, dist = x.second.first;</span><br><span class="line">		<span class="comment">//t 为节点号，dist 为起点到当前点的真实距离</span></span><br><span class="line">		v[t]++;   <span class="comment">// t 节点的出队次数加一</span></span><br><span class="line">		<span class="keyword">if</span> (v[T] == K) <span class="keyword">return</span> dist;   <span class="comment">//如果终点已经出队 K 次，则停止循环</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = h[t]; i; i = nxt[i]) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> j = to[i];</span><br><span class="line">			<span class="keyword">if</span> (v[j] &lt; K) q.<span class="built_in">push</span>(&#123;dist + w[i] + d[j], &#123;dist + w[i], j&#125;&#125;);</span><br><span class="line">			<span class="comment">//如果子节点的出队次数不到 K 次，则将该节点入队</span></span><br><span class="line">			<span class="comment">//不到 K 次才入队是因为 </span></span><br><span class="line">			<span class="comment">//对于任意正整数 i 和任意节点 x ，当 x 被第 i 次取出时，对应的就是起点 S 到该节点的第 K 短路</span></span><br><span class="line">			<span class="comment">//而由于 估值 为 该节点到终点的最短路 </span></span><br><span class="line">			<span class="comment">//所以 经过该节点的 连接起点 S 和终点 T 的路径（长度等于 该点估值 加上 起点到该节点的真实距离）只能更长，不能更短</span></span><br><span class="line">			<span class="comment">//所以当 一个点出队次数大于 K 次后，经过该点的路径就不可能是第 K 短路了，也就没必要再入队了。</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;n, &amp;m);   <span class="comment">//输入点数和边数</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> a, b, c;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>, &amp;a, &amp;b, &amp;c);</span><br><span class="line">		<span class="built_in">addh</span>(a, b, c);    <span class="comment">//存入正向图</span></span><br><span class="line">		<span class="built_in">addrh</span>(b, a, c);   <span class="comment">//存入反向图</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>, &amp;S, &amp;T, &amp;K);  <span class="comment">//读入 起点、终点、K</span></span><br><span class="line">	<span class="keyword">if</span> (S == T)K++;   <span class="comment">//当起点与终点重合时不能直接输出 0 ，而应经过任意边后再绕回来</span></span><br><span class="line">	<span class="built_in">dijk</span>();   <span class="comment">//dijkstra，同时也是估价函数</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, <span class="built_in">astar</span>());  <span class="comment">// A*</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>ok，笔记结束。<br>你学废了吗？</p>
+<p>本文部分参考 ACWing y总 的讲解以及lyd的《算法竞赛进阶指南》。<br>如有错误请 @Dumby_cat 这只蒟蒻。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/%E6%90%9C%E7%B4%A2/" rel="tag"># 搜索</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/06/27/%E6%A0%91%E5%BD%A2DP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="树形DP学习笔记">
+                  <i class="fa fa-chevron-left"></i> 树形DP学习笔记
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/06/29/A-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88K%E7%9F%AD%E8%B7%AF%E4%BE%8B%E9%A2%98%EF%BC%89/" rel="next" title="A-Star 学习笔记（K短路例题）">
+                  A-Star 学习笔记（K短路例题） <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dumby_cat</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

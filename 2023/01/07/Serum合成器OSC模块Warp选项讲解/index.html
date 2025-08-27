@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.ico">
+  <link rel="mask-icon" href="/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="codeva-ErdOy0sMT5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="https://dumblog.top/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dumblog.top/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/","path":"2023/01/07/Serum合成器OSC模块Warp选项讲解/","title":"Serum合成器OSC模块Warp选项讲解"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Serum合成器OSC模块Warp选项讲解 | DUMBLOG</title>
+  
+
+
+
+
+
+
+  <meta name="description" content="本帖用于介绍 Serum 的振荡器模块中的 Warp 选项。">
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="DUMBLOG" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">DUMBLOG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Dumby的小站</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dumblog.top/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dumby_cat">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DUMBLOG">
+      <meta itemprop="description" content="小哥哥快来玩呀！欢迎来我的小站 DUMBLOG！我会在这儿聊聊生活，分享打游戏的通关感想、最近看的超棒电影、旅行中的趣事和一些零零碎碎的日常吐槽；同时也倒腾技术，写写以前解题的“黑历史”和心得，也会记录现在学习的各种笔记和踩坑记录。随便逛逛，希望你能找到感兴趣的东西！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Serum合成器OSC模块Warp选项讲解 | DUMBLOG">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Serum合成器OSC模块Warp选项讲解
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-01-07 12:28:58" itemprop="dateCreated datePublished" datetime="2023-01-07T12:28:58+08:00">2023-01-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-04-13 11:25:14" itemprop="dateModified" datetime="2024-04-13T11:25:14+08:00">2024-04-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Dumby%E7%9A%84%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">Dumby的折腾笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>本帖用于介绍 Serum 的振荡器模块中的 Warp 选项。</p>
+<span id="more"></span>
+<p>之前讲到 WT POS 选项边上有个 Warp 选项，就是这个：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E4%BD%8D%E7%BD%AE.png" class="" title="位置">
+<p>Warp：弯曲、变形。</p>
+<p>这个选项的功能对着波形图边调边看很容易就明白了。</p>
+<p>官方给出的解释是：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E5%8A%9F%E8%83%BD%E8%A7%A3%E9%87%8A.png" class="" title="功能">
+<p>即基于当前的Warp选择调整当前的波形。</p>
+<p>我们拿正弦波来举例子（波形选择目录里选择Analog\Basic Shapes，调整WT POS 可以得到几个基础波形）。</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E6%AD%A3%E5%BC%A6%E6%B3%A2.png" class="" title="正弦波">
+<h2 id="Warp-Menu-总览"><a href="#Warp-Menu-总览" class="headerlink" title="Warp Menu 总览"></a>Warp Menu 总览</h2><p>点击默认的OFF，打开一个目录（即Warp Menu），如图：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E7%9B%AE%E5%BD%95.png" class="" title="Warp_Menu">
+<p>每一个选项都有很有意思的功能，下面一个一个看。</p>
+<h2 id="SYNC"><a href="#SYNC" class="headerlink" title="SYNC"></a>SYNC</h2><p>SYNC：同步（？）。</p>
+<p>调一下旋钮就知道这东西干嘛用的了。</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E8%B0%83%E6%95%B4SYNC.gif" class="" title="调整SYNC">
+<p>应该不会注意不到波形的变化吧。</p>
+<p>很显然，SYNC调的越高，波的周期越小，频率越大，单位时间内出现的同样的波形越多，音调越高。</p>
+<p>但要注意，如果用的是正弦波这种连续变化的波形，在调到这种位置的时候：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E8%B0%83SYNC.jpg" class="" title="调到这种位置">
+<p>由于右边的波形被截掉了，相当于有一个突变（和锯齿波的那种类似），声音就会夹杂着类似锯齿波的声音，比较刺耳。</p>
+<p>但如果用锯齿波来调的话，因为本身就是这种声音，所以除了音调变化听不大出来其他的变化。</p>
+<h3 id="SYNC-WINDOW"><a href="#SYNC-WINDOW" class="headerlink" title="SYNC WINDOW"></a>SYNC WINDOW</h3><p>如果不想有刚才的“突变”的问题，可以选择 SYNC WINDOW 这个选项。</p>
+<p>这个选项分两种： SYNC 1/2 WIN. 和 SYNC WINDOW。</p>
+<p>这个东西就相当于在波形的两侧加上淡入淡出，使声音变得更平滑，不会使连续变化的波形出现突变的情况。</p>
+<p>当然如果你用锯齿波的话，当 Warp 的数值低的时候，锯齿波会被柔和成类似正弦波的东西。</p>
+<p>SYNC 1/2 WIN. 相当于是淡入淡出更快的 SYNC WINDOW。</p>
+<p>SYNC WINDOW：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_WINDOW.jpg" class="" title="SYNC_WINDOW">
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_WINDOW.gif" class="" title="SYNC_WINDOW">
+<p>SYNC 1/2 WIN.：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_1-2_WIN.jpg" class="" title="SYNC_1&#x2F;2_WIN.">
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_1-2_WIN.gif" class="" title="SYNC_1&#x2F;2_WIN.">
+<h2 id="BEND"><a href="#BEND" class="headerlink" title="BEND"></a>BEND</h2><p>BEND：弯曲。</p>
+<h3 id="BEND-1"><a href="#BEND-1" class="headerlink" title="BEND +"></a>BEND +</h3><p>将波形向内弯曲，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BENDp.gif" class="" title="BEND+">
+<h3 id="BEND-2"><a href="#BEND-2" class="headerlink" title="BEND -"></a>BEND -</h3><p>将波形向外弯曲，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BEND-.gif" class="" title="BEND-">
+<h3 id="BEND-3"><a href="#BEND-3" class="headerlink" title="BEND +/-"></a>BEND +/-</h3><p>数值为负时向内弯曲，为正时向外弯曲，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BENDp-.gif" class="" title="BEND+&#x2F;-">
+<h2 id="PWM"><a href="#PWM" class="headerlink" title="PWM"></a>PWM</h2><p>PWM：脉冲宽度调制（Pulse Width Modulation）。</p>
+<p>相当于将波形宽度（即“脉冲宽度”）变窄，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E6%AD%A3%E5%BC%A6PWM.gif" class="" title="正弦波PWM">
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E6%96%B9%E6%B3%A2PWM.gif" class="" title="方波PWM">
+<h2 id="ASYM"><a href="#ASYM" class="headerlink" title="ASYM"></a>ASYM</h2><p>ASYM：非对称（即非对称弯曲）。</p>
+<p>ASYM 的作用大概就是将波形左右两边分别压缩或拉伸。</p>
+<h3 id="ASYM-1"><a href="#ASYM-1" class="headerlink" title="ASYM +"></a>ASYM +</h3><p>将波形左半边压缩，右半边拉伸，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYMp.gif" class="" title="ASYM+">
+<h3 id="ASYM-2"><a href="#ASYM-2" class="headerlink" title="ASYM -"></a>ASYM -</h3><p>将波形左半边拉伸，右半边压缩，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYM-.gif" class="" title="ASYM-">
+<h3 id="ASYM-3"><a href="#ASYM-3" class="headerlink" title="ASYM +/-"></a>ASYM +/-</h3><p>数值为负时，将波形左半边压缩，右半边拉伸；数值为正时，将波形左半边拉伸，右半边压缩，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYMp-.gif" class="" title="ASYM+-">
+<h2 id="FLIP"><a href="#FLIP" class="headerlink" title="FLIP"></a>FLIP</h2><p>FLIP：翻转。</p>
+<p>将波形进行上下翻转，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/FLIP.gif" class="" title="FLIP">
+<h2 id="MIRROR"><a href="#MIRROR" class="headerlink" title="MIRROR"></a>MIRROR</h2><p>MIRROR：镜像。</p>
+<p>相当于将波形先加一个 ASYM +/-，然后再左右镜像一下，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/MIRROR.gif" class="" title="MIRROR">
+<h2 id="REMAP"><a href="#REMAP" class="headerlink" title="REMAP"></a>REMAP</h2><p>REMAP：重映射。</p>
+<p>功能如其名，这个 Warp 选项旁边还有一个笔的记号，点开它是一个长得像 LFO 一样的东西，上面写着“Remap Edit”：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAPEDIT.png" class="" title="REMAPEDIT">
+<p>实际上这是个映射函数（我认为），它的作用大概如下。</p>
+<p>为了方便说明，我们假设波形是一个函数 $g( \varphi )$，如图：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/g(phi).png" class="" title="g(phi)">
+<p>然后这个我们设映射函数为 $f( \varphi )$，如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/RF.png" class="" title="RemapFunction">
+<p>当 REMAP 数值为 100% 时，原来的波形 $g( \varphi )$ 变成 $g( f( \varphi ) )$。也就是说，原来的相位 $ \varphi $ 被映射成 $f( \varphi )$。</p>
+<p>当 REMAP 数值在 0% 到 100% 之间时，$g( \varphi )$ 会在 $g( \varphi )$ 到 $g( f( \varphi ) )$ 之间变化。</p>
+<h3 id="REMAP-1"><a href="#REMAP-1" class="headerlink" title="REMAP 1"></a>REMAP 1</h3><p>普通的 REMAP，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAP1.gif" class="" title="REMAP1">
+<h3 id="REMAP-2"><a href="#REMAP-2" class="headerlink" title="REMAP 2"></a>REMAP 2</h3><p>差不多就是 REMAP 1 + MIRROR，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAP2.gif" class="" title="REMAP2">
+<h3 id="REMAP-3"><a href="#REMAP-3" class="headerlink" title="REMAP 3"></a>REMAP 3</h3><p>基于正弦函数的 REMAP，通过 REMAP 3 可以不用花太大功夫在 $f( \varphi )$ 上，即使你画的映射函数很粗糙，它在波形上引起的变化也会很平滑，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAP3.gif" class="" title="REMAP3">
+<h3 id="REMAP-4"><a href="#REMAP-4" class="headerlink" title="REMAP 4"></a>REMAP 4</h3><p>和 REMAP 2 类似，但是原来的波形周期变成四分之一，效果如下：</p>
+<img src="/2023/01/07/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAP4.gif" class="" title="REMAP4">
+<h2 id="QUANTIZE"><a href="#QUANTIZE" class="headerlink" title="QUANTIZE"></a>QUANTIZE</h2><p>QUANTIZE：量化。</p>
+<p>就是把波形变方。</p>
+<h2 id="FM-FROM-B"><a href="#FM-FROM-B" class="headerlink" title="FM(FROM B)"></a>FM(FROM B)</h2><p>以振荡器B（OSC B）的波形来频率调制该振荡器。</p>
+<h2 id="AM-FROM-B"><a href="#AM-FROM-B" class="headerlink" title="AM(FROM B)"></a>AM(FROM B)</h2><p>以振荡器B（OSC B）的波形来幅度调制该振荡器。</p>
+<h2 id="RM-FROM-B"><a href="#RM-FROM-B" class="headerlink" title="RM(FROM B)"></a>RM(FROM B)</h2><p>以振荡器B（OSC B）的波形来环形调制该振荡器。</p>
+<h2 id="FM-NOISE"><a href="#FM-NOISE" class="headerlink" title="FM(NOISE)"></a>FM(NOISE)</h2><p>以噪声振荡器的波形来频率调制该振荡器。</p>
+<h2 id="FM-SUB"><a href="#FM-SUB" class="headerlink" title="FM(SUB)"></a>FM(SUB)</h2><p>以低音振荡器的波形来频率调制该振荡器。</p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>后面部分写得不详细，因为涉及其他地方的知识，以后写到再说（反正也没人看）。</p>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv793091">B站 @Mask不是马赛克 的文章</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%90%88%E6%88%90%E5%99%A8/" rel="tag"># 合成器</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/12/24/C-GOTO%E8%AF%AD%E5%8F%A5/" rel="prev" title="C++ goto语句">
+                  <i class="fa fa-chevron-left"></i> C++ goto语句
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/02/25/Git%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/" rel="next" title="Git恢复误删文件">
+                  Git恢复误删文件 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dumby_cat</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
