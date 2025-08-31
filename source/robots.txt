@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /tags/
+Disallow: /pages/
+
+Sitemap: https://dumblog.top/sitemap.xml
+Sitemap: https://dumblog.top/sitemap.txt
