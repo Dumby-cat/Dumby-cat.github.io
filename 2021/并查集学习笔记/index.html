@@ -169,7 +169,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-08-26 15:44:23" itemprop="dateModified" datetime="2025-08-26T15:44:23+08:00">2025-08-26</time>
+      <time title="修改时间：2025-08-31 13:25:59" itemprop="dateModified" datetime="2025-08-31T13:25:59+08:00">2025-08-31</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -198,13 +198,13 @@
 <h3 id="找根"><a href="#找根" class="headerlink" title="找根"></a>找根</h3><p>递归实现。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x == father[x] ? father[x] : <span class="built_in">find</span>( father[x] );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>将 A集合 并入 B集合。体现在操作上就是将 A集合 的根的父节点设为 B节点 的根，这样通过将 A集合 的根设为 B集合 的根的儿子就可将 A集合 并入 B集合 。</p>
-<img src="/2021/%E5%B9%B6%E6%9F%A5%E9%9B%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/1.png" class="" width="1">
+<p><img src="1.png" alt="1" title="1"></p>
 <p>c++代码实现：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span></span>&#123;</span><br><span class="line">	father[ <span class="built_in">find</span>(a) ] = <span class="built_in">find</span>(b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><p>要明白查询查的是啥。<br>查询的是两元素是否在同一集合中。<br>据此容易看出只要判断<strong>两个元素所在集合的根是否是同一个</strong>就能判断出两者是否在同一集合中。<br>代码实现：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">get</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">find</span>(a) == <span class="built_in">find</span>(b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p>能看出当在极端条件下（如集合的树的结构退化成一条链），find 函数的效率会非常低，常用的有几个优化方法。</p>
 <h3 id="路径压缩"><a href="#路径压缩" class="headerlink" title="路径压缩"></a>路径压缩</h3><p>通过将每一个元素的父节点都指向根节点，可大大提高效率。</p>
-<img src="/2021/%E5%B9%B6%E6%9F%A5%E9%9B%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2.png" class="" width="2">
+<p><img src="2.png" alt="2" title="2"></p>
 <p>优化时只要将 find 函数稍作修改就行了。</p>
 <p>代码实现：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x == father[x] ? father[x] : father[x] = <span class="built_in">find</span>(p[x]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="按秩合并"><a href="#按秩合并" class="headerlink" title="按秩合并"></a>按秩合并</h3><p>按照一定顺序合并集合（如只将将小的集合并入大的集合）。<br><del>代码懒得打</del></p>

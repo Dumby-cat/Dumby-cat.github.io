@@ -169,7 +169,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-06-24 21:09:31" itemprop="dateModified" datetime="2025-06-24T21:09:31+08:00">2025-06-24</time>
+      <time title="修改时间：2025-08-31 13:28:37" itemprop="dateModified" datetime="2025-08-31T13:28:37+08:00">2025-08-31</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -202,13 +202,10 @@
         <!-- toc -->
 <ul>
 <li><a href="#markdown-----">Markdown 测试部分</a></li>
-<li><a href="#------">这是一级目录</a><ul>
 <li><a href="#------">这是二级目录</a><ul>
-<li><a href="#------">这是三级目录</a><br>~ <a href="#------">这是四级目录</a><ul>
-<li><a href="#------">这是五级目录</a><ul>
+<li><a href="#------">这是三级目录</a><ul>
+<li><a href="#------">这是四级目录</a><br>~ <a href="#------">这是五级目录</a><ul>
 <li><a href="#------">这是六级目录</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -220,8 +217,9 @@
 
     </div>
 </div>
-<h1 id="Markdown-测试部分"><a href="#Markdown-测试部分" class="headerlink" title="Markdown 测试部分"></a>Markdown 测试部分</h1><p>目录没用。<br>25.6.24，目录有用了现在。</p>
-<h1 id="这是一级目录"><a href="#这是一级目录" class="headerlink" title="这是一级目录"></a>这是一级目录</h1><h2 id="这是二级目录"><a href="#这是二级目录" class="headerlink" title="这是二级目录"></a>这是二级目录</h2><h3 id="这是三级目录"><a href="#这是三级目录" class="headerlink" title="这是三级目录"></a>这是三级目录</h3><h4 id="这是四级目录"><a href="#这是四级目录" class="headerlink" title="这是四级目录"></a>这是四级目录</h4><h5 id="这是五级目录"><a href="#这是五级目录" class="headerlink" title="这是五级目录"></a>这是五级目录</h5><h6 id="这是六级目录"><a href="#这是六级目录" class="headerlink" title="这是六级目录"></a>这是六级目录</h6><p><em>这是斜体</em>，<strong>这是加黑</strong>，<del>这是删除线</del>。</p>
+<h2 id="Markdown-测试部分"><a href="#Markdown-测试部分" class="headerlink" title="Markdown 测试部分"></a>Markdown 测试部分</h2><p>目录没用。<br>25.6.24，目录有用了现在。</p>
+<p>一级目录不建议使用</p>
+<h2 id="这是二级目录"><a href="#这是二级目录" class="headerlink" title="这是二级目录"></a>这是二级目录</h2><h3 id="这是三级目录"><a href="#这是三级目录" class="headerlink" title="这是三级目录"></a>这是三级目录</h3><h4 id="这是四级目录"><a href="#这是四级目录" class="headerlink" title="这是四级目录"></a>这是四级目录</h4><h5 id="这是五级目录"><a href="#这是五级目录" class="headerlink" title="这是五级目录"></a>这是五级目录</h5><h6 id="这是六级目录"><a href="#这是六级目录" class="headerlink" title="这是六级目录"></a>这是六级目录</h6><p><em>这是斜体</em>，<strong>这是加黑</strong>，<del>这是删除线</del>。</p>
 <blockquote>
 <p>这是一个Tag。</p>
 </blockquote>
@@ -263,9 +261,11 @@
 <blockquote id="fn_1">
 <sup>1</sup>. 脚注中间有空格。<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
 </blockquote>
-<h1 id="内部测试部分"><a href="#内部测试部分" class="headerlink" title="内部测试部分"></a>内部测试部分</h1><a href="/2022/%E6%96%B0%E5%B9%B4%E5%A5%BD%EF%BC%81%EF%BC%81%EF%BC%81/" title="引用站内文章">引用站内文章</a>
+<h2 id="内部测试部分"><a href="#内部测试部分" class="headerlink" title="内部测试部分"></a>内部测试部分</h2><a href="/2022/%E6%96%B0%E5%B9%B4%E5%A5%BD%EF%BC%81%EF%BC%81%EF%BC%81/" title="引用站内文章">引用站内文章</a>
 <p><a href="/">这是一个站内链接</a></p>
-<p>引用站内图片。<br><img src="/2022/%E6%B5%8B%E8%AF%95%E7%94%A8%E8%B4%B4/test.png" class="" title="引用站内图片"></p>
+<p>引用站内图片。</p>
+<p><img src="test.png" alt="引用站内图片" title="引用站内图片"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">用这种方法引用的图片在站长工具中显示缺少alt标签：</span><br><span class="line">&#123;% asset_img test.png 引用站内图片 %&#125;</span><br><span class="line"></span><br><span class="line">改用这种就可以手动添加alt标签：</span><br><span class="line">&lt;img src=&quot;&#123;&#123; &#x27;test.png&#x27; &#125;&#125;&quot; alt=&quot;引用站内图片&quot; title=&quot;引用站内图片&quot;&gt;</span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 

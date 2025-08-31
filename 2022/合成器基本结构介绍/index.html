@@ -169,7 +169,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-13 11:25:14" itemprop="dateModified" datetime="2024-04-13T11:25:14+08:00">2024-04-13</time>
+      <time title="修改时间：2025-08-31 13:32:09" itemprop="dateModified" datetime="2025-08-31T13:32:09+08:00">2025-08-31</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -196,35 +196,35 @@
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文用到的主要工具是一个<strong>开源</strong>的宿主软件（DAW）Bespoke Synth。</p>
 <p>它最大的特色就是它是模块化的，是一个“可定制的声音游乐场”。</p>
 <p>如图：</p>
-<img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/BespokeSynth%E7%A4%BA%E6%84%8F%E5%9B%BE.png" class="" title="BespokeSynth">
+<p><img src="BespokeSynth示意图.png" alt="BespokeSynth" title="BespokeSynth"></p>
 <p>（穷鬼用不起 Reaktor 只能用它了）</p>
 <h2 id="模块讲解"><a href="#模块讲解" class="headerlink" title="模块讲解"></a>模块讲解</h2><p>我们就按照 Bespoke 的一些模块来讲。</p>
 <p>这里只是简单介绍一下合成器的每种模块，之后每个模块（应该）会有单独帖子来讲解。</p>
-<h4 id="输入模块"><a href="#输入模块" class="headerlink" title="输入模块"></a>输入模块</h4><img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/%E8%BE%93%E5%85%A5%E6%A8%A1%E5%9D%97.png" class="" title="输入模块长这样">
+<h4 id="输入模块"><a href="#输入模块" class="headerlink" title="输入模块"></a>输入模块</h4><p><img src="输入模块.png" alt="输入模块长这样" title="输入模块长这样"></p>
 <p>这个输入模块相当于一个midi键盘了，不过输入模块不只有midi键盘一种。</p>
-<h4 id="输出模块"><a href="#输出模块" class="headerlink" title="输出模块"></a>输出模块</h4><img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/%E8%BE%93%E5%87%BA%E6%A8%A1%E5%9D%97.png" class="" title="输出模块长这样">
+<h4 id="输出模块"><a href="#输出模块" class="headerlink" title="输出模块"></a>输出模块</h4><p><img src="输出模块.png" alt="输出模块长这样" title="输出模块长这样"></p>
 <p>其中的 gain 起到的作用和耳膜类似，就是接收声音信号并将其扩大。底下的数值就是它扩大的倍数。</p>
 <p>gain 模块连了条线下来到 splitter 上，这个 splitter 的作用就是将声音分成两个声道。</p>
 <p>splitter 又连了两条线下来分别接到 output 1 和 2，这两个就是声音真正的输出了。</p>
-<h4 id="振荡器-OSC"><a href="#振荡器-OSC" class="headerlink" title="振荡器 OSC"></a>振荡器 OSC</h4><img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/%E5%A3%B0%E9%9F%B3%E4%BA%A7%E7%94%9F%E6%A8%A1%E5%9D%97.png" class="" title="这是整个声音产生模块">
+<h4 id="振荡器-OSC"><a href="#振荡器-OSC" class="headerlink" title="振荡器 OSC"></a>振荡器 OSC</h4><p><img src="声音产生模块.png" alt="这是整个声音产生模块" title="这是整个声音产生模块"></p>
 <p>准确来说图中的 wave 一列才是振荡器，不过现在大多数振荡器都会整合起一些功能。</p>
 <p>振荡器（全称oscillator）是合成器中最重要的部分之一，它的功能就是也只是产生声音。</p>
 <p>如图是著名合成器Serum中的OSC：</p>
-<img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/serum%E7%9A%84osc.png" class="" title="Serum的振荡器模块">
+<p><img src="serum的osc.png" alt="Serum的振荡器模块" title="Serum的振荡器模块"></p>
 <p>如果没有其他模块，仅仅输入输出和振荡器连接起来的话，只要给它一个信号振荡器就会一直发出声音，哪怕信号停止输入。</p>
 <p>那么为什么音乐中的各种声音都是有始有终的呢？</p>
 <p>这就需要下面这些模块了。</p>
 <h4 id="音量控制-AMP（或VCA）"><a href="#音量控制-AMP（或VCA）" class="headerlink" title="音量控制 AMP（或VCA）"></a>音量控制 AMP（或VCA）</h4><p>这个模块的准确名称叫做“电压控制放大器”，也是合成器的一个必要的模块。</p>
 <p>还是这张图：</p>
-<img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/%E5%A3%B0%E9%9F%B3%E4%BA%A7%E7%94%9F%E6%A8%A1%E5%9D%97.png" class="" title="这是整个声音产生模块">
+<p><img src="声音产生模块.png" alt="这是整个声音产生模块" title="这是整个声音产生模块"></p>
 <p>图中的 volume 一列就是音量控制（准确来说是受包络控制的音量控制模块，下面会讲）。</p>
 <p>其功能，顾名思义，就是控制音量，但也仅仅是控制音量，就像这样：</p>
-<img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/Reaktor6%E7%9A%84VCA.png" class="" title="Reaktor6的音量控制模块之一">
+<p><img src="Reaktor6的VCA.png" alt="Reaktor6的音量控制模块之一" title="Reaktor6的音量控制模块之一"></p>
 <p>如果只是将OSC接到VCA上，实际上还是不能在信号停止输入时停止声音，他们只能控制产生的声音的音量高低。</p>
 <h4 id="包络-ENV"><a href="#包络-ENV" class="headerlink" title="包络 ENV"></a>包络 ENV</h4><p>包络全称 Envelope，在整个声音产生模块中无法直观地看出包络是什么。</p>
 <p>我们上面说了声音产生模块那张图中的 volume 是受包络控制的音量控制模块，模块上方是一个波形，这个波形就是由包络产生的。</p>
 <p>下面是Serum中的ENV模块：</p>
-<img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/Serum%E4%B8%AD%E7%9A%84ENV.png" class="" title="Serum中的包络模块">
+<p><img src="Serum中的ENV.png" alt="Serum中的包络模块" title="Serum中的包络模块"></p>
 <p>简单来说，包络就是通过产生一个波形来控制其他模块（主要就是音量控制模块），从而达到模块控制的自动化。</p>
 <p>通过产生一个波形来控制音量控制模块，音量就能按照波形进行调节：增大或是衰减。</p>
 <p>有了以上几种模块后，就能够做出一个最简单最基础的合成器了，只不过产生的声音可能会很单调。</p>
@@ -232,12 +232,12 @@
 <p>接下来就需要滤波器模块了。</p>
 <h4 id="滤波器-FLT（或SVF）"><a href="#滤波器-FLT（或SVF）" class="headerlink" title="滤波器 FLT（或SVF）"></a>滤波器 FLT（或SVF）</h4><p>滤波器全称Filter（SVF指的是状态变量滤波器 State Variable Filter）。</p>
 <p>又是这张图：</p>
-<img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/%E5%A3%B0%E9%9F%B3%E4%BA%A7%E7%94%9F%E6%A8%A1%E5%9D%97.png" class="" title="这是整个声音产生模块">
+<p><img src="声音产生模块.png" alt="这是整个声音产生模块" title="这是整个声音产生模块"></p>
 <p>其中最右边 filter 一列就是滤波器。</p>
 <p>其作用，顾名思义，就是滤去一些频率，从而使声音更加动听。</p>
 <p>然后把上边一堆东西按照正确的顺序连接起来，就是一个最简单的减法合成器了。</p>
 <p>偷一张B站up主AndreChen的视频截图（文字是我加的）：</p>
-<img src="/2022/%E5%90%88%E6%88%90%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D/@AndreChen.png" class="" title="up主@AndreChen的减法合成器">
+<p><img src="@AndreChen.png" alt="up主@AndreChen的减法合成器" title="up主@AndreChen的减法合成器"></p>
 <h4 id="低频振荡器-LFO"><a href="#低频振荡器-LFO" class="headerlink" title="低频振荡器 LFO"></a>低频振荡器 LFO</h4><p>这个其实是非必要的，之后专门开一个帖子讲好了。</p>
 <h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>以上这些模块就是合成器最基础的模块了。</p>
 <p>不过这样的声音还是很难听，毕竟只是一个最简单的减法合成器。</p>

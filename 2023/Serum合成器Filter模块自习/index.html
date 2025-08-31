@@ -169,7 +169,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-13 11:25:14" itemprop="dateModified" datetime="2024-04-13T11:25:14+08:00">2024-04-13</time>
+      <time title="修改时间：2025-08-31 13:40:04" itemprop="dateModified" datetime="2025-08-31T13:40:04+08:00">2025-08-31</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -194,18 +194,18 @@
         <p>本帖用于自习Serum的滤波器模块。</p>
 <span id="more"></span>
 <p>滤波器顾名思义就是用来滤波的，简单地理解下可以看成这样一幅图：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E6%BB%A4%E6%B3%A2%E5%99%A8%E5%8A%9F%E8%83%BD%E7%9A%84%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3.png" class="" title="滤波器功能的简单理解">
+<p><img src="滤波器功能的简单理解.png" alt="滤波器功能的简单理解" title="滤波器功能的简单理解"></p>
 <p>上方的波形的横轴参数相当是频率，纵轴参数相当于是相应频率的声音的通过度，越高通过的越多，而越低则滤掉的越多。上图中的右边部分很低，说明滤波器将高频段的声音过滤掉了，所以经过这个滤波器的声音会感觉闷闷的。</p>
 <p>最基本的滤波器应该是这三种：高通、低通、带通。</p>
 <h3 id="低通滤波器（Low）"><a href="#低通滤波器（Low）" class="headerlink" title="低通滤波器（Low）"></a>低通滤波器（Low）</h3><p>意思就是只通过低频率，将高频率的声音过滤掉。</p>
 <p>上面的那张图就是低通的滤波器。</p>
 <h3 id="高通滤波器（High）"><a href="#高通滤波器（High）" class="headerlink" title="高通滤波器（High）"></a>高通滤波器（High）</h3><p>同理，如图：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E9%AB%98%E9%80%9A.png" class="" title="高通">
+<p><img src="高通.png" alt="高通" title="高通"></p>
 <h3 id="带通滤波器（Band）"><a href="#带通滤波器（Band）" class="headerlink" title="带通滤波器（Band）"></a>带通滤波器（Band）</h3><p>只通过一段连续频率的滤波器叫带通滤波器，如图：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/%E5%B8%A6%E9%80%9A.png" class="" title="带通">
+<p><img src="带通.png" alt="带通" title="带通"></p>
 <p>此外还有峰值增益（Peak）、陷波（Notch）等。</p>
 <p>接下来看下Serum自带的Filter：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8Filter%E6%A8%A1%E5%9D%97%E8%87%AA%E4%B9%A0/FILTER.png" class="" title="FILTER">
+<p><img src="FILTER.png" alt="FILTER" title="FILTER"></p>
 <h2 id="ABNS"><a href="#ABNS" class="headerlink" title="ABNS"></a>ABNS</h2><p>那四个按钮表示 OSC A/B/Noice/Sub 是否进行滤波。</p>
 <h2 id="KeyTrack"><a href="#KeyTrack" class="headerlink" title="KeyTrack"></a>KeyTrack</h2><p>音符追踪。</p>
 <p>点亮以后滤波器的属性（Cutoff）会随输入音符的变化而变化，有时能让滤波效果更适应音符。</p>

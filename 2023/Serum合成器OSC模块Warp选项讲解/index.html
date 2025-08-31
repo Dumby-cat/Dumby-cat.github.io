@@ -169,7 +169,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-13 11:25:14" itemprop="dateModified" datetime="2024-04-13T11:25:14+08:00">2024-04-13</time>
+      <time title="修改时间：2025-08-31 13:42:28" itemprop="dateModified" datetime="2025-08-31T13:42:28+08:00">2025-08-31</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -194,24 +194,24 @@
         <p>本帖用于介绍 Serum 的振荡器模块中的 Warp 选项。</p>
 <span id="more"></span>
 <p>之前讲到 WT POS 选项边上有个 Warp 选项，就是这个：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E4%BD%8D%E7%BD%AE.png" class="" title="位置">
+<p><img src="位置.png" alt="位置" title="位置"></p>
 <p>Warp：弯曲、变形。</p>
 <p>这个选项的功能对着波形图边调边看很容易就明白了。</p>
 <p>官方给出的解释是：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E5%8A%9F%E8%83%BD%E8%A7%A3%E9%87%8A.png" class="" title="功能">
+<p><img src="功能解释.png" alt="功能解释" title="功能解释"></p>
 <p>即基于当前的Warp选择调整当前的波形。</p>
 <p>我们拿正弦波来举例子（波形选择目录里选择Analog\Basic Shapes，调整WT POS 可以得到几个基础波形）。</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E6%AD%A3%E5%BC%A6%E6%B3%A2.png" class="" title="正弦波">
+<p><img src="正弦波.png" alt="正弦波" title="正弦波"></p>
 <h2 id="Warp-Menu-总览"><a href="#Warp-Menu-总览" class="headerlink" title="Warp Menu 总览"></a>Warp Menu 总览</h2><p>点击默认的OFF，打开一个目录（即Warp Menu），如图：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E7%9B%AE%E5%BD%95.png" class="" title="Warp_Menu">
+<p><img src="目录.png" alt="Warp Menu" title="Warp Menu"></p>
 <p>每一个选项都有很有意思的功能，下面一个一个看。</p>
 <h2 id="SYNC"><a href="#SYNC" class="headerlink" title="SYNC"></a>SYNC</h2><p>SYNC：同步（？）。</p>
 <p>调一下旋钮就知道这东西干嘛用的了。</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E8%B0%83%E6%95%B4SYNC.gif" class="" title="调整SYNC">
+<p><img src="调整SYNC.gif" alt="调整SYNC" title="调整SYNC"></p>
 <p>应该不会注意不到波形的变化吧。</p>
 <p>很显然，SYNC调的越高，波的周期越小，频率越大，单位时间内出现的同样的波形越多，音调越高。</p>
 <p>但要注意，如果用的是正弦波这种连续变化的波形，在调到这种位置的时候：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E8%B0%83SYNC.jpg" class="" title="调到这种位置">
+<p><img src="调SYNC.jpg" alt="调SYNC" title="调SYNC"></p>
 <p>由于右边的波形被截掉了，相当于有一个突变（和锯齿波的那种类似），声音就会夹杂着类似锯齿波的声音，比较刺耳。</p>
 <p>但如果用锯齿波来调的话，因为本身就是这种声音，所以除了音调变化听不大出来其他的变化。</p>
 <h3 id="SYNC-WINDOW"><a href="#SYNC-WINDOW" class="headerlink" title="SYNC WINDOW"></a>SYNC WINDOW</h3><p>如果不想有刚才的“突变”的问题，可以选择 SYNC WINDOW 这个选项。</p>
@@ -220,54 +220,54 @@
 <p>当然如果你用锯齿波的话，当 Warp 的数值低的时候，锯齿波会被柔和成类似正弦波的东西。</p>
 <p>SYNC 1/2 WIN. 相当于是淡入淡出更快的 SYNC WINDOW。</p>
 <p>SYNC WINDOW：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_WINDOW.jpg" class="" title="SYNC_WINDOW">
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_WINDOW.gif" class="" title="SYNC_WINDOW">
+<p><img src="SYNC_WINDOW.jpg" alt="SYNC_WINDOW" title="SYNC_WINDOW"></p>
+<p><img src="SYNC_WINDOW.gif" alt="SYNC_WINDOW" title="SYNC_WINDOW"></p>
 <p>SYNC 1/2 WIN.：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_1-2_WIN.jpg" class="" title="SYNC_1&#x2F;2_WIN.">
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/SYNC_1-2_WIN.gif" class="" title="SYNC_1&#x2F;2_WIN.">
+<p><img src="SYNC_1-2_WIN.jpg" alt="SYNC_1/2_WIN." title="SYNC_1/2_WIN."></p>
+<p><img src="SYNC_1-2_WIN.gif" alt="SYNC_1/2_WIN." title="SYNC_1/2_WIN."></p>
 <h2 id="BEND"><a href="#BEND" class="headerlink" title="BEND"></a>BEND</h2><p>BEND：弯曲。</p>
 <h3 id="BEND-1"><a href="#BEND-1" class="headerlink" title="BEND +"></a>BEND +</h3><p>将波形向内弯曲，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BENDp.gif" class="" title="BEND+">
+<p><img src="BENDp.gif" alt="BEND+" title="BEND+"></p>
 <h3 id="BEND-2"><a href="#BEND-2" class="headerlink" title="BEND -"></a>BEND -</h3><p>将波形向外弯曲，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BEND-.gif" class="" title="BEND-">
+<p><img src="BEND-.gif" alt="BEND-" title="BEND-"></p>
 <h3 id="BEND-3"><a href="#BEND-3" class="headerlink" title="BEND +/-"></a>BEND +/-</h3><p>数值为负时向内弯曲，为正时向外弯曲，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/BENDp-.gif" class="" title="BEND+&#x2F;-">
+<p><img src="BENDp-.gif" alt="BEND+/-" title="BEND+/-"></p>
 <h2 id="PWM"><a href="#PWM" class="headerlink" title="PWM"></a>PWM</h2><p>PWM：脉冲宽度调制（Pulse Width Modulation）。</p>
 <p>相当于将波形宽度（即“脉冲宽度”）变窄，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E6%AD%A3%E5%BC%A6PWM.gif" class="" title="正弦波PWM">
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/%E6%96%B9%E6%B3%A2PWM.gif" class="" title="方波PWM">
+<p><img src="正弦PWM.gif" alt="正弦波PWM" title="正弦波PWM"></p>
+<p><img src="方波PWM.gif" alt="方波PWM" title="方波PWM"></p>
 <h2 id="ASYM"><a href="#ASYM" class="headerlink" title="ASYM"></a>ASYM</h2><p>ASYM：非对称（即非对称弯曲）。</p>
 <p>ASYM 的作用大概就是将波形左右两边分别压缩或拉伸。</p>
 <h3 id="ASYM-1"><a href="#ASYM-1" class="headerlink" title="ASYM +"></a>ASYM +</h3><p>将波形左半边压缩，右半边拉伸，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYMp.gif" class="" title="ASYM+">
+<p><img src="ASYMp.gif" alt="ASYM+" title="ASYM+"></p>
 <h3 id="ASYM-2"><a href="#ASYM-2" class="headerlink" title="ASYM -"></a>ASYM -</h3><p>将波形左半边拉伸，右半边压缩，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYM-.gif" class="" title="ASYM-">
+<p><img src="ASYM-.gif" alt="ASYM-" title="ASYM-"></p>
 <h3 id="ASYM-3"><a href="#ASYM-3" class="headerlink" title="ASYM +/-"></a>ASYM +/-</h3><p>数值为负时，将波形左半边压缩，右半边拉伸；数值为正时，将波形左半边拉伸，右半边压缩，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/ASYMp-.gif" class="" title="ASYM+-">
+<p><img src="ASYMp-.gif" alt="ASYM+/-" title="ASYM+/-"></p>
 <h2 id="FLIP"><a href="#FLIP" class="headerlink" title="FLIP"></a>FLIP</h2><p>FLIP：翻转。</p>
 <p>将波形进行上下翻转，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/FLIP.gif" class="" title="FLIP">
+<p><img src="FLIP.gif" alt="FLIP" title="FLIP"></p>
 <h2 id="MIRROR"><a href="#MIRROR" class="headerlink" title="MIRROR"></a>MIRROR</h2><p>MIRROR：镜像。</p>
 <p>相当于将波形先加一个 ASYM +/-，然后再左右镜像一下，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/MIRROR.gif" class="" title="MIRROR">
+<p><img src="MIRROR.gif" alt="MIRROR" title="MIRROR"></p>
 <h2 id="REMAP"><a href="#REMAP" class="headerlink" title="REMAP"></a>REMAP</h2><p>REMAP：重映射。</p>
 <p>功能如其名，这个 Warp 选项旁边还有一个笔的记号，点开它是一个长得像 LFO 一样的东西，上面写着“Remap Edit”：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAPEDIT.png" class="" title="REMAPEDIT">
+<p><img src="REMAPEDIT.png" alt="REMAPEDIT" title="REMAPEDIT"></p>
 <p>实际上这是个映射函数（我认为），它的作用大概如下。</p>
 <p>为了方便说明，我们假设波形是一个函数 $g( \varphi )$，如图：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/g(phi).png" class="" title="g(phi)">
+<p><img src="g(phi).png" alt="g(phi)" title="g(phi)" /></p>
 <p>然后这个我们设映射函数为 $f( \varphi )$，如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/RF.png" class="" title="RemapFunction">
+<p><img src="RF.png" alt="RemapFunction" title="RemapFunction" /></p>
 <p>当 REMAP 数值为 100% 时，原来的波形 $g( \varphi )$ 变成 $g( f( \varphi ) )$。也就是说，原来的相位 $ \varphi $ 被映射成 $f( \varphi )$。</p>
 <p>当 REMAP 数值在 0% 到 100% 之间时，$g( \varphi )$ 会在 $g( \varphi )$ 到 $g( f( \varphi ) )$ 之间变化。</p>
 <h3 id="REMAP-1"><a href="#REMAP-1" class="headerlink" title="REMAP 1"></a>REMAP 1</h3><p>普通的 REMAP，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAP1.gif" class="" title="REMAP1">
+<p><img src="REMAP1.gif" alt="REMAP1" title="REMAP1" /></p>
 <h3 id="REMAP-2"><a href="#REMAP-2" class="headerlink" title="REMAP 2"></a>REMAP 2</h3><p>差不多就是 REMAP 1 + MIRROR，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAP2.gif" class="" title="REMAP2">
+<p><img src="REMAP2.gif" alt="REMAP2" title="REMAP2" /></p>
 <h3 id="REMAP-3"><a href="#REMAP-3" class="headerlink" title="REMAP 3"></a>REMAP 3</h3><p>基于正弦函数的 REMAP，通过 REMAP 3 可以不用花太大功夫在 $f( \varphi )$ 上，即使你画的映射函数很粗糙，它在波形上引起的变化也会很平滑，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAP3.gif" class="" title="REMAP3">
+<p><img src="REMAP3.gif" alt="REMAP3" title="REMAP3" /></p>
 <h3 id="REMAP-4"><a href="#REMAP-4" class="headerlink" title="REMAP 4"></a>REMAP 4</h3><p>和 REMAP 2 类似，但是原来的波形周期变成四分之一，效果如下：</p>
-<img src="/2023/Serum%E5%90%88%E6%88%90%E5%99%A8OSC%E6%A8%A1%E5%9D%97Warp%E9%80%89%E9%A1%B9%E8%AE%B2%E8%A7%A3/REMAP4.gif" class="" title="REMAP4">
+<p><img src="REMAP4.gif" alt="REMAP4" title="REMAP4" /></p>
 <h2 id="QUANTIZE"><a href="#QUANTIZE" class="headerlink" title="QUANTIZE"></a>QUANTIZE</h2><p>QUANTIZE：量化。</p>
 <p>就是把波形变方。</p>
 <h2 id="FM-FROM-B"><a href="#FM-FROM-B" class="headerlink" title="FM(FROM B)"></a>FM(FROM B)</h2><p>以振荡器B（OSC B）的波形来频率调制该振荡器。</p>
