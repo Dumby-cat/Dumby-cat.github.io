@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.ico">
+  <link rel="mask-icon" href="/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="codeva-ErdOy0sMT5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="https://dumblog.top/2021/%E6%95%B0%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0%E4%B8%93%E9%A2%98%E7%AF%87%EF%BC%89/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dumblog.top/2021/%E6%95%B0%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0%E4%B8%93%E9%A2%98%E7%AF%87%EF%BC%89/","path":"2021/数论学习笔记（欧拉函数专题篇）/","title":"数论学习笔记（欧拉函数专题篇）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>数论学习笔记（欧拉函数专题篇） | DUMBLOG</title>
+  
+
+
+
+
+
+
+  <meta name="description" content="快来学数论！本文介绍欧拉函数的定义性质及拓展。">
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="DUMBLOG" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">DUMBLOG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Dumby的小站</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dumblog.top/2021/%E6%95%B0%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0%E4%B8%93%E9%A2%98%E7%AF%87%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dumby_cat">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DUMBLOG">
+      <meta itemprop="description" content="欢迎来小站 DUMBLOG！我会在这儿聊聊生活，分享最近看的电影、旅行中的趣事和一些零零碎碎的日常吐槽；同时也倒腾技术，写写以前解题的黑历史和心得，也会记录现在学习的各种笔记和踩坑记录。随便逛逛，希望你能找到感兴趣的东西！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="数论学习笔记（欧拉函数专题篇） | DUMBLOG">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数论学习笔记（欧拉函数专题篇）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-07-02 15:00:18" itemprop="dateCreated datePublished" datetime="2021-07-02T15:00:18+08:00">2021-07-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-08-26 15:47:10" itemprop="dateModified" datetime="2025-08-26T15:47:10+08:00">2025-08-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/" itemprop="url" rel="index"><span itemprop="name">Dumby的OI生涯</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>快来学数论！本文介绍欧拉函数的定义性质及拓展。</p>
+<span id="more"></span>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>1 到 $N$ 中与 $N$ 互质的数的个数被称为欧拉函数，记为 $\varphi(N)$。</p>
+<h2 id="函数式"><a href="#函数式" class="headerlink" title="函数式"></a>函数式</h2><p>$\varphi \left ( n \right ) = n \times \prod_{i=1}^{m} \left ( 1-\frac{1}{p_{i}} \right )$</p>
+<h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><h3 id="性质一"><a href="#性质一" class="headerlink" title="性质一"></a>性质一</h3><p>显然，如果 $N$ 为 质数，则 $\varphi(N)=N-1$</p>
+<h3 id="性质二"><a href="#性质二" class="headerlink" title="性质二"></a>性质二</h3><p> 欧拉函数为 积性函数： 若 $\gcd(a , b ) = 1$，则 $\varphi(ab)=\varphi(a)\varphi(b)$。</p>
+<blockquote>
+<p>积性函数 指对于所有互质的整数 $a$ 和 $b$ 有性质 $f( ab ) = f( a ) f( b )$ 的数论函数。</p>
+</blockquote>
+<h3 id="性质三"><a href="#性质三" class="headerlink" title="性质三"></a>性质三</h3><p> 若 $n=p^{k}$，$p$ 为 质数，则 $\varphi(n)= n\left (1 - \frac{1}{p} \right )=  \left ( p - 1 \right )p^{k-1}$。</p>
+<blockquote>
+<p>证明<br>$n$ 个数中只有 $p$ 的倍数不与 $n$ 互质，而 $p$ 的倍数 $x$ 则有 $\dfrac{n}{p}=p^{k-1}$ 个，<br>因此 $\varphi(n)=n-\dfrac{n}{p}=n(1-\dfrac{1}{p})=p^{k}-p^{k-1}=(p-1)p^{k-1}$ 。</p>
+</blockquote>
+<h3 id="性质四"><a href="#性质四" class="headerlink" title="性质四"></a>性质四</h3><p> 若 $N=p_{1}^{c_{1}}p_{2}^{c_{2}}…p_{m}^{c_{m}}$，则：<br> $\varphi(N)=N \times \dfrac{p_{1}-1}{p_{1}} \times \dfrac{p_{2}-1}{p_{2}} \times … \times \dfrac{p_{m}-1}{p_{m}}$<br> $\varphi(N)=N \times \left ( 1-\dfrac{1}{p_{1}} \right ) \times \left ( 1-\dfrac{1}{p_{2}} \right ) \times …  \times \left ( 1-\dfrac{1}{p_{m}} \right )$</p>
+<p>即：<br>${\small \varphi \left ( n \right ) = n \times \prod_{i=1}^{m} \left ( 1-\frac{1}{p_{i}} \right )} $</p>
+<h3 id="性质五"><a href="#性质五" class="headerlink" title="性质五"></a>性质五</h3><p>$\forall  n &gt; 1$，1 到 $n$ 中与 $n$ 互质的数的和为 $n \times \dfrac{\varphi(n)}{2}$。</p>
+<blockquote>
+<p>证明<br>因为 $\gcd( n , x ) = \gcd( n , n-x )$，所以与 $n$ 不互质的数 $x$，$n - x$ 成对出现，平均值为 $\dfrac{n}{2}$ 。<br>因此，与 $n$ 互质的数的平均数也是 $\dfrac{n}{2}$，进而可得 1 到 $n$ 中所有与 $n$ 互质的数的和为  $\dfrac{n}{2} \varphi(n)$，化简得 $\dfrac{n\times \varphi(n)}{2}$。</p>
+</blockquote>
+<h3 id="性质六"><a href="#性质六" class="headerlink" title="性质六"></a>性质六</h3><p>如果 $a \mod p = 0$，其中 $p$ 为质数，则 $\varphi(a \times p)=p \times \varphi(a)$</p>
+<blockquote>
+<p>证明<br>因为 $a \mod p = 0$，所以 $a \times p$ 与 $a$ 包含相同的质因子，只是其中有一个质因子 $p$ 的指数不同。<br>直接把 $\varphi(a \times p)$ 和 $\varphi(a)$ 按照函数式写出来，前者除去后者，商为 $p$ ，即  $\dfrac{\varphi(a \times p)}{\varphi(a)}=p$<br>所以 $\varphi(a \times p)=p \times \varphi(a)$</p>
+</blockquote>
+<h3 id="性质七"><a href="#性质七" class="headerlink" title="性质七"></a>性质七</h3><p>如果 $a \mod p \ne 0$， 其中 $p$ 为质数，则 $\varphi(ap)=(p-1)\varphi(a)$</p>
+<blockquote>
+<p>证明<br>欧拉函数为积性函数。<br>所以 $\varphi(ap)=\varphi(a)\varphi(p)$，<br>又因为 $p$ 是质数，由 性质一 可得 $\varphi(p)=p-1$<br>所以 $\varphi(ap)=(p-1)\varphi(a)$</p>
+</blockquote>
+<h2 id="欧拉定理"><a href="#欧拉定理" class="headerlink" title="欧拉定理"></a>欧拉定理</h2><p>若正整数 $a$，$n$ 互质，则 $a^{\varphi(n)} \equiv 1\pmod{n}$，其中 $\varphi(n)$ 为欧拉函数。</p>
+<blockquote>
+<p>证明<br>设 1 到 $n$ 中所有与 $n$ 互质的数为 $a_{1},a_{2},…,a_{\varphi(n)}$<br>因为 $a$ 与 $n$ 互质，$a_{1}$ 与 $n$ 互质 （$a \equiv 1\pmod{n}$ 并且 $a_{1} \equiv 1\pmod{n}$<br>所以 $aa_{1}$ 与 n 互质 （$aa_{1} \equiv 1\pmod{n}$<br>同理 $aa_{1},aa_{2},…,aa_{\varphi(n)}$ 都与 $n$ 互质<br>所以 $aa_{1} \times aa_{2} \times … \times aa_{\varphi(n)}=a^{\varphi(n)} \times \left ( a_{1}a_{2}…a_{\varphi(n)}\right )$ 与 $n$ 互质<br>又因为  $a^{\varphi(n)} \times \left ( a_{1}a_{2}…a_{\varphi(n)}\right ) \equiv a_{1}a_{2}…a_{\varphi(n)} \pmod{n}$<br>所以  $a^{\varphi(n)} \equiv 1\pmod{n}$</p>
+</blockquote>
+<h3 id="费马小定理"><a href="#费马小定理" class="headerlink" title="费马小定理"></a>费马小定理</h3><p>为欧拉定理的一种情况。<br>若 $p$ 为质数，则对于任意整数 $a$，有 $a^{p} \equiv a \pmod{p}$，即 $a^{p-1} \equiv 1 \pmod{p}$</p>
+<blockquote>
+<p>证明<br>是欧拉函数的一种情况<br>将 $\varphi(p)=p-1$ 带入即可</p>
+</blockquote>
+<h2 id="欧拉函数求法"><a href="#欧拉函数求法" class="headerlink" title="欧拉函数求法"></a>欧拉函数求法</h2><h3 id="求单个数的欧拉函数"><a href="#求单个数的欧拉函数" class="headerlink" title="求单个数的欧拉函数"></a>求单个数的欧拉函数</h3><p>只要在 分解质因数 时顺便将欧拉函数求出来就好了。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">phi</span><span class="params">(<span class="type">int</span> n)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> ans = n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= <span class="built_in">sqrt</span>(n); i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (n % i == <span class="number">0</span>) </span><br><span class="line">		&#123;</span><br><span class="line">			ans = ans / i * (i - <span class="number">1</span>);</span><br><span class="line">			<span class="keyword">while</span> (n % i == <span class="number">0</span>)n /= i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (n &gt; <span class="number">1</span>)ans = ans / n * (n - <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="线性求多个数的欧拉函数"><a href="#线性求多个数的欧拉函数" class="headerlink" title="线性求多个数的欧拉函数"></a>线性求多个数的欧拉函数</h3><p>在 线性筛 实现的时候顺便求欧拉函数。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">euler</span><span class="params">(<span class="type">int</span> x)</span> </span></span><br><span class="line"><span class="function"></span>&#123;   <span class="comment">// primes数组存质数</span></span><br><span class="line">	<span class="comment">// phi数组存欧拉函数</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">2</span>; i &lt;= x; i ++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(!st[i]) </span><br><span class="line">		&#123;</span><br><span class="line">			primes[cn++] = i; </span><br><span class="line">			phi[i] = i - <span class="number">1</span>;</span><br><span class="line">			<span class="comment">//这句利用性质一</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; primes[j] &lt;= x / i; j ++) </span><br><span class="line">		&#123; </span><br><span class="line">			st[ primes[j] * i ] = <span class="number">1</span>;</span><br><span class="line">			phi[ primes[j] * i ] = phi[i] * (i % primes[j] ? primes[j] - <span class="number">1</span> : primes[j]);</span><br><span class="line">			<span class="comment">// 这句利用了性质六、七</span></span><br><span class="line">			<span class="keyword">if</span>( i % primes[j] == <span class="number">0</span> ) <span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>OK，笔记完。<br>本蒟蒻刚学 OI ，如有错误请 D 我！！</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/%E6%95%B0%E8%AE%BA/" rel="tag"># 数论</a>
+              <a href="/tags/%E8%B4%A8%E6%95%B0/" rel="tag"># 质数</a>
+              <a href="/tags/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/" rel="tag"># 欧拉函数</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/%E6%95%B0%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%BA%A6%E6%95%B0%E7%AF%87%E4%BA%8C%EF%BC%89/" rel="prev" title="数论学习笔记（约数篇二）">
+                  <i class="fa fa-chevron-left"></i> 数论学习笔记（约数篇二）
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/%E9%BE%9F%E9%80%9F%E4%B9%98%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="龟速乘学习笔记">
+                  龟速乘学习笔记 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dumby_cat</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

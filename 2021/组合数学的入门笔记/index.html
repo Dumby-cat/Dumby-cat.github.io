@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.ico">
+  <link rel="mask-icon" href="/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="codeva-ErdOy0sMT5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="https://dumblog.top/2021/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dumblog.top/2021/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/","path":"2021/组合数学的入门笔记/","title":"组合数学入门笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>组合数学入门笔记 | DUMBLOG</title>
+  
+
+
+
+
+
+
+  <meta name="description" content="来学组合数学！">
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="DUMBLOG" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">DUMBLOG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Dumby的小站</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dumblog.top/2021/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dumby_cat">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DUMBLOG">
+      <meta itemprop="description" content="欢迎来小站 DUMBLOG！我会在这儿聊聊生活，分享最近看的电影、旅行中的趣事和一些零零碎碎的日常吐槽；同时也倒腾技术，写写以前解题的黑历史和心得，也会记录现在学习的各种笔记和踩坑记录。随便逛逛，希望你能找到感兴趣的东西！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="组合数学入门笔记 | DUMBLOG">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          组合数学入门笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-09-02 18:09:46" itemprop="dateCreated datePublished" datetime="2021-09-02T18:09:46+08:00">2021-09-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-08-26 15:50:54" itemprop="dateModified" datetime="2025-08-26T15:50:54+08:00">2025-08-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Dumby%E7%9A%84OI%E7%94%9F%E6%B6%AF/" itemprop="url" rel="index"><span itemprop="name">Dumby的OI生涯</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>来学组合数学！</p>
+<span id="more"></span>
+<h2 id="加法及乘法原理"><a href="#加法及乘法原理" class="headerlink" title="加法及乘法原理"></a>加法及乘法原理</h2><h3 id="加法原理"><a href="#加法原理" class="headerlink" title="加法原理"></a>加法原理</h3><p>完成一件事有 $n$ 类方法，每类方法有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1}+m_{2}+…+m_{n}$ 种方法。</p>
+<h3 id="乘法原理"><a href="#乘法原理" class="headerlink" title="乘法原理"></a>乘法原理</h3><p>完成一件事有 $n$ 个步骤，每个步骤有 $m$ 个不同的方法，那么完成这件事总共就有 $N=m_{1} \times m_{2} \times … \times m_{n}$ 种方法。</p>
+<h2 id="排列与组合入门"><a href="#排列与组合入门" class="headerlink" title="排列与组合入门"></a>排列与组合入门</h2><h3 id="排列与排列数"><a href="#排列与排列数" class="headerlink" title="排列与排列数"></a>排列与排列数</h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，按照一定顺序排列，所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的排列数</strong>。</p>
+<p>公式如下：</p>
+<p>$ A^{m}_{n}=\left ( n-m+1 \right )…\left ( n-2 \right )\left ( n-1 \right )n=\frac{n!}{\left (n-m\right )!} $</p>
+<p>如何理解这个公式：</p>
+<p>有 $m$ 个位置，第一个有 $n$ 种选法，第二个有 $n-1$ 种，以此类推，第 $m$ 种有 1 种选法，所以由乘法原理可得总方案数为 $\left ( n-m+1 \right )…\left ( n-2 \right )\left ( n-1 \right )n$。</p>
+<h3 id="组合与组合数"><a href="#组合与组合数" class="headerlink" title="组合与组合数"></a>组合与组合数</h3><p>在 $n$ 个元素中任取 $m$ （$m&lt;=n$，$m,n \in N$）个元素，组成一个组合（集合），所有的情况的个数叫做 <strong>从 $n$ 个不同元素中取出 $m$ 个的组合数</strong>。</p>
+<p>公式如下：</p>
+<p>$C^{m}_{n}=\frac{A^{m}_{n}}{m!}=\frac{n!}{m!\left (n-m\right)!}$</p>
+<p>如何理解这个公式：</p>
+<p>一个 $m$ 个元素的序列的全排列的序列数为 $m!$，所以将排列数除去全排列的序列数就为组合数。</p>
+<p><strong>$C^{m}_{n}$ 还写成 $\begin{pmatrix}n \\m\end{pmatrix}$，组合数也叫二项式系数</strong>。</p>
+<p>特别地，当 $m&gt;n$ 时，$A^{m}_{n}=C^{m}_{n}=0$。</p>
+<h4 id="C-求组合数代码"><a href="#C-求组合数代码" class="headerlink" title="C++ 求组合数代码"></a>C++ 求组合数代码</h4><p>递归：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">100005</span>, MOD = <span class="number">19260817</span>;</span><br><span class="line"><span class="type">int</span> a[N], ans;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = n; i &gt;= m; i--) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (m &gt; <span class="number">1</span>) <span class="built_in">C</span>(n - <span class="number">1</span>, m - <span class="number">1</span>);</span><br><span class="line">		<span class="keyword">else</span> ans = (ans + <span class="number">1</span>) % MOD;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>递推：</p>
+<p>组合数满足以下递推式：</p>
+<p>$\left\{\begin{matrix} C^{m}_{n}=C^{m-1}_{n}+C^{m-1}_{n-1},n&gt;m&gt;0\\C^{m}_{n}=1,m=0 或 n=m\end{matrix}\right.$</p>
+<p>所以代码很容易打出来了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1005</span>, MOD = <span class="number">19260817</span>;</span><br><span class="line"><span class="type">int</span> f[N][N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (n == <span class="number">0</span> || m == n) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= m; i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt;= n; i++) </span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (i == <span class="number">0</span>)f[i][j] = <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">else</span> f[i][j] = f[i - <span class="number">1</span>][j - <span class="number">1</span>] + f[i - <span class="number">1</span>][j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> f[m][n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>求排列数则只要<br>将组合数乘上 $m!$ 就好了。</p>
+<h4 id="二项式定理"><a href="#二项式定理" class="headerlink" title="二项式定理"></a>二项式定理</h4><p>公式如下：</p>
+<p>$\left ( a+b \right )^{n}= {\textstyle \sum_{n}^{i=0}\begin{pmatrix}n \\i\end{pmatrix}a^{n-i}b^{i}}$</p>
+<p>其实很好理解，自己手推一下就出来了。</p>
+<h2 id="Catalan（卡特兰）数列"><a href="#Catalan（卡特兰）数列" class="headerlink" title="Catalan（卡特兰）数列"></a>Catalan（卡特兰）数列</h2><p>没什么好说的，记个公式（要推导它的通项公式需要生成函数，反正本蒟蒻不会）。</p>
+<p>$Cat_{0}=Cat_{1}=1$</p>
+<p>$Cat_{n}=\frac{\begin{pmatrix}2n\\n\end{pmatrix}}{n+1}\left ( n\ge 2,n \in N^{+}\right )$</p>
+<p>其他 Catalan 数列常用公式：</p>
+<p>$Cat_{n}=\frac{Cat_{n-1}\left ( 4n-2 \right )}{n+1}$</p>
+<p>$Cat_{n}=\begin{pmatrix} 2n\\n\end{pmatrix}-\begin{pmatrix} 2n\\n-1\end{pmatrix}$</p>
+<p>$Cat_{n}=\left\{\begin{matrix}{\textstyle \sum_{i=1}^{n}Cat_{i-1}Cat_{n-i}},n\ge 2,n\in N^{+} \\1, n=0,1\end{matrix}\right.$</p>
+<p>代码可以由 $Cat_{n}=\frac{Cat_{n-1}\left ( 4n-2 \right )}{n+1}$ 很简单的写出来，这里就不放了。</p>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ol>
+<li>对角线不相交，将一个凸多边形分成多个三角形的方案数。</li>
+<li>一个序列的进栈顺序为 $1,2,3…,n-1,n$，求有几种不同的出栈序列。</li>
+<li>$n$ 个节点可以构成多少个不同的二叉树。</li>
+<li>等等等等</li>
+</ol>
+<p>ok，有错误请 D 我。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/%E6%95%B0%E8%AE%BA/" rel="tag"># 数论</a>
+              <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" rel="tag"># 组合数学</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/Luogu-P5136-sequence-%E9%A2%98%E8%A7%A3%E6%8A%A5%E5%91%8A/" rel="prev" title="Luogu P5136 sequence 题解报告">
+                  <i class="fa fa-chevron-left"></i> Luogu P5136 sequence 题解报告
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/%E6%96%B0%E5%B9%B4%E5%A5%BD%EF%BC%81%EF%BC%81%EF%BC%81/" rel="next" title="！！！🏮新年好🏮！！！">
+                  ！！！🏮新年好🏮！！！ <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dumby_cat</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
