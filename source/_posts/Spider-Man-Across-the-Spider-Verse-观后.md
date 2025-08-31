@@ -15,7 +15,7 @@ date: 2023-06-17 21:49:39
 
 先放张剧照镇下帖。
 
-{% asset_img Miles&Gwen.jpg 镇帖图 %}
+<img src="{{ 'Miles&Gwen.jpg' }}" alt="镇帖图" title="镇帖图">
 
 以下也有许多是口嗨，不喜勿喷。
 
@@ -25,7 +25,7 @@ date: 2023-06-17 21:49:39
 
 主要是看到这个东西：
 
-{% asset_img Spotter-man.png Spotter-man %}
+<img src="{{ 'Spotter-man.png' }}" alt="Spotter-man" title="Spotter-man">
 
 我不知道官方有没有关于这个的介绍，反正挺有意思的，看着像 Spot 和 Spider-man 的结合体，就瞎起了个名字。
 
@@ -35,17 +35,17 @@ date: 2023-06-17 21:49:39
 
 第一遍看的时候就觉得这两东西挺像的了：
 
-{% asset_img Lobby.jpg 2099_Lobby %}
+<img src="{{ 'Lobby.jpg' }}" alt="2099_Lobby" title="2099_Lobby">
 
 和
 
-{% asset_img 瑞城.png 瑞城 %}
+<img src="{{ '瑞城.png' }}" alt="瑞城" title="瑞城">
 
 （不过只是有些设定挺像的，其他的。。。毕竟后者那一集是额。。dddd）
 
 ### 星球大战
 
-{% asset_img ReturnOfTheJedi.jpg "Return of the Jedi" %}
+<img src="{{ 'ReturnOfTheJedi.jpg' }}" alt="Return of the Jedi" title="Return of the Jedi">
 
 《蜘蛛侠：平行宇宙》这两部情节设置个人感觉和《星球大战》（4-6）很有相似之处。（星战是三部曲鼻祖，不像就怪了。。）我随便说说：
 

@@ -13,11 +13,11 @@ date: 2022-11-27 19:17:03
 
 还是这张图。
 
-{% asset_img serum的osc.png OSC %}
+<img src="{{ 'serum的osc.png' }}" alt="OSC" title="OSC">
 
 一个一个看。
 
-{% asset_img 波形.png 波形 %}
+<img src="{{ '波形.png' }}" alt="波形" title="波形">
 
 最上面这个自然是**波形（Waveform）**了（红框里的）。
 
@@ -33,7 +33,7 @@ CRS（CoarsePit）：粗调
 
 接下来有这些东西：
 
-{% asset_img 下方.png 其他参数 %}
+<img src="{{ '下方.png' }}" alt="其他参数" title="其他参数">
 
 UNISON：合奏，即同时演奏的声音数量。
 
@@ -41,7 +41,7 @@ DETUNE：失谐，即同时演奏的声音之间相差的音高大小。
 
 BLEND：同时演奏的声音之间相差的音量（**实际上是电平**，两者并不一样，但是改变电平的直观感受是改变音量）大小。
 
-{% asset_img unison.png 调节的界面 %}
+<img src="{{ 'unison.png' }}" alt="调节的界面" title="调节的界面">
 
 这几个东西右边的有这两个：PHASE、RAND。
 
@@ -53,11 +53,11 @@ RAND（RANDOM）：随机，就是将每个同时演奏的声音的相位随机�
 
 你可以单击波形显示的地方，然后它的波形的显示界面会变成这样：
 
-{% asset_img 子波形.png 默认波形的所有帧 %}
+<img src="{{ '子波形.png' }}" alt="默认波形的所有帧" title="默认波形的所有帧">
 
 默认的锯齿波看这个并不明显，我们可以随便切换一个别的波形（这里拿Acid举例子），它的所有帧叠起来是这样的：
 
-{% asset_img acid子波形.png Acid的所有帧 %}
+<img src="{{ 'acid子波形.png' }}" alt="Acid的所有帧" title="Acid的所有帧">
 
 而下面的WT POS，就是调整帧用的。
 

@@ -14,7 +14,7 @@ date: 2023-07-22 13:19:35
 
 **以下仅为个人感受，勿杠。杠就是你对。**
 
-{% asset_img NANK小音舱.jpg NANK小音舱 %}
+<img src="{{ 'NANK小音舱.jpg' }}" alt="NANK小音舱" title="NANK小音舱">
 
 先说要是让我打星，那就是1/5。一星好评。。
 

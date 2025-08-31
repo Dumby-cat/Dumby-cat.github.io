@@ -17,7 +17,7 @@ date: 2022-08-02 16:45:17
 
 直到我看到这个叫做[TCod Cpp Engine](https://github.com/HexDecimal/tcod-cpp-engine-2022)的项目（最近官方出了个[模板](https://github.com/HexDecimal/libtcod-vcpkg-template)，配置过程与下面类似，两者都可使用），最后跟着介绍的步骤终于跑起来了。
 
-{% asset_img 第一次成功运行.png 终于跑起来啦！！！ %}
+<img src="{{ '第一次成功运行.png' }}" alt="终于跑起来啦！！！" title="终于跑起来啦！！！">
 
 ## 配置
 
@@ -46,7 +46,7 @@ git submodule update --init --recursive
 
 VsCode还会提示你选择Kit，这里Win10的话最好选amd64，如果没提示的话可以到底部找到Kit选项打开并选择。
 
-{% asset_img Kit.png 选择Kit %}
+<img src="{{ 'Kit.png' }}" alt="选择Kit" title="选择Kit">
 
 最后按 ```F5```，VsCode会自动进行编译。
 
