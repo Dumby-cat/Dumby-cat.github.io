@@ -1294,7 +1294,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #bbde0e;
+  background: #91ebff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2743,23 +2743,8 @@ header.header {
 :root {
   --text-color: #fff;
 }
-header.header {
-  width: 0%;
+.column {
   background: #000;
-}
-.header-inner {
-  background: #000;
-  align-items: center;
-  display: flex;
-  padding: 20px 0;
-}
-@media (max-width: 767px) {
-  .header-inner {
-    background: #000;
-    display: block;
-    padding: 10px 0;
-    width: auto;
-  }
 }
 .footer {
   width: 0%;
