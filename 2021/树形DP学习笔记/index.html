@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
-
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.ico">
@@ -16,14 +15,13 @@
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.26.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"remove","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/grayscale-dark","dark":"base16/grayscale-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
 
 
 
 <link rel="canonical" href="https://dumblog.top/2021/%E6%A0%91%E5%BD%A2DP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-
 
 
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dumblog.top/2021/%E6%A0%91%E5%BD%A2DP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"2021/树形DP学习笔记/","title":"树形DP学习笔记"}</script>
@@ -33,6 +31,34 @@
   
 
 
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
 
 
 
@@ -49,8 +75,8 @@
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
@@ -70,7 +96,7 @@
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
         <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
@@ -90,37 +116,30 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
     </div>
   </div>
 
-</div>
-    </header>
-
-    
-
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
+</header>
+    </div>
 
     <div class="main-inner post posts-expand">
 
@@ -190,8 +209,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-        <p>来做一些树形DP的经典题目吧。</p>
+    <div class="post-body" itemprop="articleBody"><p>来做一些树形DP的经典题目吧。</p>
 <span id="more"></span>
 <p>开始开始！</p>
 <h2 id="为什么叫树形DP？与线性DP有什么区别？"><a href="#为什么叫树形DP？与线性DP有什么区别？" class="headerlink" title="为什么叫树形DP？与线性DP有什么区别？"></a>为什么叫树形DP？与线性DP有什么区别？</h2><p>两者的本质一致，只不过是在处理数据时的迭代方式不同了而已。<br>即，数据间迭代关系由线性（线性DP）变成了非线性（树形DP）。<br>举个栗子，如下两题：<br><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1115">最大子段和</a>和<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1122">最大子树和</a></p>
@@ -210,7 +228,7 @@
 <h5 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h5><p>设 $f[i]$ 为以 $i$ 为根的的总距离， $size[i]$ 为以 $i$ 为根的子树大小（“ 大小 ” 指的是带权的大小）<br><del>显然</del>，<br>$ans = min { f[i] ， 1 &lt;= i &lt;= n }$<br>那么，我们只要DFS求出任意一个点的 $f$ ，再通过转移方程求出所有的 $f$ 就好了<br>为了方便，我们先DFS求出 $f[1]$ 。<br>转移方程如下，对于每个 $i$ 可到达的 $j$ 点（ $j$ 为 $i$ 的儿子）：</p>
 <p>$f[j] = f[i] + size[1] − size[j] − size[j]$</p>
 <p>当我们从 $i$ 点转移到 $j$ 点时（即根从 $i$ 变为 $j$ 时），每个 $j$ 的子树的节点到根的距离都减 1 。本来 $j$ 的子树的节点应该到 $i$ 这个节点，但因为根节点下移一个，所以距离全部减 1 （- $size[j]$）。<br>同理，在根节点上方的节点到根节点的距离都加上 1 ， 总路程就加了（$size[1]$ − $size[j]$）。<br>$size[1]$ 即为整棵树的大小， $size[j]$则是除了 $j$ 节点的子树以外的节点数。<br><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/GetKeyState/solution-p1364">参考博客</a></p>
-<h6 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h6><p>这篇代码是蛮早写的，码风和后面不一致，敬请谅解。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,a,b,l,r,cn;</span><br><span class="line"><span class="type">int</span> dd[<span class="number">10000</span>],f[<span class="number">100000</span>],to[<span class="number">10000</span>],next[<span class="number">10000</span>],head[<span class="number">10000</span>],w[<span class="number">10000</span>];</span><br><span class="line"><span class="comment">//这里的 dd 数组就是 size 数组</span></span><br><span class="line"><span class="type">int</span> ans=<span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">dfs</span><span class="params">( <span class="type">int</span> u , <span class="type">int</span> fa , <span class="type">int</span> dep )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	dd[u] = w[u];</span><br><span class="line">	<span class="keyword">for</span>( <span class="type">int</span> i = head[u] ; i ; i = next[i] )   <span class="comment">//邻接表储存</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>( to[i] != fa ) </span><br><span class="line">		&#123;   <span class="comment">//如果该点不是叶子节点</span></span><br><span class="line">			<span class="built_in">dfs</span>( to[i] , u , dep+<span class="number">1</span> );   <span class="comment">//继续向下搜</span></span><br><span class="line">			dd[u] += dd[to[i]];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	f[<span class="number">1</span>] += w[u] * dep;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">dp</span><span class="params">( <span class="type">int</span> u , <span class="type">int</span> fa )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>( <span class="type">int</span> i = head[u] ; i ; i = next[i] ) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>( to[i] != fa )</span><br><span class="line">		&#123;</span><br><span class="line">			f[to[i]] = f[u] + dd[<span class="number">1</span>] - dd[to[i]]*<span class="number">2</span>;</span><br><span class="line">			<span class="built_in">dp</span>( to[i] , u );</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	ans = <span class="built_in">min</span>( ans , f[u] );</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	<span class="keyword">for</span>( <span class="type">int</span> i = <span class="number">1</span> ; i &lt;= n ; i ++ )</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>, &amp;w[i] , &amp;l , &amp;r);</span><br><span class="line">		<span class="keyword">if</span>( l )</span><br><span class="line">		&#123;</span><br><span class="line">			to[++cn] = l;</span><br><span class="line">			next[cn] = head[i];</span><br><span class="line">			head[i] = cn;</span><br><span class="line">			to[++cn] = i;</span><br><span class="line">			next[cn] = head[l];</span><br><span class="line">			head[l] = cn;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>( r )</span><br><span class="line">		&#123;</span><br><span class="line">			to[++cn] = r;</span><br><span class="line">			next[cn] = head[i];</span><br><span class="line">			head[i] = cn;</span><br><span class="line">			to[++cn] = i;</span><br><span class="line">			next[cn] = head[r];</span><br><span class="line">			head[r] = cn;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">dfs</span>( <span class="number">1</span> , <span class="number">0</span> , <span class="number">0</span> );</span><br><span class="line">	<span class="built_in">dp</span>( <span class="number">1</span> , <span class="number">0</span> );</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>这里还有道进阶的题目 <del>（就当做习题好了）</del>。<br>题解的话，<del>我有时间写。。。吧</del><br>题目：<a target="_blank" rel="noopener" href="http://poj.org/problem?id=3140">POJ-3140：Contestants Division</a></p>
+<h6 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h6><p>这篇代码是蛮早写的，码风和后面不一致，敬请谅解。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,a,b,l,r,cn;</span><br><span class="line"><span class="type">int</span> dd[<span class="number">10000</span>],f[<span class="number">100000</span>],to[<span class="number">10000</span>],next[<span class="number">10000</span>],head[<span class="number">10000</span>],w[<span class="number">10000</span>];</span><br><span class="line"><span class="comment">//这里的 dd 数组就是 size 数组</span></span><br><span class="line"><span class="type">int</span> ans=<span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">dfs</span><span class="params">( <span class="type">int</span> u , <span class="type">int</span> fa , <span class="type">int</span> dep )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	dd[u] = w[u];</span><br><span class="line">	<span class="keyword">for</span>( <span class="type">int</span> i = head[u] ; i ; i = next[i] )   <span class="comment">//邻接表储存</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>( to[i] != fa ) </span><br><span class="line">		&#123;   <span class="comment">//如果该点不是叶子节点</span></span><br><span class="line">			<span class="built_in">dfs</span>( to[i] , u , dep<span class="number">+1</span> );   <span class="comment">//继续向下搜</span></span><br><span class="line">			dd[u] += dd[to[i]];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	f[<span class="number">1</span>] += w[u] * dep;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">dp</span><span class="params">( <span class="type">int</span> u , <span class="type">int</span> fa )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>( <span class="type">int</span> i = head[u] ; i ; i = next[i] ) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>( to[i] != fa )</span><br><span class="line">		&#123;</span><br><span class="line">			f[to[i]] = f[u] + dd[<span class="number">1</span>] - dd[to[i]]*<span class="number">2</span>;</span><br><span class="line">			<span class="built_in">dp</span>( to[i] , u );</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	ans = <span class="built_in">min</span>( ans , f[u] );</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	<span class="keyword">for</span>( <span class="type">int</span> i = <span class="number">1</span> ; i &lt;= n ; i ++ )</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>, &amp;w[i] , &amp;l , &amp;r);</span><br><span class="line">		<span class="keyword">if</span>( l )</span><br><span class="line">		&#123;</span><br><span class="line">			to[++cn] = l;</span><br><span class="line">			next[cn] = head[i];</span><br><span class="line">			head[i] = cn;</span><br><span class="line">			to[++cn] = i;</span><br><span class="line">			next[cn] = head[l];</span><br><span class="line">			head[l] = cn;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>( r )</span><br><span class="line">		&#123;</span><br><span class="line">			to[++cn] = r;</span><br><span class="line">			next[cn] = head[i];</span><br><span class="line">			head[i] = cn;</span><br><span class="line">			to[++cn] = i;</span><br><span class="line">			next[cn] = head[r];</span><br><span class="line">			head[r] = cn;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">dfs</span>( <span class="number">1</span> , <span class="number">0</span> , <span class="number">0</span> );</span><br><span class="line">	<span class="built_in">dp</span>( <span class="number">1</span> , <span class="number">0</span> );</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>这里还有道进阶的题目 <del>（就当做习题好了）</del>。<br>题解的话，<del>我有时间写。。。吧</del><br>题目：<a target="_blank" rel="noopener" href="http://poj.org/problem?id=3140">POJ-3140：Contestants Division</a></p>
 <h3 id="最大子树"><a href="#最大子树" class="headerlink" title="最大子树"></a>最大子树</h3><h4 id="例题：最大子树和"><a href="#例题：最大子树和" class="headerlink" title="例题：最大子树和"></a>例题：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1122">最大子树和</a></h4><h5 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h5><p>给出一个节点数为 n 的树 a，选出其中几个连续节点（包括根节点）的非空集合使得这段和最大。</p>
 <h5 id="题解-1"><a href="#题解-1" class="headerlink" title="题解"></a>题解</h5><p>前面说了树形DP与线性DP思想一致，在这题上就能得到充分体现。<br>首先，每个点有两种状态：取或不取。<br>开一个vector来存储每一个节点的儿子。<br>设 $f[i][1]$ 为以 $i$ 为根的最大子树和（取根节点），$f[i][0]$ 为以 $i$ 为根的最大子树和（不取根节点）<br>那么，转移方程就出来了：</p>
 <p>$f[i][1]+=max { f[son][1] ， f[son][0] }$</p>
@@ -359,12 +377,12 @@
           <div class="post-nav">
             <div class="post-nav-item">
                 <a href="/2021/WELCOME-TO-DUMBLOG/" rel="prev" title="WELCOME TO DUMBLOG">
-                  <i class="fa fa-chevron-left"></i> WELCOME TO DUMBLOG
+                  <i class="fa fa-angle-left"></i> WELCOME TO DUMBLOG
                 </a>
             </div>
             <div class="post-nav-item">
                 <a href="/2021/A-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="A-Star学习笔记">
-                  A-Star学习笔记 <i class="fa fa-chevron-right"></i>
+                  A-Star学习笔记 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -383,42 +401,23 @@
   <footer class="footer">
     <div class="footer-inner">
 
-
-<div class="copyright">
-  &copy; 2021 – 
-  <span itemprop="copyrightYear">2025</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Dumby_cat</span>
-</div>
+  <div class="copyright">
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Dumby_cat</span>
+  </div>
 
     </div>
   </footer>
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
-<script src="/js/third-party/search/local-search.js"></script>
-
-
-
-
-
-  
-
-
-
-
-  
-
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
-<script src="/js/third-party/math/mathjax.js"></script>
-
-
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
 </body>
 </html>
