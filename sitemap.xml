@@ -668,7 +668,7 @@
   </url>
   
   <url>
-    <loc>https://dumblog.top/archives/</loc>
+    <loc>https://dumblog.top/categories/</loc>
     
     <lastmod>2023-01-07</lastmod>
     
@@ -677,7 +677,7 @@
   </url>
   
   <url>
-    <loc>https://dumblog.top/categories/</loc>
+    <loc>https://dumblog.top/archives/</loc>
     
     <lastmod>2023-01-07</lastmod>
     
@@ -709,20 +709,6 @@
   </url>
   
   <url>
-    <loc>https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/</loc>
-    <lastmod>2025-12-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/</loc>
-    <lastmod>2025-12-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://dumblog.top/tags/C/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -737,7 +723,14 @@
   </url>
   
   <url>
-    <loc>https://dumblog.top/tags/%E8%80%B3%E6%9C%BA/</loc>
+    <loc>https://dumblog.top/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dumblog.top/tags/%E5%BD%B1%E8%A7%86%E5%89%A7/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -745,6 +738,13 @@
   
   <url>
     <loc>https://dumblog.top/tags/C-%E5%87%BD%E6%95%B0%E5%92%8C%E8%AF%AD%E5%8F%A5/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dumblog.top/tags/%E8%80%B3%E6%9C%BA/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -800,6 +800,13 @@
   </url>
   
   <url>
+    <loc>https://dumblog.top/tags/%E7%AB%99%E5%8A%A1/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://dumblog.top/tags/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -808,13 +815,6 @@
   
   <url>
     <loc>https://dumblog.top/tags/%E6%95%B0%E8%AE%BA/</loc>
-    <lastmod>2025-12-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dumblog.top/tags/%E7%AB%99%E5%8A%A1/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -870,14 +870,14 @@
   </url>
   
   <url>
-    <loc>https://dumblog.top/tags/%E9%80%9A%E7%9F%A5/</loc>
+    <loc>https://dumblog.top/tags/%E8%9C%98%E8%9B%9B%E4%BE%A0/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://dumblog.top/tags/%E8%9C%98%E8%9B%9B%E4%BE%A0/</loc>
+    <loc>https://dumblog.top/tags/%E9%80%9A%E7%9F%A5/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -989,20 +989,6 @@
   </url>
   
   <url>
-    <loc>https://dumblog.top/tags/%E6%89%B9%E5%A4%84%E7%90%86/</loc>
-    <lastmod>2025-12-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dumblog.top/tags/bat/</loc>
-    <lastmod>2025-12-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://dumblog.top/tags/%E8%B4%A8%E6%95%B0/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -1018,6 +1004,20 @@
   
   <url>
     <loc>https://dumblog.top/tags/%E7%BA%A6%E6%95%B0/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dumblog.top/tags/%E6%89%B9%E5%A4%84%E7%90%86/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dumblog.top/tags/bat/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1094,14 +1094,14 @@
   </url>
   
   <url>
-    <loc>https://dumblog.top/tags/%E8%A1%8C%E5%B0%B8%E8%B5%B0%E8%82%89/</loc>
+    <loc>https://dumblog.top/tags/%E7%8B%97P%E6%96%87%E5%AD%A6/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://dumblog.top/tags/%E7%8B%97P%E6%96%87%E5%AD%A6/</loc>
+    <loc>https://dumblog.top/tags/%E8%A1%8C%E5%B0%B8%E8%B5%B0%E8%82%89/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

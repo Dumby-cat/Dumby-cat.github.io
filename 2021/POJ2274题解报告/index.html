@@ -17,8 +17,27 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.26.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"remove","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/grayscale-dark","dark":"base16/grayscale-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.26.0","exturl":true,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"remove","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/grayscale-dark","dark":"base16/grayscale-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
+    <meta name="description" content="POJ2274 The Race题解。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="POJ2274题解报告">
+<meta property="og:url" content="https://dumblog.top/2021/POJ2274%E9%A2%98%E8%A7%A3%E6%8A%A5%E5%91%8A/">
+<meta property="og:site_name" content="DUMBLOG">
+<meta property="og:description" content="POJ2274 The Race题解。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3f9dc9693f714c6187b47554ddbb27e2.jpg">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3ab57d5b48b145dfa5a0738686fc789e.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0R1bWJ5X2NhdA==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ec436cd4fce248b5b3003888e39a12ec.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0R1bWJ5X2NhdA==,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2021-08-12T04:22:32.000Z">
+<meta property="article:modified_time" content="2025-08-26T07:57:31.582Z">
+<meta property="article:author" content="Dumby_cat">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="堆">
+<meta property="article:tag" content="树状数组">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/3f9dc9693f714c6187b47554ddbb27e2.jpg">
 
 
 <link rel="canonical" href="https://dumblog.top/2021/POJ2274%E9%A2%98%E8%A7%A3%E6%8A%A5%E5%91%8A/">
@@ -41,9 +60,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/js/utils.js" defer></script><script src="/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/js/third-party/search/local-search.js" defer></script>
-
+  
 
 
 
@@ -65,6 +82,7 @@
 
   <meta name="description" content="POJ2274 The Race题解。">
 
+<link rel="canonical" href="" />
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -97,7 +115,6 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="搜索" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -106,37 +123,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger">搜索
-        </a>
-      </li>
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="搜索..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </header>
     </div>
@@ -211,7 +202,7 @@
     
     <div class="post-body" itemprop="articleBody"><p>POJ2274 The Race题解。</p>
 <span id="more"></span>
-<p><a target="_blank" rel="noopener" href="http://poj.org/problem?id=2274">题目链接</a></p>
+<p><span class="exturl" data-url="aHR0cDovL3Bvai5vcmcvcHJvYmxlbT9pZD0yMjc0">题目链接<i class="fa fa-external-link-alt"></i></span></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给一堆车超出起点的距离 x 和车速度 v ，速度不变，求出飞行过程中的超车总数（对1000000取模）并输出超车与被超车的车的编号（如有同时则编号小的先输出）。</p>
 <h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>一行一个整数 n （0 &lt; n &lt;= 250000）表示车数。</p>
 <p>接下来 n 行，每行两个整数 x （0 &lt;= x &lt;= 1000000）和 v（0 &lt; v &lt; 100），表示车超出起点的距离和车速（保证编号 1 到 n 的车的 x 值单调递增）。</p>

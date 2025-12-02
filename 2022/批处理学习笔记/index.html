@@ -17,8 +17,21 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.26.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"remove","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/grayscale-dark","dark":"base16/grayscale-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.26.0","exturl":true,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"remove","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/grayscale-dark","dark":"base16/grayscale-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
+    <meta name="description" content="本贴为批处理学习笔记。 别问为什么要学批处理，问就是折腾。 因为是折腾，所以学得很散很乱。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="批处理学习笔记">
+<meta property="og:url" content="https://dumblog.top/2022/%E6%89%B9%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<meta property="og:site_name" content="DUMBLOG">
+<meta property="og:description" content="本贴为批处理学习笔记。 别问为什么要学批处理，问就是折腾。 因为是折腾，所以学得很散很乱。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-07-16T06:17:42.000Z">
+<meta property="article:modified_time" content="2025-08-26T07:39:38.696Z">
+<meta property="article:author" content="Dumby_cat">
+<meta property="article:tag" content="批处理">
+<meta property="article:tag" content="bat">
+<meta name="twitter:card" content="summary">
 
 
 <link rel="canonical" href="https://dumblog.top/2022/%E6%89%B9%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
@@ -41,9 +54,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/js/utils.js" defer></script><script src="/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/js/third-party/search/local-search.js" defer></script>
-
+  
 
 
 
@@ -65,6 +76,7 @@
 
   <meta name="description" content="本贴为批处理学习笔记。 别问为什么要学批处理，问就是折腾。 因为是折腾，所以学得很散很乱。">
 
+<link rel="canonical" href="" />
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -97,7 +109,6 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="搜索" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -106,37 +117,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger">搜索
-        </a>
-      </li>
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="搜索..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </header>
     </div>
@@ -251,8 +236,8 @@
 <p>显示所有以 p 开头的环境变量。</p>
 <p>参考：</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/5599830a8051?u_atoken=8332737f-b9a1-4dcb-840e-b688110eaa58&amp;u_asession=01gy6eOLwCcB_8-CDZf3z2KnC_FFeVK62IcIf3NKrQYdADchGulvx-MEPcd1yFYuePX0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K9kFAbUkDOvGooo_RddoXmGMKWrbBzYAhXhkL4v5_cjQmBkFo3NEHBv0PZUm6pbxQU&amp;u_asig=05CZuWUF1dXBOUj8LbF462yajfgDLZW2eAL69zvDx-75zyAdea6Ua2jjzgZA6EOK8WQcWGKTiNRFlF4OOzmHKVFDZcsLPvp2fgOhmg_mCF8_-4o_x_DSskOph_6hDjYwe_TYysqoeVo93yFIiaF_yNfnjEB_KMkiQAWteXiWUJ1Ev9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJza3TvhMjGgDQPrWfIv4JXF8c1r2tAJnEudPVMUvAXVqKdf9JIAkyKervFWgmMgV8j-3h9VXwMyh6PgyDIVSG1W_i6qXCmp0m0JKxGlDsiF7TGVjuvW8Mbnw36tryIj0GRspsxe0TaTxvBcgIUCsX2G5rkLYuko5aLG-BbWxa0_RHmWspDxyAEEo4kbsryBKb9Q&amp;u_aref=W%2FaJqpVCqVnZ3ia2sJ0n5vx%2BIWE%3D">批处理(bat)命令之echo命令</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.hxstrive.com/">人人编程网</a></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81NTk5ODMwYTgwNTE/dV9hdG9rZW49ODMzMjczN2YtYjlhMS00ZGNiLTg0MGUtYjY4ODExMGVhYTU4JnVfYXNlc3Npb249MDFneTZlT0x3Q2NCXzgtQ0RaZjN6MktuQ19GRmVWSzYySWNJZjNOS3JRWWRBRGNoR3VsdngtTUVQY2QxeUZZdWVQWDBLTkJ3bTdMb3ZscHhqZF9QX3E0SnNLV1lyVDNXX05LUHI4dzZvVTdLOWtGQWJVa0RPdkdvb29fUmRkb1htR01LV3JiQnpZQWhYaGtMNHY1X2NqUW1Ca0ZvM05FSEJ2MFBaVW02cGJ4UVUmdV9hc2lnPTA1Q1p1V1VGMWRYQk9VajhMYkY0NjJ5YWpmZ0RMWlcyZUFMNjl6dkR4LTc1enlBZGVhNlVhMmpqemdaQTZFT0s4V1FjV0dLVGlOUkZsRjRPT3ptSEtWRkRaY3NMUHZwMmZnT2htZ19tQ0Y4Xy00b194X0RTc2tPcGhfNmhEall3ZV9UWXlzcW9lVm85M3lGSWlhRl95TmZuakVCX0tNa2lRQVd0ZVhpV1VKMUV2OUpTN3E4WkQ3WHR6Mkx5LWIwa211eUFLUkZTVkpra2R3VlVueUhBSUp6YTNUdmhNakdnRFFQcldmSXY0SlhGOGMxcjJ0QUpuRXVkUFZNVXZBWFZxS2RmOUpJQWt5S2VydkZXZ21NZ1Y4ai0zaDlWWHdNeWg2UGd5RElWU0cxV19pNnFYQ21wMG0wSkt4R2xEc2lGN1RHVmp1dlc4TWJudzM2dHJ5SWowR1JzcHN4ZTBUYVR4dkJjZ0lVQ3NYMkc1cmtMWXVrbzVhTEctQmJXeGEwX1JIbVdzcER4eUFFRW80a2JzcnlCS2I5USZ1X2FyZWY9VyUyRmFKcXBWQ3FWblozaWEyc0owbjV2eCUyQklXRSUzRA==">批处理(bat)命令之echo命令<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaHhzdHJpdmUuY29tLw==">人人编程网<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
