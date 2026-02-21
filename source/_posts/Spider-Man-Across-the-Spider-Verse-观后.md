@@ -1,10 +1,10 @@
 ---
 title: 'Spider-Man: Across the Spider-Verse 观后'
 tags:
-  - 日常
-  - 影视剧
-  - 蜘蛛侠
-categories: Dumby的sb日常
+  - 科幻:星球大战/沙丘等
+  - 日常:杂谈与随笔
+  - 影视:剧集评论
+categories: Dumby的随笔与影评
 abbrlink: b6c4de85
 date: 2023-06-17 21:49:39
 ---

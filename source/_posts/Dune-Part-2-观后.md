@@ -1,10 +1,10 @@
 ---
 title: Dune Part.2 观后
 tags:
-  - 日常
-  - 影视剧
-  - 沙丘
-categories: Dumby的sb日常
+  - 科幻:星球大战/沙丘等
+  - 日常:杂谈与随笔
+  - 影视:剧集评论
+categories: Dumby的随笔与影评
 abbrlink: e9e5cd8c
 date: 2024-03-17 11:41:22
 ---

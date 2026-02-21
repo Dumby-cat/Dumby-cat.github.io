@@ -1,10 +1,9 @@
 ---
 title: 行尸走肉 The Walking Dead
 tags:
-  - 行尸走肉
-  - 日常
-  - 影视剧
-categories: Dumby的sb日常
+  - 日常:杂谈与随笔
+  - 影视:剧集评论
+categories: Dumby的随笔与影评
 abbrlink: 29445
 date: 2025-10-04 23:33:41
 ---

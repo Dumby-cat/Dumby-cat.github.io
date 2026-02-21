@@ -1,9 +1,8 @@
 ---
 title: C++ goto语句
 tags:
-  - C++
-  - C++函数和语句
-categories: Dumby的C++学习笔记
+  - 编程:C++
+categories: Dumby的C++编程开发
 abbrlink: b001cc58
 date: 2022-12-24 14:32:57
 ---

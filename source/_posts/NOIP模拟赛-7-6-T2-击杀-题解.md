@@ -1,8 +1,9 @@
 ---
 title: NOIP模拟赛 7.6 T2 击杀 题解
 tags:
-  - DP
-categories: Dumby的OI生涯
+  - 编程:C++
+  - 算法:动态规划
+categories: Dumby的OI/算法竞赛
 abbrlink: c94e91b3
 date: 2022-07-07 19:10:15
 ---

@@ -1,7 +1,8 @@
 ---
 title: Git恢复误删文件
-tags: 站务
-categories: Dumby的折腾笔记
+tags: 
+  - 站务:公告通知
+categories: Dumby的硬核折腾笔记
 abbrlink: 5dd96eb
 date: 2023-02-25 17:27:20
 ---

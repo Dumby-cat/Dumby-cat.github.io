@@ -1,10 +1,8 @@
 ---
 title: csp-s初赛准备：时间复杂度
 tags:
-  - 初赛
-  - 时间复杂度
-  - 主定理
-categories: Dumby的OI生涯
+  - 算法:基础与复杂度
+categories: Dumby的OI/算法竞赛
 abbrlink: 4ce99d46
 date: 2022-09-18 09:57:51
 ---

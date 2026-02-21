@@ -1,10 +1,9 @@
 ---
 title: 树形DP学习笔记
 tags:
-  - C++
-  - 树形DP
-  - DP
-categories: Dumby的OI生涯
+  - 编程:C++
+  - 算法:动态规划
+categories: Dumby的OI/算法竞赛
 abbrlink: 7407db9f
 date: 2021-06-27 13:41:07
 ---

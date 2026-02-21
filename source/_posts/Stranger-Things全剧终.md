@@ -1,9 +1,9 @@
 ---
 title: Stranger Things全剧终
 tags:
-  - 日常
-  - 影视剧
-categories: Dumby的sb日常
+  - 日常:杂谈与随笔
+  - 影视:剧集评论
+categories: Dumby的随笔与影评
 abbrlink: 26716
 date: 2026-01-01 22:39:33
 ---

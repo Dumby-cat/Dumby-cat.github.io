@@ -1,10 +1,10 @@
 ---
 title: Ahsoka 剧评
 tags:
-  - 星球大战
-  - 日常
-  - 影视剧
-categories: Dumby的sb日常
+  - 科幻:星球大战/沙丘等
+  - 日常:杂谈与随笔
+  - 影视:剧集评论
+categories: Dumby的随笔与影评
 abbrlink: 45afe6fc
 date: 2023-08-27 10:39:03
 ---

@@ -1,8 +1,8 @@
 ---
 title: Serum的OSC入门
 tags:
-  - 合成器
-categories: Dumby的折腾笔记
+  - 音乐:合成器
+categories: Dumby的硬核折腾笔记
 abbrlink: 588d3703
 date: 2022-11-27 19:17:03
 ---

@@ -1,7 +1,8 @@
 ---
 title: C++预处理命令自习
-tags: C++
-categories: Dumby的C++学习笔记
+tags: 
+  - 编程:C++
+categories: Dumby的C++编程开发
 abbrlink: 4869ecbf
 date: 2022-10-09 09:58:14
 ---

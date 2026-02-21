@@ -1,10 +1,10 @@
 ---
 title: Dsu on Tree （树上启发式合并）不是很详的解
 tags:
-  - C++
-  - 启发式
-  - dsu on tree
-categories: Dumby的OI生涯
+  - 编程:C++
+  - 算法:基础与复杂度
+  - 算法:图论与搜索
+categories: Dumby的OI/算法竞赛
 abbrlink: a62d2852
 date: 2022-07-09 21:18:50
 ---

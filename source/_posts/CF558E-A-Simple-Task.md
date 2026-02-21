@@ -1,12 +1,10 @@
 ---
 title: CF558E A Simple Task
 tags:
-  - 线段树
-  - 数据结构
-  - C++
-  - 排序
-  - 字符串
-categories: Dumby的OI生涯
+  - 算法:数据结构
+  - 编程:C++
+  - 算法:基础与复杂度
+categories: Dumby的OI/算法竞赛
 abbrlink: 1a1ef87d
 date: 2022-07-12 12:17:26
 ---

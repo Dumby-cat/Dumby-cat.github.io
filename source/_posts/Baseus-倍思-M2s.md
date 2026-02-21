@@ -1,9 +1,9 @@
 ---
 title: Baseus 倍思 M2s
 tags:
-  - 日常
-  - 耳机
-categories: Dumby的sb日常
+  - 日常:杂谈与随笔
+  - 外设:装备与EDC
+categories: Dumby的随笔与影评
 abbrlink: 6e8aad32
 date: 2023-07-22 13:20:13
 ---

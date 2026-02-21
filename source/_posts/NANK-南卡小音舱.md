@@ -1,9 +1,9 @@
 ---
 title: NANK 南卡小音舱
 tags:
-  - 日常
-  - 耳机
-categories: Dumby的sb日常
+  - 外设:装备与EDC
+  - 日常:杂谈与随笔
+categories: Dumby的随笔与影评
 abbrlink: f0028b20
 date: 2023-07-22 13:19:35
 ---

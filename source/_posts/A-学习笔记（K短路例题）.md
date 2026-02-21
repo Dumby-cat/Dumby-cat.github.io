@@ -1,9 +1,9 @@
 ---
 title: A-Star 学习笔记（K短路例题）
 tags:
-  - C++
-  - 搜索
-categories: Dumby的OI生涯
+  - 编程:C++
+  - 算法:图论与搜索
+categories: Dumby的OI/算法竞赛
 abbrlink: 9cf82999
 date: 2021-06-29 20:10:45
 ---

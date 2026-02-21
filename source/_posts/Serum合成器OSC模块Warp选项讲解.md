@@ -1,8 +1,8 @@
 ---
 title: Serum合成器OSC模块Warp选项讲解
 tags:
-  - 合成器
-categories: Dumby的折腾笔记
+  - 音乐:合成器
+categories: Dumby的硬核折腾笔记
 abbrlink: 31cd30e4
 date: 2023-01-07 12:28:58
 ---

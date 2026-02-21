@@ -1,9 +1,9 @@
 ---
 title: 距离Stranger Things第五季开播仅剩19天
 tags:
-  - 日常
-  - 影视剧
-categories: Dumby的sb日常
+  - 日常:杂谈与随笔
+  - 影视:剧集评论
+categories: Dumby的随笔与影评
 abbrlink: 39838
 date: 2025-11-08 23:33:45
 ---

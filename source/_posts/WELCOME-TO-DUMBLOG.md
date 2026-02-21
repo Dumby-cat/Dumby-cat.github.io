@@ -1,8 +1,7 @@
 ---
 title: WELCOME TO DUMBLOG
 tags:
-  - 通知
-  - 站务
+  - 站务:公告通知
 categories: 站务
 abbrlink: f9fb1675
 date: 2021-06-26 14:45:10

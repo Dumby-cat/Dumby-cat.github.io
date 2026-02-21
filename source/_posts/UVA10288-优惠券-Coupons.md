@@ -1,12 +1,9 @@
 ---
 title: UVA10288 优惠券 Coupons
 tags:
-  - C++
-  - 概率
-  - 期望
-  - DP
-  - 线性DP
-categories: Dumby的OI生涯
+  - 编程:C++
+  - 算法:动态规划
+categories: Dumby的OI/算法竞赛
 abbrlink: 4d6eb27f
 date: 2022-07-18 19:06:24
 ---

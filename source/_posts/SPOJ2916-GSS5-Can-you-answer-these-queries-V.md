@@ -1,10 +1,9 @@
 ---
 title: SPOJ2916 GSS5-Can you answer these queries V
 tags:
-  - 线段树
-  - 数据结构
-  - C++
-categories: Dumby的OI生涯
+  - 编程:C++
+  - 算法:数据结构
+categories: Dumby的OI/算法竞赛
 abbrlink: 52b2685a
 date: 2022-07-09 20:52:29
 ---

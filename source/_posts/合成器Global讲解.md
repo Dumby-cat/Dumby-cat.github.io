@@ -1,8 +1,8 @@
 ---
 title: 合成器Global讲解
 tags:
-  - 合成器
-categories: Dumby的折腾笔记
+  - 音乐:合成器
+categories: Dumby的硬核折腾笔记
 abbrlink: 8e168ba4
 date: 2022-11-13 12:24:38
 ---
