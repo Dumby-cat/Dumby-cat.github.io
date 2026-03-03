@@ -2738,13 +2738,23 @@
     <url>/2026/%E7%9F%A9%E9%98%B5%E7%9A%84%E9%83%A8%E5%88%86%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E8%AE%A1%E7%AE%97/</url>
     <content><![CDATA[<p>本文为一些矩阵相关知识的自习笔记。</p>
 <span id="more"></span>
-<h2 id="矩阵范数"><a href="#矩阵范数" class="headerlink" title="矩阵范数"></a>矩阵范数</h2><p>矩阵范数用于度量矩阵的大小。常见有 1-范数，$\infty$-范数，Frobenius范数，2-范数，最大元素绝对值范数。</p>
+<h2 id="矩阵特征值"><a href="#矩阵特征值" class="headerlink" title="矩阵特征值"></a>矩阵特征值</h2><p>若存在标量 $\delta$ 和非零向量 $x$ 使矩阵满足方程 $Ax=\delta x(x\ne 0)$，则 $\delta$ 和 $x$ 为矩阵的特征值和特征向量。</p>
+<p>特征值 $\delta$ 通过方程 $\mathrm{det}(A-\delta I)=0$ 求解。</p>
+<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
+<li>行列式：矩阵的行列式等于所有特征值的乘积（$\mathrm{det}(A)=\prod \delta_i$）；</li>
+<li>迹：矩阵的<strong>迹（对角线元素之和）</strong>等于所有特征值的和；</li>
+<li>相似矩阵：若 A 和 B 为相似矩阵（即存在 P 使 $P^{-1}AP=B$），则 A 和 B 具有相同的特征值；</li>
+<li>特殊矩阵：三角矩阵的特征值就是其主对角线元素。</li>
+</ol>
+<h2 id="共轭转置矩阵"><a href="#共轭转置矩阵" class="headerlink" title="共轭转置矩阵"></a>共轭转置矩阵</h2><p>记作 $A^H$ 或 $A^*$。共轭转置即先将矩阵进行转置，再对每个元素取复共轭的操作。对于实数矩阵，共轭转置等同于普通转置。</p>
+<h2 id="矩阵的奇异值"><a href="#矩阵的奇异值" class="headerlink" title="矩阵的奇异值"></a>矩阵的奇异值</h2><p>A 的奇异值是 $A^{*}A$ 的特征值 $\delta_i$ 的非负平方根 $\sigma_i=\sqrt{\delta_i}$。</p>
+<h2 id="矩阵范数"><a href="#矩阵范数" class="headerlink" title="矩阵范数"></a>矩阵范数</h2><p>矩阵范数用于度量矩阵的大小。常见有 1-范数，$\infty$-范数，Frobenius范数，2-范数。</p>
 <p>MATLAB计算代码：<code>norm(A, 1)</code>，<code>norm(A, inf)</code>，<code>norm(A, &#39;fro&#39;)</code>，<code>norm(A, 2)</code>。</p>
 <h3 id="1-范数"><a href="#1-范数" class="headerlink" title="1-范数"></a>1-范数</h3><p>$||A||_{1}$：矩阵列向量的绝对值之和的最大值（列和最大）。</p>
 <h3 id="infty-范数"><a href="#infty-范数" class="headerlink" title="$\infty$-范数"></a>$\infty$-范数</h3><p>$||A||_{\infty}$：矩阵行向量的绝对值之和的最大值（行和最大）。</p>
-<h3 id="Frobenius范数"><a href="#Frobenius范数" class="headerlink" title="Frobenius范数"></a>Frobenius范数</h3><p>$||A||<em>{F}$：矩阵元素绝对值平方和的平方根，即 $\sqrt{\sum</em>{i,j}|a_{ij}|^{2}}$。</p>
+<h3 id="Frobenius范数"><a href="#Frobenius范数" class="headerlink" title="Frobenius范数"></a>Frobenius范数</h3><p>$||A||_{F}$：矩阵元素绝对值平方和的平方根，即 $\sqrt{\sum_{i,j}|a_{ij}|^{2}}$。</p>
 <h3 id="2-范数"><a href="#2-范数" class="headerlink" title="2-范数"></a>2-范数</h3><p>$||A||_{2}$：矩阵的最大奇异值，即 $A^{*}A$ 最大特征值的平方根。</p>
-<h3 id="最大元素绝对值范数"><a href="#最大元素绝对值范数" class="headerlink" title="最大元素绝对值范数"></a>最大元素绝对值范数</h3><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
         <category>Dumby的自动化课程笔记</category>
       </categories>
