@@ -27,7 +27,7 @@
 <meta property="og:description" content="本文为一些矩阵相关知识的自习笔记。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-02-21T13:29:26.000Z">
-<meta property="article:modified_time" content="2026-03-03T15:48:53.660Z">
+<meta property="article:modified_time" content="2026-03-09T12:54:42.867Z">
 <meta property="article:author" content="Dumby_cat">
 <meta property="article:tag" content="算法:数论与数学">
 <meta property="article:tag" content="自动化:课程笔记">
@@ -202,7 +202,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-03 23:48:53" itemprop="dateModified" datetime="2026-03-03T23:48:53+08:00">2026-03-03</time>
+      <time title="修改时间：2026-03-09 20:54:42" itemprop="dateModified" datetime="2026-03-09T20:54:42+08:00">2026-03-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -241,6 +241,19 @@
 <h3 id="infty-范数"><a href="#infty-范数" class="headerlink" title="$\infty$-范数"></a>$\infty$-范数</h3><p>$||A||_{\infty}$：矩阵行向量的绝对值之和的最大值（行和最大）。</p>
 <h3 id="Frobenius范数"><a href="#Frobenius范数" class="headerlink" title="Frobenius范数"></a>Frobenius范数</h3><p>$||A||_{F}$：矩阵元素绝对值平方和的平方根，即 $\sqrt{\sum_{i,j}|a_{ij}|^{2}}$。</p>
 <h3 id="2-范数"><a href="#2-范数" class="headerlink" title="2-范数"></a>2-范数</h3><p>$||A||_{2}$：矩阵的最大奇异值，即 $A^{*}A$ 最大特征值的平方根。</p>
+<h2 id="舒尔补"><a href="#舒尔补" class="headerlink" title="舒尔补"></a>舒尔补</h2><p>舒尔补通常用于将大的复杂的矩阵分解成小的易于解决的矩阵，更具体地，通常用于</p>
+<h3 id="舒尔补的定义"><a href="#舒尔补的定义" class="headerlink" title="舒尔补的定义"></a>舒尔补的定义</h3><p>假设一个 $(p+q)\times (p+q)$ 的矩阵 $M$ 被分为 $A, B, C, D$ 四个部分，分别是 $p\times p$、$p\times q$、$q\times p$ 以及 $q\times q$ 的矩阵，也就是说：</p>
+<p>$M=\begin{bmatrix} A &amp; B \\ C &amp; D \end{bmatrix}$</p>
+<p>若 $D$ 可逆，则 $D$ 在矩阵内的舒尔补为 $A-BD^{-1}C$；同理，若 $A$ 可逆，则 $A$ 在矩阵内的舒尔补为 $D-CA^{-1}B$。</p>
+<h3 id="舒尔补的性质"><a href="#舒尔补的性质" class="headerlink" title="舒尔补的性质"></a>舒尔补的性质</h3><p>以下以 $A$ 可逆，$S=D-CA^{-1}B$ 为 $A$ 的舒尔补为例。</p>
+<p>行列式关系如下：<br>$\mathrm{det}(M) = \mathrm{det}(A) \times \mathrm{det}(D-CA^{-1}B)$</p>
+<p>正定性关系如下：<br>矩阵 $M$ 正定，当且仅当 $A$ 和其舒尔补 $S=D-CA^{-1}B$ 正定。</p>
+<h3 id="舒尔补在解方程中的应用"><a href="#舒尔补在解方程中的应用" class="headerlink" title="舒尔补在解方程中的应用"></a>舒尔补在解方程中的应用</h3><p>考虑一个方程 $M\mathbf{x}=\mathbf{b}$，将 $M$ 进行划分：<br>$M=\begin{bmatrix} A &amp; B \\ C &amp; D\end{bmatrix}, \mathbf{x}=\begin{bmatrix} \mathbf{x_1} \\ \mathbf{x_2}\end{bmatrix}, \mathbf{b}=\begin{bmatrix} \mathbf{b_1} \\ \mathbf{b_2}\end{bmatrix}$</p>
+<p>通过第一行得到<br>$\mathbf{x}_{1}=A^{-1}\left(\mathbf{b}_{1}-B \mathbf{x}_{2}\right)$<br>代入到第二行得到<br>$\left(D-C A^{-1} B\right) \mathbf{x}_{2}=\mathbf{b}_{2}-C A^{-1} \mathbf{b}_{1}$</p>
+<p>通过 $A$ 和它的舒尔补解出方程。</p>
+<h3 id="舒尔补在求矩阵的逆时的应用"><a href="#舒尔补在求矩阵的逆时的应用" class="headerlink" title="舒尔补在求矩阵的逆时的应用"></a>舒尔补在求矩阵的逆时的应用</h3><p>如果 $M$ 可逆且 $A$ 可逆，则：<br>$\begin{array}{l}M^{-1} = \left[\begin{array}{ll}A &amp; B \\ C &amp; D\end{array}\right]^{-1}=\left[\begin{array}{cc}\left(A-B D^{-1} C\right)^{-1} &amp; -\left(A-B D^{-1} C\right)^{-1} B D^{-1} \\ -D^{-1} C\left(A-B D^{-1} C\right)^{-1} &amp; D^{-1}+D^{-1} C\left(A-B D^{-1} C\right)^{-1} B D^{-1}\end{array}\right]\end{array}$</p>
+<p>如果 $M$ 可逆且 $A,D$ 可逆，则：<br>$\begin{array}{l}M^{-1} = \left[\begin{array}{ll}A &amp; B \\ C &amp; D\end{array}\right]^{-1}=\left[\begin{array}{cc}\left(A-B D^{-1} C\right)^{-1} &amp; -A^{-1} B\left(D-C A^{-1} B\right)^{-1} \\ -D^{-1} C\left(A-B D^{-1} C\right)^{-1} &amp; \left(D-C A^{-1} B\right)^{-1}\end{array}\right]\end{array}$</p>
+<p>更特殊的，如果 $A,B,C,D$ 都是系数（数字）时，有：<br>$M^{-1}=\frac{1}{A D-B C}\left[\begin{array}{cc}D &amp; -B \\ -C &amp; A\end{array}\right]$</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
