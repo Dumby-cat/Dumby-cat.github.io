@@ -2757,7 +2757,7 @@
 <h3 id="infty-范数"><a href="#infty-范数" class="headerlink" title="$\infty$-范数"></a>$\infty$-范数</h3><p>$||A||_{\infty}$：矩阵行向量的绝对值之和的最大值（行和最大）。</p>
 <h3 id="Frobenius范数"><a href="#Frobenius范数" class="headerlink" title="Frobenius范数"></a>Frobenius范数</h3><p>$||A||_{F}$：矩阵元素绝对值平方和的平方根，即 $\sqrt{\sum_{i,j}|a_{ij}|^{2}}$。</p>
 <h3 id="2-范数"><a href="#2-范数" class="headerlink" title="2-范数"></a>2-范数</h3><p>$||A||_{2}$：矩阵的最大奇异值，即 $A^{*}A$ 最大特征值的平方根。</p>
-<h2 id="舒尔补"><a href="#舒尔补" class="headerlink" title="舒尔补"></a>舒尔补</h2><p>舒尔补通常用于将大的复杂的矩阵分解成小的易于解决的矩阵，更具体地，通常用于</p>
+<h2 id="舒尔补"><a href="#舒尔补" class="headerlink" title="舒尔补"></a>舒尔补</h2><p>舒尔补通常用于将大的复杂的矩阵分解成小的易于解决的矩阵，更具体地，通常用于把含有未知变量相乘（非线性）的复杂不等式，拉伸成一个维度更高、但完全线性的矩阵不等式，从而能够直接求解。</p>
 <h3 id="舒尔补的定义"><a href="#舒尔补的定义" class="headerlink" title="舒尔补的定义"></a>舒尔补的定义</h3><p>假设一个 $(p+q)\times (p+q)$ 的矩阵 $M$ 被分为 $A, B, C, D$ 四个部分，分别是 $p\times p$、$p\times q$、$q\times p$ 以及 $q\times q$ 的矩阵，也就是说：</p>
 <p>$M=\begin{bmatrix} A &amp; B \\ C &amp; D \end{bmatrix}$</p>
 <p>若 $D$ 可逆，则 $D$ 在矩阵内的舒尔补为 $A-BD^{-1}C$；同理，若 $A$ 可逆，则 $A$ 在矩阵内的舒尔补为 $D-CA^{-1}B$。</p>
