@@ -6,6 +6,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: 4d6eb27f
 date: 2022-07-18 19:06:24
+mathjax: true
 ---
 
 UVA10288 优惠券 Coupons 题解。

@@ -6,6 +6,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: b83b8342
 date: 2022-02-14 17:56:33
+mathjax: true
 ---
 
 本文介绍如何用拓扑排序来求 DAG 最短路（内附代码实现）。

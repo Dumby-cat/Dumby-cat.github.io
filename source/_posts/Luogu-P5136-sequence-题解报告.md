@@ -6,6 +6,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: c69d20bb
 date: 2021-08-27 15:25:29
+mathjax: true
 ---
 
 Luogu P5136 sequence 题解。

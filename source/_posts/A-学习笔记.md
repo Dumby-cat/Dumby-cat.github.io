@@ -6,6 +6,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: dfb97dcd
 date: 2021-06-29 13:22:38
+mathjax: true
 ---
 
 介绍A星算法的定义和应用（内附代码实现）。

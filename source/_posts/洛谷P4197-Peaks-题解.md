@@ -8,6 +8,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: 8ea37269
 date: 2022-07-06 21:48:40
+mathjax: true
 ---
 
 克鲁斯卡尔重构树介绍以及洛谷P4197 Peaks 题解。

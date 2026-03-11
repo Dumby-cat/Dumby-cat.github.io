@@ -5,6 +5,7 @@ tags:
 categories: Dumby的硬核折腾笔记
 abbrlink: 5dd96eb
 date: 2023-02-25 17:27:20
+mathjax: true
 ---
 
 放这篇文章给自己看，怕自己又脑瘫整出些逆天操作，因此在这留个后路。

@@ -5,6 +5,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: 4ce99d46
 date: 2022-09-18 09:57:51
+mathjax: true
 ---
 
 初赛似乎是必考一题时间复杂度计算，现在在考前抱下佛脚。

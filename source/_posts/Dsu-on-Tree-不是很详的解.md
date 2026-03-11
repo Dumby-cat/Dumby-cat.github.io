@@ -7,6 +7,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: a62d2852
 date: 2022-07-09 21:18:50
+mathjax: true
 ---
 
 树上启发式合并学习笔记。
