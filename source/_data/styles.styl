@@ -328,3 +328,20 @@ tbody tr {
   width: 10px; 
   height: 15px; 
 }
+
+
+/* 让 KaTeX 超长块级公式支持横向滚动，防止撑爆移动端页面 */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* 提升 iOS 设备上的滑动流畅度 */
+  max-width: 100%;
+}
+
+/* 兼容处理：如果你以后换回 MathJax，这段也能保护页面不被撑爆 */
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
