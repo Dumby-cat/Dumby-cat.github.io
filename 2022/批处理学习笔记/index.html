@@ -69,8 +69,7 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
-<script src="/js/third-party/math/mathjax.js" defer></script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM=" crossorigin="anonymous">
 
 
 
@@ -226,19 +225,39 @@
 <p>别问为什么要学批处理，问就是折腾。</p>
 <p>因为是折腾，所以学得很散很乱。</p>
 <span id="more"></span>
-<h2 id="ECHO"><a href="#ECHO" class="headerlink" title="ECHO"></a>ECHO</h2><p>主要用来显示一些东西。</p>
-<h5 id="输出文本"><a href="#输出文本" class="headerlink" title="输出文本"></a>输出文本</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo 文本</span><br></pre></td></tr></table></figure>
-<h6 id="输出空行"><a href="#输出空行" class="headerlink" title="输出空行"></a>输出空行</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">echo.</span><br><span class="line">echo,</span><br><span class="line">echo:</span><br><span class="line">echo;</span><br><span class="line">echo\</span><br><span class="line">echo/</span><br></pre></td></tr></table></figure>
-<h5 id="开关回显"><a href="#开关回显" class="headerlink" title="开关回显"></a>开关回显</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo on</span><br><span class="line">echo off</span><br></pre></td></tr></table></figure>
-<h5 id="回复命令"><a href="#回复命令" class="headerlink" title="回复命令"></a>回复命令</h5><p>这个后面再说。</p>
-<h2 id="PAUSE"><a href="#PAUSE" class="headerlink" title="PAUSE"></a>PAUSE</h2><p>暂停。</p>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><h5 id="REM"><a href="#REM" class="headerlink" title="REM"></a>REM</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">REM 这是条注释</span><br></pre></td></tr></table></figure>
-<h5 id=""><a href="#" class="headerlink" title="::"></a>::</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:: 这也是条注释</span><br></pre></td></tr></table></figure>
-<p>在批处理文件中，单独一个以”:”为开头的行都被视作<strong>标签</strong>（后面会讲），并且标签后的所有内容均会被忽略。<br>但是，GOTO 命令只会识别有效标签，也就是冒号后面紧跟一个以字母或数字为开头的字符串。<br>所以冒号后面跟其他以非字母或数字开头的字符串都可以拿来做注释。</p>
-<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><p>如果你懒得一行一行打注释，你可以：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">goto tag</span><br><span class="line">这之间打注释。</span><br><span class="line">:tag</span><br></pre></td></tr></table></figure></p>
-<h2 id="-1"><a href="#-1" class="headerlink" title="@"></a>@</h2><p>这个符号叫<strong>命令行回显屏蔽符</strong>。<br>功能就和名字一样。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br></pre></td></tr></table></figure></p>
+<h2 id="echo"><a class="markdownIt-Anchor" href="#echo"></a> ECHO</h2>
+<p>主要用来显示一些东西。</p>
+<h5 id="输出文本"><a class="markdownIt-Anchor" href="#输出文本"></a> 输出文本</h5>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo 文本</span><br></pre></td></tr></table></figure>
+<h6 id="输出空行"><a class="markdownIt-Anchor" href="#输出空行"></a> 输出空行</h6>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">echo.</span><br><span class="line">echo,</span><br><span class="line">echo:</span><br><span class="line">echo;</span><br><span class="line">echo\</span><br><span class="line">echo/</span><br></pre></td></tr></table></figure>
+<h5 id="开关回显"><a class="markdownIt-Anchor" href="#开关回显"></a> 开关回显</h5>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo on</span><br><span class="line">echo off</span><br></pre></td></tr></table></figure>
+<h5 id="回复命令"><a class="markdownIt-Anchor" href="#回复命令"></a> 回复命令</h5>
+<p>这个后面再说。</p>
+<h2 id="pause"><a class="markdownIt-Anchor" href="#pause"></a> PAUSE</h2>
+<p>暂停。</p>
+<h2 id="注释"><a class="markdownIt-Anchor" href="#注释"></a> 注释</h2>
+<h5 id="rem"><a class="markdownIt-Anchor" href="#rem"></a> REM</h5>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">REM 这是条注释</span><br></pre></td></tr></table></figure>
+<h5 id=""><a class="markdownIt-Anchor" href="#"></a> ::</h5>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:: 这也是条注释</span><br></pre></td></tr></table></figure>
+<p>在批处理文件中，单独一个以&quot;:&quot;为开头的行都被视作<strong>标签</strong>（后面会讲），并且标签后的所有内容均会被忽略。<br />
+但是，GOTO 命令只会识别有效标签，也就是冒号后面紧跟一个以字母或数字为开头的字符串。<br />
+所以冒号后面跟其他以非字母或数字开头的字符串都可以拿来做注释。</p>
+<h5 id="其他"><a class="markdownIt-Anchor" href="#其他"></a> 其他</h5>
+<p>如果你懒得一行一行打注释，你可以：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">goto tag</span><br><span class="line">这之间打注释。</span><br><span class="line">:tag</span><br></pre></td></tr></table></figure>
+<h2 id="-2"><a class="markdownIt-Anchor" href="#-2"></a> @</h2>
+<p>这个符号叫<strong>命令行回显屏蔽符</strong>。<br />
+功能就和名字一样。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br></pre></td></tr></table></figure>
 <p>这样就能让 echo off 那条命令也不显示。</p>
-<h2 id="GOTO"><a href="#GOTO" class="headerlink" title="GOTO"></a>GOTO</h2><p>这东西大概就是让你跳到标签处运行。<br>标签必须单独一行，并且以单独一个冒号开头，冒号后面紧跟一个以字母或数字为开头的字符串。<br>如下：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">:tag</span><br><span class="line">echo This is DUMBLOG.</span><br><span class="line">GOTO tag</span><br></pre></td></tr></table></figure></p>
+<h2 id="goto"><a class="markdownIt-Anchor" href="#goto"></a> GOTO</h2>
+<p>这东西大概就是让你跳到标签处运行。<br />
+标签必须单独一行，并且以单独一个冒号开头，冒号后面紧跟一个以字母或数字为开头的字符串。<br />
+如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">:tag</span><br><span class="line">echo This is DUMBLOG.</span><br><span class="line">GOTO tag</span><br></pre></td></tr></table></figure>
 <p>循环输出“This is DUMBLOG.”。</p>
 <p>注意：</p>
 <ol>
@@ -246,21 +265,33 @@
 <li>标签名只能用常量，不能用变量。</li>
 <li>若有标签重名，执行最顶上那个。</li>
 </ol>
-<h2 id="重定向符"><a href="#重定向符" class="headerlink" title="重定向符"></a>重定向符</h2><p>将命令的输出写入到指定的文件或 <em>nul</em> 中（nul是空设备，相当于直接把输出文本屏蔽掉）。</p>
-<h5 id="gt"><a href="#gt" class="headerlink" title="&gt;"></a>&gt;</h5><p>“&gt;” 会覆盖文件中已有的内容。</p>
-<h5 id="gt-gt"><a href="#gt-gt" class="headerlink" title="&gt;&gt;"></a>&gt;&gt;</h5><p>“&gt;&gt;” 不会覆盖文件中原有内容，而是将文本直接加到指定文件最后面。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@echo 可以这样来打注释 &gt; nul</span><br><span class="line">ping dumblog.top &gt; ping.txt</span><br><span class="line">@echo 把 ping 命令的输出写到文件 ping.txt 中去 &gt;&gt; nul</span><br></pre></td></tr></table></figure></p>
-<h6 id="一些设备名"><a href="#一些设备名" class="headerlink" title="一些设备名"></a>一些设备名</h6><ul>
+<h2 id="重定向符"><a class="markdownIt-Anchor" href="#重定向符"></a> 重定向符</h2>
+<p>将命令的输出写入到指定的文件或 <em>nul</em> 中（nul是空设备，相当于直接把输出文本屏蔽掉）。</p>
+<h5 id="-3"><a class="markdownIt-Anchor" href="#-3"></a> &gt;</h5>
+<p>“&gt;” 会覆盖文件中已有的内容。</p>
+<h5 id="-4"><a class="markdownIt-Anchor" href="#-4"></a> &gt;&gt;</h5>
+<p>“&gt;&gt;” 不会覆盖文件中原有内容，而是将文本直接加到指定文件最后面。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@echo 可以这样来打注释 &gt; nul</span><br><span class="line">ping dumblog.top &gt; ping.txt</span><br><span class="line">@echo 把 ping 命令的输出写到文件 ping.txt 中去 &gt;&gt; nul</span><br></pre></td></tr></table></figure>
+<h6 id="一些设备名"><a class="markdownIt-Anchor" href="#一些设备名"></a> 一些设备名</h6>
+<ul>
 <li>con：控制台（键盘和显示器）</li>
 <li>nul：空设备</li>
 <li>clock$ 电子钟</li>
 </ul>
-<p>重定向符可用于Debug：<br>“&gt;nul”前的 1 表示输出流，2 表示错误流。</p>
-<h2 id="SET"><a href="#SET" class="headerlink" title="SET"></a>SET</h2><p>SET的基础功能是用来显示、设置或删除 cmd.exe 环境变量。</p>
-<p>语法：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set [v=[s]]</span><br></pre></td></tr></table></figure></p>
-<p>v 指定环境变量名；<br>s 指定要赋给变量的字符串。</p>
-<h5 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h5><p>直接输入没有参数的环境变量。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set PATH</span><br></pre></td></tr></table></figure></p>
+<p>重定向符可用于Debug：<br />
+“&gt;nul”前的 1 表示输出流，2 表示错误流。</p>
+<h2 id="set"><a class="markdownIt-Anchor" href="#set"></a> SET</h2>
+<p>SET的基础功能是用来显示、设置或删除 cmd.exe 环境变量。</p>
+<p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set [v=[s]]</span><br></pre></td></tr></table></figure>
+<p>v 指定环境变量名；<br />
+s 指定要赋给变量的字符串。</p>
+<h5 id="显示"><a class="markdownIt-Anchor" href="#显示"></a> 显示</h5>
+<p>直接输入没有参数的环境变量。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set PATH</span><br></pre></td></tr></table></figure>
 <p>会显示环境变量 PATH 的值。</p>
-<p>也可以：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set p</span><br></pre></td></tr></table></figure></p>
+<p>也可以：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set p</span><br></pre></td></tr></table></figure>
 <p>显示所有以 p 开头的环境变量。</p>
 <p>参考：</p>
 <ul>

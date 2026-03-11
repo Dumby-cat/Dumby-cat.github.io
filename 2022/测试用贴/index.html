@@ -72,8 +72,7 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
-<script src="/js/third-party/math/mathjax.js" defer></script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM=" crossorigin="anonymous">
 
 
 
@@ -236,11 +235,19 @@
         <!-- toc -->
 <ul>
 <li><a href="#markdown-----">Markdown 测试部分</a></li>
-<li><a href="#------">这是二级目录</a><ul>
-<li><a href="#------">这是三级目录</a><ul>
-<li><a href="#------">这是四级目录</a><br>~ <a href="#------">这是五级目录</a><ul>
+<li><a href="#------">这是二级目录</a>
+<ul>
+<li><a href="#------">这是三级目录</a>
+<ul>
+<li>
+<dl>
+<dt><a href="#------">这是四级目录</a></dt>
+<dd><a href="#------">这是五级目录</a>
+<ul>
 <li><a href="#------">这是六级目录</a></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -251,31 +258,46 @@
 
     </div>
 </div>
-<h2 id="Markdown-测试部分"><a href="#Markdown-测试部分" class="headerlink" title="Markdown 测试部分"></a>Markdown 测试部分</h2><p>目录没用。<br>25.6.24，目录有用了现在。</p>
+<h2 id="markdown-测试部分"><a class="markdownIt-Anchor" href="#markdown-测试部分"></a> Markdown 测试部分</h2>
+<p>目录没用。<br />
+25.6.24，目录有用了现在。</p>
 <p>一级目录不建议使用</p>
-<h2 id="这是二级目录"><a href="#这是二级目录" class="headerlink" title="这是二级目录"></a>这是二级目录</h2><h3 id="这是三级目录"><a href="#这是三级目录" class="headerlink" title="这是三级目录"></a>这是三级目录</h3><h4 id="这是四级目录"><a href="#这是四级目录" class="headerlink" title="这是四级目录"></a>这是四级目录</h4><h5 id="这是五级目录"><a href="#这是五级目录" class="headerlink" title="这是五级目录"></a>这是五级目录</h5><h6 id="这是六级目录"><a href="#这是六级目录" class="headerlink" title="这是六级目录"></a>这是六级目录</h6><p><em>这是斜体</em>，<strong>这是加黑</strong>，<del>这是删除线</del>。</p>
+<h2 id="这是二级目录"><a class="markdownIt-Anchor" href="#这是二级目录"></a> 这是二级目录</h2>
+<h3 id="这是三级目录"><a class="markdownIt-Anchor" href="#这是三级目录"></a> 这是三级目录</h3>
+<h4 id="这是四级目录"><a class="markdownIt-Anchor" href="#这是四级目录"></a> 这是四级目录</h4>
+<h5 id="这是五级目录"><a class="markdownIt-Anchor" href="#这是五级目录"></a> 这是五级目录</h5>
+<h6 id="这是六级目录"><a class="markdownIt-Anchor" href="#这是六级目录"></a> 这是六级目录</h6>
+<p><em>这是斜体</em>，<strong>这是加黑</strong>，<s>这是删除线</s>。</p>
 <blockquote>
 <p>这是一个Tag。</p>
 </blockquote>
-<p>这是脚注<sup><a href="#fn_1" id="reffn_1">1</a></sup>。</p>
+<p>这是脚注<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
 <p><a href="https://dumblog.top/">这是个链接</a>。</p>
-<p>这是张照片。<br><img src="https://dumblog.top/favicon.ico" alt="这是张照片"></p>
+<p>这是张照片。<br />
+<img src="https://dumblog.top/favicon.ico" alt="这是张照片" /></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这是c++代码块</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;Hello World!!!&quot;</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>代码块有个神奇特性。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//```</span><br><span class="line">//DUMBLOG</span><br><span class="line">//```</span><br><span class="line">//写一些东西</span><br><span class="line">//</span><br><span class="line">//如上文字直接写在```下面一行代码块和文字间会有一个大空。</span><br><span class="line">//</span><br><span class="line">//</span><br><span class="line">//```</span><br><span class="line">//DUMBLOG</span><br><span class="line">//```</span><br><span class="line">//</span><br><span class="line">//写一些东西</span><br><span class="line">//</span><br><span class="line">//像这样空就会小很多</span><br></pre></td></tr></table></figure><br>这样空会很大。</p>
+<p>代码块有个神奇特性。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//```</span><br><span class="line">//DUMBLOG</span><br><span class="line">//```</span><br><span class="line">//写一些东西</span><br><span class="line">//</span><br><span class="line">//如上文字直接写在```下面一行代码块和文字间会有一个大空。</span><br><span class="line">//</span><br><span class="line">//</span><br><span class="line">//```</span><br><span class="line">//DUMBLOG</span><br><span class="line">//```</span><br><span class="line">//</span><br><span class="line">//写一些东西</span><br><span class="line">//</span><br><span class="line">//像这样空就会小很多</span><br></pre></td></tr></table></figure>
+<p>这样空会很大。</p>
 <ol>
 <li>这是列表</li>
 <li>这是列表</li>
 </ol>
 <ul>
-<li>这还是列表</li>
-<li><p>这还是列表</p>
+<li>
+<p>这还是列表</p>
 </li>
-<li><p>[ ] 这是任务单</p>
+<li>
+<p>这还是列表</p>
 </li>
-<li>[x] 这是完成的任务单</li>
+<li>
+<p>[ ] 这是任务单</p>
+</li>
+<li>
+<p>[x] 这是完成的任务单</p>
+</li>
 </ul>
 <p>任务单没用。</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -290,16 +312,21 @@
 </tr>
 </tbody>
 </table>
-</div>
-<p>$\LaTeX$<br>行间公式用不了。</p>
-<blockquote id="fn_1">
-<sup>1</sup>. 脚注中间有空格。<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
-</blockquote>
-<h2 id="内部测试部分"><a href="#内部测试部分" class="headerlink" title="内部测试部分"></a>内部测试部分</h2><a href="/2022/%E6%96%B0%E5%B9%B4%E5%A5%BD%EF%BC%81%EF%BC%81%EF%BC%81/" title="！！！🏮新年好🏮！！！">引用站内文章</a>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span><br />
+行间公式用不了。</p>
+<h2 id="内部测试部分"><a class="markdownIt-Anchor" href="#内部测试部分"></a> 内部测试部分</h2>
+<a href="/2022/%E6%96%B0%E5%B9%B4%E5%A5%BD%EF%BC%81%EF%BC%81%EF%BC%81/" title="！！！🏮新年好🏮！！！">引用站内文章</a>
 <p><a href="/">这是一个站内链接</a></p>
 <p>引用站内图片。</p>
-<p><img src="test.png" alt="引用站内图片" title="引用站内图片"></p>
+<img src="test.png" alt="引用站内图片" title="引用站内图片">
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">用这种方法引用的图片在站长工具中显示缺少alt标签：</span><br><span class="line">&#123;% asset_img test.png 引用站内图片 %&#125;</span><br><span class="line"></span><br><span class="line">改用这种就可以手动添加alt标签：</span><br><span class="line">&lt;img src=&quot;&#123;&#123; &#x27;test.png&#x27; &#125;&#125;&quot; alt=&quot;引用站内图片&quot; title=&quot;引用站内图片&quot;&gt;</span><br></pre></td></tr></table></figure>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>脚注中间有空格。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
