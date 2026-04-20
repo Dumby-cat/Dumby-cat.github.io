@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2026-04-11T06:17:36.388Z</updated>
+  <updated>2026-04-20T16:46:36.770Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>带驾驶员模型的 1/4 车辆座椅与悬架集成控制仿真</title>
+    <link href="https://dumblog.top/2026/%E5%B8%A6%E9%A9%BE%E9%A9%B6%E5%91%98%E6%A8%A1%E5%9E%8B%E7%9A%84-1-4-%E8%BD%A6%E8%BE%86%E5%BA%A7%E6%A4%85%E4%B8%8E%E6%82%AC%E6%9E%B6%E9%9B%86%E6%88%90%E6%8E%A7%E5%88%B6%E4%BB%BF%E7%9C%9F/"/>
+    <id>https://dumblog.top/2026/%E5%B8%A6%E9%A9%BE%E9%A9%B6%E5%91%98%E6%A8%A1%E5%9E%8B%E7%9A%84-1-4-%E8%BD%A6%E8%BE%86%E5%BA%A7%E6%A4%85%E4%B8%8E%E6%82%AC%E6%9E%B6%E9%9B%86%E6%88%90%E6%8E%A7%E5%88%B6%E4%BB%BF%E7%9C%9F/</id>
+    <published>2026-04-20T16:41:55.000Z</published>
+    <updated>2026-04-20T16:46:36.770Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文为下面这篇论文的复现和代码实现的项目readme。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;H. Du, W. Li and N. Zhang, “Integrated Seat and Suspension Control for a Quarter Car With Driver Model,” in IEEE Transactions on Vehicular Technology, vol. 61, no. 9, pp. 3893-3908, Nov. 2012, doi: 10.1109/TVT.2012.2212472.&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Dumby的自动化课程笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="自动化:信号处理" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+    <category term="自动化:课程笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="自动化:控制理论" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>你的羊是真的吗？——《银翼杀手1982》观后</title>
@@ -44,7 +70,7 @@
     <link href="https://dumblog.top/2026/%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%AB%E5%87%BD%E6%95%B0%E5%92%8CH%E6%97%A0%E7%A9%B7%E6%8E%A7%E5%88%B6%E8%87%AA%E4%B9%A0/"/>
     <id>https://dumblog.top/2026/%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%AB%E5%87%BD%E6%95%B0%E5%92%8CH%E6%97%A0%E7%A9%B7%E6%8E%A7%E5%88%B6%E8%87%AA%E4%B9%A0/</id>
     <published>2026-03-18T07:23:50.000Z</published>
-    <updated>2026-04-10T16:08:25.713Z</updated>
+    <updated>2026-04-20T16:44:22.343Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为李雅普诺夫函数和 H 无穷控制相关知识的自习笔记。&lt;/p&gt;</summary>
@@ -53,6 +79,8 @@
     
     <category term="Dumby的自动化课程笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
+    
+    <category term="自动化:课程笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     <category term="自动化:控制理论" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/"/>
     
@@ -411,25 +439,6 @@
     
     
     <category term="站务:公告通知" scheme="https://dumblog.top/tags/%E7%AB%99%E5%8A%A1-%E5%85%AC%E5%91%8A%E9%80%9A%E7%9F%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杂谈</title>
-    <link href="https://dumblog.top/2024/%E6%9D%82%E8%B0%88/"/>
-    <id>https://dumblog.top/2024/%E6%9D%82%E8%B0%88/</id>
-    <published>2024-11-23T03:15:23.000Z</published>
-    <updated>2026-02-21T14:27:35.148Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;断更好久（虽然也没人看就是了），这几个月在干什么嘞？🤔&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的随笔与影评" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E9%9A%8F%E7%AC%94%E4%B8%8E%E5%BD%B1%E8%AF%84/"/>
-    
-    
-    <category term="日常:杂谈与随笔" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8-%E6%9D%82%E8%B0%88%E4%B8%8E%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
