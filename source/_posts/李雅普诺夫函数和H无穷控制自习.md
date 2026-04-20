@@ -2,6 +2,7 @@
 title: 李雅普诺夫函数和H无穷控制自习
 tags:
   - '自动化:控制理论'
+  - '自动化:课程笔记'
 categories: Dumby的自动化课程笔记
 abbrlink: 6930
 date: 2026-03-18 15:23:50
