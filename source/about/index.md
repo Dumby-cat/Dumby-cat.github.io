@@ -23,4 +23,4 @@ type: "about"
 
 也去可以看看下面这些大佬的博客：
 
-[李明朗的博客](liminglang.top)
+[李明朗的博客](https://liminglang.top)
