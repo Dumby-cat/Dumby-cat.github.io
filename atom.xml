@@ -6,7 +6,7 @@
   <link href="https://dumblog.top/atom.xml" rel="self"/>
   
   <link href="https://dumblog.top/"/>
-  <updated>2026-05-22T14:07:54.247Z</updated>
+  <updated>2026-06-15T16:53:29.274Z</updated>
   <id>https://dumblog.top/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>西门子杯赛后呓语</title>
+    <link href="https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/"/>
+    <id>https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/</id>
+    <published>2026-06-13T12:35:29.000Z</published>
+    <updated>2026-06-15T16:53:29.274Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;十一号中午西门子杯正式结束（这甚至是我上大学以后参加的第一个省级往上的工程科技竞赛😭），这两天闲下来（虽然还有期末考）写点东西吧。&lt;/p&gt;
+&lt;p&gt;以下内容信息密度极低，闲的没事的可以看看。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Dumby的自动化心得笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="自动化:心得笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="编程:嵌入式开发" scheme="https://dumblog.top/tags/%E7%BC%96%E7%A8%8B-%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>《曼达洛人》剧场版，既不承上也不启下——《曼达洛人与古古》观后</title>
     <link href="https://dumblog.top/2026/%E3%80%8A%E6%9B%BC%E8%BE%BE%E6%B4%9B%E4%BA%BA%E3%80%8B%E5%89%A7%E5%9C%BA%E7%89%88%EF%BC%8C%E6%97%A2%E4%B8%8D%E6%89%BF%E4%B8%8A%E4%B9%9F%E4%B8%8D%E5%90%AF%E4%B8%8B%E2%80%94%E2%80%94%E3%80%8A%E6%9B%BC%E8%BE%BE%E6%B4%9B%E4%BA%BA%E4%B8%8E%E5%8F%A4%E5%8F%A4%E3%80%8B%E8%A7%82%E5%90%8E/"/>
     <id>https://dumblog.top/2026/%E3%80%8A%E6%9B%BC%E8%BE%BE%E6%B4%9B%E4%BA%BA%E3%80%8B%E5%89%A7%E5%9C%BA%E7%89%88%EF%BC%8C%E6%97%A2%E4%B8%8D%E6%89%BF%E4%B8%8A%E4%B9%9F%E4%B8%8D%E5%90%AF%E4%B8%8B%E2%80%94%E2%80%94%E3%80%8A%E6%9B%BC%E8%BE%BE%E6%B4%9B%E4%BA%BA%E4%B8%8E%E5%8F%A4%E5%8F%A4%E3%80%8B%E8%A7%82%E5%90%8E/</id>
     <published>2026-05-22T13:50:01.000Z</published>
-    <updated>2026-05-22T14:07:54.247Z</updated>
+    <updated>2026-05-22T14:08:06.069Z</updated>
     
     
     <summary type="html">&lt;p&gt;这部电影完全是《曼达洛人》剧集的剧场版。&lt;/p&gt;</summary>
@@ -113,19 +135,19 @@
     <link href="https://dumblog.top/2026/%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%AB%E5%87%BD%E6%95%B0%E5%92%8CH%E6%97%A0%E7%A9%B7%E6%8E%A7%E5%88%B6%E8%87%AA%E4%B9%A0/"/>
     <id>https://dumblog.top/2026/%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%AB%E5%87%BD%E6%95%B0%E5%92%8CH%E6%97%A0%E7%A9%B7%E6%8E%A7%E5%88%B6%E8%87%AA%E4%B9%A0/</id>
     <published>2026-03-18T07:23:50.000Z</published>
-    <updated>2026-04-20T16:44:22.343Z</updated>
+    <updated>2026-06-13T12:39:38.013Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为李雅普诺夫函数和 H 无穷控制相关知识的自习笔记。&lt;/p&gt;</summary>
     
     
     
-    <category term="Dumby的自动化课程笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <category term="Dumby的自动化心得笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="自动化:控制理论" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/"/>
     
-    <category term="自动化:课程笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <category term="自动化:心得笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -134,19 +156,19 @@
     <link href="https://dumblog.top/2026/%E7%9F%A9%E9%98%B5%E7%9A%84%E9%83%A8%E5%88%86%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E8%AE%A1%E7%AE%97/"/>
     <id>https://dumblog.top/2026/%E7%9F%A9%E9%98%B5%E7%9A%84%E9%83%A8%E5%88%86%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E8%AE%A1%E7%AE%97/</id>
     <published>2026-02-21T13:29:26.000Z</published>
-    <updated>2026-04-10T03:05:48.033Z</updated>
+    <updated>2026-06-13T12:39:38.019Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文为一些矩阵相关知识的自习笔记。&lt;/p&gt;</summary>
     
     
     
-    <category term="Dumby的自动化课程笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <category term="Dumby的自动化心得笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="算法:数论与数学" scheme="https://dumblog.top/tags/%E7%AE%97%E6%B3%95-%E6%95%B0%E8%AE%BA%E4%B8%8E%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="自动化:课程笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <category term="自动化:心得笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -155,21 +177,21 @@
     <link href="https://dumblog.top/2026/%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%BC%80%E6%BA%90%E5%88%86%E4%BA%AB/"/>
     <id>https://dumblog.top/2026/%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%BC%80%E6%BA%90%E5%88%86%E4%BA%AB/</id>
     <published>2026-02-21T12:35:08.000Z</published>
-    <updated>2026-03-18T07:28:33.410Z</updated>
+    <updated>2026-06-13T12:39:38.019Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文用来分享我个人的自动化专业课程的学习笔记，部分笔记由于某些神秘原因并不完整。笔记可能有错误和纰漏，请需要者阅读时注意思考鉴别🤓&lt;/p&gt;</summary>
     
     
     
-    <category term="Dumby的自动化课程笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <category term="Dumby的自动化心得笔记" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="自动化:控制理论" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/"/>
     
-    <category term="自动化:课程笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
-    
     <category term="自动化:信号处理" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+    <category term="自动化:心得笔记" scheme="https://dumblog.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -410,25 +432,6 @@
     
     
     <summary type="html">&lt;p&gt;我要吐槽。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Dumby的随笔与影评" scheme="https://dumblog.top/categories/Dumby%E7%9A%84%E9%9A%8F%E7%AC%94%E4%B8%8E%E5%BD%B1%E8%AF%84/"/>
-    
-    
-    <category term="日常:杂谈与随笔" scheme="https://dumblog.top/tags/%E6%97%A5%E5%B8%B8-%E6%9D%82%E8%B0%88%E4%B8%8E%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开会</title>
-    <link href="https://dumblog.top/2025/%E5%BC%80%E4%BC%9A/"/>
-    <id>https://dumblog.top/2025/%E5%BC%80%E4%BC%9A/</id>
-    <published>2025-03-19T13:45:39.000Z</published>
-    <updated>2026-02-21T14:18:18.974Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;我要发表暴论，爱tm听就听，不听就tm滚。&lt;/p&gt;</summary>
     
     
     

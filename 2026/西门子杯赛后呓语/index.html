@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.ico">
+  <link rel="mask-icon" href="/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="codeva-ErdOy0sMT5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dumblog.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":true,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"remove","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/grayscale-dark","dark":"base16/grayscale-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="十一号中午西门子杯正式结束（这甚至是我上大学以后参加的第一个省级往上的工程科技竞赛😭），这两天闲下来（虽然还有期末考）写点东西吧。 以下内容信息密度极低，闲的没事的可以看看。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="西门子杯赛后呓语">
+<meta property="og:url" content="https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/">
+<meta property="og:site_name" content="DUMBLOG">
+<meta property="og:description" content="十一号中午西门子杯正式结束（这甚至是我上大学以后参加的第一个省级往上的工程科技竞赛😭），这两天闲下来（虽然还有期末考）写点东西吧。 以下内容信息密度极低，闲的没事的可以看看。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/%E5%8E%BB%E5%B9%B4%E8%B5%9B%E9%A2%98%E4%BB%A3%E7%A0%81.jpeg">
+<meta property="og:image" content="https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/%E6%AD%A3%E5%BC%8F%E5%BC%80%E8%B5%9B%E5%89%8D%E5%86%99%E7%9A%84%E5%BA%93.jpeg">
+<meta property="og:image" content="https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/%E5%BC%80%E8%B5%9B%E5%90%8E%E7%9A%84Commit.jpeg">
+<meta property="article:published_time" content="2026-06-13T12:35:29.000Z">
+<meta property="article:modified_time" content="2026-06-15T16:53:29.274Z">
+<meta property="article:author" content="Dumby_cat">
+<meta property="article:tag" content="自动化:心得笔记">
+<meta property="article:tag" content="编程:嵌入式开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/%E5%8E%BB%E5%B9%B4%E8%B5%9B%E9%A2%98%E4%BB%A3%E7%A0%81.jpeg">
+
+
+<link rel="canonical" href="https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/","path":"2026/西门子杯赛后呓语/","title":"西门子杯赛后呓语"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>西门子杯赛后呓语 | DUMBLOG</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM=" crossorigin="anonymous">
+
+
+
+
+  <meta name="description" content="十一号中午西门子杯正式结束（这甚至是我上大学以后参加的第一个省级往上的工程科技竞赛😭），这两天闲下来（虽然还有期末考）写点东西吧。 以下内容信息密度极低，闲的没事的可以看看。">
+
+<link rel="canonical" href="" />
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="DUMBLOG" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">DUMBLOG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Dumby的小站</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dumblog.top/2026/%E8%A5%BF%E9%97%A8%E5%AD%90%E6%9D%AF%E8%B5%9B%E5%90%8E%E5%91%93%E8%AF%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dumby_cat">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DUMBLOG">
+      <meta itemprop="description" content="欢迎来小站 DUMBLOG！我会在这儿聊聊生活，分享最近看的电影、旅行中的趣事和一些零零碎碎的日常吐槽；同时也倒腾技术，写写以前解题的黑历史和心得，也会记录现在学习的各种笔记和踩坑记录。随便逛逛，希望你能找到感兴趣的东西！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="西门子杯赛后呓语 | DUMBLOG">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          西门子杯赛后呓语
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-06-13 20:35:29" itemprop="dateCreated datePublished" datetime="2026-06-13T20:35:29+08:00">2026-06-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-06-16 00:53:29" itemprop="dateModified" datetime="2026-06-16T00:53:29+08:00">2026-06-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Dumby%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">Dumby的自动化心得笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>十一号中午西门子杯正式结束（这甚至是我上大学以后参加的第一个省级往上的工程科技竞赛😭），这两天闲下来（虽然还有期末考）写点东西吧。</p>
+<p>以下内容信息密度极低，闲的没事的可以看看。</p>
+<span id="more"></span>
+<h2 id="主角一览"><a class="markdownIt-Anchor" href="#主角一览"></a> 主角一览</h2>
+<p>QQ：偏算法，ADC部分基本全部由她负责，除此之外还清算了各种大大小小的题目和功能，主要的情报来源。</p>
+<p>Chy：硬件佬，打板仙人，硬件以外也是啥都会点，我吃了他好多好多包辣条，QQ 的男票。</p>
+<p>我：小呆呆，对硬件一窍不通，软件小白，好几次找不到人因为在睡大觉。</p>
+<h2 id="流水账"><a class="markdownIt-Anchor" href="#流水账"></a> 流水账</h2>
+<p>我在这里不会详细讲代码的详细思路和具体是怎么写的，只是记一下流水账，后面会有一个注意要点的部分。还有我已经有点记不清一些具体的事情了，就主要写我负责的部分了。</p>
+<p>我在大学里实在是有些疲于收集信息情报了，在三月前都还没了解过西门子杯。三月底 Chy 叫我去和他俩一起组队打工业嵌入式赛道，考虑到时间没有很冲突，在期末第一门开考前能全部打完（指中午完赛晚上考期末考🤫），周期相对比较短而且难度还行，那还说啥了，那就打呗。</p>
+<p>四月初差不多确定要打，那时候初赛的样题和说明都已经出了（分别于三月一号和三月六号发布），我们在 Github 上找了个去年的省一的代码，拿来自己对着去年赛题和今年样题重写了一遍放自己库里，<strong>这一步很有用</strong>：既可以熟悉一下题目和代码，今年出题以后还可以直接从库里掏之前写好改好的代码用，非常省事。至少一开始以为今年题目和去年应该差不了多少的时候是这么想的。不过有一说一 Keil 工程用 git 维护起来是真的麻烦😡，不过后来队友推拉之前之后沟通一下也还好。</p>
+<img src="去年赛题代码.jpeg" alt="去年赛题代码库" title="去年赛题代码库">
+<p>四月二十五号出硬件题，Chy 开始高强度工作，但是由于我对硬件一窍不通，实在帮不上忙，就继续写去年题目的代码，到五月初五一之后差不多我和 QQ 把去年题目的代码整合完跑了一遍，基本能顺利完成去年的所有赛题。</p>
+<p>完成去年的题目以后我们开始琢磨 QQ 从应该是B站找到的一个叫 <strong>“马眼镜”</strong> 的博主在四月初发布的一个例程包，里面的内容和今年赛题是很贴合的。我们开始搬运重写例程代码，根据样题和去年赛题给自己设定了一些任务用于测试样题上要求的各项功能，期间主板还调坏了一次。购入新板子以后，最后在开赛当天的凌晨完成了今年例程和我们的去年的代码库的整合，在开赛前写出了一个比较完整的库（还是有一些没调好的，比如用 RS485 的串口通信、外部 ADC 部分等）。</p>
+<img src="正式开赛前写的库.jpeg" alt="正式开赛前写的库" title="正式开赛前写的库">
+<h3 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day 1</h3>
+<p>六月五号晚上八点正式开赛，一看题目<s>又臭又长</s>。通读了一遍题目，和去年题目还是有挺多区别的，差不多是去年题目的 Pro Max 版。先直接挑最重点的做，一看报文解析那部分之前没写，这个做不出来基本零分了直接，我就开始写这个协议通信，与此同时 Chy 和 QQ 继续浏览整理题目（因为这题目出的真的太长太啰嗦了，没什么条理表述也不清晰）。</p>
+<p>因为形式固定，报文解析实现起来还算简单，花了我大概三个半小时把这部分写完，期间另外两人已经开始写题目里那些零碎的任务了。我把报文解析部分上传以后，大家开始往里面填充各个任务的代码。三个人之间的任务分配非常关键，<strong>如果有一些不方便几个人一起写而且还耗时的任务一定要分个人赶紧开始写（比如本次赛题的 BootLoader 部分）</strong>，我分到的 RTC 任务（设置时间读取时间）和深度睡眠任务，QQ 继续完成那些零碎的任务以及 ADC 部分。</p>
+<p>我又花了三个小时差不多在六号凌晨两点二十五传上去这几个任务代码的初版，等 QQ 用板子的空闲上板试了下发现不好使。RTC 的任务还算好调因为原来的库里有很多 RTC 代码，只要写两个时间戳和 RTC 时间相互转换的函数就行，深度睡眠的任务就有点麻烦了，因为之前没试过用 Alarm 唤醒低功耗模式。调到三点多快四点因为六号早上还有节早八的实验课，就先回去小睡了一下，另外两个应该是四点半回去的。</p>
+<p>第一天相当于完成了基础协议通信（用的 USB 串口线搭配 USART0，还没调 RS485）、一些小任务，要写进 Flash 的参数设置任务（除了波特率不能持久化）、设置读取时间和深度睡眠模式的初版代码，继续调了之前没调好的外部 ADC 和串口（还是没调好）。</p>
+<h3 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day 2</h3>
+<p>上午我在上课时 Chy 去把电源的板子调好，可以正常使用。上完课我十一点半回来把设置读取时间的部分调出来以后，没啥进展去吃了个 KFC，回来成功把深度睡眠调好了。过了会 Chy 把外部 ADC 的初版（可以正常读到电压温度）也调出来了。深度睡眠之前的问题是初始化时时序有问题，导致寄存器配置完以后马上被清空了；ADC 之前的问题应该是嘉立创焊的板子有个焊盘掉了😡。</p>
+<p>BootLoader 部分基本全由我负责，写完深度睡眠以后整合了一下就开始写。由于题目要求和库里的 BootLoader 地址分配和固件包安装等等都有很大区别，工作量比较大（对我来说），我后面主要任务基本就是调 BootLoader。</p>
+<p>我先把原来这版所有有关地址的部分改成题目要求的分配。比较麻烦的是题目在 BootLoader 区也是要进行交互的，也就是说 APP 区的串口通信和协议解析的代码 BootLoader 也要有一份。把 APP 区的 LED、OLED、USART、I2C、ROM 模块搬到 BootLoader 区以后，开始完成题目要求的报文指令的交互，并把代码接收的部分改成了符合题目的切片接收。同时为了能够确定当前状态，重新写了一遍从特定地址读写 Flash 的函数，将重要参数或者标志存到特定地址让 BootLoader 区和 APP 区能够借此交互。期间还把原来 BootLoader 代码中一些多余的功能删掉了（其实不应该删的，这点后面说）。</p>
+<p>在完成了大部分 BootLoader 功能的未调试初版以后，已经是七号的凌晨快五点了，第二天也差不多到此结束。</p>
+<h3 id="day-3"><a class="markdownIt-Anchor" href="#day-3"></a> Day 3</h3>
+<p>来了先把 Day 2 写的 BootLoader 的代码上板跑一下果然是无法正常运行，不说无法烧录，连 APP 区都没发正常跳转。就因为没法正常跳转从起床一直调到下午，从 <em>一开始的开始烧录 APP 代码就死机，到莫名其妙（真的原因不明）不死机了但是还是无法进入 APP 区（能跳转到 APP 区但是一跳转就会卡死），再到发现 Flash 片擦除用成了扇区擦除导致卡死（这时候能正常进 APP 区了但是参数持久化又出问题），再到最后发现 APP 区初始化时序有问题（啊对又是初始化时序）导致持久化的参数被擦除</em> ，终于成功实现从 BootLoader 正常跳转 APP 区并发送心跳帧。在修改读写 Flash 的代码时同时也调好了之前波特率不能持久化的问题。</p>
+<p>不过光进入 APP 区远达不到题目要求，上板以后发现固件包也无法正常下载跳转。检查后发现主要问题在切片接收和魔法字检验上：切片接收的时限要适当调高点，考虑到各个模块的延迟和一些玄学原因；魔法字检验完以后要把魔法字的四个字节抛弃，从第五个字节开始下载到 APP 区的内存上。最终我在大概五点的时候将 BootLoader 的功能<strong>大部分</strong>实现了。</p>
+<p>与此同时，我的两位队友将 RS485 串口通信和其他基本所有任务都完成了，除了有几个任务还有一些小 Bug。</p>
+<p>终于我们在大概八号凌晨六点将所有代码整合跑了一遍自动测评，没怎么仔细看结果先出去吃早饭了，不过后面看这次的代码已经可以完成大部分任务了。</p>
+<p>在美美吃完一顿徽州早点以后我们大概七点半回去结束了第三天（怎么越熬越晚了还）。</p>
+<img src="开赛后的Commit.jpeg" alt="开赛后的Commit" title="开赛后的Commit">
+<h3 id="day-4"><a class="markdownIt-Anchor" href="#day-4"></a> Day 4</h3>
+<p>仔细看了下测评结果以后发现最主要的 BootLoader 和 ADC 还是有些小问题。QQ 和 Chy 开始调 ADC，我开始调 BootLoader。</p>
+<p>调完发现 BootLoader 部分一个主要问题是直接做了字符串匹配而没有解析报文，导致设备号改了以后就识别不到命令了；另一个主要问题是先下载后检验魔法字，而且检验失败以后直接跳转 APP 区而不是等待下发新固件包。改完以后 BootLoader 部分跑自动测评可以做到全部通过。</p>
+<p>下午我们去科协（方便焊板子而且设备如电源和电子负载齐全），Chy 继续调 ADC，我开始将原来的代码结构改成符合题目要求的结构（就是把这个文件夹的代码放另一个文件夹里之类的），期间还把原来代码中一些多余的功能删掉了（<strong>其实不应该删的，这点后面说</strong>😭）。由于我的过度自信（认为改点这种东西肯定出不了什么问题），<strong>没有找还在调 ADC 的 QQ 把板子拿来跑一下自动测评</strong>，而是和Chy 去找录视频的地方（当时已经五六点了，视频录制截止时间是八点）。</p>
+<p>QQ 最终在六点半差不多调出来以后发现仅需多加几行代码，我就把这几行代码直接粘贴到我整理过的代码上，熟悉了一下流程后便开始录制。</p>
+<p>由于不熟悉流程以及操作不熟练，几个人耽搁了一段时间后终于正常录了一个进入自动测评的视频了（这个视频开始录制已经是七点二十七了），自动测评时却发现原本应该全部正常通过的代码现在全部无响应。我们立刻停止录制开始调试，这时候已经是三十九分了，时间非常紧迫。看了一下自动测评是从参数持久化也就是写入 Flash 开始超时，我们查了下 Flash 部分的代码，但是从上次能跑以后根本就没有改过这部分代码，只有我删掉了一些注释。浏览了一遍 Flash 的库，由于一下子查不出是哪里出问题，只好回滚到上一个版本的代码（也就是没有修改结构的那版，我甚至还没把调好的 BootLoader 部分上传，所以这版的代码的 BootLoader 也是有问题的，但是我忘了这事了☹），把 ADC 改过的代码加上以后急忙开始录制。</p>
+<p>这里我先嘴硬一下，所有的题目要求（无论是之前发的还是赛题或是上位机上的标注）全都没有明确说明具体的评分规则以及提交时间的处理方式，仅仅说了视频拍摄截止时间是八点而所有文件的上传截止时间是十一点五十九分——并没有说明不能上传新的代码和测试结果！😡😡</p>
+<p>录制开始，Chy 发现上次录制时电子负载忘记开了，这次开了以后电源板也跑不满了（事后 Chy 描述是因为太自信把电流设置太高了）。进入到自动评测阶段，发现主循环里 printf 电压值的代码忘记删了，自动测评界面一直在跳电压值。刚看到这里的时候我们其实是有时间立马删掉对应代码赶紧开始重新录制的，但是风险太大我们还是让自动测评跑完结束录制了。</p>
+<p>这时候七点五十五我们已经没什么还能补救的了，就开始复盘代码，尝试找出为什么新代码跑不通。</p>
+<p>我想着上一版都能跑这版跑不通那就是整理的时候出问题了呗，我从最主要的代码开始用文本比较器对比看看哪里多了什么少了什么。</p>
+<p>搞笑的是问题就出在我检查的第一个文件 Function.c 里：我在删除那些多余的代码时在初始化部分多删了一行 <code>spi_flash_init()</code> 。</p>
+<p>啊对没错就是这一行。</p>
+<p>就只因为这一行。</p>
+<p>加上以后再跑了一遍自动测评直接就跑过了。</p>
+<p>我 chovy，我删代码给我删好了啊😭😭😭</p>
+<p>但是事已至此，我们只好把新的代码、测试结果、电路文件以及原来的视频上传以后，以一顿美美的烧烤结束了失败的 Day 4。</p>
+<p>这里我还是要嘴硬一下，**所有的题目要求（无论是之前发的还是赛题或是上位机上的标注）全都没有明确说明具体的评分规则以及提交时间的处理方式，仅仅说了视频拍摄截止时间是八点而所有文件的上传截止时间是十一点五十九分——并没有说明不能上传新的代码和测试结果！**😡😡</p>
+<h3 id="day-5-8"><a class="markdownIt-Anchor" href="#day-5-8"></a> Day 5-8</h3>
+<p>这段时间就是稍作歇息然后把设计文档和 PPT 以及系统介绍视频录制完成并上传，几个人分工，没什么具体好讲的（不过由于那几天我的实验课比较多，另外两人写了大部分）。</p>
+<h2 id="值得注意的问题"><a class="markdownIt-Anchor" href="#值得注意的问题"></a> 值得注意的问题</h2>
+<p>我把我能想到的问题都写一写吧。</p>
+<ol>
+<li>在开赛出题前一定要有一个自己的库，这会大大减轻比赛四天的负担。</li>
+<li>最好在开赛以后先将代码改成符合题目要求的结构，不要等最后代码多了再调整，容易出很多莫名其妙的问题。</li>
+<li>时序非常关键：不管是硬件初始化或者配置的时序还是头文件加载的时序，一定要检查一下初始化的顺序会不会在某些特定情况下出问题。</li>
+<li>只在一个情况下跑过能跑通的代码在其他情况下未必有用，我写的 RTC 就是初始化时序有问题但是不用 Alarm 的时候就是没问题的。</li>
+<li>最好不要每个文件都包含所有的头文件，用到哪个包含哪个，不然可能会冲突或者出一些更莫名其妙的问题。</li>
+<li>STLink 的 3.3V 接口不能在有其他供电的情况下（比如板子还和电脑接着 USB 串口线）接到板上，会导致电压倒灌烧掉主板，我们的板子就是这样烧掉了一块。</li>
+<li>STLink 的 Reset 最好不接，这样在 STLink 拔掉以后板子还可以正常通过复位键复位。</li>
+<li>用不到的代码不要删，一是留着不会对代码造成任何影响，二是可能会误删一些有用的代码，三是写设计书的时候可以把这些部分作为创新点写上去。</li>
+<li>完成每个任务以后或者每个大改动前后多保存，如果用 Git 维护那就多推 Commit，方便后续回滚或者查询。</li>
+<li>完成一些关键改动以后一定要上板测试一下，防止翻车。</li>
+<li>设计书三天写完全来得及。</li>
+<li>一定要在比赛截止前至少两个半小时开始录制，提前两个小时应该只要要录了一版视频。</li>
+<li>调代码的时候调不出来多输出看状态，再调不出来也要考虑下是不是硬件问题。</li>
+</ol>
+<p>暂时想不到别的了，如果有问题可以邮箱联系我，我的邮箱站点“关于”有写。</p>
+<p>总之，也算是一次比较有收获的比赛了吧。</p>
+<p>最后，感谢学校的支持，感谢老师的知道，感谢父母培养，感谢队友的付出，也感谢队友父母对队友的培养🤓</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96-%E5%BF%83%E5%BE%97%E7%AC%94%E8%AE%B0/" rel="tag"># 自动化:心得笔记</a>
+              <a href="/tags/%E7%BC%96%E7%A8%8B-%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/" rel="tag"># 编程:嵌入式开发</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/%E3%80%8A%E6%9B%BC%E8%BE%BE%E6%B4%9B%E4%BA%BA%E3%80%8B%E5%89%A7%E5%9C%BA%E7%89%88%EF%BC%8C%E6%97%A2%E4%B8%8D%E6%89%BF%E4%B8%8A%E4%B9%9F%E4%B8%8D%E5%90%AF%E4%B8%8B%E2%80%94%E2%80%94%E3%80%8A%E6%9B%BC%E8%BE%BE%E6%B4%9B%E4%BA%BA%E4%B8%8E%E5%8F%A4%E5%8F%A4%E3%80%8B%E8%A7%82%E5%90%8E/" rel="prev" title="《曼达洛人》剧场版，既不承上也不启下——《曼达洛人与古古》观后">
+                  <i class="fa fa-angle-left"></i> 《曼达洛人》剧场版，既不承上也不启下——《曼达洛人与古古》观后
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Dumby_cat</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
