@@ -9,17 +9,13 @@ description: 欢迎来小站 DUMBLOG！我会在这儿聊聊生活，分享最�
 keywords: 个人博客, 信息学竞赛, 编程笔记, 游戏影评, 技术分享, 生活记录, 算法学习, 旅行见闻
 author: Dumby_cat
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://dumblog.top
 root: /
 permalink: :year/:title/
-# permalink: :year/:month/:day/:title/
-#abbrlink: 
-#  alg: crc32 #算法选项：crc16丨crc32
-#  rep: hex #输出进制：dec为十进制，hex为十六进制
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -107,13 +103,9 @@ theme: next
 plugins:
   - hexo-toc
 
-# hexo-toc:
-#   anchorlink: true # 如果想要在标题旁边显示锚点链接，可以设置为true
-#   maxDepth: 6     # 指定生成目录的最大标题层级，默认为6
 toc:
   maxdepth: 6
   class: toc
-  # slugify: transliteration
   decodeEntities: false
   anchor:
     position: before
@@ -127,7 +119,6 @@ deploy:
   - type: git
     repo: git@github.com:Dumby-cat/Dumby-cat.github.io.git
     branch: master
-  - type: baidu_url_submitter
 
 #RSS
 feed:
@@ -139,16 +130,10 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-  icon: icon.png
+  icon: images/rss.png
   autodiscovery: true
   template:
 
-
-baidu_url_submit:
-  count: 200
-  host: https://dumblog.top
-  token: kyZZPxlW85Ma8xCM
-  path: baidu_urls.txt
 
 search:
   path: search.xml
@@ -156,34 +141,6 @@ search:
   content: true
   format: html
 
-# Minifier
-filter_optimize:
-  enable: true
-  # static resource versioning
-  versioning: false
-  css:
-    # minify all css files
-    minify: true
-    excludes:
-    # use preload to load css elements dynamically
-    delivery:
-      - '@fortawesome/fontawesome-free'
-      - 'fonts.googleapis.com'
-    # make specific css content inline into the html page
-    inlines:
-      # support full path only
-      - css/main.css
-  js:
-    # minify all js files
-    minify: true
-    excludes:
-    # remove the comments in each of the js files
-    remove_comments: false
-  html:
-    # minify all html files
-    minify: true
-    excludes:
-  # set the priority of this plugin,
-  # lower means it will be executed first, default of Hexo is 10
-  priority: 12
-
+# CSS 压缩：由现有 Stylus 渲染器执行，不改变样式的加载方式或层叠顺序。
+stylus:
+  compress: true

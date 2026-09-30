@@ -1,9 +1,0 @@
-{# Meta Description #}
-{% if page.description %}
-  <meta name="description" content="{{ page.description | striptags | truncate(150) }}">
-{% elif page.excerpt %}
-  <meta name="description" content="{{ page.excerpt | striptags | truncate(150) }}">
-{% elif config.description %}
-  <meta name="description" content="{{ config.description }}">
-{% endif %}
-<link rel="canonical" href="{{ site.url }}{{ page.url }}" />

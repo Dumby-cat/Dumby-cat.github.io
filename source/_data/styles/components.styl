@@ -1,0 +1,133 @@
+// 标题、菜单、复制按钮、分页及分类标签
+i {
+  background: $dumblog-background !important;
+  display: block;
+  height: 0px;
+  position: relative;
+}
+
+.site-title {
+  color: $dumblog-text;
+}
+
+.post-title {
+  color: $dumblog-text;
+}
+
+.copy-btn {
+  color: $dumblog-text;
+  if (hexo-config('codeblock.copy_button.style') == 'flat') {
+    background: $dumblog-background;
+  }
+}
+
+.followme {
+  color: $dumblog-text;
+  text-align: center;
+  background: $dumblog-background;
+  border-left: 3px solid $dumblog-text;
+}
+
+.posts-expand .post-title-link {
+  color: $dumblog-text;
+}
+
+.menu-item {
+  a, span.exturl {
+    color: $dumblog-text;
+    &:hover {
+      color: $dumblog-text;
+      background: $dumblog-hover;
+    }
+  }
+}
+.menu .menu-item a {
+  text-align: center;
+}
+.menu-item a:hover, .menu-item a.menu-item-active {
+  color: $dumblog-text;
+  background: $dumblog-hover;
+}
+
+.pagination .page-number.current {
+  background: $dumblog-page-current;
+  border-color: $dumblog-page-border;
+  color: $dumblog-text;
+}
+
+.tag-cloud {
+  a {
+    display: inline-block;
+    border-bottom-color: $dumblog-text;
+    margin: 10px;
+    color: $dumblog-text;
+
+    order: 1;
+    &:hover {
+      color: $dumblog-link-hover !important;
+    }
+  }
+}
+
+.posts-expand .post-tags a {
+  background: $dumblog-background;
+  &:hover {
+    background: $dumblog-hover;
+    color: $dumblog-text;
+  }
+}
+
+.category-all-page .category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  a {
+    color: $dumblog-text;
+    &:hover {
+      background: $dumblog-hover;
+      color: $dumblog-text;
+    }
+  }
+}
+
+.posts-collapse .post-content .collection-title {
+  display: none;
+}
+
+// 搜索弹窗使用与页面相同的深色体系，覆盖主题的浅色固定值。
+.search-popup {
+  color: $dumblog-text;
+
+  .search-header {
+    background: $dumblog-muted-background;
+  }
+
+  input.search-input {
+    color: $dumblog-text;
+    caret-color: $dumblog-text;
+
+    &::placeholder {
+      color: $dumblog-link;
+    }
+  }
+
+  .search-icon, .popup-btn-close, .search-result-icon {
+    color: $dumblog-link;
+  }
+
+  .popup-btn-close:hover .fa {
+    color: $dumblog-link-hover;
+  }
+
+  // 局部修复全局 i 的背景和零高度，保证搜索控件正常显示。
+  i {
+    background: transparent !important;
+    display: inline-block;
+    height: auto;
+  }
+
+  mark.search-keyword {
+    color: #ff8a80;
+    border-bottom-color: #ff8a80;
+  }
+}

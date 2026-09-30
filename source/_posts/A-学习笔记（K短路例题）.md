@@ -6,6 +6,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: 9cf82999
 date: 2021-06-29 20:10:45
+updated: 2026-02-21 22:30:46
 ---
 
 来做个常用A星算法解决的一种常见题型：K短路问题。

@@ -1,0 +1,19 @@
+// 表格及行状态
+table {
+  background: $dumblog-background;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: $table-font-size;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+tbody tr {
+  background: $dumblog-background;
+  &:nth-of-type(odd) {
+    background: $dumblog-background;
+  }
+
+  &:hover {
+    background: $dumblog-muted-background;
+  }
+}

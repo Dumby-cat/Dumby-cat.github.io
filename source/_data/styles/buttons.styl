@@ -1,0 +1,28 @@
+// 按钮及内部图标
+.btn {
+  background: $dumblog-background;
+  border: 2px solid $dumblog-text;
+  border-radius: $btn-default-radius;
+  color: $dumblog-link-hover;
+  display: inline-block;
+  font-size: $font-size-small;
+  line-height: 2;
+  padding: 0 20px;
+  text-decoration: none;
+  transition-property: background-color;
+  the-transition();
+  &:hover {
+    border-color: $dumblog-background;
+    color: $dumblog-text;
+    background: $dumblog-hover;
+  }
+
+  + .btn {
+    margin: 0 0 8px 8px;
+  }
+
+  .fa-fw {
+    text-align: left;
+    width: (18em / 14);
+  }
+}

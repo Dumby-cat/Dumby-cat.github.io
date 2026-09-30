@@ -7,6 +7,7 @@ categories: Dumby的自动化心得笔记
 abbrlink: 6930
 date: 2026-03-18 15:23:50
 mathjax: true
+updated: 2026-06-13 20:39:38
 ---
 
 本文为李雅普诺夫函数和 H 无穷控制相关知识的自习笔记。

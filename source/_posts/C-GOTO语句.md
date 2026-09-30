@@ -5,6 +5,7 @@ tags:
 categories: Dumby的C++编程开发
 abbrlink: b001cc58
 date: 2022-12-24 14:32:57
+updated: 2026-02-21 22:31:42
 ---
 
 关于C++中的goto语句。

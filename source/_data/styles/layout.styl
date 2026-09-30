@@ -1,0 +1,41 @@
+// 页面宽度、响应式断点及移动端导航
+header.post-header {
+  width: auto;
+}
+.container .main-inner { width: 80%; }
+.content-wrap { width: calc(100% - 260px); }
+.header {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto;
+  }
+}
+.container .main-inner {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto;
+  }
+}
+.content-wrap {
+  +tablet() {
+    width: 100% !important;
+  }
+  +mobile() {
+    width: 100%;
+  }
+}
+
+nav.site-nav {
+  --scroll-height: 228px;
+  --scroll-width: 120px;
+}
+@media (max-width: 767px) {
+  body.site-nav-on .site-nav {
+    height: var(--scroll-height);
+    width: var(--scroll-width);
+  }
+}

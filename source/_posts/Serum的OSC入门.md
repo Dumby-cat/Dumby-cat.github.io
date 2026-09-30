@@ -5,6 +5,7 @@ tags:
 categories: Dumby的硬核折腾笔记
 abbrlink: 588d3703
 date: 2022-11-27 19:17:03
+updated: 2026-02-21 22:36:21
 ---
 
 本帖用于自习Serum的振荡器模块。

@@ -1,0 +1,94 @@
+// 基础颜色、页脚、链接与文字
+:root {
+  color-scheme: dark;
+  --body-bg-color: $dumblog-background;
+  --content-bg-color: $dumblog-background;
+  --card-bg-color: $dumblog-card;
+  --text-color: $dumblog-text;
+  --selection-bg: $dumblog-hover;
+  --selection-color: $dumblog-text;
+  --blockquote-color: $dumblog-link;
+  --link-color: $dumblog-link;
+  --link-hover-color: $dumblog-link-hover;
+  --brand-color: $dumblog-text;
+  --brand-hover-color: $dumblog-link-hover;
+  --table-row-odd-bg-color: $dumblog-background;
+  --table-row-hover-bg-color: $dumblog-muted-background;
+  --menu-item-bg-color: $dumblog-hover;
+  --theme-color: $dumblog-background;
+  --btn-default-bg: $dumblog-background;
+  --btn-default-color: $dumblog-text;
+  --btn-default-border-color: $dumblog-border;
+  --btn-default-hover-bg: $dumblog-hover;
+  --btn-default-hover-color: $dumblog-link-hover;
+  --btn-default-hover-border-color: $dumblog-link;
+  --highlight-background: $dumblog-card;
+  --highlight-gutter-background: $dumblog-muted-background;
+}
+
+.column {
+  background: $dumblog-background;
+}
+
+.footer {
+  width: 0%;
+  background: $dumblog-background;
+}
+.footer-inner {
+  display: none;
+  text-align: right;
+}
+
+.with-love {
+  display: none;
+}
+
+a:-webkit-any-link {
+  color: $dumblog-link;
+  border-bottom: none;
+  &:hover {
+    color: $dumblog-link-hover;
+    border-bottom: none;
+  }
+}
+
+.post-body p a {
+  color: $dumblog-link;
+  border-bottom: 1px solid $dumblog-link;
+  &:hover {
+    color: $dumblog-link-hover;
+    border-bottom: 1px solid $dumblog-link-hover;
+  }
+}
+
+/* webkit, opera, IE9 */
+::selection {
+  background: $dumblog-muted-background;
+  color: $dumblog-link;
+}
+/* firefox */
+::-moz-selection {
+  background: $dumblog-muted-background;
+  color: $dumblog-link;
+}
+
+body {
+  background-color: $dumblog-background;
+}
+
+.post-button .btn {
+  color: $dumblog-text;
+  &:hover {
+    color: $dumblog-text;
+    background: $dumblog-hover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dumblog-heading;
+}
+
+b, strong {
+  font-weight: 900;
+  font-size: large;
+}

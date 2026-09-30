@@ -6,6 +6,7 @@ tags:
 categories: Dumby的OI/算法竞赛
 abbrlink: 52b2685a
 date: 2022-07-09 20:52:29
+updated: 2026-02-21 22:37:02
 ---
 
 坑题 SPOJ2916 GSS5-Can you answer these queries V 题解。

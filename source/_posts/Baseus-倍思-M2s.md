@@ -6,6 +6,7 @@ tags:
 categories: Dumby的随笔与影评
 abbrlink: 6e8aad32
 date: 2023-07-22 13:20:13
+updated: 2026-02-21 22:31:20
 ---
 
 上上个星期买的 Baseus M2s 在上个星期到手了，稍稍写下体验。

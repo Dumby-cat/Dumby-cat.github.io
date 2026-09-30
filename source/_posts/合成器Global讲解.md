@@ -5,6 +5,7 @@ tags:
 categories: Dumby的硬核折腾笔记
 abbrlink: 8e168ba4
 date: 2022-11-13 12:24:38
+updated: 2026-02-21 22:15:38
 ---
 
 本帖用于介绍合成器的Global面板。
