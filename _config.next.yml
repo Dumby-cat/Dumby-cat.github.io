@@ -206,6 +206,9 @@ exturl_icon: true
 google_site_verification:
 bing_site_verification:
 yandex_site_verification:
+# 百度搜索资源平台 HTML 标签验证：仅填写 meta 标签的 content 值。
+# 操作说明见 docs/baidu-indexing.md。
+baidu_site_verification: "codeva-jXU3RwAAWK"
 
 # 公式与页面增强
 math:

@@ -2,6 +2,8 @@
 title: 404 Not Found
 date: 2023-10-20 19:10:32
 type: 404
+noindex: true
+sitemap: false
 permalink: /404.html
 ---
 

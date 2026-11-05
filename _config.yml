@@ -120,7 +120,14 @@ deploy:
     repo: git@github.com:Dumby-cat/Dumby-cat.github.io.git
     branch: master
 
-#RSS
+# 搜索引擎站点地图（XML 用于抓取，TXT 也可用于手动提交链接）
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  tags: false
+
+# RSS
 feed:
   type: atom
   path: atom.xml
