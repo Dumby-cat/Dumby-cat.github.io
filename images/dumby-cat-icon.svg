@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 144" width="128" height="144" role="img" aria-labelledby="title desc">
+  <title id="title">Dumby 白色三眼头像</title>
+  <desc id="desc">沿用原头像的直边尖耳轮廓，白色脸部，绿色点眼、蓝色加号眼、红色减号眼，粉色圆颊和沙漏形嘴部。</desc>
+  <g stroke="#111" stroke-width="4" stroke-linejoin="miter">
+    <path d="M16 130V31L32 7 48 31H80L96 7 112 31V130L104 138H24Z" fill="#fff"/>
+    <path d="m25 29 7-12 9 12Zm62 0 9-12 7 12Z" fill="#fff" stroke-width="3"/>
+    <ellipse cx="64" cy="49" rx="10" ry="12" fill="#fff"/>
+    <circle cx="38" cy="65" r="11" fill="#fff"/>
+    <circle cx="90" cy="65" r="11" fill="#fff"/>
+    <circle cx="16" cy="94" r="12" fill="#f6a5da"/>
+    <circle cx="112" cy="94" r="12" fill="#f6a5da"/>
+  </g>
+  <circle cx="64" cy="49" r="3.5" fill="#76e85b"/>
+  <path d="M38 59v12m-6-6h12" stroke="#007bff" stroke-width="4"/>
+  <path d="M84 65h12" stroke="#df123a" stroke-width="4"/>
+  <path d="M50 78H78L88 87 78 96H50L40 87Z" fill="#fff" stroke="#111" stroke-width="3"/>
+  <path d="M47 96H81L93 108 82 119H46L35 108Z" fill="#fff" stroke="#111" stroke-width="3"/>
+  <path d="M64 78v54m-18-5v5h36v-5" fill="none" stroke="#111" stroke-width="5" stroke-linejoin="miter"/>
+</svg>
